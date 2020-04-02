@@ -1,0 +1,23 @@
+{
+  "name": "matthewlettini.me",
+  "version": "1.0.0",
+  "description": "My personal site",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mlettini/matthewlettini.me"
+  },
+  "author": {
+    "name": "Matthew Lettini",
+    "url": "https://matthewlettini.me"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "@11ty/eleventy-plugin-rss": "^1.0.7",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1"
+  }
+}
