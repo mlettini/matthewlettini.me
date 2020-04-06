@@ -12,18 +12,59 @@
 	
     
     <entry>
-      <title>Don’t Overthink Remote Working</title>
-      <link href="https://matthewlettini.me/posts/dont-overthink-remote-working/"/>
-      <updated>2020-03-13T00:00:00-00:00</updated>
-      <id>https://matthewlettini.me/posts/dont-overthink-remote-working/</id>
+      <title>Testing Blog Setup</title>
+      <link href="https://matthewlettini.me/posts/test-post/"/>
+      <updated>2020-04-05T00:00:00-00:00</updated>
+      <id>https://matthewlettini.me/posts/test-post/</id>
       <content type="html"><![CDATA[
-        <p>The coronavirus is here, and as a result a lot of employers are asking employees to work remotely if possible. I’ve seen a fair share of <em>tips for remote working</em> blog posts this past week. I figured I’d cash in on the action and share my thoughts.</p>
-<h2>Don’t Overthink It</h2>
-<p>Most of the posts I’ve read, more or less, are saying the same things: have an enjoyable working environment, communicate with your team regularly, stick to a schedule, yada yada yada…</p>
-<p>All of those are great, but also seem subjective. Maybe its because I’ve been a remote working for over 10 years, but I have a different  point of view here. The best advice I have is: <strong>don’t overthink it</strong>. I’m not saying all those other things aren’t important, however if you spend too much time focusing on: <em>I have to do this</em> and <em>I have to do that</em>, you’ll probably find the transition will be more difficult and take longer.</p>
-<h2>It is a Transition</h2>
-<p>Simply be aware that remote working <em>is</em> a transition, especially if you’ve worked in an office environment for some time. And that’s ok! Recognize this, but try not to dwell on it too much. Do what you can to figure out how to get into <em>your</em> groove quickly. Maybe that means working in pajamas, or working at the kitchen table instead of a dedicated office, or whatever!</p>
-<p>The fact is, it will take you a little time to get used to remote working. And you’ll likely have to try different things to find what works for you. Your preferences might also fluctuate over time. Be aware of the transition, and try not to overthink it.</p>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+<p><em>Donec nec justo eget felis facilisis fermentum.</em> <strong>Aliquam porttitor mauris sit amet orci.</strong> Aenean dignissim <a href="">pellentesque felis</a>.</p>
+<p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</p>
+<p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</p>
+<p>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.</p>
+<h1>Header one</h1>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+<p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</p>
+<h2>Header two</h2>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+<p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</p>
+<h3>Header three</h3>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+<ul>
+<li>Lorem ipsum dolor sit amet.</li>
+<li>Consectetuer adipiscing elit.</li>
+<li>Donec odio.</li>
+<li>Quisque volutpat mattis eros.</li>
+</ul>
+<p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</p>
+<ol>
+<li>Lorem ipsum dolor sit amet.</li>
+<li>Consectetuer adipiscing elit.</li>
+<li>Donec odio.</li>
+<li>Quisque volutpat mattis eros.</li>
+</ol>
+<p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</p>
+<blockquote>
+<p>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.</p>
+</blockquote>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+<figure>
+  <img src="/img/posts/test1.jpg" alt="">
+</figure>
+<figure>
+  <img src="/img/posts/test2.jpg" alt="">
+</figure>
+<p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+<figure>
+  <img src="/img/posts/test4.jpg" alt="">
+</figure>
+<p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</p>
+<figure>
+  <img src="/img/posts/test3.jpg" alt="">
+</figure>
+<p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">name</span><span class="token punctuation">:</span> Eleventy Build<br><br><span class="token key atrule">on</span><span class="token punctuation">:</span><br>  <span class="token key atrule">push</span><span class="token punctuation">:</span><br>    <span class="token key atrule">branches</span><span class="token punctuation">:</span><br>      <span class="token punctuation">-</span> master<br><br><span class="token key atrule">jobs</span><span class="token punctuation">:</span><br>  <span class="token key atrule">deploy</span><span class="token punctuation">:</span><br>    <span class="token key atrule">runs-on</span><span class="token punctuation">:</span> ubuntu<span class="token punctuation">-</span><span class="token number">18.04</span><br>    <span class="token key atrule">steps</span><span class="token punctuation">:</span><br>      <span class="token punctuation">-</span> <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/checkout@v2<br><br>      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Setup Node<br>        <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/setup<span class="token punctuation">-</span>node@v1<br>        <span class="token key atrule">with</span><span class="token punctuation">:</span><br>          <span class="token key atrule">node-version</span><span class="token punctuation">:</span> ’10.x’<br><br>      <span class="token punctuation">-</span> <span class="token key atrule">run</span><span class="token punctuation">:</span> npm ci<br><br>      <span class="token punctuation">-</span> <span class="token key atrule">run</span><span class="token punctuation">:</span> npm run build<br><br>      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Deploy<br>        <span class="token key atrule">uses</span><span class="token punctuation">:</span> peaceiris/actions<span class="token punctuation">-</span>gh<span class="token punctuation">-</span>pages@v3<br>        <span class="token key atrule">with</span><span class="token punctuation">:</span><br>          <span class="token key atrule">deploy_key</span><span class="token punctuation">:</span> $<span class="token punctuation">{</span><span class="token punctuation">{</span> secrets.ACTIONS_DEPLOY_KEY <span class="token punctuation">}</span><span class="token punctuation">}</span><br>          <span class="token key atrule">publish_dir</span><span class="token punctuation">:</span> ./dist</code></pre>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
 
       ]]></content>
     </entry>
@@ -37,37 +78,23 @@
       <content type="html"><![CDATA[
         <p>I really like <a href="https://pages.github.com/">GitHub Pages</a>, and have used it to host my site for a while. The biggest challenge of switching my site to <a href="https://www.11ty.dev/">Eleventy</a> was getting deployments to GitHub pages set up. I suppose I could have built my site locally, and then push that to the <code>gh-pages</code> branch, but that felt <em>wrong</em>. I prefer my <code>master</code> branch to be the source of my site, while <code>gh-pages</code> to only be the published content.</p>
 <p>I’m aware of tools such as <a href="https://www.netlify.com/">Netlify</a> and <a href="https://travis-ci.com/">Travis CI</a> which aid in hosting or deployment processes. However I wasn’t looking to add another service into my tech stack. With some digging into <a href="https://github.com/features/actions">GitHub Actions</a>, this seemed like a plausible route for getting my site deployed without having to rely on an external service.</p>
-<h3>Setting Up a GitHub Action</h3>
+<h2>Setting Up a GitHub Action</h2>
 <p>GitHub Actions allow you to automate workflows such as code deployment, running tests, compressing images, and so much more. GitHub has a whole <em>Marketplace</em> where you can explore community-created actions. I’m using the <a href="https://github.com/marketplace/actions/github-pages-action">GitHub Pages action</a> which handles everything I need for deploying. My workflow is fairly simple, and is largely based on the instructions for <a href="https://github.com/marketplace/actions/github-pages-action#%EF%B8%8F-static-site-generators-with-nodejs">Static Site Generators with Node.js</a>. In <code>/.github/workflows/eleventy_build.yml</code>, I have the following:</p>
 <pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">name</span><span class="token punctuation">:</span> Eleventy Build<br><br><span class="token key atrule">on</span><span class="token punctuation">:</span><br>  <span class="token key atrule">push</span><span class="token punctuation">:</span><br>    <span class="token key atrule">branches</span><span class="token punctuation">:</span><br>      <span class="token punctuation">-</span> master<br><br><span class="token key atrule">jobs</span><span class="token punctuation">:</span><br>  <span class="token key atrule">deploy</span><span class="token punctuation">:</span><br>    <span class="token key atrule">runs-on</span><span class="token punctuation">:</span> ubuntu<span class="token punctuation">-</span><span class="token number">18.04</span><br>    <span class="token key atrule">steps</span><span class="token punctuation">:</span><br>      <span class="token punctuation">-</span> <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/checkout@v2<br><br>      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Setup Node<br>        <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/setup<span class="token punctuation">-</span>node@v1<br>        <span class="token key atrule">with</span><span class="token punctuation">:</span><br>          <span class="token key atrule">node-version</span><span class="token punctuation">:</span> ’10.x’<br><br>      <span class="token punctuation">-</span> <span class="token key atrule">run</span><span class="token punctuation">:</span> npm ci<br><br>      <span class="token punctuation">-</span> <span class="token key atrule">run</span><span class="token punctuation">:</span> npm run build<br><br>      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Deploy<br>        <span class="token key atrule">uses</span><span class="token punctuation">:</span> peaceiris/actions<span class="token punctuation">-</span>gh<span class="token punctuation">-</span>pages@v3<br>        <span class="token key atrule">with</span><span class="token punctuation">:</span><br>          <span class="token key atrule">deploy_key</span><span class="token punctuation">:</span> $<span class="token punctuation">{</span><span class="token punctuation">{</span> secrets.ACTIONS_DEPLOY_KEY <span class="token punctuation">}</span><span class="token punctuation">}</span><br>          <span class="token key atrule">publish_dir</span><span class="token punctuation">:</span> ./dist</code></pre>
 <p>Depending on how your Eleventy project is set up you might need to make some tweaks to the defaults. I recommend checking out the rest of the <a href="https://github.com/marketplace/actions/github-pages-action#table-of-contents">documentation</a> to see what you can do.</p>
-<h3>Hey GitHub, I’m Not Using Jekyll</h3>
+<h2>Hey GitHub, I’m Not Using Jekyll</h2>
 <p>I found this to be the biggest hurdle, and it kind of buried in <a href="https://help.github.com/en/github/working-with-github-pages/about-github-pages#static-site-generators">GitHub’s documentation</a>. By default, GitHub tries to use Jekyll to build your site. If you’re using any syntax other than what Jekyll recognizes, then you <em>might</em> get errors and your build could potentially fail. The good news is the fix is really easy. In the root of your project, include an empty file <code>.nojekyll</code>.</p>
-<h3>Committing the Package Lock file</h3>
+<h2>Committing the Package Lock file</h2>
 <p>This GitHub action is an <em>automated environment</em>, so rather than use <code>npm install</code> our action should use <code>npm ci</code>. This ensures that you get a <em>clean install</em> of your dependencies. One of the requirements for using <code>npm ci</code> is that the project <strong>must</strong> have an existing <code>package-lock.json</code>. I’m not really sure what the norm is here, but I don’t typically commit this file. So if you fall into that category, make sure you get that file committed!</p>
-<h3>Creating an NPM Build Script</h3>
+<h2>Creating an NPM Build Script</h2>
 <p>When it’s time for Eleventy to build your site when the <code>master</code> branch is pushed upstream, it needs to happen in the context of the Node environment. In my <code>package.json</code> I have a script mapped to the command <code>eleventy</code>:</p>
 <pre class="language-json"><code class="language-json"><span class="token property">"scripts"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>  <span class="token property">"build"</span><span class="token operator">:</span> <span class="token string">"eleventy"</span><br><span class="token punctuation">}</span></code></pre>
 <p>Now when <code>npm run build</code> runs in the GitHub action, it will know where to find the <code>eleventy</code> command.</p>
-<h3>No SSH Deploy Key? No Deployment!</h3>
+<h2>No SSH Deploy Key? No Deployment!</h2>
 <p>For security purposes, GitHub requires that you have a <em>deploy key</em> and a corresponding <em>secret</em> set up in the repository that this GitHub Action is in. There’s handy <a href="https://github.com/marketplace/actions/github-pages-action#%EF%B8%8F-create-ssh-deploy-key">step by step guide with screenshots</a> on how to create the deploy key and secret, as well as adding them to the repository.</p>
 <p>In my case I’ve labelled my deploy key <em>ACTIONS_DEPLOY_KEY</em>. This is case-sensitive, so make sure you pay attention to what you call your deploy key!</p>
-<h3>Wrapping Up</h3>
+<h2>Wrapping Up</h2>
 <p>While I’m not sure if this is the best way to get my Eleventy site deployed to GitHub Pages, it meets my needs. As far as I can tell, this general deployment process would be fairly similar to set up with a service like Netlify or Travis CI. However I find it extremely satisfying not being dependent on extra services.</p>
-
-      ]]></content>
-    </entry>
-	
-    
-    <entry>
-      <title>Trying Out Eleventy</title>
-      <link href="https://matthewlettini.me/posts/trying-out-eleventy/"/>
-      <updated>2020-02-18T00:00:00-00:00</updated>
-      <id>https://matthewlettini.me/posts/trying-out-eleventy/</id>
-      <content type="html"><![CDATA[
-        <p>As I started to think about blogging again, I began looking at options for hosting, CMS frameworks, static site generators, etc. <a href="http://www.11ty.dev">Eleventy</a> has been in the mainstream for sometime now, and I've heard nothing but good things about it. I figured I should give it a shot.</p>
-<p>There are no shortage of examples for using Eleventy, but I particularly found <a href="https://hankchizljaw.com/">Andy Bell’s</a> <a href="https://hebra.dev/">Hebra</a> starter kit, as well as the <a href="https://github.com/11ty/eleventy-base-blog">Eleventy Base Blog</a> to be excellent resources. I'm using <a href="https://mozilla.github.io/nunjucks/">Nunjucks</a> for templating. It more or less feels like <a href="https://shopify.github.io/liquid/">Liquid</a> which I'm familiar with from having used <a href="https://jekyllrb.com/">Jekyll</a>, as well as creating <a href="https://www.statemottoprints.com/">State Motto Prints</a>.</p>
-<p>In the course of an afternoon, I was able to put together the <a href="https://github.com/starzonmyarmz/iamdanielmarino.com">bones of this redesign</a>. Over the past week, during my spare time, I've been adding polish, and getting deployments working with Github Pages. I'll continue to make tweaks here and there, but overall I feel good about it.</p>
 
       ]]></content>
     </entry>
@@ -81,18 +108,18 @@
       <content type="html"><![CDATA[
         <p>As a Product Designer at <a href="https://getharvest.com">Harvest</a>, part of my role is running projects. While I don’t believe there is a <em>right</em> or <em>wrong</em> way to manage projects, I do think there are some methods that can yield better results. I’m hardly an expert in this area, but I’d like to share some of the ways I find success in managing projects.</p>
 <p>I should mention that these thoughts are my own. I’m extremely blessed to work for a company that gives some freedom as to how individuals run projects. Of course there are some fixed variables. For example, we all use Basecamp for tracking updates, and follow the same guidelines for communicating updates with other teams within Harvest.</p>
-<h3>Ethos</h3>
+<h2>Ethos</h2>
 <p>I don’t really have some profound wisdom to share. Basically, I try to stay out of the way as much as possible, leaving room for my teammates to get their work done. Their time, much like mine, is valuable. Out of respect, I try not to gum up the works with unnecessary meetings or emails. This doesn’t mean I’m out of the loop. We’re all generally aware of what the other person is working on.</p>
-<h3>The Kickoff</h3>
+<h2>The Kickoff</h2>
 <p>In preparation for the <em>Kickoff</em>, I prefer creating a Google Doc with the project details rather than a slideshow. It’s much easier to review and edit on the fly. I also don’t have to get hung up on the little things like <em>does this slide look pretty</em>.</p>
 <p>Typically, I keep the Kickoff to 30 minutes or less. This isn’t the place to figure out technical or design decisions. We still might kick around some ideas and ask questions, but typically we breakout into smaller groups as needed. My preference is to have the Kickoff the Friday before the project starts. This allows my distributed team to hit the ground running first thing Monday morning.</p>
-<h3>Weekly Hangout</h3>
+<h2>Weekly Hangout</h2>
 <p>Once a week, our team will meet over a Google Hangout for about 20–30 minutes to discuss updates. We don’t necessarily try to solve problems in these meetings unless they’re quick and easy to figure out. The goal of these hangouts is to make sure we’re all on the same page throughout the course of the project.</p>
-<h3>Daily Slack Check-in</h3>
+<h2>Daily Slack Check-in</h2>
 <p>Simply put, I hate <em>unnecessary</em> meetings, and find that most others do too. They disrupt the flow of my work day, and I suspect they do for others too. I prefer daily check-ins on <a href="https://slack.com/">Slack</a> because it’s asynchronous. It allows my to get updates as breaks occur naturally throughout my day. I ask teammates to write a one- or two-sentence update. Basically what are you working on and is anything blocking you from completing it. Short and sweet.</p>
 <p>Of course, if something is pressing or I’m blocking a todo from progressing, I ask my teammates to @ me, so that I get an immediate notification.</p>
 <p>I know some people are into multiple email check-ins throughout the week (such as Basecamp’s automated check-ins). Personally, I dislike these—primarily because it feels like extra clutter in my inbox.</p>
-<h3>Todos on Basecamp</h3>
+<h2>Todos on Basecamp</h2>
 <p>Previously I mentioned we all use <a href="https://basecamp.com">Basecamp</a> at Harvest. I hold my teammates responsible for making todos, and keeping related discussions up-to-date. That means a developer may create multiple todos for building out a feature or creating a todo for me to apply some design polish.</p>
 <p>That’s the bulk of it. Of course there are little things here and there that I didn’t go over, but this should give you a glimpse into how I manage projects.</p>
 
