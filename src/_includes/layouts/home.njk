@@ -2,19 +2,40 @@
 {% set pageType = 'home' %}
 
 {% block content %}
-  <main id="content">
-    <h1 id="headline">Hey, I’m {{ site.authorName }}.</h1>
-    <p>This website is under-construction (insert gif). All the posts below are written by my pal <a href="https://iamdanielmarino.com" target="_blank" rel="noopener">Daniel</a>, who is helping me figure out Eleventy.</p>
+  <main>
+    <header id="home-header">
+      <h1>{{ site.authorName }}</h1>
+    </header>
 
-    <ul id="recent-posts" class="posts">
-      {% for post in collections.recent_posts %}
-        <li>
-          <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
-          <small>{{ post.date | dateFilter }}</small>
-        </li>
-      {% endfor %}
-    </ul>
+    <section id="home-content">
+      <p>
+        Hey there! I’m a product designer,
+        <a href="http://photos.matthewlettini.com" rel="noopener" target="_blank">photographer</a>,
+        and musician based in Brooklyn, NY. Today, I work with a team of wonderful humans building great things at
+        <a href="http://getharvest.com" rel="noopener" target="_blank">Harvest</a>.
+      </p>
+      <p>
+        This website is under-construction (insert gif) as I figure out Eleventy.
+        In the meantime, you can find me @mlettini in the usual places:
+        <br>
+        <a href="http://twitter.com/mlettini" rel="noopener" target="_blank">Twitter</a> •
+        <a href="http://instagram.com/mlettini" rel="noopener" target="_blank">Instagram</a> •
+        <a href="https://open.spotify.com/user/mlettini" rel="noopener" target="_blank">Spotify</a> •
+        <a href="http://github.com/mlettini" rel="noopener" target="_blank">Github</a>
+      </p>
 
-    <a href="/posts" id="view-all">View all posts</a>
+      {#
+      <ul id="recent-posts" class="posts">
+        {% for post in collections.recent_posts %}
+          <li>
+            <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+            <small>{{ post.date | dateFilter }}</small>
+          </li>
+        {% endfor %}
+      </ul>
+
+      <a href="/posts" id="view-all">View all posts</a>
+      #}
+    </section>
   </main>
 {% endblock %}

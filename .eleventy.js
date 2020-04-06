@@ -2,6 +2,7 @@ const pluginRss = require('@11ty/eleventy-plugin-rss')
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 
 const dateFilter = require('./src/filters/date-filter.js')
+const dateFilterNumerals = require('./src/filters/date-filter-numerals.js')
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss)
@@ -16,6 +17,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('CNAME')
 
   eleventyConfig.addFilter('dateFilter', dateFilter)
+  eleventyConfig.addFilter('dateFilterNumerals', dateFilterNumerals)
 
   eleventyConfig.addCollection('all_posts', collection => {
     return [
