@@ -80,12 +80,17 @@
   box-sizing: border-box;
 }
 html {
-  font-size: 18px;
+  font-size: 19px;
   min-height: 100vh;
 }
 @media (min-width: 800px) {
   html {
     font-size: 20px;
+  }
+}
+@media (min-width: 1400px) {
+  html {
+    font-size: 21px;
   }
 }
 body {
