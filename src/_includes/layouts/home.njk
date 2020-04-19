@@ -3,26 +3,12 @@
 
 {% block content %}
   <main>
-    <header id="home-header">
+    <header id="home-header" class="centered">
       <h1>{{ site.authorName }}</h1>
     </header>
 
-    <section id="home-content">
-      <p>
-        Hey there! I’m a product designer,
-        <a href="http://photos.matthewlettini.com" rel="noopener" target="_blank">photographer</a>,
-        and musician based in Brooklyn, NY. Today, I work with a team of wonderful humans building great things at
-        <a href="http://getharvest.com" rel="noopener" target="_blank">Harvest</a>.
-      </p>
-      <p>
-        This website is under-construction (insert gif) as I figure out Eleventy.
-        In the meantime, you can find me @mlettini in the usual places:
-        <br>
-        <a href="http://twitter.com/mlettini" rel="noopener" target="_blank">Twitter</a> •
-        <a href="http://instagram.com/mlettini" rel="noopener" target="_blank">Instagram</a> •
-        <a href="https://open.spotify.com/user/mlettini" rel="noopener" target="_blank">Spotify</a> •
-        <a href="http://github.com/mlettini" rel="noopener" target="_blank">Github</a>
-      </p>
+    <section id="home-content" class="centered">
+      {{ content | safe }}
 
       {#
       <ul id="recent-posts" class="posts">

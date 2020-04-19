@@ -3,6 +3,7 @@
   <head>
     <title>{{ site.authorName }} • {% if pageType != 'home' %}{{ title }}{% else %}Home{% endif %}</title>
     <meta charset="utf-8">
+    <meta name="robots" content="noindex"> {# To Be Deleted When Done #}
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="keywords" content="matthew lettini, matthew, mathew, matt, lettini, lentini, lettin, new york, nyc, ny, brooklyn, greenpoint, web, design, designer, product, html, css, harvest, forecast, amie street, songza, chosen, mlettini@gmail.com">
@@ -30,18 +31,38 @@
   </head>
   <body id="{{ pageType }}">
 
-    {#
-    {% if pageType == 'home' %}
-      <img id="headshot" src="/img/matthew-lettini@2x.jpg" alt="Headshot of {{ site.authorName }}">
-    {% else %}
-      <header id="logo" role="banner">
-        <a href="/">{{ site.authorName }}</a>
-      </header>
-    {% endif %}
-    #}
+    <header id="header">
+      <strong>Matthew Lettini</strong>
+      <nav class="header-content">
+        <ul>
+          <li><a href="/" {% if (pageType == 'home') %}class="selected"{% endif %}>Home</a></li>
+          <li><a href="/posts" {% if (pageType == 'post') or (pageType == 'archives') %}class="selected"{% endif %}>Writing</a></li>
+          <li><a href="http://photos.matthewlettini.com">Photos</a><span>↗</span></li>
+          <li><del aria-label="In Progress" title="In Progress">Work</del></li>
+          <li><del aria-label="In Progress" title="In Progress">About</del></li>
+          <li><del aria-label="In Progress" title="In Progress">Social</del></li>
+        </ul>
+      </nav>
+    </header>
 
     {% block content %}
     {% endblock content %}
+
+    {% if (pageType == 'post') or (pageType == 'archives') %}
+    <footer id="footer">
+      <nav class="footer-content centered">
+        <ul>
+          <li>© 2020</li>
+          {% if (pageType == 'post') %}
+          <li><a href="#">Back to top</a></li>
+          <li><a href="/posts">All posts</a></li>
+          {% endif %}
+          <li><a href="/feed.xml">RSS feed</a></li>
+          <li><a href="mlettini@gmail.com">Email</a></li>
+        </ul>
+      </nav>
+    </footer>
+    {% endif %}
 
   </body>
 </html>

@@ -4,7 +4,7 @@
 {% block content %}
   <main>
     <article>
-      <header id="post-header">
+      <header id="post-header" class="centered">
         <time>{{ date | dateFilter }}</time>
         <h1>{{ title }}</h1>
       </header>
@@ -13,16 +13,5 @@
         {{ content | safe }}
       </section>
     </article>
-
-    <footer id="footer">
-      <nav class="footer-content">
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/posts">All posts</a></li>
-          <li><a href="/feed.xml">RSS</a></li>
-          <li><a href="#">Back to top</a></li>
-        </ul>
-      </nav>
-    </footer>
   </main>
 {% endblock content %}

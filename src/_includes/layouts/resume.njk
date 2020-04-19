@@ -1,0 +1,14 @@
+{% extends 'layouts/base.njk' %}
+{% set pageType = 'resume' %}
+
+{% block content %}
+  <main>
+    <header id="resume-header" class="centered">
+      <h1>{{ site.authorName }}</h1>
+    </header>
+
+    <section id="resume-content" class="centered">
+      {{ content | safe }}
+    </section>
+  </main>
+{% endblock content %}
