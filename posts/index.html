@@ -3,6 +3,7 @@
   <head>
     <title>Matthew Lettini • All Posts</title>
     <meta charset="utf-8">
+    <meta name="robots" content="noindex"> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="keywords" content="matthew lettini, matthew, mathew, matt, lettini, lentini, lettin, new york, nyc, ny, brooklyn, greenpoint, web, design, designer, product, html, css, harvest, forecast, amie street, songza, chosen, mlettini@gmail.com">
@@ -22,20 +23,32 @@
   </head>
   <body id="archives">
 
-    
+    <header id="header">
+      <strong>Matthew Lettini</strong>
+      <nav class="header-content">
+        <ul>
+          <li><a href="/" >Home</a></li>
+          <li><a href="/posts" class="selected">Writing</a></li>
+          <li><a href="http://photos.matthewlettini.com">Photos</a><span>↗</span></li>
+          <li><del aria-label="In Progress" title="In Progress">Work</del></li>
+          <li><del aria-label="In Progress" title="In Progress">About</del></li>
+          <li><del aria-label="In Progress" title="In Progress">Social</del></li>
+        </ul>
+      </nav>
+    </header>
 
     
   <main>
-    <header id="archives-header">
+    <header id="archives-header" class="centered">
       <h1>All Posts</h1>
     </header>
 
-    <section id="archives-content">
+    <section id="archives-content" class="centered">
       <ul class="archive-list">
         
           <li>
             <time>2020.04.05</time>
-            <a href="/posts/test-post/">Testing Blog Setup</a>
+            <a href="/posts/test-post/">Testing The Blog</a>
           </li>
         
           <li>
@@ -48,10 +61,24 @@
             <a href="/posts/how-i-manage-projects/">How I Manage Projects</a>
           </li>
         
+        <li>
       </ul>
     </section>
   </main>
 
+
+    
+    <footer id="footer">
+      <nav class="footer-content centered">
+        <ul>
+          <li>© 2020</li>
+          
+          <li><a href="/feed.xml">RSS feed</a></li>
+          <li><a href="mlettini@gmail.com">Email</a></li>
+        </ul>
+      </nav>
+    </footer>
+    
 
   </body>
 </html>

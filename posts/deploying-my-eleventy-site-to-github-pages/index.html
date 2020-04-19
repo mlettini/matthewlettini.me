@@ -3,6 +3,7 @@
   <head>
     <title>Matthew Lettini • Deploying My Eleventy Site to GitHub Pages</title>
     <meta charset="utf-8">
+    <meta name="robots" content="noindex"> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="keywords" content="matthew lettini, matthew, mathew, matt, lettini, lentini, lettin, new york, nyc, ny, brooklyn, greenpoint, web, design, designer, product, html, css, harvest, forecast, amie street, songza, chosen, mlettini@gmail.com">
@@ -22,12 +23,24 @@
   </head>
   <body id="post">
 
-    
+    <header id="header">
+      <strong>Matthew Lettini</strong>
+      <nav class="header-content">
+        <ul>
+          <li><a href="/" >Home</a></li>
+          <li><a href="/posts" class="selected">Writing</a></li>
+          <li><a href="http://photos.matthewlettini.com">Photos</a><span>↗</span></li>
+          <li><del aria-label="In Progress" title="In Progress">Work</del></li>
+          <li><del aria-label="In Progress" title="In Progress">About</del></li>
+          <li><del aria-label="In Progress" title="In Progress">Social</del></li>
+        </ul>
+      </nav>
+    </header>
 
     
   <main>
     <article>
-      <header id="post-header">
+      <header id="post-header" class="centered">
         <time>March 2, 2020</time>
         <h1>Deploying My Eleventy Site to GitHub Pages</h1>
       </header>
@@ -55,19 +68,24 @@
 
       </section>
     </article>
+  </main>
 
+
+    
     <footer id="footer">
-      <nav class="footer-content">
+      <nav class="footer-content centered">
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/posts">All posts</a></li>
-          <li><a href="/feed.xml">RSS</a></li>
+          <li>© 2020</li>
+          
           <li><a href="#">Back to top</a></li>
+          <li><a href="/posts">All posts</a></li>
+          
+          <li><a href="/feed.xml">RSS feed</a></li>
+          <li><a href="mlettini@gmail.com">Email</a></li>
         </ul>
       </nav>
     </footer>
-  </main>
-
+    
 
   </body>
 </html>
