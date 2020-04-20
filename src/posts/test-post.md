@@ -1,8 +1,6 @@
 ---
-title: Testing The Blog
+title: Blog Test Post
 date: 2020-04-05
-tags:
-  - testing
 ---
 
 I’m not sure how much I’ll actually write on here, but I’m creating this blog post as a way to test the design while I figure out Eleventy. This post should contain everything I’ll need for a future blog post, including headers, lists, blockquotes, code, photos, etc.
@@ -42,23 +40,23 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque vo
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
 
 <figure>
-  <img src="/img/posts/test1.jpg" alt="">
-</figure>
-
-<figure>
-  <img src="/img/posts/test2.jpg" alt="">
-</figure>
-
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
-
-<figure>
-  <img src="/img/posts/test4.jpg" alt="">
+  <img src="/images/posts/test1.jpg" alt="">
+  <img src="/images/posts/test2.jpg" alt="">
+  <figcaption>This is a single figure with multiple images</figcaption>
 </figure>
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
 
 <figure>
-  <img src="/img/posts/test3.jpg" alt="">
+  <img src="/images/posts/test4.jpg" alt="">
+  <figcaption>This is a wider horizontal image</figcaption>
+</figure>
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+
+<figure>
+  <img src="/images/posts/test3.jpg" alt="">
+  <figcaption>This is a taller vertical image that gets cut</figcaption>
 </figure>
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
@@ -94,3 +92,9 @@ jobs:
 ```
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+
+<aside>
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+
+</aside>

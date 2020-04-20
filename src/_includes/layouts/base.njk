@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>{{ site.authorName }} • {% if pageType != 'home' %}{{ title }}{% else %}Home{% endif %}</title>
+    <title>{% if pageType != 'home' %}{{ title }} • {% endif %}{{ site.authorName }}</title>
     <meta charset="utf-8">
     <meta name="robots" content="noindex"> {# To Be Deleted When Done #}
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,20 +21,21 @@
     <meta property="og:description" content="{{ description }}">
     <meta name="twitter:description" content="{{ description }}">
     {% endif %}
-    {#
-    <link rel="icon" href="/favicon.png" type="image/png">
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link rel="mask-icon" href="/favicon.svg" color="black">
-    #}
+    <link rel="icon" href="/images/matthew-lettini-header.jpg" type="image/png">
+    <link rel="icon" href="/images/matthew-lettini-header.jpg" type="image/svg+xml">
+    <link rel="mask-icon" href="/img/matthew-lettini-header.jpg" color="black">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="alternate" type="application/rss+xml" title="Posts" href="/feed.xml">
   </head>
   <body id="{{ pageType }}">
 
     <header id="header">
-      <strong>Matthew Lettini</strong>
-      <nav class="header-content">
-        <ul>
+      <a href="/" class="header-name">
+        <img src="/images/matthew-lettini-header.jpg" alt="">
+        <h1>Matthew Lettini</h1>
+      </a>
+      <nav>
+        <ul class="header-nav">
           <li><a href="/" {% if (pageType == 'home') %}class="selected"{% endif %}>Home</a></li>
           <li><a href="/posts" {% if (pageType == 'post') or (pageType == 'archives') %}class="selected"{% endif %}>Writing</a></li>
           <li><a href="http://photos.matthewlettini.com">Photos</a><span>↗</span></li>
@@ -49,18 +50,15 @@
     {% endblock content %}
 
     {% if (pageType == 'post') or (pageType == 'archives') %}
-    <footer id="footer">
-      <nav class="footer-content centered">
-        <ul>
-          <li>© 2020</li>
-          {% if (pageType == 'post') %}
+    <footer id="footer" class="centered">
+      <nav>
+        <ul class="footer-nav">
           <li><a href="#">Back to top</a></li>
-          <li><a href="/posts">All posts</a></li>
-          {% endif %}
           <li><a href="/feed.xml">RSS feed</a></li>
           <li><a href="mlettini@gmail.com">Email</a></li>
         </ul>
       </nav>
+      <small>© 2020</small>
     </footer>
     {% endif %}
 
