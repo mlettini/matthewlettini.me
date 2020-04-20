@@ -1,7 +1,7 @@
 ---
 layout: layouts/home.njk
 title: Home
-description: A Product Designer at Harvest who is passionate about crafting simple, high-quality experiences.
+description: Brooklyn-based product designer building great things at Harvest.
 ---
 
 Hey there! I’m **Matthew Lettini**, a product designer, photography, and musician based in Brooklyn, NY. For the past decade, I’ve been working with a team of wonderful humans building great things at [Harvest](http://getharvest.com).

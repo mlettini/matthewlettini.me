@@ -28,9 +28,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addCollection('recent_posts', collection => {
     return [
       ...collection.getFilteredByGlob('./src/posts/*.md')
-    ]
-      .reverse()
-      .slice(0, 2)
+    ].reverse().slice(0, 2)
   })
 
   return {
