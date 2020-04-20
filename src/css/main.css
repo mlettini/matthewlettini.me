@@ -77,7 +77,6 @@
 }
 html {
   font-size: 19px;
-  min-height: 100vh;
   -webkit-text-size-adjust: 100%;
 }
 @media screen and (min-width: 700px) {
@@ -96,8 +95,6 @@ body {
   font-weight: 400;
   line-height: 1.4;
   margin: 0;
-  min-height: 100vh;
-  min-width: 100vw;
   padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   text-rendering: optimizelegibility;
 }
@@ -177,6 +174,7 @@ a:active:focus {
   text-decoration: none !important;
 }
 .header-name > img {
+  border-radius: 2rem;
   display: none;
   margin-right: 0.5rem;
   width: 2rem;
@@ -345,8 +343,9 @@ a:active:focus {
   padding: 0 1.5rem;
 }
 #post-content > aside > p {
-  background: var(--code-background);
-  color: var(--code-text);
+  border: 1px dashed var(--text-light);
+  color: var(--text-medium);
+  font-size: 0.9rem;
   font-style: italic;
   margin: 1.5rem auto;
   padding: 1rem;

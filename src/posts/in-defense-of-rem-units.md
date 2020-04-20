@@ -7,7 +7,7 @@ tags:
 
 <aside>
 
-This post was originally written in January 2013, as a post for [Harvest’s Tech Time](http://techtime.getharvest.com/blog/in-defense-of-rem-units) developer blog. Some stuff in here hasn’t aged well, but I still use rem units!
+This post was originally written for [Harvest’s Tech Time developer blog](http://techtime.getharvest.com/blog/in-defense-of-rem-units). My thanks to the developers there for feedback when I wrote it. Some of what’s written here hasn’t aged well, but I still use rem units, and you should too!
 
 </aside>
 
@@ -55,7 +55,7 @@ I decided to try rem units for Harvest’s 2012 Year In Work to learn their stre
 Here’s what you should know about rem units:
 
 
-## 1. They’re great for responsive resign
+## 1. They’re great for responsive design
 
 Since all rem units are relative to a single number – the html `font-size` – you need only set the breakpoints on this number for a simple responsive layout. Here’s the code used in the Year In Work’s [Sass](http://sass-lang.com/) file:
 
