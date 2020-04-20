@@ -3,7 +3,7 @@
   <title>Matthew Lettini</title>
 	<link href="https://matthewlettini.me/feed.xml" rel="self"/>
 	<link href="https://matthewlettini.me/"/>
-	<updated>2020-02-12T00:00:00-00:00</updated>
+	<updated>2013-01-13T00:00:00-00:00</updated>
 	<id>https://matthewlettini.me</id>
 	<author>
     <name>Matthew Lettini</name>
@@ -12,7 +12,7 @@
 	
     
     <entry>
-      <title>Testing The Blog</title>
+      <title>Blog Test Post</title>
       <link href="https://matthewlettini.me/posts/test-post/"/>
       <updated>2020-04-05T00:00:00-00:00</updated>
       <id>https://matthewlettini.me/posts/test-post/</id>
@@ -45,79 +45,147 @@
 </blockquote>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
 <figure>
-  <img src="/img/posts/test1.jpg" alt="">
-</figure>
-<figure>
-  <img src="/img/posts/test2.jpg" alt="">
-</figure>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
-<figure>
-  <img src="/img/posts/test4.jpg" alt="">
+  <img src="/images/posts/test1.jpg" alt="">
+  <img src="/images/posts/test2.jpg" alt="">
+  <figcaption>This is a single figure with multiple images</figcaption>
 </figure>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
 <figure>
-  <img src="/img/posts/test3.jpg" alt="">
+  <img src="/images/posts/test4.jpg" alt="">
+  <figcaption>This is a wider horizontal image</figcaption>
+</figure>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+<figure>
+  <img src="/images/posts/test3.jpg" alt="">
+  <figcaption>This is a taller vertical image that gets cut</figcaption>
 </figure>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
 <pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">name</span><span class="token punctuation">:</span> Eleventy Build<br><br><span class="token key atrule">on</span><span class="token punctuation">:</span><br>  <span class="token key atrule">push</span><span class="token punctuation">:</span><br>    <span class="token key atrule">branches</span><span class="token punctuation">:</span><br>      <span class="token punctuation">-</span> master<br><br><span class="token key atrule">jobs</span><span class="token punctuation">:</span><br>  <span class="token key atrule">deploy</span><span class="token punctuation">:</span><br>    <span class="token key atrule">runs-on</span><span class="token punctuation">:</span> ubuntu<span class="token punctuation">-</span><span class="token number">18.04</span><br>    <span class="token key atrule">steps</span><span class="token punctuation">:</span><br>      <span class="token punctuation">-</span> <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/checkout@v2<br><br>      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Setup Node<br>        <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/setup<span class="token punctuation">-</span>node@v1<br>        <span class="token key atrule">with</span><span class="token punctuation">:</span><br>          <span class="token key atrule">node-version</span><span class="token punctuation">:</span> ’10.x’<br><br>      <span class="token punctuation">-</span> <span class="token key atrule">run</span><span class="token punctuation">:</span> npm ci<br><br>      <span class="token punctuation">-</span> <span class="token key atrule">run</span><span class="token punctuation">:</span> npm run build<br><br>      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Deploy<br>        <span class="token key atrule">uses</span><span class="token punctuation">:</span> peaceiris/actions<span class="token punctuation">-</span>gh<span class="token punctuation">-</span>pages@v3<br>        <span class="token key atrule">with</span><span class="token punctuation">:</span><br>          <span class="token key atrule">deploy_key</span><span class="token punctuation">:</span> $<span class="token punctuation">{</span><span class="token punctuation">{</span> secrets.ACTIONS_DEPLOY_KEY <span class="token punctuation">}</span><span class="token punctuation">}</span><br>          <span class="token key atrule">publish_dir</span><span class="token punctuation">:</span> ./dist</code></pre>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+<aside>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+</aside>
 
       ]]></content>
     </entry>
 	
     
     <entry>
-      <title>Deploying My Eleventy Site to GitHub Pages</title>
-      <link href="https://matthewlettini.me/posts/deploying-my-eleventy-site-to-github-pages/"/>
-      <updated>2020-03-02T00:00:00-00:00</updated>
-      <id>https://matthewlettini.me/posts/deploying-my-eleventy-site-to-github-pages/</id>
+      <title>The Heavy Edition: Port-Mortem</title>
+      <link href="https://matthewlettini.me/posts/the-heavy-edition-post-mortem/"/>
+      <updated>2013-02-24T00:00:00-00:00</updated>
+      <id>https://matthewlettini.me/posts/the-heavy-edition-post-mortem/</id>
       <content type="html"><![CDATA[
-        <p>I really like <a href="https://pages.github.com/">GitHub Pages</a>, and have used it to host my site for a while. The biggest challenge of switching my site to <a href="https://www.11ty.dev/">Eleventy</a> was getting deployments to GitHub pages set up. I suppose I could have built my site locally, and then push that to the <code>gh-pages</code> branch, but that felt <em>wrong</em>. I prefer my <code>master</code> branch to be the source of my site, while <code>gh-pages</code> to only be the published content.</p>
-<p>I’m aware of tools such as <a href="https://www.netlify.com/">Netlify</a> and <a href="https://travis-ci.com/">Travis CI</a> which aid in hosting or deployment processes. However I wasn’t looking to add another service into my tech stack. With some digging into <a href="https://github.com/features/actions">GitHub Actions</a>, this seemed like a plausible route for getting my site deployed without having to rely on an external service.</p>
-<h2>Setting Up a GitHub Action</h2>
-<p>GitHub Actions allow you to automate workflows such as code deployment, running tests, compressing images, and so much more. GitHub has a whole <em>Marketplace</em> where you can explore community-created actions. I’m using the <a href="https://github.com/marketplace/actions/github-pages-action">GitHub Pages action</a> which handles everything I need for deploying. My workflow is fairly simple, and is largely based on the instructions for <a href="https://github.com/marketplace/actions/github-pages-action#%EF%B8%8F-static-site-generators-with-nodejs">Static Site Generators with Node.js</a>. In <code>/.github/workflows/eleventy_build.yml</code>, I have the following:</p>
-<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">name</span><span class="token punctuation">:</span> Eleventy Build<br><br><span class="token key atrule">on</span><span class="token punctuation">:</span><br>  <span class="token key atrule">push</span><span class="token punctuation">:</span><br>    <span class="token key atrule">branches</span><span class="token punctuation">:</span><br>      <span class="token punctuation">-</span> master<br><br><span class="token key atrule">jobs</span><span class="token punctuation">:</span><br>  <span class="token key atrule">deploy</span><span class="token punctuation">:</span><br>    <span class="token key atrule">runs-on</span><span class="token punctuation">:</span> ubuntu<span class="token punctuation">-</span><span class="token number">18.04</span><br>    <span class="token key atrule">steps</span><span class="token punctuation">:</span><br>      <span class="token punctuation">-</span> <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/checkout@v2<br><br>      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Setup Node<br>        <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/setup<span class="token punctuation">-</span>node@v1<br>        <span class="token key atrule">with</span><span class="token punctuation">:</span><br>          <span class="token key atrule">node-version</span><span class="token punctuation">:</span> ’10.x’<br><br>      <span class="token punctuation">-</span> <span class="token key atrule">run</span><span class="token punctuation">:</span> npm ci<br><br>      <span class="token punctuation">-</span> <span class="token key atrule">run</span><span class="token punctuation">:</span> npm run build<br><br>      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Deploy<br>        <span class="token key atrule">uses</span><span class="token punctuation">:</span> peaceiris/actions<span class="token punctuation">-</span>gh<span class="token punctuation">-</span>pages@v3<br>        <span class="token key atrule">with</span><span class="token punctuation">:</span><br>          <span class="token key atrule">deploy_key</span><span class="token punctuation">:</span> $<span class="token punctuation">{</span><span class="token punctuation">{</span> secrets.ACTIONS_DEPLOY_KEY <span class="token punctuation">}</span><span class="token punctuation">}</span><br>          <span class="token key atrule">publish_dir</span><span class="token punctuation">:</span> ./dist</code></pre>
-<p>Depending on how your Eleventy project is set up you might need to make some tweaks to the defaults. I recommend checking out the rest of the <a href="https://github.com/marketplace/actions/github-pages-action#table-of-contents">documentation</a> to see what you can do.</p>
-<h2>Hey GitHub, I’m Not Using Jekyll</h2>
-<p>I found this to be the biggest hurdle, and it kind of buried in <a href="https://help.github.com/en/github/working-with-github-pages/about-github-pages#static-site-generators">GitHub’s documentation</a>. By default, GitHub tries to use Jekyll to build your site. If you’re using any syntax other than what Jekyll recognizes, then you <em>might</em> get errors and your build could potentially fail. The good news is the fix is really easy. In the root of your project, include an empty file <code>.nojekyll</code>.</p>
-<h2>Committing the Package Lock file</h2>
-<p>This GitHub action is an <em>automated environment</em>, so rather than use <code>npm install</code> our action should use <code>npm ci</code>. This ensures that you get a <em>clean install</em> of your dependencies. One of the requirements for using <code>npm ci</code> is that the project <strong>must</strong> have an existing <code>package-lock.json</code>. I’m not really sure what the norm is here, but I don’t typically commit this file. So if you fall into that category, make sure you get that file committed!</p>
-<h2>Creating an NPM Build Script</h2>
-<p>When it’s time for Eleventy to build your site when the <code>master</code> branch is pushed upstream, it needs to happen in the context of the Node environment. In my <code>package.json</code> I have a script mapped to the command <code>eleventy</code>:</p>
-<pre class="language-json"><code class="language-json"><span class="token property">"scripts"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>  <span class="token property">"build"</span><span class="token operator">:</span> <span class="token string">"eleventy"</span><br><span class="token punctuation">}</span></code></pre>
-<p>Now when <code>npm run build</code> runs in the GitHub action, it will know where to find the <code>eleventy</code> command.</p>
-<h2>No SSH Deploy Key? No Deployment!</h2>
-<p>For security purposes, GitHub requires that you have a <em>deploy key</em> and a corresponding <em>secret</em> set up in the repository that this GitHub Action is in. There’s handy <a href="https://github.com/marketplace/actions/github-pages-action#%EF%B8%8F-create-ssh-deploy-key">step by step guide with screenshots</a> on how to create the deploy key and secret, as well as adding them to the repository.</p>
-<p>In my case I’ve labelled my deploy key <em>ACTIONS_DEPLOY_KEY</em>. This is case-sensitive, so make sure you pay attention to what you call your deploy key!</p>
-<h2>Wrapping Up</h2>
-<p>While I’m not sure if this is the best way to get my Eleventy site deployed to GitHub Pages, it meets my needs. As far as I can tell, this general deployment process would be fairly similar to set up with a service like Netlify or Travis CI. However I find it extremely satisfying not being dependent on extra services.</p>
+        <p>Years ago I was a member of my college radio station, where we frequently got the newest albums and artists to play. My cohost and I always had a great time, being idiots on the air and playing awesome new music.</p>
+<p>Somewhere along the line, I noticed something peculiar: When I would go back and listen to a “new” track that I hadn’t heard in a few weeks, it would feel “old.”</p>
+<p>I hated that. Here’s an artist I liked, that hasn’t even made it yet, and they’ve already been replaced in my rotation for newer music. And I talked to others at the time that felt the same. Sad.</p>
+<p>After graduating, I began falling behind on my new music knowledge, so I created a simple music blog: <a href="http://theheavyedition.com">The Heavy Edition</a>.</p>
+<p>Well, it was less of a blog and more of a weekly collection. I didn’t write any posts, just hosted links to new tracks and music videos I enjoyed that week. I would follow other blogs and sources, and when I found something to share, I’d throw it in a collection to publish the following week.</p>
+<p>I wanted to keep a running collection I could always go back and refer to, so I wouldn’t forget about these bands.</p>
+<p>Eventually, The Heavy Edition started gaining some followers, which was actually pretty cool. The problem was, after a few months, I started having trouble keeping up. I would hear so many (good) new bands and videos that by the time the next week rolled around to publish a post, everyone had already heard them last week!</p>
+<p>Damnit, the same thing was happening…</p>
+<p>So I switched to a daily collection. As soon as I heard something I liked I posted it. And the site became kinda successful—I think I had around 400 followers at some point. I kept it up until the end of 2010, when I started having less free time and just stopped posting. It had a good run.</p>
+<h2>Looking Back</h2>
+<p>In the years since, I’ve found myself returning to The Heavy Edition often. A song I hadn’t heard in awhile would jump into my head and I wanted to go find it, or I would hear someone that sounded familiar and wanted to see if I posted them years earlier.</p>
+<p>When I visit the site now I think “Wow this song/band/video was awesome, I forgot about this.” I noticed that some bands are still around today, and many are not.</p>
+<p>So it goes, I guess.</p>
+<p>But it got me thinking: This was only a couple years, nearly 500 posts, and so many of these bands I just don’t hear about again. And I started thinking about all the bands I didn’t know, from years before I started The Heavy Edition, that were probably damn good (at least to me).</p>
+<p>I wonder how many fucking awesome bands in the 70s and 80s are just lost forever… damn.</p>
+<p>It’s easier now than ever before for anyone to make music, and distributing and getting your name out there with social networks and apps like Rdio and Spotify makes it even viable, but breaking that last wall is still a challenge. That wall of making it into someone’s heavy rotation, of reaching a fan to the point that they pay money to see you in concert or buy your merch. <em>That wall of making people remember you after they heard you only once or twice</em>.</p>
+<p>It’s a bit ironic, but as I look back I realize my first post is a video for a band I haven’t heard since I posted them (<a href="http://vimeo.com/2030699">The Boxing Lesson – Dark Side of the Moog</a>) and my second post, also a video, is for a band I went to see in concert only a few months ago (<a href="http://youtu.be/Y3Vcoq-QRo4">Red Fang – Prehistoric Dog</a>).</p>
+<p>Both were/are great.</p>
 
       ]]></content>
     </entry>
 	
     
     <entry>
-      <title>How I Manage Projects</title>
-      <link href="https://matthewlettini.me/posts/how-i-manage-projects/"/>
-      <updated>2020-02-12T00:00:00-00:00</updated>
-      <id>https://matthewlettini.me/posts/how-i-manage-projects/</id>
+      <title>In Defense of Rem Units</title>
+      <link href="https://matthewlettini.me/posts/in-defense-of-rem-units/"/>
+      <updated>2013-02-01T00:00:00-00:00</updated>
+      <id>https://matthewlettini.me/posts/in-defense-of-rem-units/</id>
       <content type="html"><![CDATA[
-        <p>As a Product Designer at <a href="https://getharvest.com">Harvest</a>, part of my role is running projects. While I don’t believe there is a <em>right</em> or <em>wrong</em> way to manage projects, I do think there are some methods that can yield better results. I’m hardly an expert in this area, but I’d like to share some of the ways I find success in managing projects.</p>
-<p>I should mention that these thoughts are my own. I’m extremely blessed to work for a company that gives some freedom as to how individuals run projects. Of course there are some fixed variables. For example, we all use Basecamp for tracking updates, and follow the same guidelines for communicating updates with other teams within Harvest.</p>
-<h2>Ethos</h2>
-<p>I don’t really have some profound wisdom to share. Basically, I try to stay out of the way as much as possible, leaving room for my teammates to get their work done. Their time, much like mine, is valuable. Out of respect, I try not to gum up the works with unnecessary meetings or emails. This doesn’t mean I’m out of the loop. We’re all generally aware of what the other person is working on.</p>
-<h2>The Kickoff</h2>
-<p>In preparation for the <em>Kickoff</em>, I prefer creating a Google Doc with the project details rather than a slideshow. It’s much easier to review and edit on the fly. I also don’t have to get hung up on the little things like <em>does this slide look pretty</em>.</p>
-<p>Typically, I keep the Kickoff to 30 minutes or less. This isn’t the place to figure out technical or design decisions. We still might kick around some ideas and ask questions, but typically we breakout into smaller groups as needed. My preference is to have the Kickoff the Friday before the project starts. This allows my distributed team to hit the ground running first thing Monday morning.</p>
-<h2>Weekly Hangout</h2>
-<p>Once a week, our team will meet over a Google Hangout for about 20–30 minutes to discuss updates. We don’t necessarily try to solve problems in these meetings unless they’re quick and easy to figure out. The goal of these hangouts is to make sure we’re all on the same page throughout the course of the project.</p>
-<h2>Daily Slack Check-in</h2>
-<p>Simply put, I hate <em>unnecessary</em> meetings, and find that most others do too. They disrupt the flow of my work day, and I suspect they do for others too. I prefer daily check-ins on <a href="https://slack.com/">Slack</a> because it’s asynchronous. It allows my to get updates as breaks occur naturally throughout my day. I ask teammates to write a one- or two-sentence update. Basically what are you working on and is anything blocking you from completing it. Short and sweet.</p>
-<p>Of course, if something is pressing or I’m blocking a todo from progressing, I ask my teammates to @ me, so that I get an immediate notification.</p>
-<p>I know some people are into multiple email check-ins throughout the week (such as Basecamp’s automated check-ins). Personally, I dislike these—primarily because it feels like extra clutter in my inbox.</p>
-<h2>Todos on Basecamp</h2>
-<p>Previously I mentioned we all use <a href="https://basecamp.com">Basecamp</a> at Harvest. I hold my teammates responsible for making todos, and keeping related discussions up-to-date. That means a developer may create multiple todos for building out a feature or creating a todo for me to apply some design polish.</p>
-<p>That’s the bulk of it. Of course there are little things here and there that I didn’t go over, but this should give you a glimpse into how I manage projects.</p>
+        <aside>
+<p>This post was originally written in January 2013, as a post for <a href="http://techtime.getharvest.com/blog/in-defense-of-rem-units">Harvest’s Tech Time</a> developer blog. Some stuff in here hasn’t aged well, but I still use rem units!</p>
+</aside>
+<p>Over the past couple weeks, I’ve had the opportunity to design and build <a href="http://getharvest.com/2012-year-in-work?utm_source=techtime">Harvest’s 2012 Year In Work</a>, which afforded me a chance to try out something new: the <strong>rem unit</strong> of measurement.</p>
+<p>You’re probably already familiar with <a href="http://www.w3.org/TR/css3-values/#em-unit">em units</a> – they’ve been a common feature of CSS for the past decade – but a crash course: elements specified using em units are sized relative to the <code>font-size</code> of their parent element. For example, if a paragraph has a specified <code>font-size</code>
+of 2em, and the div it’s inside of has a <code>font-size</code> of 10px, then the effective <code>font-size</code> of the paragraph is 10px × 2em, which is 20px.</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">.parent</span> <span class="token punctuation">{</span><br>  <span class="token property">font-size</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span> <span class="token punctuation">}</span><br><span class="token selector">.parent p.child</span> <span class="token punctuation">{</span><br>  <span class="token property">font-size</span><span class="token punctuation">:</span> 2em<span class="token punctuation">;</span> <span class="token comment">/* outputs to 20px */</span> <span class="token punctuation">}</span></code></pre>
+<p>“Rem” stands for “root em”. Similar to em units, they calculate size based on an ancestor element’s <code>font-size</code>, except rem units always calculate against the html/root element’s base size. So if the html element has a <code>font-size</code> of 16px, then a paragraph with <code>font-size</code> of 2rem will always be 32px, regardless of the parent div or any other element.</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">html</span> <span class="token punctuation">{</span><br>  <span class="token property">font-size</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span> <span class="token punctuation">}</span><br><span class="token selector">.parent</span> <span class="token punctuation">{</span><br>  <span class="token property">font-size</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span> <span class="token punctuation">}</span><br><span class="token selector">.parent p.child</span> <span class="token punctuation">{</span><br>  <span class="token property">font-size</span><span class="token punctuation">:</span> 2rem<span class="token punctuation">;</span> <span class="token comment">/* relative to html - outputs to 32px */</span> <span class="token punctuation">}</span></code></pre>
+<p>This is incredibly compelling, particularly because…</p>
+<h2>I try to avoid em units</h2>
+<p>Em units are useful for a variety of reasons, the most important being that they’re <a href="http://trentwalton.com/2013/01/07/flexible-foundations/">flexible</a> and <a href="http://blog.cloudfour.com/the-ems-have-it-proportional-media-queries-ftw/">scalable</a>. You can set the highest parent element, html, to have a relative <code>font-size</code> specified with an em value or a percentage, and it will calculate a specific value based on the browser’s default <code>font-size</code>. This is great for printed documents (the typical default browser print size is 12px vs. 16px for screen display), and it allows your site to scale with the user’s preference, especially in older browsers that have a harder time with page/text zoom.</p>
+<p>However, em units have their drawbacks as well, particularly for web-apps or teams where many people touch the CSS. Consider Harvest, a web-app with thousands of lines of CSS code. We use modularized CSS for various designs and extensions used in various places throughout the app (like our calendar pop-over). If any of our styles were set in ems, then there’s a possibility that the pop-over would get added to too many different parent elements in too many different places with various <code>font-size</code>s, causing it to look different each time and ruining the consistency.</p>
+<p>As both a product designer and an HTML/CSS developer accustomed to decently-sized dev teams, I’ve learned to avoid em units for the bulk of app development. On smaller and less complicated sites, these issues are less apparent, but still necessary to keep in mind and design around.</p>
+<h2>Enter the rem unit</h2>
+<p>I first heard about rem units <a href="http://snook.ca/archives/html_and_css/font-size-with-rem">a few years ago</a>, but haven’t seen much talk or use since. I’m not sure why, though, as they have always seemed incredibly well-suited for web design – they behave much more predictably like pixels, but retain the flexibility of ems. If an element is always supposed to have a <code>font-size</code> of 16px at base size, regardless of the parent element, then rems make more sense than ems. It’s much easier to convert design comps into code without worrying about parent elements. The same goes for <code>width</code>, <code>height</code>, <code>padding</code>, <code>margin</code>, and all other style attributes that specify size.</p>
+<p>I decided to try rem units for Harvest’s 2012 Year In Work to learn their strengths and weaknesses first-hand in a real world environment. I found them to be very useful, and a joy to use for a variety of reasons.</p>
+<p>Here’s what you should know about rem units:</p>
+<h2>1. They’re great for responsive resign</h2>
+<p>Since all rem units are relative to a single number – the html <code>font-size</code> – you need only set the breakpoints on this number for a simple responsive layout. Here’s the code used in the Year In Work’s <a href="http://sass-lang.com/">Sass</a> file:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">html</span> <span class="token punctuation">{</span><br>  <span class="token property">font-size</span><span class="token punctuation">:</span> 16px<br>  @media screen and <span class="token punctuation">(</span><span class="token property">min-width</span><span class="token punctuation">:</span> 1600px<span class="token punctuation">)</span>  // Large Monitors<br>    <span class="token property">font-size</span><span class="token punctuation">:</span> 18px<br>  @media screen and <span class="token punctuation">(</span><span class="token property">min-width</span><span class="token punctuation">:</span> 1400px<span class="token punctuation">)</span>  // Small Laptops<br>    <span class="token property">font-size</span><span class="token punctuation">:</span> 14px<br>  @media screen and <span class="token punctuation">(</span><span class="token property">min-width</span><span class="token punctuation">:</span> 1100px<span class="token punctuation">)</span>  // Tablet Landscape<br>    <span class="token property">font-size</span><span class="token punctuation">:</span> 13px<br>  @media screen and <span class="token punctuation">(</span><span class="token property">min-width</span><span class="token punctuation">:</span> 800px<span class="token punctuation">)</span>   // Tablet Portrait<br>    <span class="token property">font-size</span><span class="token punctuation">:</span> 12px<br>  @media screen and <span class="token punctuation">(</span><span class="token property">min-width</span><span class="token punctuation">:</span> 500px<span class="token punctuation">)</span>   // Mobile Landscape<br>    <span class="token property">font-size</span><span class="token punctuation">:</span> 7px<br>  @media screen and <span class="token punctuation">(</span><span class="token property">min-width</span><span class="token punctuation">:</span> 400px<span class="token punctuation">)</span>   // Mobile Portrait<br>    <span class="token property">font-size</span><span class="token punctuation">:</span> 5px</code></pre>
+<p>While this isn’t appropriate for every design, being able to set a base size for your entire layout for every breakpoint can be incredibly useful.</p>
+<blockquote>
+<p>Pro-tip: While I used pixel values, you could use % values as well.</p>
+</blockquote>
+<h2>2. They’re great for rapid prototyping</h2>
+<p>I’ve signed on to the theory of prototyping a design directly in HTML/CSS, and avoiding Photoshop altogether (sometimes). When experimenting with a design right within the browser, the last thing you want to worry about is getting the sizes exactly right.</p>
+<p>Set the html <code>font-size</code> to 16px, or whatever you want, and then quickly estimate the sizes for everything else and run with them. The h1 is probably 2.5x that size, h2 probably 2x, h3 probably 1.75x… etc. It’s fast. While you can use em units for this as well, using rem units avoids the issue of having to resize the h3 after putting it inside a div with a <code>font-size</code> on it – which is more likely as you tend to move things around quickly during rapid prototyping.</p>
+<p>This is how I designed the Year In Work actually… there were no layout PSDs.</p>
+<blockquote>
+<p>Pro-tip: Just like with ems, you’ll find you need to use
+fractions like 2.25 for some values. I always stuck to .25, .5, or .75
+when not using a whole number, since my base size is 16px. However, as
+you can see in the screenshot above, the base size can change to 13px,
+which at 2.25rem is 29.25px. Since you can’t have a quarter pixel,
+some browsers render this as 29px, others as 30px. I found this to be
+a minor trade-off (but something to keep in mind) for the ease of the
+responsive layout that I explained above.</p>
+</blockquote>
+<h2>3. All sizes should be in rem units</h2>
+<p>Some developers prefer a mix of pixels, percentages, and ems for different styles on different elements, all within the same page. Personally, I think this makes development confusing, but it can work.</p>
+<p>This doesn’t work well when using rem units, though. Using rems on only some styles doesn’t offer any advantage – you might as well just use pixels. You have to commit to replacing all pixel values with rem units if you want the responsive advantages.</p>
+<blockquote>
+<p>Pro-tip: You can use ems and rems together, though. Check out
+<a href="http://cl.ly/image/2R0j181Y3W3r">the h3 on slide 3</a> of The Year In
+Work – I didn’t feel like calculating the size of the “21”, so I gave
+it a font-size of 1.25em.</p>
+</blockquote>
+<h2>4. They can influence your design style</h2>
+<p>Sometimes you need an element to be only 3px – this translates to 0.1875rem… not very conducive to simplified design code. However, you can allow this to influence your design, and decide to just use 0.2rem (or 0.25rem, like I mentioned above). Often the difference isn’t important.</p>
+<p>Or, if that 3px is a border-radius, maybe you decide to remove it entirely. Those are design decisions you have to make. I increasingly found that I prefer numbers to end in 0 or 5, or at least an even number. If an element was 9rem wide, I would just make it 10rem and see how that felt. The majority of the time it worked out just fine, and psychologically I felt like my code and design was clearer, cleaner, and easier to work with.</p>
+<p>It’s because of this reason that rem units probably aren’t the best for sophisticated web-apps. They worked great for the Year In Work, but I don’t see us using them in Harvest anytime soon – that would probably slow down development rather than speed it up. There are just too many small pixel sizes in various places for rem units to be useful.</p>
+<p>However, if you put the last two points together, and you fully use rems from the start while allowing yourself to design around the strengths and weaknesses of rem units, you could end up with a nice web-app that scales nicely between browser and tablet sizes and page zooms.</p>
+<h2>5. They do not work in IE8</h2>
+<p>This may be the biggest reason why we don’t hear about rem units too often currently, as many sites (especially web-apps) still need to support IE8. Luckily, that was not a requirement for the Year In Work, which we decided should be a showcase of some forward-thinking design and techniques.</p>
+<p>If you’re working on a personal or small site, I doubt this will be a big issue for you.</p>
+<h2>Final thoughts</h2>
+<p>Rem units aren’t great for every occasion, but for some sites they can be a great tool. They are worth trying regardless of what you’re normally comfortable with:</p>
+<ul>
+<li>If you’re coming from a background that always uses pixels, rems are virtually the same thing, but they add the responsiveness that was missing in your old designs.</li>
+<li>If you’re coming from a background that always uses ems, rems can solve your issues of elements-within-elements becoming inconsistent and having to add multiple definitions in your stylesheet.</li>
+</ul>
+<p>Either way, I hope to see more rem usage in the future. I don’t feel like it’s been fully explored yet, and think there’s still some use cases that haven’t been discovered.</p>
+
+      ]]></content>
+    </entry>
+	
+    
+    <entry>
+      <title>A Day Without Glasses</title>
+      <link href="https://matthewlettini.me/posts/a-day-without-glasses/"/>
+      <updated>2013-01-13T00:00:00-00:00</updated>
+      <id>https://matthewlettini.me/posts/a-day-without-glasses/</id>
+      <content type="html"><![CDATA[
+        <p>A minor incident Thursday night left me with broken glasses, shattered lenses, and a scratched cornea. It was an accident, and the scratches would heal in a couple days with no (known) longterm issues. I normally have old glasses around as backups, but I got rid of those during a recent purge. So I spent half my Friday without any vision correctness.</p>
+<p>It was an interesting experience.</p>
+<p>On the positive side, I’m not that blind, only a -3.25 prescription. And the day was mostly spent in comfortable territory. I know my own apartment and the surrounding area well enough. But I had to venture out to the optometrist.</p>
+<p>While they happened to be close by (I didn’t need to read any street signs), it was still an eye-opening (I’m sorry) experience to go through the day without the crutch for a disability I’ve had since elementary school. Where did I put my keys? Is that a bug or just a dot? How do I know I’m not stepping on a nail?</p>
+<p>The oddest part part for me, though, was not being able to see anybody’s face as I walked around town. As mentioned, I knew where I needed to go without having to pay attention to street signs or buildings. But when it came to people I would walk past, their face and most of their body language was a complete blur. Are they looking at me? Are they smiling? Frowning? Are they talking to me? How are they reacting?</p>
+<p>Not knowing was so weird. I knew that I was looking at them, but did not know if they were looking back—I assume I freaked a few people out by staring. It made me feel completely disconnected. The face is important to us humans. We even seek it out in random objects, a phenomenon known as <a href="http://en.wikipedia.org/wiki/Pareidolia">Pareidolia</a>.</p>
+<p>I’m happy the experience didn’t last too long, but it was humbling while it lasted. If you wear glasses, perhaps try it for a day?</p>
 
       ]]></content>
     </entry>

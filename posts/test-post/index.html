@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Matthew Lettini • Testing The Blog</title>
+    <title>Blog Test Post • Matthew Lettini</title>
     <meta charset="utf-8">
     <meta name="robots" content="noindex"> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,24 +9,29 @@
     <meta name="keywords" content="matthew lettini, matthew, mathew, matt, lettini, lentini, lettin, new york, nyc, ny, brooklyn, greenpoint, web, design, designer, product, html, css, harvest, forecast, amie street, songza, chosen, mlettini@gmail.com">
     <meta property="og:image" content="https://matthewlettini.me/img/matthew-lettini@2x.jpg">
     <meta property="og:site_name" content="Matthew Lettini">
-    <meta property="og:title" content="Testing The Blog">
+    <meta property="og:title" content="Blog Test Post">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://matthewlettini.me">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:image" content="https://matthewlettini.me/img/matthew-lettini@2x.jpg">
     <meta name="twitter:site" content="@mlettini">
-    <meta name="twitter:title" content="Testing The Blog">
+    <meta name="twitter:title" content="Blog Test Post">
     
-    
+    <link rel="icon" href="/images/matthew-lettini-header.jpg" type="image/png">
+    <link rel="icon" href="/images/matthew-lettini-header.jpg" type="image/svg+xml">
+    <link rel="mask-icon" href="/img/matthew-lettini-header.jpg" color="black">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="alternate" type="application/rss+xml" title="Posts" href="/feed.xml">
   </head>
   <body id="post">
 
     <header id="header">
-      <strong>Matthew Lettini</strong>
-      <nav class="header-content">
-        <ul>
+      <a href="/" class="header-name">
+        <img src="/images/matthew-lettini-header.jpg" alt="">
+        <h1>Matthew Lettini</h1>
+      </a>
+      <nav>
+        <ul class="header-nav">
           <li><a href="/" >Home</a></li>
           <li><a href="/posts" class="selected">Writing</a></li>
           <li><a href="http://photos.matthewlettini.com">Photos</a><span>↗</span></li>
@@ -42,7 +47,7 @@
     <article>
       <header id="post-header" class="centered">
         <time>April 5, 2020</time>
-        <h1>Testing The Blog</h1>
+        <h1>Blog Test Post</h1>
       </header>
 
       <section id="post-content">
@@ -74,22 +79,26 @@
 </blockquote>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
 <figure>
-  <img src="/img/posts/test1.jpg" alt="">
-</figure>
-<figure>
-  <img src="/img/posts/test2.jpg" alt="">
-</figure>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
-<figure>
-  <img src="/img/posts/test4.jpg" alt="">
+  <img src="/images/posts/test1.jpg" alt="">
+  <img src="/images/posts/test2.jpg" alt="">
+  <figcaption>This is a single figure with multiple images</figcaption>
 </figure>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
 <figure>
-  <img src="/img/posts/test3.jpg" alt="">
+  <img src="/images/posts/test4.jpg" alt="">
+  <figcaption>This is a wider horizontal image</figcaption>
+</figure>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+<figure>
+  <img src="/images/posts/test3.jpg" alt="">
+  <figcaption>This is a taller vertical image that gets cut</figcaption>
 </figure>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
 <pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">name</span><span class="token punctuation">:</span> Eleventy Build<br><br><span class="token key atrule">on</span><span class="token punctuation">:</span><br>  <span class="token key atrule">push</span><span class="token punctuation">:</span><br>    <span class="token key atrule">branches</span><span class="token punctuation">:</span><br>      <span class="token punctuation">-</span> master<br><br><span class="token key atrule">jobs</span><span class="token punctuation">:</span><br>  <span class="token key atrule">deploy</span><span class="token punctuation">:</span><br>    <span class="token key atrule">runs-on</span><span class="token punctuation">:</span> ubuntu<span class="token punctuation">-</span><span class="token number">18.04</span><br>    <span class="token key atrule">steps</span><span class="token punctuation">:</span><br>      <span class="token punctuation">-</span> <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/checkout@v2<br><br>      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Setup Node<br>        <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/setup<span class="token punctuation">-</span>node@v1<br>        <span class="token key atrule">with</span><span class="token punctuation">:</span><br>          <span class="token key atrule">node-version</span><span class="token punctuation">:</span> ’10.x’<br><br>      <span class="token punctuation">-</span> <span class="token key atrule">run</span><span class="token punctuation">:</span> npm ci<br><br>      <span class="token punctuation">-</span> <span class="token key atrule">run</span><span class="token punctuation">:</span> npm run build<br><br>      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Deploy<br>        <span class="token key atrule">uses</span><span class="token punctuation">:</span> peaceiris/actions<span class="token punctuation">-</span>gh<span class="token punctuation">-</span>pages@v3<br>        <span class="token key atrule">with</span><span class="token punctuation">:</span><br>          <span class="token key atrule">deploy_key</span><span class="token punctuation">:</span> $<span class="token punctuation">{</span><span class="token punctuation">{</span> secrets.ACTIONS_DEPLOY_KEY <span class="token punctuation">}</span><span class="token punctuation">}</span><br>          <span class="token key atrule">publish_dir</span><span class="token punctuation">:</span> ./dist</code></pre>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+<aside>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+</aside>
 
       </section>
     </article>
@@ -97,18 +106,15 @@
 
 
     
-    <footer id="footer">
-      <nav class="footer-content centered">
-        <ul>
-          <li>© 2020</li>
-          
+    <footer id="footer" class="centered">
+      <nav>
+        <ul class="footer-nav">
           <li><a href="#">Back to top</a></li>
-          <li><a href="/posts">All posts</a></li>
-          
           <li><a href="/feed.xml">RSS feed</a></li>
           <li><a href="mlettini@gmail.com">Email</a></li>
         </ul>
       </nav>
+      <small>© 2020</small>
     </footer>
     
 
