@@ -79,10 +79,10 @@ html {
   font-size: 19px;
   min-height: 100vh;
 }
-@media (min-width: 700px) {
+@media screen and (min-width: 680px) {
   html { font-size: 20px; }
 }
-@media (min-width: 1400px) {
+@media screen and (min-width: 1400px) {
   html { font-size: 21px; }
 }
 body {
@@ -97,6 +97,7 @@ body {
   line-height: 1.4;
   margin: 0;
   min-height: 100vh;
+  min-width: 100vw;
   padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   text-rendering: optimizelegibility;
 }
@@ -208,7 +209,7 @@ a:active:focus {
   opacity: 0.5;
   text-decoration: none;
 }
-@media (min-width: 700px) {
+@media screen and (min-width: 680px) {
   #header {
     align-items: center;
     display: flex;
@@ -258,7 +259,7 @@ a:active:focus {
   font-feature-settings: 'tnum';
   font-size: 0.9rem;
 }
-@media (min-width: 700px) {
+@media screen and (min-width: 680px) {
   .archive-list {
     list-style: none;
     padding: 0
