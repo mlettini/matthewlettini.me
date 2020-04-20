@@ -1,6 +1,6 @@
 /* Variables */
 :root {
-  --font-code: 'Office Code Pro', monospace;
+  --font-code: 'LG Mono', Monaco, monospace;
   --font-sans: 'LG', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-serif: 'Times New Roman', serif;
   --size-gap: 3.5rem;
@@ -60,10 +60,10 @@
 }
 @font-face {
   font-display: swap;
-  font-family: 'Office Code Pro';
+  font-family: 'LG Mono';
   font-style: normal;
-  font-weight: normal;
-  src: url('/fonts/OfficeCodePro-Regular.otf');
+  font-weight: 400;
+  src: url('/fonts/LG-mono.woff');
 }
 
 
@@ -76,14 +76,8 @@
   outline: 2px solid var(--primary);
 }
 html {
-  font-size: 19px;
+  font-size: 20px;
   -webkit-text-size-adjust: 100%;
-}
-@media screen and (min-width: 700px) {
-  html { font-size: 20px; }
-}
-@media screen and (min-width: 1400px) {
-  html { font-size: 21px; }
 }
 body {
   background-color: var(--background);
@@ -240,31 +234,22 @@ a:active:focus {
 
 /* Archives */
 .archive-list {
-  padding-left: 1rem;
+  list-style: none;
+  padding-left: 0;
 }
 .archive-list > li {
-  margin-bottom: 1rem;
+  margin: 0.5rem 0;
 }
 .archive-list > li > time {
   color: var(--text-medium);
   display: block;
-  font-feature-settings: 'tnum';
   font-size: 0.9rem;
 }
 @media screen and (min-width: 700px) {
-  .archive-list {
-    list-style: none;
-    padding: 0
-  }
-  .archive-list > li {
-    align-items: baseline;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    margin: 0;
-  }
+  .archive-list > li > a,
   .archive-list > li > time {
-    min-width: 7rem;
+    display: inline-block;
+    margin-right: 0.5rem;
   }
 }
 
