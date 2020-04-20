@@ -6,25 +6,31 @@ permalink: '/resume/index.html'
 
 Website • Email • Phone #
 
+---
+
 ## About Me
 
 Lorem
 
+---
+
 ## Experience
 
-### Harvest
+**Harvest**<br>
 Lorem
 
-### Forecast
+**Forecast**<br>
 Lorem
 
-### Harvest
+**Harvest**<br>
 Lorem
 
-### Amie Street
+**Amie Street**<br>
 Lorem
+
+---
 
 ## Education
 
-### Harvest
+**Hofstra**<br>
 Lorem
