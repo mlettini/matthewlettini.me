@@ -5,7 +5,7 @@
   --font-serif: 'Times New Roman', serif;
   --size-gap: 3.5rem;
   --size-max-width: 35rem;
-  --size-larger-max-width: 45rem;
+  --size-larger-max-width: 42rem;
   --background: rgb(255, 255, 255);
   --text: rgba(0, 0, 0, 0.9);
   --text-medium: rgba(0, 0, 0, 0.6);
@@ -160,12 +160,6 @@ a:active:focus {
   font-size: 0.9rem;
   margin-bottom: var(--size-gap);
   padding: 1rem;
-}
-#header a {
-  text-decoration: none;
-}
-#header a:hover {
-  text-decoration: underline;
 }
 .header-name {
   align-items: center;
