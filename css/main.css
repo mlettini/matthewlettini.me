@@ -78,8 +78,9 @@
 html {
   font-size: 19px;
   min-height: 100vh;
+  -webkit-text-size-adjust: 100%;
 }
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 700px) {
   html { font-size: 20px; }
 }
 @media screen and (min-width: 1400px) {
@@ -91,7 +92,6 @@ body {
   font-family: var(--font-sans);
   font-feature-settings: 'liga', 'ss02', 'ss04';
   font-size: 1rem;
-  -webkit-font-smoothing: antialiased;
   font-variation-settings: 'wght' 400;
   font-weight: 400;
   line-height: 1.4;
@@ -209,7 +209,7 @@ a:active:focus {
   opacity: 0.5;
   text-decoration: none;
 }
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 700px) {
   #header {
     align-items: center;
     display: flex;
@@ -259,7 +259,7 @@ a:active:focus {
   font-feature-settings: 'tnum';
   font-size: 0.9rem;
 }
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 700px) {
   .archive-list {
     list-style: none;
     padding: 0
