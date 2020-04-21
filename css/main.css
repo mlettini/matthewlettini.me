@@ -1,29 +1,31 @@
 /* Variables */
 :root {
-  --font-code: 'LG Mono', Monaco, monospace;
-  --font-sans: 'LG', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-serif: 'Times New Roman', serif;
-  --size-gap: 3.5rem;
-  --size-max-width: 35rem;
-  --size-larger-max-width: 42rem;
-  --background: rgb(255, 255, 255);
+  --background: #FFF;
   --text: rgba(0, 0, 0, 0.9);
   --text-medium: rgba(0, 0, 0, 0.6);
   --text-light: rgba(0, 0, 0, 0.3);
-  --primary: rgb(0, 0, 255);
-  --code-background: rgba(235, 235, 235);
+  --primary: rgba(0, 0, 255, 1);
+  --code-background: #EEE;
   --code-text: inherit;
-  --code-dark-background: rgb(40, 44, 52);
-  --code-dark-text: rgba(255, 255, 255, 0.9);
+  --code-dark-background: #282C34;
+  --code-dark-text: #D6D5CC;
+  --font-code: 'LG Mono', Monaco, monospace;
+  --font-sans: 'LG', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: 'Times New Roman', serif;
+  --gap: 3.5rem;
+  --max-width-small: 35rem;
+  --max-width-medium: 42rem;
+  --max-width-large: 60rem;
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: rgb(0, 0, 0);
+    --background: #000;
     --text: rgba(255, 255, 255, 0.8);
     --text-medium: rgba(255, 255, 255, 0.6);
     --text-light: rgba(255, 255, 255, 0.4);
     --primary: rgba(0, 255, 255, 0.9);
     --code-background: var(--code-dark-background);
+    --code-text: var(--code-dark-text);
   }
 }
 
@@ -91,6 +93,8 @@ body {
   margin: 0;
   padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   text-rendering: optimizelegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-sans);
@@ -116,7 +120,7 @@ hr {
   background: var(--text-light);
   border: 0;
   height: 1px;
-  margin: var(--size-gap) auto;
+  margin: var(--gap) auto;
   width: 10rem;
 }
 a {
@@ -142,7 +146,7 @@ a:active:focus {
 .centered {
   margin-left: auto;
   margin-right: auto;
-  max-width: var(--size-max-width);
+  max-width: var(--max-width-small);
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -152,7 +156,7 @@ a:active:focus {
 /* Header */
 #header {
   font-size: 0.9rem;
-  margin-bottom: var(--size-gap);
+  margin-bottom: var(--gap);
   padding: 1rem;
 }
 .header-name {
@@ -257,7 +261,7 @@ a:active:focus {
 
 /* Post */
 #post-header {
-  margin-bottom: var(--size-gap);
+  margin-bottom: var(--gap);
 }
 #post-header > time {
   color: var(--text-medium);
@@ -274,26 +278,26 @@ a:active:focus {
 #post-content > blockquote,
 #post-content > aside {
   margin: 1rem auto;
-  max-width: var(--size-max-width);
+  max-width: var(--max-width-small);
   padding-left: 1rem;
   padding-right: 1rem;
 }
 #post-content > h1,
 #post-content > h2,
 #post-content > h3 {
-  margin-top: var(--size-gap);
+  margin-top: var(--gap);
 }
 #post-content > ol,
 #post-content > ul {
-  padding-left: var(--size-gap);
+  padding-left: var(--gap);
 }
 #post-content > figure,
 #post-content > pre {
-  margin-bottom: var(--size-gap);
-  margin-top: var(--size-gap);
+  margin-bottom: var(--gap);
+  margin-top: var(--gap);
   margin-left: auto;
   margin-right: auto;
-  max-width: var(--size-larger-max-width);
+  max-width: var(--max-width-medium);
 }
 #post-content > figure > img {
   display: block;
@@ -348,7 +352,6 @@ code {
 /* Inline code */
 :not(pre) > code {
   background: var(--code-background);
-  border-radius: 2px;
   color: var(--code-text);
 	padding: 0.1rem;
 	white-space: normal;
@@ -356,13 +359,11 @@ code {
 /* Code blocks */
 pre[class*="language-"] {
   background: var(--code-dark-background);
-  border-radius: 3px;
 	color: var(--code-dark-text);
 	hyphens: none;
 	line-height: 1.4;
 	overflow: auto;
-	padding: 1rem 1.25rem;
-	tab-size: 4;
+	padding: 1rem;
 	text-align: left;
 	white-space: pre;
   width: 100%;
@@ -370,25 +371,14 @@ pre[class*="language-"] {
 	word-spacing: normal;
 	word-wrap: normal;
 }
+.token.punctuation {
+	color: rgba(255, 255, 255, 0.4);
+}
 .token.comment,
 .token.prolog,
 .token.doctype,
 .token.cdata {
-	color: #d4d0ab;
-}
-.token.punctuation {
-	color: #fefefe;
-}
-.token.property,
-.token.tag,
-.token.constant,
-.token.symbol,
-.token.deleted {
-	color: #ffa07a;
-}
-.token.boolean,
-.token.number {
-	color: #00e0e0;
+	color: #5C6773;
 }
 .token.selector,
 .token.attr-name,
@@ -396,7 +386,16 @@ pre[class*="language-"] {
 .token.char,
 .token.builtin,
 .token.inserted {
-	color: #abe338;
+  color: #FFAE57;
+}
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted,
+.token.boolean,
+.token.number {
+  color: #5CCFE6;
 }
 .token.operator,
 .token.entity,
@@ -404,19 +403,17 @@ pre[class*="language-"] {
 .language-css .token.string,
 .style .token.string,
 .token.variable {
-	color: #00e0e0;
+	color: #BAE67E;
 }
 .token.atrule,
 .token.attr-value,
-.token.function {
-	color: #ffd700;
-}
-.token.keyword {
-	color: #00e0e0;
-}
+.token.function,
 .token.regex,
 .token.important {
-	color: #ffd700;
+	color: #FFD700;
+}
+.token.keyword {
+	color: #D4BFFF;
 }
 .token.important,
 .token.bold {
