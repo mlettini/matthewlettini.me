@@ -184,6 +184,8 @@ a:active:focus {
 }
 .header-nav > li {
   display: inline-flex;
+}
+.header-nav > li:not(:last-of-type) {
   margin-right: 0.5rem;
 }
 .header-nav > li > span {
