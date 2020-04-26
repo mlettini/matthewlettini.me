@@ -4,4 +4,6 @@ title: Work
 permalink: '/work/index.html'
 ---
 
-Building my portfolio here is on my to-do list...
+A full portfolio of my work, research, and case studies for Harvest will be completed soon. In the meantime, here’s a [smattering](https://blog.getharvest.com/author/matt-lettini) of smaller improvements I’ve worked on and announced.
+
+![](/images/soon.gif)

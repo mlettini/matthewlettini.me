@@ -2,6 +2,7 @@
 title: "The Heavy Edition: Port-Mortem"
 date: 2013-02-24
 tags:
+  - post
   - life
 ---
 

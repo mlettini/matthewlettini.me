@@ -51,6 +51,12 @@
       <nav>
         <ul class="footer-nav">
           <li>© 2020</li>
+          {% if (pageType) == 'post' %}
+          <li><a href="/posts">All posts</a></li>
+          {% endif %}
+          {% if (pageType) == 'archives' %}
+          <li><a href="/feed.xml">RSS feed</a></li>
+          {% endif %}
           <li><a href="#">Back to top</a></li>
         </ul>
       </nav>

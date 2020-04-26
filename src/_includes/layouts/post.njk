@@ -12,6 +12,27 @@
       <section id="post-content">
         {{ content | safe }}
       </section>
+
+      <section id="post-nav" class="centered do-not-print">
+        <nav>
+          <ul class="post-nav">
+            {% if prevPost.url %}
+            <li class="previous">
+              &larr; Older
+              <a class="previous" href="{{ prevPost.url }}">{{ prevPost.data.title }}</a>
+              <time>{{ prevPost.data.date | dateFilterShorthand}}</time>
+            </li>
+            {% endif %}
+            {% if nextPost.url %}
+            <li class="next">
+              Newer &rarr;
+              <a class="next" href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
+              <time>{{ nextPost.data.date | dateFilterShorthand}}</time>
+            </li>
+            {% endif %}
+          </ul>
+        </nav>
+      </section>
     </article>
   </main>
 {% endblock content %}

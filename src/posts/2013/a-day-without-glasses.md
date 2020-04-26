@@ -2,6 +2,7 @@
 title: A Day Without Glasses
 date: 2013-01-13
 tags:
+  - post
   - life
 ---
 

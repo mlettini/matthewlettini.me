@@ -1,6 +1,8 @@
 ---
 title: Blog Test Post
 date: 2020-04-05
+tags:
+  - post
 ---
 
 I’m not sure how much I’ll actually write on here, but I’m creating this blog post as a way to test the design while I figure out Eleventy. This post should contain everything I’ll need for a future blog post, including headers, lists, blockquotes, code, photos, etc.
