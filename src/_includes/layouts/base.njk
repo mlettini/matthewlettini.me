@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>{% if (pageType != 'home') %}{{ title }} • {% endif %}{{ site.authorName }}{% if (pageType) == 'home' %} • NYC Product Designer{% endif %}</title>
+    <title>{{ site.authorName }} • {% if (pageType) == 'home' %}NYC Product Designer{% else %}{{ title }}{% endif %}</title>
     <meta charset="utf-8">
     <meta name="robots" content="noindex"> {# To Be Deleted When Done #}
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -29,7 +29,7 @@
   </head>
   <body id="{{ pageType }}">
 
-    <header id="header">
+    <header id="header" class="do-not-print">
       <div class="header-name">
         <img src="/images/matthew-lettini-header.jpg" alt="">
         <h1>Matthew Lettini</h1>
@@ -37,11 +37,9 @@
       <nav>
         <ul class="header-nav">
           <li><a href="/">Home</a></li>
-          <li><del aria-label="In Progress" title="In Progress">Work</del></li>
+          <li><a href="/work">Work</a></li>
           <li><a href="/posts">Writing</a></li>
-          <li><a href="http://photos.matthewlettini.com">Photography</a></li>
-          <li><a href="http://twitter.com/mlettini" target="_blank">Twitter</a></li>
-          <li><a href="http://instagram.com/mlettini" target="_blank">Instagram</a></li>
+          <li><a href="http://photos.matthewlettini.com">Photos</a></li>
         </ul>
       </nav>
     </header>
@@ -49,18 +47,14 @@
     {% block content %}
     {% endblock content %}
 
-    {% if (pageType == 'post') or (pageType == 'archives') %}
-    <footer id="footer" class="centered">
+    <footer id="footer" class="centered do-not-print">
       <nav>
         <ul class="footer-nav">
+          <li>© 2020</li>
           <li><a href="#">Back to top</a></li>
-          <li><a href="/feed.xml">RSS</a></li>
-          <li><a href="mlettini@gmail.com">Email</a></li>
         </ul>
       </nav>
-      <small>© 2020</small>
     </footer>
-    {% endif %}
 
   </body>
 </html>

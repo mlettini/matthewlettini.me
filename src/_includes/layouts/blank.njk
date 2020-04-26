@@ -1,0 +1,14 @@
+{% extends 'layouts/base.njk' %}
+{% set pageType = 'blank' %}
+
+{% block content %}
+  <main>
+    <header id="blank-header" class="centered">
+      <h1>{{ title }}</h1>
+    </header>
+
+    <section id="blank-content" class="centered">
+      {{ content | safe }}
+    </section>
+  </main>
+{% endblock content %}

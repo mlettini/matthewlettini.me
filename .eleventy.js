@@ -21,13 +21,13 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addCollection('all_posts', collection => {
     return [
-      ...collection.getFilteredByGlob('./src/posts/*.md')
+      ...collection.getFilteredByGlob('./src/posts/*/*.md')
     ].reverse()
   })
 
   eleventyConfig.addCollection('recent_posts', collection => {
     return [
-      ...collection.getFilteredByGlob('./src/posts/*.md')
+      ...collection.getFilteredByGlob('./src/posts/*/*.md')
     ].reverse().slice(0, 2)
   })
 
