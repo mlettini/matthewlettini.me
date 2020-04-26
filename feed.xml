@@ -13,9 +13,9 @@
     
     <entry>
       <title>Blog Test Post</title>
-      <link href="https://matthewlettini.me/posts/test-post/"/>
+      <link href="https://matthewlettini.me/posts/2020/test-post/"/>
       <updated>2020-04-05T00:00:00-00:00</updated>
-      <id>https://matthewlettini.me/posts/test-post/</id>
+      <id>https://matthewlettini.me/posts/2020/test-post/</id>
       <content type="html"><![CDATA[
         <p>I’m not sure how much I’ll actually write on here, but I’m creating this blog post as a way to test the design while I figure out Eleventy. This post should contain everything I’ll need for a future blog post, including headers, lists, blockquotes, code, photos, etc.</p>
 <p><em>Here’s an italicised sentence.</em> <strong>Here’s a bolded sentence.</strong> <a href="">Here’s a link.</a> <code>Here’s some inline code</code>. Isn’t this fun?</p>
@@ -72,9 +72,9 @@
     
     <entry>
       <title>The Heavy Edition: Port-Mortem</title>
-      <link href="https://matthewlettini.me/posts/the-heavy-edition-post-mortem/"/>
+      <link href="https://matthewlettini.me/posts/2013/the-heavy-edition-post-mortem/"/>
       <updated>2013-02-24T00:00:00-00:00</updated>
-      <id>https://matthewlettini.me/posts/the-heavy-edition-post-mortem/</id>
+      <id>https://matthewlettini.me/posts/2013/the-heavy-edition-post-mortem/</id>
       <content type="html"><![CDATA[
         <p>Years ago I was a member of my college radio station, where we frequently got the newest albums and artists to play. My cohost and I always had a great time, being idiots on the air and playing awesome new music.</p>
 <p>Somewhere along the line, I noticed something peculiar: When I would go back and listen to a “new” track that I hadn’t heard in a few weeks, it would feel “old.”</p>
@@ -101,9 +101,9 @@
     
     <entry>
       <title>In Defense of Rem Units</title>
-      <link href="https://matthewlettini.me/posts/in-defense-of-rem-units/"/>
+      <link href="https://matthewlettini.me/posts/2013/in-defense-of-rem-units/"/>
       <updated>2013-02-01T00:00:00-00:00</updated>
-      <id>https://matthewlettini.me/posts/in-defense-of-rem-units/</id>
+      <id>https://matthewlettini.me/posts/2013/in-defense-of-rem-units/</id>
       <content type="html"><![CDATA[
         <aside>
 <p>This post was originally written for <a href="http://techtime.getharvest.com/blog/in-defense-of-rem-units">Harvest’s Tech Time developer blog</a>. My thanks to the developers there for feedback when I wrote it. Some of what’s written here hasn’t aged well, but I still use rem units, and you should too!</p>
@@ -175,9 +175,9 @@ it a font-size of 1.25em.</p>
     
     <entry>
       <title>A Day Without Glasses</title>
-      <link href="https://matthewlettini.me/posts/a-day-without-glasses/"/>
+      <link href="https://matthewlettini.me/posts/2013/a-day-without-glasses/"/>
       <updated>2013-01-13T00:00:00-00:00</updated>
-      <id>https://matthewlettini.me/posts/a-day-without-glasses/</id>
+      <id>https://matthewlettini.me/posts/2013/a-day-without-glasses/</id>
       <content type="html"><![CDATA[
         <p>A minor incident Thursday night left me with broken glasses, shattered lenses, and a scratched cornea. It was an accident, and the scratches would heal in a couple days with no (known) longterm issues. I normally have old glasses around as backups, but I got rid of those during a recent purge. So I spent half my Friday without any vision correctness.</p>
 <p>It was an interesting experience.</p>
