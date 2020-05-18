@@ -25,17 +25,19 @@
   </head>
   <body id="post">
 
-    <header id="header" class="do-not-print">
+    <header id="header">
       <div class="header-name">
-        <img src="/images/matthew-lettini-header.jpg" alt="">
-        <h1>Matthew Lettini</h1>
+        <a href="/">
+          <img src="/images/matthew-lettini-header.jpg" alt="Matthew Lettini">
+          <strong>Matthew Lettini</strong>
+        </a>
       </div>
       <nav>
         <ul class="header-nav">
-          <li><a href="/">Home</a></li>
+          
           <li><a href="/work">Work</a></li>
           <li><a href="/posts">Writing</a></li>
-          <li><a href="http://photos.matthewlettini.com">Photos</a></li>
+          <li><a href="http://photos.matthewlettini.com">Photography</a></li>
         </ul>
       </nav>
     </header>
@@ -43,9 +45,9 @@
     
   <main>
     <article>
-      <header id="post-header" class="centered">
+      <header id="post-header" class="small-centered">
         <time>February 24, 2013</time>
-        <h1>The Heavy Edition: Port-Mortem</h1>
+        <h1 class="m-auto">The Heavy Edition: Port-Mortem</h1>
       </header>
 
       <section id="post-content">
@@ -69,38 +71,38 @@
 <p>Both were/are great.</p>
 
       </section>
-
-      <section id="post-nav" class="centered do-not-print">
-        <nav>
-          <ul class="post-nav">
-            
-            <li class="previous">
-              &larr; Older
-              <a class="previous" href="/posts/2013/in-defense-of-rem-units/">In Defense of Rem Units</a>
-              <time>Feb 2013</time>
-            </li>
-            
-            
-            <li class="next">
-              Newer &rarr;
-              <a class="next" href="/posts/2020/test-post/">Blog Test Post</a>
-              <time>Apr 2020</time>
-            </li>
-            
-          </ul>
-        </nav>
-      </section>
     </article>
   </main>
 
+  <section id="post-nav">
+    <nav>
+      <ul class="post-nav">
+        
+          <li class="previous">
+            <span>&larr; Older post</span>
+            <a class="previous" href="/posts/2013/in-defense-of-rem-units/">In Defense of Rem Units</a>
+          </li>
+        
+        
+          <li class="next">
+            <span>Newer post &rarr;</span>
+            <a class="next" href="/posts/2020/test-post/">Blog Test Post</a>
+          </li>
+        
+      </ul>
+    </nav>
+  </section>
 
-    <footer id="footer" class="centered do-not-print">
+
+    <footer id="footer">
       <nav>
         <ul class="footer-nav">
           <li>© 2020</li>
           
           <li><a href="/posts">All posts</a></li>
           
+          
+          <li><a href="/feed.xml">RSS feed</a></li>
           
           <li><a href="#">Back to top</a></li>
         </ul>

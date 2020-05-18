@@ -25,17 +25,19 @@
   </head>
   <body id="post">
 
-    <header id="header" class="do-not-print">
+    <header id="header">
       <div class="header-name">
-        <img src="/images/matthew-lettini-header.jpg" alt="">
-        <h1>Matthew Lettini</h1>
+        <a href="/">
+          <img src="/images/matthew-lettini-header.jpg" alt="Matthew Lettini">
+          <strong>Matthew Lettini</strong>
+        </a>
       </div>
       <nav>
         <ul class="header-nav">
-          <li><a href="/">Home</a></li>
+          
           <li><a href="/work">Work</a></li>
           <li><a href="/posts">Writing</a></li>
-          <li><a href="http://photos.matthewlettini.com">Photos</a></li>
+          <li><a href="http://photos.matthewlettini.com">Photography</a></li>
         </ul>
       </nav>
     </header>
@@ -43,15 +45,14 @@
     
   <main>
     <article>
-      <header id="post-header" class="centered">
+      <header id="post-header" class="small-centered">
         <time>February 1, 2013</time>
-        <h1>In Defense of Rem Units</h1>
+        <h1 class="m-auto">In Defense of Rem Units</h1>
       </header>
 
       <section id="post-content">
-        <aside>
-<p>This post was originally written for <a href="http://techtime.getharvest.com/blog/in-defense-of-rem-units">Harvest’s Tech Time developer blog</a>. My thanks to the developers there for feedback when I wrote it. Some of what’s written here hasn’t aged well, but I still use rem units, and you should too!</p>
-</aside>
+        <p><em>This post was originally written for <a href="http://techtime.getharvest.com/blog/in-defense-of-rem-units">Harvest’s Tech Time developer blog</a>, way back in 2013. My thanks to the devs there for feedback when I wrote it. Some of what’s written here hasn’t aged well, but I still use rem units, and you should too!</em></p>
+<hr>
 <p>Over the past couple weeks, I’ve had the opportunity to design and build <a href="http://getharvest.com/2012-year-in-work?utm_source=techtime">Harvest’s 2012 Year In Work</a>, which afforded me a chance to try out something new: the <strong>rem unit</strong> of measurement.</p>
 <p>You’re probably already familiar with <a href="http://www.w3.org/TR/css3-values/#em-unit">em units</a> – they’ve been a common feature of CSS for the past decade – but a crash course: elements specified using em units are sized relative to the <code>font-size</code> of their parent element. For example, if a paragraph has a specified <code>font-size</code>
 of 2em, and the div it’s inside of has a <code>font-size</code> of 10px, then the effective <code>font-size</code> of the paragraph is 10px × 2em, which is 20px.</p>
@@ -114,38 +115,38 @@ it a font-size of 1.25em.</p>
 <p>Either way, I hope to see more rem usage in the future. I don’t feel like it’s been fully explored yet, and think there’s still some use cases that haven’t been discovered.</p>
 
       </section>
-
-      <section id="post-nav" class="centered do-not-print">
-        <nav>
-          <ul class="post-nav">
-            
-            <li class="previous">
-              &larr; Older
-              <a class="previous" href="/posts/2013/a-day-without-glasses/">A Day Without Glasses</a>
-              <time>Jan 2013</time>
-            </li>
-            
-            
-            <li class="next">
-              Newer &rarr;
-              <a class="next" href="/posts/2013/the-heavy-edition-post-mortem/">The Heavy Edition: Port-Mortem</a>
-              <time>Feb 2013</time>
-            </li>
-            
-          </ul>
-        </nav>
-      </section>
     </article>
   </main>
 
+  <section id="post-nav">
+    <nav>
+      <ul class="post-nav">
+        
+          <li class="previous">
+            <span>&larr; Older post</span>
+            <a class="previous" href="/posts/2013/a-day-without-glasses/">A Day Without Glasses</a>
+          </li>
+        
+        
+          <li class="next">
+            <span>Newer post &rarr;</span>
+            <a class="next" href="/posts/2013/the-heavy-edition-post-mortem/">The Heavy Edition: Port-Mortem</a>
+          </li>
+        
+      </ul>
+    </nav>
+  </section>
 
-    <footer id="footer" class="centered do-not-print">
+
+    <footer id="footer">
       <nav>
         <ul class="footer-nav">
           <li>© 2020</li>
           
           <li><a href="/posts">All posts</a></li>
           
+          
+          <li><a href="/feed.xml">RSS feed</a></li>
           
           <li><a href="#">Back to top</a></li>
         </ul>

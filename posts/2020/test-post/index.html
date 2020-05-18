@@ -25,17 +25,19 @@
   </head>
   <body id="post">
 
-    <header id="header" class="do-not-print">
+    <header id="header">
       <div class="header-name">
-        <img src="/images/matthew-lettini-header.jpg" alt="">
-        <h1>Matthew Lettini</h1>
+        <a href="/">
+          <img src="/images/matthew-lettini-header.jpg" alt="Matthew Lettini">
+          <strong>Matthew Lettini</strong>
+        </a>
       </div>
       <nav>
         <ul class="header-nav">
-          <li><a href="/">Home</a></li>
+          
           <li><a href="/work">Work</a></li>
           <li><a href="/posts">Writing</a></li>
-          <li><a href="http://photos.matthewlettini.com">Photos</a></li>
+          <li><a href="http://photos.matthewlettini.com">Photography</a></li>
         </ul>
       </nav>
     </header>
@@ -43,9 +45,9 @@
     
   <main>
     <article>
-      <header id="post-header" class="centered">
+      <header id="post-header" class="small-centered">
         <time>April 5, 2020</time>
-        <h1>Blog Test Post</h1>
+        <h1 class="m-auto">Blog Test Post</h1>
       </header>
 
       <section id="post-content">
@@ -87,44 +89,44 @@
   <figcaption>This is a wider horizontal image</figcaption>
 </figure>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
-<figure>
+<figure class="portrait">
   <img src="/images/posts/test3.jpg" alt="">
   <figcaption>This is a taller vertical image that gets cut</figcaption>
 </figure>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
 <pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">name</span><span class="token punctuation">:</span> Eleventy Build<br><br><span class="token key atrule">on</span><span class="token punctuation">:</span><br>  <span class="token key atrule">push</span><span class="token punctuation">:</span><br>    <span class="token key atrule">branches</span><span class="token punctuation">:</span><br>      <span class="token punctuation">-</span> master<br><br><span class="token key atrule">jobs</span><span class="token punctuation">:</span><br>  <span class="token key atrule">deploy</span><span class="token punctuation">:</span><br>    <span class="token key atrule">runs-on</span><span class="token punctuation">:</span> ubuntu<span class="token punctuation">-</span><span class="token number">18.04</span><br>    <span class="token key atrule">steps</span><span class="token punctuation">:</span><br>      <span class="token punctuation">-</span> <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/checkout@v2<br><br>      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Setup Node<br>        <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/setup<span class="token punctuation">-</span>node@v1<br>        <span class="token key atrule">with</span><span class="token punctuation">:</span><br>          <span class="token key atrule">node-version</span><span class="token punctuation">:</span> ’10.x’<br><br>      <span class="token punctuation">-</span> <span class="token key atrule">run</span><span class="token punctuation">:</span> npm ci<br><br>      <span class="token punctuation">-</span> <span class="token key atrule">run</span><span class="token punctuation">:</span> npm run build<br><br>      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Deploy<br>        <span class="token key atrule">uses</span><span class="token punctuation">:</span> peaceiris/actions<span class="token punctuation">-</span>gh<span class="token punctuation">-</span>pages@v3<br>        <span class="token key atrule">with</span><span class="token punctuation">:</span><br>          <span class="token key atrule">deploy_key</span><span class="token punctuation">:</span> $<span class="token punctuation">{</span><span class="token punctuation">{</span> secrets.ACTIONS_DEPLOY_KEY <span class="token punctuation">}</span><span class="token punctuation">}</span><br>          <span class="token key atrule">publish_dir</span><span class="token punctuation">:</span> ./dist</code></pre>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
-<aside>
+<hr>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
-</aside>
 
-      </section>
-
-      <section id="post-nav" class="centered do-not-print">
-        <nav>
-          <ul class="post-nav">
-            
-            <li class="previous">
-              &larr; Older
-              <a class="previous" href="/posts/2013/the-heavy-edition-post-mortem/">The Heavy Edition: Port-Mortem</a>
-              <time>Feb 2013</time>
-            </li>
-            
-            
-          </ul>
-        </nav>
       </section>
     </article>
   </main>
 
+  <section id="post-nav">
+    <nav>
+      <ul class="post-nav">
+        
+          <li class="previous">
+            <span>&larr; Older post</span>
+            <a class="previous" href="/posts/2013/the-heavy-edition-post-mortem/">The Heavy Edition: Port-Mortem</a>
+          </li>
+        
+        
+      </ul>
+    </nav>
+  </section>
 
-    <footer id="footer" class="centered do-not-print">
+
+    <footer id="footer">
       <nav>
         <ul class="footer-nav">
           <li>© 2020</li>
           
           <li><a href="/posts">All posts</a></li>
           
+          
+          <li><a href="/feed.xml">RSS feed</a></li>
           
           <li><a href="#">Back to top</a></li>
         </ul>

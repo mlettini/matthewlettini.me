@@ -55,16 +55,15 @@
   <figcaption>This is a wider horizontal image</figcaption>
 </figure>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
-<figure>
+<figure class="portrait">
   <img src="/images/posts/test3.jpg" alt="">
   <figcaption>This is a taller vertical image that gets cut</figcaption>
 </figure>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
 <pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">name</span><span class="token punctuation">:</span> Eleventy Build<br><br><span class="token key atrule">on</span><span class="token punctuation">:</span><br>  <span class="token key atrule">push</span><span class="token punctuation">:</span><br>    <span class="token key atrule">branches</span><span class="token punctuation">:</span><br>      <span class="token punctuation">-</span> master<br><br><span class="token key atrule">jobs</span><span class="token punctuation">:</span><br>  <span class="token key atrule">deploy</span><span class="token punctuation">:</span><br>    <span class="token key atrule">runs-on</span><span class="token punctuation">:</span> ubuntu<span class="token punctuation">-</span><span class="token number">18.04</span><br>    <span class="token key atrule">steps</span><span class="token punctuation">:</span><br>      <span class="token punctuation">-</span> <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/checkout@v2<br><br>      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Setup Node<br>        <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/setup<span class="token punctuation">-</span>node@v1<br>        <span class="token key atrule">with</span><span class="token punctuation">:</span><br>          <span class="token key atrule">node-version</span><span class="token punctuation">:</span> ’10.x’<br><br>      <span class="token punctuation">-</span> <span class="token key atrule">run</span><span class="token punctuation">:</span> npm ci<br><br>      <span class="token punctuation">-</span> <span class="token key atrule">run</span><span class="token punctuation">:</span> npm run build<br><br>      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Deploy<br>        <span class="token key atrule">uses</span><span class="token punctuation">:</span> peaceiris/actions<span class="token punctuation">-</span>gh<span class="token punctuation">-</span>pages@v3<br>        <span class="token key atrule">with</span><span class="token punctuation">:</span><br>          <span class="token key atrule">deploy_key</span><span class="token punctuation">:</span> $<span class="token punctuation">{</span><span class="token punctuation">{</span> secrets.ACTIONS_DEPLOY_KEY <span class="token punctuation">}</span><span class="token punctuation">}</span><br>          <span class="token key atrule">publish_dir</span><span class="token punctuation">:</span> ./dist</code></pre>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
-<aside>
+<hr>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
-</aside>
 
       ]]></content>
     </entry>
@@ -105,9 +104,8 @@
       <updated>2013-02-01T00:00:00-00:00</updated>
       <id>https://matthewlettini.me/posts/2013/in-defense-of-rem-units/</id>
       <content type="html"><![CDATA[
-        <aside>
-<p>This post was originally written for <a href="http://techtime.getharvest.com/blog/in-defense-of-rem-units">Harvest’s Tech Time developer blog</a>. My thanks to the developers there for feedback when I wrote it. Some of what’s written here hasn’t aged well, but I still use rem units, and you should too!</p>
-</aside>
+        <p><em>This post was originally written for <a href="http://techtime.getharvest.com/blog/in-defense-of-rem-units">Harvest’s Tech Time developer blog</a>, way back in 2013. My thanks to the devs there for feedback when I wrote it. Some of what’s written here hasn’t aged well, but I still use rem units, and you should too!</em></p>
+<hr>
 <p>Over the past couple weeks, I’ve had the opportunity to design and build <a href="http://getharvest.com/2012-year-in-work?utm_source=techtime">Harvest’s 2012 Year In Work</a>, which afforded me a chance to try out something new: the <strong>rem unit</strong> of measurement.</p>
 <p>You’re probably already familiar with <a href="http://www.w3.org/TR/css3-values/#em-unit">em units</a> – they’ve been a common feature of CSS for the past decade – but a crash course: elements specified using em units are sized relative to the <code>font-size</code> of their parent element. For example, if a paragraph has a specified <code>font-size</code>
 of 2em, and the div it’s inside of has a <code>font-size</code> of 10px, then the effective <code>font-size</code> of the paragraph is 10px × 2em, which is 20px.</p>
