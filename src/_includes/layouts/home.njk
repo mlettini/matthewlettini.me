@@ -3,15 +3,12 @@
 
 {% block content %}
   <main>
-    {#
-    <header id="home-header" class="centered">
+    {# <header id="home-header">
       <h1>{{ site.authorName }}</h1>
-    </header>
-    #}
+    </header> #}
 
-    <section id="home-content" class="centered">
+    <section id="home-content">
       {{ content | safe }}
-
       {#
       <ul id="recent-posts" class="posts">
         {% for post in collections.recent_posts %}

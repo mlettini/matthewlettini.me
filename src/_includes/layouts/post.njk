@@ -4,35 +4,33 @@
 {% block content %}
   <main>
     <article>
-      <header id="post-header" class="centered">
+      <header id="post-header" class="small-centered">
         <time>{{ date | dateFilter }}</time>
-        <h1>{{ title }}</h1>
+        <h1 class="m-auto">{{ title }}</h1>
       </header>
 
       <section id="post-content">
         {{ content | safe }}
       </section>
-
-      <section id="post-nav" class="centered do-not-print">
-        <nav>
-          <ul class="post-nav">
-            {% if prevPost.url %}
-            <li class="previous">
-              &larr; Older
-              <a class="previous" href="{{ prevPost.url }}">{{ prevPost.data.title }}</a>
-              <time>{{ prevPost.data.date | dateFilterShorthand}}</time>
-            </li>
-            {% endif %}
-            {% if nextPost.url %}
-            <li class="next">
-              Newer &rarr;
-              <a class="next" href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
-              <time>{{ nextPost.data.date | dateFilterShorthand}}</time>
-            </li>
-            {% endif %}
-          </ul>
-        </nav>
-      </section>
     </article>
   </main>
+
+  <section id="post-nav">
+    <nav>
+      <ul class="post-nav">
+        {% if prevPost.url %}
+          <li class="previous">
+            <span>&larr; Older post</span>
+            <a class="previous" href="{{ prevPost.url }}">{{ prevPost.data.title }}</a>
+          </li>
+        {% endif %}
+        {% if nextPost.url %}
+          <li class="next">
+            <span>Newer post &rarr;</span>
+            <a class="next" href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
+          </li>
+        {% endif %}
+      </ul>
+    </nav>
+  </section>
 {% endblock content %}

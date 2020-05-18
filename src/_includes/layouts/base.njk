@@ -29,17 +29,19 @@
   </head>
   <body id="{{ pageType }}">
 
-    <header id="header" class="do-not-print">
+    <header id="header">
       <div class="header-name">
-        <img src="/images/matthew-lettini-header.jpg" alt="">
-        <h1>Matthew Lettini</h1>
+        <a href="/">
+          <img src="/images/matthew-lettini-header.jpg" alt="Matthew Lettini">
+          <strong>Matthew Lettini</strong>
+        </a>
       </div>
       <nav>
         <ul class="header-nav">
-          <li><a href="/">Home</a></li>
+          {# <li><a href="/">Home</a></li> #}
           <li><a href="/work">Work</a></li>
           <li><a href="/posts">Writing</a></li>
-          <li><a href="http://photos.matthewlettini.com">Photos</a></li>
+          <li><a href="http://photos.matthewlettini.com">Photography</a></li>
         </ul>
       </nav>
     </header>
@@ -47,14 +49,14 @@
     {% block content %}
     {% endblock content %}
 
-    <footer id="footer" class="centered do-not-print">
+    <footer id="footer">
       <nav>
         <ul class="footer-nav">
           <li>© 2020</li>
           {% if (pageType) == 'post' %}
           <li><a href="/posts">All posts</a></li>
           {% endif %}
-          {% if (pageType) == 'archives' %}
+          {% if (pageType == 'archives') or (pageType == 'post') %}
           <li><a href="/feed.xml">RSS feed</a></li>
           {% endif %}
           <li><a href="#">Back to top</a></li>

@@ -3,11 +3,11 @@
 
 {% block content %}
   <main>
-    <header id="archives-header" class="centered">
+    <header id="archives-header">
       <h1>{{ title }}</h1>
     </header>
 
-    <section id="archives-content" class="centered">
+    <section id="archives-content">
       <ul class="archive-list">
         {% for post in collections.all_posts %}
           <li>

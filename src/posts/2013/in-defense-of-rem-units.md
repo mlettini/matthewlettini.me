@@ -6,11 +6,9 @@ tags:
   - development
 ---
 
-<aside>
+*This post was originally written for [Harvest’s Tech Time developer blog](http://techtime.getharvest.com/blog/in-defense-of-rem-units), way back in 2013. My thanks to the devs there for feedback when I wrote it. Some of what’s written here hasn’t aged well, but I still use rem units, and you should too!*
 
-This post was originally written for [Harvest’s Tech Time developer blog](http://techtime.getharvest.com/blog/in-defense-of-rem-units). My thanks to the developers there for feedback when I wrote it. Some of what’s written here hasn’t aged well, but I still use rem units, and you should too!
-
-</aside>
+---
 
 Over the past couple weeks, I’ve had the opportunity to design and build [Harvest’s 2012 Year In Work](http://getharvest.com/2012-year-in-work?utm_source=techtime), which afforded me a chance to try out something new: the **rem unit** of measurement.
 

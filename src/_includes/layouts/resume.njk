@@ -2,12 +2,12 @@
 {% set pageType = 'resume' %}
 
 {% block content %}
-  <main>
-    <header id="resume-header" class="centered">
+  <main class="small-centered">
+    <header id="resume-header">
       <h1>{{ site.authorName }}</h1>
     </header>
 
-    <section id="resume-content" class="centered">
+    <section id="resume-content">
       {{ content | safe }}
     </section>
   </main>
