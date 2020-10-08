@@ -193,7 +193,7 @@ main {
   width: 10rem;
 }
 #home-content {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-bottom: var(--gap-md);
 }
 #home-content p:first-of-type {
@@ -205,6 +205,10 @@ main {
 #home-content a {
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
+}
+@media screen and (min-width: 500px) {
+  #home-content {
+    font-size: 1.5rem;
 }
 
 
