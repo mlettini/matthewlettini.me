@@ -3,7 +3,7 @@
   <head>
     <title>{{ site.authorName }} • {% if (pageType) == 'home' %}NYC Product Designer{% else %}{{ title }}{% endif %}</title>
     <meta charset="utf-8">
-    <meta name="robots" content="noindex"> {# To Be Deleted When Done #}
+     {# To Be Deleted When Done #}
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="keywords" content="matthew lettini, matthew, mathew, matt, lettini, lentini, lettin, new york, nyc, ny, brooklyn, greenpoint, web, design, designer, product, html, css, harvest, forecast, amie street, songza, chosen, mlettini@gmail.com">
@@ -26,43 +26,13 @@
     <link rel="mask-icon" href="/img/matthew-lettini-header.jpg" type="image/jpg" color="black">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Posts">
+    {% block header_content %}
+    {% endblock %}
   </head>
   <body id="{{ pageType }}">
 
-    <header id="header">
-      <div class="header-name">
-        <a href="/">
-          <img src="/images/matthew-lettini-header.jpg" alt="Matthew Lettini">
-          <strong>Matthew Lettini</strong>
-        </a>
-      </div>
-      <nav>
-        <ul class="header-nav">
-          {# <li><a href="/">Home</a></li> #}
-          <li><a href="/work">Work</a></li>
-          <li><a href="/posts">Writing</a></li>
-          <li><a href="http://photos.matthewlettini.com">Photography</a></li>
-        </ul>
-      </nav>
-    </header>
-
     {% block content %}
-    {% endblock content %}
-
-    <footer id="footer">
-      <nav>
-        <ul class="footer-nav">
-          <li>© 2020</li>
-          {% if (pageType) == 'post' %}
-          <li><a href="/posts">All posts</a></li>
-          {% endif %}
-          {% if (pageType == 'archives') or (pageType == 'post') %}
-          <li><a href="/feed.xml">RSS feed</a></li>
-          {% endif %}
-          <li><a href="#">Back to top</a></li>
-        </ul>
-      </nav>
-    </footer>
+    {% endblock %}
 
   </body>
 </html>

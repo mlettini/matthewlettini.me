@@ -1,19 +1,20 @@
 /* Variables */
 :root {
-  --background: #FFF;
+  --background: #fafafa;
   --border-color: rgba(0, 0, 0, 0.15);
-  --code-background: #EEE;
+  --code-background: #eee;
   --code-text: inherit;
-  --code-dark-background: #282C34;
-  --code-dark-text: #D6D5CC;
+  --code-dark-background: #282c34;
+  --code-dark-text: #d6d5cc;
   --font-code: 'LG Mono', Monaco, monospace;
   --font-sans: 'LG', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --gap-sm: 1.5rem;
-  --gap-md: 3.5rem;
+  --gap-sm: 1.75rem;
+  --gap-md: calc(var(--gap-sm) * 2);
   --max-width-sm: 33rem;
-  --max-width-large: 48rem;
-  --primary: rgba(0, 0, 0, 0.9);
-  --primary-underline: rgba(0, 0, 0, 0.2);
+  --max-width-large: 45rem;
+  --primary: var(--text);
+  --primary-underline: rgba(0, 0, 0, 0.9);
+  --primary-hover: rgba(0, 0, 255, 1);
   --text: rgba(0, 0, 0, 0.9);
   --text-medium: rgba(0, 0, 0, 0.6);
   --text-light: rgba(0, 0, 0, 0.3);
@@ -24,8 +25,8 @@
     --border-color: rgba(255, 255, 255, 0.15);
     --code-background: var(--code-dark-background);
     --code-text: var(--code-dark-text);
-    --primary: rgba(0, 215, 255, 0.9);
-    --primary-underline: rgba(0, 215, 255, 0.3);
+    --primary-underline: rgba(0, 200, 255, 1);
+    --primary-hover: rgba(0, 200, 255, 1);
     --text: rgba(255, 255, 255, 0.9);
     --text-medium: rgba(255, 255, 255, 0.5);
     --text-light: rgba(255, 255, 255, 0.3);
@@ -74,10 +75,11 @@
 
 
 
-/* Atomic Utility */
+/* Utilities */
 .m-auto {
   margin: auto;
 }
+
 
 
 /* Base */
@@ -87,6 +89,8 @@
 html {
   font-size: 20px;
   padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
 }
 @media screen and (min-width: 1400px) {
@@ -106,7 +110,6 @@ body {
   margin: auto;
   max-width: var(--max-width-large);
   padding: 0 1rem;
-  text-rendering: optimizelegibility;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-sans);
@@ -129,15 +132,18 @@ img {
 a {
   color: var(--primary);
   text-decoration-color: var(--primary-underline);
-  text-decoration-thickness: 2px;
   text-underline-offset: 3px;
+}
+a:hover {
+  color: var(--primary-hover);
+  text-decoration-color: var(--primary-hover);
 }
 
 
 
 /* Layout */
 main {
-  padding: 15vh 0;
+  padding: 10vh 0;
 }
 .small-centered {
   margin-left: auto;
@@ -152,58 +158,13 @@ main {
   border-bottom: 1px solid var(--border-color);
   padding: var(--gap-sm) 0;
 }
-#header a {
-  text-decoration: none;
-}
-.header-name {
-  display: flex;
-  font-size: inherit;
-  line-height: inherit;
-  margin: 0;
-}
-.header-name a {
-  color: inherit;
-}
-.header-name img {
-  border-radius: 2.5rem;
-  display: none;
-  height: 2.5rem;
-  width: 2.5rem;
-}
-.header-nav {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.header-nav li {
-  display: inline-flex;
-}
-.header-nav li:not(:last-of-type) {
-  margin-right: 0.8rem;
-}
-@media screen and (min-width: 400px) {
-  #header {
-    align-items: center;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-  }
-  .header-name img {
-    display: block;
-  }
-  .header-name strong {
-    display: none;
-  }
-  .header-nav li:not(:last-of-type) {
-    margin-right: 1rem;
-  }
-}
+
 
 
 /* Footer */
 #footer {
   border-top: 1px solid var(--border-color);
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   padding: var(--gap-sm) 0;
 }
 .footer-nav {
@@ -213,6 +174,7 @@ main {
 }
 .footer-nav li {
   display: inline-flex;
+  white-space: nowrap
 }
 .footer-nav li:not(:last-of-type) {
   margin-right: 0.5rem;
@@ -221,8 +183,18 @@ main {
 
 
 /* Home */
+#home-header {
+  margin-bottom: 10vh;
+  text-align: center;
+}
+#home-header img {
+  border-radius: 10rem;
+  display: inline-block;
+  width: 10rem;
+}
 #home-content {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
+  margin-bottom: var(--gap-md);
 }
 #home-content p:first-of-type {
   margin-top: 0;
@@ -231,13 +203,8 @@ main {
   margin-bottom: 0;
 }
 #home-content a {
-  text-decoration-thickness: 3px;
+  text-decoration-thickness: 2px;
   text-underline-offset: 4px;
-}
-@media screen and (min-width: 700px) {
-  #home-content {
-    font-size: 1.8rem;
-  }
 }
 
 

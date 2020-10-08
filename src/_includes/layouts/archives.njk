@@ -1,7 +1,15 @@
 {% extends 'layouts/base.njk' %}
 {% set pageType = 'archives' %}
 
+{% block header_content %}
+  <meta name="robots" content="noindex">
+{% endblock %}
+
 {% block content %}
+  <header id="header">
+    🚧 Area under-construction 🚧
+  </header>
+
   <main>
     <header id="archives-header">
       <h1>{{ title }}</h1>
@@ -18,4 +26,16 @@
       </ul>
     </section>
   </main>
-{% endblock content %}
+
+  <footer id="footer">
+    <nav>
+      <ul class="footer-nav">
+        <li>Copyright © 2020</li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/posts">All posts</a></li>
+        <li><a href="/feed.xml">RSS feed</a></li>
+        <li><a href="#">Back to top</a></li>
+      </ul>
+    </nav>
+  </footer>
+{% endblock %}

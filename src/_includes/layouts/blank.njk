@@ -1,6 +1,10 @@
 {% extends 'layouts/base.njk' %}
 {% set pageType = 'blank' %}
 
+{% block header_content %}
+  <meta name="robots" content="noindex">
+{% endblock %}
+
 {% block content %}
   <main>
     <header id="blank-header">
@@ -11,4 +15,4 @@
       {{ content | safe }}
     </section>
   </main>
-{% endblock content %}
+{% endblock %}
