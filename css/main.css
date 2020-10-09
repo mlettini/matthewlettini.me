@@ -6,17 +6,18 @@
   --code-text: inherit;
   --code-dark-background: #282c34;
   --code-dark-text: #d6d5cc;
-  --font-code: 'LG Mono', Monaco, monospace;
+  --font-mono: 'LG Mono', Monaco, monospace;
   --font-sans: 'LG', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --gap-sm: 1.75rem;
   --gap-md: calc(var(--gap-sm) * 2);
   --max-width-sm: 33rem;
-  --max-width-large: 45rem;
+  --max-width-md: 40rem;
+  --max-width-lg: 45rem;
   --primary: var(--text);
   --primary-hover: rgba(0, 0, 255, 1);
-  --primary-underline: rgba(0, 0, 0, 0.5);
+  --primary-underline: rgba(0, 0, 0, 0.4);
   --text: rgba(0, 0, 0, 0.9);
-  --text-medium: rgba(0, 0, 0, 0.5);
+  --text-medium: rgba(0, 0, 0, 0.6);
   --text-light: rgba(0, 0, 0, 0.3);
 }
 @media (prefers-color-scheme: dark) {
@@ -29,7 +30,7 @@
     --primary-hover: rgba(0, 200, 255, 1);
     --primary-underline: rgba(0, 200, 255, 0.5);
     --text: rgba(255, 255, 255, 0.9);
-    --text-medium: rgba(255, 255, 255, 0.5);
+    --text-medium: rgba(255, 255, 255, 0.6);
     --text-light: rgba(255, 255, 255, 0.3);
   }
 }
@@ -97,7 +98,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
 }
-@media (min-width: 1400px) {
+@media (min-width: 1600px) {
   html {
     font-size: 22px;
   }
@@ -112,7 +113,7 @@ body {
   font-weight: 400;
   line-height: 1.4;
   margin: auto;
-  max-width: var(--max-width-large);
+  max-width: var(--max-width-lg);
   padding: 0 1rem;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -191,7 +192,7 @@ main {
 
 /* Home */
 #home-header {
-  margin-bottom: 10vh;
+  margin-bottom: 8vh;
   text-align: center;
 }
 #home-header img {
@@ -231,7 +232,7 @@ main {
   padding: 0;
 }
 .archive-list li {
-  margin: 0.5rem 0;
+  margin: 1rem 0;
 }
 .archive-list time {
   color: var(--text-medium);
@@ -239,6 +240,9 @@ main {
   font-size: 0.9rem;
 }
 @media screen and (min-width: 500px) {
+  .archive-list li {
+    margin: 0.5rem 0;
+  }
   .archive-list a,
   .archive-list time {
     display: inline-block;
@@ -266,7 +270,11 @@ main {
 }
 #post-content > ol,
 #post-content > ul {
-  padding-left: var(--gap-md);
+  padding-left: var(--gap-sm);
+}
+#post-content > ol > li,
+#post-content > ul > li {
+  margin: 0.5rem 0;
 }
 #post-content > blockquote {
   border-left: 2px solid var(--border-color);
@@ -303,7 +311,7 @@ main {
 }
 #post-content > figure > figcaption {
   color: var(--text-medium);
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   margin-top: 0.5rem;
   text-align: center;
 }
@@ -344,7 +352,7 @@ main {
 /* Code */
 @media all {
   code {
-    font-family: var(--font-code);
+    font-family: var(--font-mono);
     font-size: 0.9rem;
   }
   :not(pre) > code {
@@ -459,6 +467,66 @@ main {
 	.token.url {
 		font-weight: normal;
 	}
+}
+
+
+
+/* Basecamp */
+#basecamp {
+  max-width: var(--max-width-md);
+}
+#basecamp h3 {
+  color: var(--text-light);
+  font-family: var(--font-mono);
+  font-weight: 400;
+  margin-top: var(--gap-md);
+  text-transform: uppercase;
+}
+#basecamp-header address {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-style: normal;
+}
+
+#basecamp-cover-letter {
+  border: 1px solid var(--border-color);
+  margin: 1rem auto var(--gap-md);
+  padding: var(--gap-md);
+}
+#basecamp-cover-letter p:first-of-type {
+  margin-top: 0;
+}
+#basecamp-cover-letter p:last-of-type {
+  margin-bottom: 0;
+}
+
+.basecamp-work-block {
+  margin: var(--gap-sm) auto var(--gap-md);
+}
+.basecamp-work-block > header {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+}
+.basecamp-work-block > header > h2 {
+  margin-left: 0;
+}
+.basecamp-work-block > header > h2 > span {
+  color: var(--text-medium);
+  font-weight: 400;
+}
+.basecamp-work-block > header > time {
+  background: var(--code-background);
+  border-radius: 3px;
+  color: var(--code-text);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  padding: 2px 6px;
+  text-transform: uppercase;
+}
+#basecamp-skills em {
+  color: var(--text-light);
 }
 
 
