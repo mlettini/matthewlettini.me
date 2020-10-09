@@ -1,0 +1,124 @@
+{% extends 'layouts/base.njk' %}
+{% set pageType = 'basecamp' %}
+
+{% block header_content %}
+  <meta name="robots" content="noindex">
+{% endblock %}
+
+{% block content %}
+  <main>
+    <header id="basecamp-header">
+      <h1>{{ site.authorName }}</h1>
+      <address>
+        Product Designer since 2006<br>
+        Working remotely from Brooklyn, NY<br>
+        <a href="mailto:mlettini@hey.com">mlettini@hey.com</a><br>
+        <tel>516.978.0881</tel>
+      </address>
+    </header>
+
+    <h3>Cover Letter</h3>
+    <section id="basecamp-cover-letter">
+      {{ content | safe }}
+    </section>
+
+    <section id="basecamp-work-experience">
+      <h3>Work Experience</h3>
+      <div class="basecamp-work-block">
+        <header>
+          <h2>Harvest <span>· Senior Product Designer</span></h2>
+          <time>2018–Present</time>
+        </header>
+        <p><em>Explain...</em></p>
+        <ul>
+          <li>All new email and desktop notification reminders to track time</li>
+          <li>All new welcome flow to better onboard new trials</li>
+          <li>Improved cancellation flow with a new exit survey</li>
+          <li>Researched and solutioned challenges in Harvest’s information architecture (IA)</li>
+        </ul>
+      </div>
+      <div class="basecamp-work-block">
+        <header>
+          <h2>Harvest Forecast <span>· Lead Product Designer</span></h2>
+          <time>2013–2018</time>
+        </header>
+        <p><em>Explain...</em></p>
+        <ul>
+          <li>Taking Forecast from back-of-napkin idea, to closed beta, to 1.0</li>
+          <li>Introduced the concept of scheduling placeholders</li>
+          <li>...</li>
+        </ul>
+      </div>
+      <div class="basecamp-work-block">
+        <header>
+          <h2>Harvest <span>· Product Designer</span></h2>
+          <time>2010–2013</time>
+        </header>
+        <p><em>Explain...</em></p>
+        <ul>
+          <li>All new Timesheets</li>
+          <li>All new Time and Detailed Time Reports</li>
+          <li>Multiple iterations of our marketing homepage (getharvest.com)</li>
+          <li>Mac App 1.0</li>
+          <li>iPhone App 2.0</li>
+        </ul>
+      </div>
+      <div class="basecamp-work-block">
+        <header>
+          <h2>Pre-Harvest <span>· Designer</span></h2>
+          <time>2006–2010</time>
+        </header>
+        <p><em>Explain...</em></p>
+        <ul>
+          <li>AmieStreet</li>
+          <li>Songza</li>
+          <li>The Heavy Edition</li>
+          <li>Freelance</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="basecamp-skills">
+      <h3>Technical skills</h3>
+      <p>Proficient:</p>
+      <ul>
+        <li>HTML</li>
+        <li>CSS <em>(and BEM)</em></li>
+        <li>Working in Ruby on Rails</li>
+        <li>Atomic styles and using design systems</li>
+        <li>Adobe CS <em>(haven’t used in a long time, but it’s like riding a bike)</em></li>
+        <li>Whimsical</li>
+      </ul>
+      <p>Some experience:</p>
+      <ul>
+        <li>Sketch, Figma, Adobe XS, and similar tools <em>(I more often jump into code after sketching and copywriting, but I can easily use these tools)</em></li>
+        <li>Indesign and other prototyping tools</li>
+        <li>Accessibility</li>
+        <li>Data analysis in tools like Mode and Chartmogul <em>(or just creating a chart in Google Sheets)</em></li>
+      </ul>
+      <p>Could use more experience:</p>
+      <ul>
+        <li>Javascript <em>(often paired with strong JS developers while I project manage)</em></li>
+        <li>Public speaking</li>
+      </ul>
+    </section>
+
+    <section id="basecamp-education">
+      <h3>Education</h3>
+      <div class="basecamp-work-block">
+        <header>
+          <h2>Behavior Design Boot Camp</h2>
+          <time>September 2020</time>
+        </header>
+        <p>Completed 4 week online training course to effectively teach and use the B.J. Fogg Behavior Model in product development and design thinking.</p>
+      </div>
+      <div class="basecamp-work-block">
+        <header>
+          <h2>Hofstra University</h2>
+          <time>Graduated 2008</time>
+        </header>
+        <p>Graduated magna cum laude with a 3.8 GPA. Received a Bachelor of Arts degree for Communications with a minor in Design. Provost scholar recipient.</p>
+      </div>
+    </section>
+  </main>
+{% endblock %}

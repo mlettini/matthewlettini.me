@@ -6,7 +6,7 @@ tags:
   - development
 ---
 
-*This post was originally written for [Harvest’s Tech Time developer blog](http://techtime.getharvest.com/blog/in-defense-of-rem-units), way back in 2013. My thanks to the devs there for feedback when I wrote it. Some of what’s written here hasn’t aged well, but I still use rem units, and you should too!*
+This post was originally written for [Harvest’s Tech Time developer blog](http://techtime.getharvest.com/blog/in-defense-of-rem-units). Some of what’s written here hasn’t aged well, but I still use rem units and you should too!
 
 ---
 
@@ -56,10 +56,10 @@ Here’s what you should know about rem units:
 
 ## 1. They’re great for responsive design
 
-Since all rem units are relative to a single number – the html `font-size` – you need only set the breakpoints on this number for a simple responsive layout. Here’s the code used in the Year In Work’s [Sass](http://sass-lang.com/) file:
+Since all rem units are relative to a single number – the html `font-size` – you need only set the breakpoints on this number for a simple responsive layout. Here’s the actual code used in the Year In Work’s [Sass](http://sass-lang.com/) file:
 
 ```scss
-html {
+html
   font-size: 16px
   @media screen and (min-width: 1600px)  // Large Monitors
     font-size: 18px
@@ -73,7 +73,6 @@ html {
     font-size: 7px
   @media screen and (min-width: 400px)   // Mobile Portrait
     font-size: 5px
-}
 ```
 
 While this isn’t appropriate for every design, being able to set a base size for your entire layout for every breakpoint can be incredibly useful.
