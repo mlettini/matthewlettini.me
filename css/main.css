@@ -1,7 +1,7 @@
 /* Variables */
 :root {
   --background: #fff;
-  --border-color: rgba(0, 0, 0, 0.15);
+  --border-color: rgba(0, 0, 0, 0.2);
   --code-background: #eee;
   --code-text: inherit;
   --code-dark-background: #282c34;
@@ -11,7 +11,7 @@
   --gap-sm: 1.75rem;
   --gap-md: calc(var(--gap-sm) * 2);
   --max-width-sm: 33rem;
-  --max-width-md: 40rem;
+  --max-width-md: 38rem;
   --max-width-lg: 45rem;
   --primary: var(--text);
   --primary-hover: rgba(0, 0, 255, 1);
@@ -23,7 +23,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #000;
-    --border-color: rgba(255, 255, 255, 0.15);
+    --border-color: rgba(255, 255, 255, 0.2);
     --code-background: var(--code-dark-background);
     --code-text: var(--code-dark-text);
     --primary: rgba(0, 200, 255, 1);
@@ -430,69 +430,88 @@ main {
     cursor: help;
   }
 }
-@media (-ms-high-contrast: active) {
-	code[class*="language-"],
-	pre[class*="language-"] {
-		color: windowText;
-		background: window;
-	}
-	:not(pre) > code[class*="language-"],
-	pre[class*="language-"] {
-		background: window;
-	}
-	.token.important {
-		background: highlight;
-		color: window;
-		font-weight: normal;
-	}
-	.token.atrule,
-	.token.attr-value,
-	.token.function,
-	.token.keyword,
-	.token.operator,
-	.token.selector {
-		font-weight: bold;
-	}
-	.token.attr-value,
-	.token.comment,
-	.token.doctype,
-	.token.function,
-	.token.keyword,
-	.token.operator,
-	.token.property,
-	.token.string {
-		color: highlight;
-	}
-	.token.attr-value,
-	.token.url {
-		font-weight: normal;
-	}
-}
 
 
 
 /* Basecamp */
-#basecamp {
-  max-width: var(--max-width-md);
+#basecamp section {
+  margin: var(--gap-md) auto;
+  /* max-width: var(--max-width-md); */
 }
-#basecamp h3 {
-  color: var(--text-light);
-  font-family: var(--font-mono);
-  font-weight: 400;
-  margin-top: var(--gap-md);
-  text-transform: uppercase;
+#basecamp h1 {
+  text-align: center;
 }
-#basecamp-header address {
-  display: block;
-  font-family: var(--font-mono);
+#basecamp hr {
+  background: var(--primary-hover);
+  border: 0;
+  border-radius: 2px;
+  height: 2px;
+  margin: var(--gap-md) auto;
+  width: 100%;
+}
+#basecamp li {
+  margin: 0.5rem 0;
+}
+#basecamp li:first-of-type {
+  margin-top: 0;
+}
+#basecamp li:last-of-type {
+  margin-bottom: 0;
+}
+/* BC - Work Experience */
+#basecamp-work-experience h1 + p {
   font-size: 0.8rem;
-  font-style: normal;
+  margin-top: 0.25rem;
+  text-align: center;
 }
-
+.basecamp-work-block {
+  margin: var(--gap-md) auto;
+}
+@media (min-width: 700px) {
+.basecamp-work-block {
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+}
+}
+.basecamp-work-block time {
+  background: var(--code-background);
+  border-radius: 3px;
+  color: var(--code-text);
+  display: inline-flex;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  height: min-content;
+  margin-top: 0.25rem;
+  padding: 0.125rem 0.325rem;
+  white-space: nowrap;
+  width: min-content;
+}
+.basecamp-work-block h2 span {
+  color: var(--text-medium);
+  font-weight: 400;
+}
+.basecamp-work-block h2 + p {
+  margin-top: 0.5rem;
+}
+.basecamp-case-study-links {
+  list-style: none;
+  padding: 0;
+}
+.basecamp-case-study-links a {
+  border: 1px solid var(--border-color);
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+}
+.basecamp-case-study-links a:hover {
+  border-color: var(--primary-hover);
+}
+/* BC - Cover Letter */
 #basecamp-cover-letter {
   border: 1px solid var(--border-color);
-  margin: 1rem auto var(--gap-md);
-  padding: var(--gap-md);
+  margin: var(--gap-md) auto;
+  max-width: var(--max-width-md);
+  padding: 5vw;
 }
 #basecamp-cover-letter p:first-of-type {
   margin-top: 0;
@@ -500,33 +519,10 @@ main {
 #basecamp-cover-letter p:last-of-type {
   margin-bottom: 0;
 }
-
-.basecamp-work-block {
-  margin: var(--gap-sm) auto var(--gap-md);
-}
-.basecamp-work-block > header {
-  align-items: flex-start;
-  display: flex;
-  justify-content: space-between;
-}
-.basecamp-work-block > header > h2 {
-  margin-left: 0;
-}
-.basecamp-work-block > header > h2 > span {
-  color: var(--text-medium);
-  font-weight: 400;
-}
-.basecamp-work-block > header > time {
-  background: var(--code-background);
-  border-radius: 3px;
-  color: var(--code-text);
+#basecamp-cover-letter p:last-of-type small {
+  display: block;
   font-family: var(--font-mono);
-  font-size: 0.8rem;
-  padding: 2px 6px;
-  text-transform: uppercase;
-}
-#basecamp-skills em {
-  color: var(--text-light);
+  font-size: 0.7rem;
 }
 
 
