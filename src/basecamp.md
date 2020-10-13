@@ -14,7 +14,7 @@ But being a fan is not a qualification. Here is why I’d be a great candidate f
 
 At Harvest, I’ve owned or been responsible for many things in various and changing capacities over the years, including both web products (Harvest and Forecast), our desktop and mobile apps, the marketing site, support documentation, data and success metrics, mentoring coworkers, and leading internal workshops. Under the tutelage of co-founders Shawn Liu and Danny Wen and various colleagues over the years, the hats I wear have grown from purely designer to also product strategist, project manager, front-end developer, researcher, writer, data analyst, and more.
 
-I excel as a generalist because what I love is solving design problems and challenges. My small way of impacting the world is to make software simpler and more clear for people. *The Design of Everyday Things* and the principles of affordance are my North Star. And at its core: human-centered design and strong communication.
+I excel as a generalist because I love solving design problems and challenges. My small way of impacting the world is to make software simpler and more clear for people. *The Design of Everyday Things* and the principles of affordance are my North Star. And at its core: human-centered design and strong communication.
 
 I have worked on both top-level product strategy and low-level code implementation. I can take ideas from initial spark to finished product. And for the past couple of years now, I’ve been doing this in cycles and the *Shape Up* methodology at Harvest. I’ve both shaped and de-risked ideas into pitches, as well as scope-hammered work and successfully led a team to ship within 6 weeks.
 
@@ -26,13 +26,15 @@ I believe my skills and experience have set me up well for this opportunity. The
 
 But I’m also excited for the chance to learn from the best in the industry. The team behind Basecamp has been influential in shaping what it looks like to build software and treat users like humans. That’s where I’d like to grow over my next decade.
 
-Since I’m not the type of employee to hop from job-to-job, I hope you’ll excuse this hastily put together application. Below is my attempt to quickly timeline and highlight some of the work I’m most proud. I didn’t have time to write detailed case studies for every project, but I’m happy to answer any questions you may have.
+Since I’m not the type of employee to hop from job-to-job, I hope you’ll excuse this hastily put together resume-folio. I had only been on the fence before I saw your open position, so I didn’t have something more cohesive ready-to-go.
+
+Below is my attempt to quickly timeline and highlight some of the work I’m most proud of. While I didn’t have time to write detailed case studies for every project, I’m happy to answer any questions.
+
+Finally, I’ll mention that I bring my full, weird self to everything I do. Like everyone else, COVID-19 has up-ended most of my non-work life. So while I’d love to speak more about my love for basketball, traveling, karaoke, and D&amp;D, sadly those have all been on hold. But in their place is more camping in the catskills, moving during a pandemic, training my guitar fingers again, and trying to spend more time with my niece and nephew before they grow up too fast.
 
 Thank you very much for your time and consideration, and I hope to hear from you soon.
 
 Sincerely,<br>
 Matthew Lettini
 
-<div style="text-align:right">
-  <img src="/images/basecamp/ml-signature.png" alt="Matthew Lettini">
-</div>
+<img src="/images/basecamp/ml-signature.png" alt="Matthew Lettini">
