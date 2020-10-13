@@ -479,7 +479,6 @@ main {
 #basecamp-cover-letter {
   border: 1px solid var(--border-color);
   margin: var(--gap-md) auto;
-  max-width: var(--max-width-md);
   padding: 5vw;
 }
 #basecamp-cover-letter img {
@@ -514,8 +513,8 @@ main {
   font-family: var(--font-mono);
   font-size: 0.75rem;
   height: min-content;
-  margin-top: 0.25rem;
-  padding: 0.125rem 0.325rem;
+  margin: 0.25rem 0;
+  padding: 3px 7px;
   white-space: nowrap;
   width: min-content;
 }
