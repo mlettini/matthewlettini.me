@@ -18,19 +18,17 @@ I excel as a generalist because I love solving design problems and challenges. M
 
 I have worked on both top-level product strategy and low-level code implementation. I can take ideas from initial spark to finished product. And for the past couple of years now, I’ve been doing this in cycles and the *Shape Up* methodology at Harvest. I’ve both shaped and de-risked ideas into pitches, as well as scope-hammered work and successfully led a team to ship within 6 weeks.
 
-After 10 years, I’m looking for new challenges, and the future of Basecamp and HEY offers a rare opportunity. These are fundamental tools that help individuals and teams get things done, while retaining control and calm in their lives. They’re used for everything from personal needs, to planning small events, to building global businesses. And their built by an outspoken company that has inspired me for years.
+After 10 years, I’m looking for new challenges, and the future of Basecamp and HEY offers a rare opportunity. These are tools that fundamentally help individuals and teams get things done, while retaining control and calm in their lives. They’re used for everything from personal needs, to planning small events, to building global businesses. And they’re built by an outspoken company that has inspired me for years.
 
 **Helping design tools that help people change the world gets me excited to produce again.**
 
-I believe my skills and experience have set me up well for this opportunity. There’d be no learning curve working in cycles or being a manager of one, I understand the intricacies of designing SaaS products made for teams, and I’m already a user of both BC3 and HEY. Heck, I’ve even sent in a few feature requests over the years.
+I believe my skills and experience have set me up well for this opportunity. There’d be no learning curve working in cycles or being a manager of one, I understand the intricacies of designing SaaS products made for teams, and I’m a user of both BC3 and HEY. Heck, I’ve even sent in a few feature requests over the years.
 
-But I’m also excited for the chance to learn from the best in the industry. The team behind Basecamp has been influential in shaping what it looks like to build software and treat users like humans. That’s where I’d like to grow over my next decade.
+But I’m also excited for the chance to work alongside and learn from the best in the industry. The team behind Basecamp has been influential in shaping what it looks like to build software and treat users like humans. That’s where I’d like to grow over my next decade.
 
-Since I’m not the type of employee to hop from job-to-job, I hope you’ll excuse this hastily put together resume-folio. I had only been on the fence before I saw your open position, so I didn’t have something more cohesive ready-to-go.
+Since I’m not the type of employee to hop from job-to-job, I wasn’t ready to apply elsewhere when I learned you were hiring. So I hope you’ll excuse [my hastily put together resume-folio](https://matthewlettini.me/basecamp), just for this application. It’s my attempt at highlighting work I’m proud of at Harvest and how my role has changed over the years. While I didn’t have time to write detailed case studies for every project, I plan to add to it over the next week and I’m happy to answer any questions.
 
-Below is my attempt to quickly timeline and highlight some of the work I’m most proud of. While I didn’t have time to write detailed case studies for every project, I’m happy to answer any questions.
-
-Finally, I’ll mention that I bring my full, weird self to everything I do. Like everyone else, COVID-19 has up-ended most of my non-work life. So while I’d love to speak more about my love for basketball, traveling, karaoke, and D&amp;D, sadly those have all been on hold. But in their place is more camping in the catskills, moving during a pandemic, training my guitar fingers again, and trying to spend more time with my niece and nephew before they grow up too fast.
+Finally, I’ll also mention that I bring my full, weird self to everything I do. Like everyone else, COVID-19 has up-ended most of my non-work life. So while I’d love to speak more about my love for basketball, traveling, karaoke, and D&amp;D, sadly those have all been on hold. But in their place is more camping in the catskills, moving during a pandemic, and trying to spend more time with my niece and nephew before they grow up too fast.
 
 Thank you very much for your time and consideration, and I hope to hear from you soon.
 
