@@ -11,7 +11,7 @@
   --gap-sm: 1.75rem;
   --gap-md: calc(var(--gap-sm) * 2);
   --max-width-sm: 33rem;
-  --max-width-md: 38rem;
+  --max-width-md: 40rem;
   --max-width-lg: 45rem;
   --primary: var(--text);
   --primary-hover: rgba(0, 0, 255, 1);
@@ -434,6 +434,10 @@ main {
 
 
 /* Basecamp */
+/* BC - Base styles */
+#basecamp {
+  max-width: var(--max-width-md);
+}
 #basecamp section {
   margin: var(--gap-md) auto;
 }
@@ -445,6 +449,14 @@ main {
   margin: var(--gap-md) auto;
   width: 100%;
 }
+#basecamp h2 {
+  margin-bottom: 0.5rem;
+}
+#basecamp h2 span {
+  color: var(--text-light);
+  font-weight: 400;
+  margin-left: 0.25rem;
+}
 #basecamp li {
   margin: 0.5rem 0;
 }
@@ -452,6 +464,7 @@ main {
 #basecamp p:first-of-type {
   margin-top: 0;
 }
+#basecamp ul:last-of-type,
 #basecamp li:last-of-type,
 #basecamp p:last-of-type {
   margin-bottom: 0;
@@ -476,6 +489,7 @@ main {
 .basecamp-logo img {
   border-radius: 4rem;
 }
+/* BC - Cover letter */
 #basecamp-cover-letter {
   border: 1px solid var(--border-color);
   margin: var(--gap-md) auto;
@@ -490,19 +504,15 @@ main {
     filter: invert(1);
   }
 }
-/* BC - Work Experience */
-#basecamp-work-experience h1 + p {
-  font-size: 0.8rem;
-  margin-top: 0.25rem;
-  text-align: center;
-}
+/* BC - Work experience */
 .basecamp-work-block {
   margin: var(--gap-md) auto;
+  position: relative;
 }
 @media (min-width: 700px) {
   .basecamp-work-block {
     display: grid;
-    grid-template-columns: 9rem 1fr;
+    grid-template-columns: 7rem 1fr;
   }
 }
 .basecamp-work-block time {
@@ -513,47 +523,29 @@ main {
   font-family: var(--font-mono);
   font-size: 0.75rem;
   height: min-content;
-  margin: 0.25rem 0;
+  margin: 0.125rem 0;
   padding: 3px 7px;
   white-space: nowrap;
   width: min-content;
 }
-.basecamp-work-block h2 {
-  margin-bottom: 0.725rem;
-}
-.basecamp-work-block h2 span {
-  color: var(--text-light);
-  font-weight: 400;
-  margin-left: 0.25rem;
-}
-.basecamp-case-study-links {
-  list-style: none;
-  padding: 0;
-}
-.basecamp-case-study-links a {
-  border: 1px solid var(--primary-underline);
-  border-radius: 0.25rem;
+.basecamp-work-block small {
+  color: var(--text-medium);
   display: block;
-  padding: 1rem;
-  text-decoration: none;
+  font-size: 0.9rem;
 }
-.basecamp-case-study-links a:hover {
-  border-color: var(--primary-hover);
+/* BC - Skills & Education */
+#basecamp-skills div,
+#basecamp-education div {
+  margin: var(--gap-sm) auto;
 }
-/* BC - Skills */
-#basecamp-skills ul:first-of-type {
-  margin-top: 0;
-}
-#basecamp-skills ul:last-of-type {
-  margin-bottom: 0;
-}
-/* BC - Levity */
-#basecamp-levity h1 {
-  margin-bottom: var(--gap-md);
-}
-#basecamp-levity span {
-  color: var(--text-light);
-  padding: 0 0.5rem;
+@media (min-width: 700px) {
+  #basecamp-skills div {
+    display: grid;
+    grid-template-columns: 7rem 1fr;
+  }
+  #basecamp-skills ul {
+    margin: 0;
+  }
 }
 
 
