@@ -6,7 +6,7 @@ description: Hey!
 
 To Jason, David, and the team at Basecamp,
 
-I’ve been a Basecamp fan and user for many years. I nodded my head reading *It Doesn’t Have To Be Crazy At Work*, followed the 37Signals blog on and off, been inspired by your public company policies, and was an early sign up for HEY. So I was elated to see “hiring a Senior Designer” land in my imbox.
+I’ve been a Basecamp fan and user for many years. I nodded my head reading *It Doesn’t Have to Be Crazy at Work*, followed the 37Signals blog on and off, been inspired by your public company policies, and was an early sign up for HEY. So I was elated to see “hiring a Senior Designer” land in my imbox.
 
 But being a fan is not a qualification. Here is why I’d be a great candidate for the job—
 
@@ -16,7 +16,7 @@ At Harvest, I’ve owned or been responsible for many things in various and chan
 
 I excel as a generalist because I love solving design problems and challenges. My small way of impacting the world is to make software simpler and more clear for people. *The Design of Everyday Things* and the principles of affordance are my North Star. And at its core: human-centered design and strong communication.
 
-I have worked on both top-level product strategy and low-level code implementation. I can take ideas from initial spark to finished product. And for the past couple of years now, I’ve been doing this in cycles and the *Shape Up* methodology at Harvest. I’ve both shaped and de-risked ideas into pitches, as well as scope-hammered work and successfully led a team to ship within 6 weeks.
+I have worked on both top-level product strategy and low-level code implementation. I can take ideas from initial spark to finished product. And for the past couple of years now, I’ve been doing this in cycles and the *Shape Up* methodology at Harvest. I’ve both shaped and de-risked ideas into pitches, as well as scope-hammered work and successfully led teams to ship within 6 weeks.
 
 After 10 years, I’m looking for new challenges, and the future of Basecamp and HEY offers a rare opportunity. These are tools that fundamentally help individuals and teams get things done, while retaining control and calm in their lives. They’re used for everything from personal needs, to planning small events, to building global businesses. And they’re built by an outspoken company that has inspired me for years.
 
