@@ -520,11 +520,11 @@ main {
   border-radius: 3px;
   color: var(--code-text);
   display: inline-flex;
-  font-family: var(--font-mono);
   font-size: 0.75rem;
+  font-weight: 600;
   height: min-content;
   margin: 0.125rem 0;
-  padding: 3px 7px;
+  padding: 3px 7px 2px;
   white-space: nowrap;
   width: min-content;
 }
