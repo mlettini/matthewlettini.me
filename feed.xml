@@ -55,7 +55,7 @@
   <figcaption>This is a wider horizontal image</figcaption>
 </figure>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
-<figure class="portrait">
+<figure>
   <img src="/images/posts/test3.jpg" alt="">
   <figcaption>This is a taller vertical image that gets cut</figcaption>
 </figure>
