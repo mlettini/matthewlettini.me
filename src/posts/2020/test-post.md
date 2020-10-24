@@ -56,7 +56,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque vo
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
 
-<figure class="portrait">
+<figure>
   <img src="/images/posts/test3.jpg" alt="">
   <figcaption>This is a taller vertical image that gets cut</figcaption>
 </figure>

@@ -3,6 +3,7 @@
 
 {% block header_content %}
   <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="/css/basecamp.css">
   <script type="text/javascript">
     function toggle_visibility(id) {
        var e = document.getElementById(id);
@@ -24,7 +25,7 @@
       </svg>
     </div>
     <p>Hey, I’m <strong>Matthew Lettini</strong>, a product designer working remotely from Brooklyn, NYC. This is my hastily put together application for the <strong>Senior Designer role at Basecamp</strong>. Welcome! 👋</p>
-    <p>I’m very excited for this rare opportunity. Below you’ll find a page I made just for this application. If you haven’t read it yet, <a href="#basecamp-cover-letter" onclick="toggle_visibility('basecamp-cover-letter');">my cover letter</a> is where you  can learn more about me and why I’m applying for this job.</p><p> As I explain there, I’ve been employed by <a href="https://getharvest.com" target="_blank">Harvest</a> for over 10 years, so I wasn’t ready to apply anywhere when I learned you were hiring. Unfortunately, due to work obligations, I wasn’t able to deliver you a more complete portfolio with detailed case studies before applications closed. However, between October 19-23, I expect to update some projects below with images and more project details.</p>
+    <p>I’m very excited for this rare opportunity. Below you’ll find a page I made just for this application. If you haven’t read it yet, <a href="#basecamp-cover-letter" onclick="toggle_visibility('basecamp-cover-letter');">my cover letter</a> is where you  can learn more about me and why I’m applying for this job.</p><p> As I explain there, I’ve been employed by <a href="https://getharvest.com" target="_blank">Harvest</a> for more than a <em>decade</em>, and I wasn’t ready to apply anywhere when I learned you were hiring. Unfortunately, due to work obligations, I wasn’t able to deliver you a more complete portfolio earlier, but I’ll be adding detailed case studies for a few projects below over time.</p>
     <p>I’m happy to chat more about anything—my decade at Harvest, what I can bring to Basecamp, or my favorite D&amp;D class. Thank you very much for your time and consideration. You can contact me at <a href="mailto:mlettini@hey.com">mlettini@hey.com</a> or <tel>516-978-0881</tel>.</p>
   </section>
 
@@ -42,7 +43,12 @@
         <p>In 2018, Harvest made some big internal changes: implementing cycles, shuffling teams around, hiring new directors, adding OKRs, and other process shifts. My role has moved to senior, and alongside continuing to shape pitches and lead cycles, I also help mentor others on the product team.</p>
         <p>As mentioned, I plan to write more elaborate case studies for some of these, but here’s a list of things I worked on recently:</p>
         <ul>
-          <li>Improved our multi-step welcome flow to better onboard new trials, and remove friction in getting familiar with a new account.</li>
+          <li>
+            Improved our multi-step welcome flow to better onboard new trials and remove friction in new account setup.
+            <a href="/basecamp/welcome-flow" class="basecamp-work-link">
+              👉 Read the full welcome flow case study
+              <img src="/images/basecamp/wf-image-9.png" alt="">
+            </a></li>
           <li>Audited and proposed a significant upgrade to Harvest’s inconsistent information architecture (IA).</li>
           <li>Added all new email and desktop notification reminders, to help customers prompt themselves to track time.</li>
           <li>Improved the cancellation flow to remove friction, and add a new exit survey to help us understand customer churn.</li>

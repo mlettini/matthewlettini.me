@@ -1,0 +1,131 @@
+/* BC - Base styles */
+#basecamp {
+  max-width: var(--max-width-md);
+}
+#basecamp section {
+  margin: var(--gap-md) auto;
+}
+#basecamp h2 {
+  margin-bottom: 0.5rem;
+}
+#basecamp h2 span {
+  color: var(--text-light);
+  font-weight: 400;
+  margin-left: 0.25rem;
+}
+#basecamp li {
+  margin: 0.5rem 0;
+}
+#basecamp li:first-of-type,
+#basecamp p:first-of-type {
+  margin-top: 0;
+}
+#basecamp ul:last-of-type,
+#basecamp li:last-of-type,
+#basecamp p:last-of-type {
+  margin-bottom: 0;
+}
+
+/* BC – Intro */
+.basecamp-logo {
+  align-items: center;
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
+  margin-bottom: var(--gap-sm);
+}
+.basecamp-logo svg,
+.basecamp-logo img {
+  height: 4rem;
+  margin: 0 1rem;
+  width: 4rem;
+}
+.basecamp-logo path {
+  stroke: var(--text);
+}
+.basecamp-logo img {
+  border-radius: 4rem;
+}
+
+/* BC - Cover letter */
+#basecamp-cover-letter {
+  border: 1px solid var(--border-color);
+  margin: var(--gap-md) auto;
+  padding: 5vw;
+}
+#basecamp-cover-letter img {
+  margin: auto auto -1rem;
+  width: 10rem;
+}
+@media (prefers-color-scheme: dark) {
+  #basecamp-cover-letter img {
+    filter: invert(1);
+  }
+}
+
+/* BC - Work experience */
+.basecamp-work-block {
+  margin: var(--gap-md) auto;
+  position: relative;
+}
+@media (min-width: 700px) {
+  .basecamp-work-block {
+    display: grid;
+    grid-template-columns: 8rem 1fr;
+  }
+}
+.basecamp-work-block time {
+  align-items: center;
+  border-radius: 3px;
+  color: var(--code-text);
+  display: inline-flex;
+  height: 1.7rem;  /* Height of the H2 */
+  white-space: nowrap;
+  width: min-content;
+}
+.basecamp-work-block small {
+  color: var(--text-medium);
+  display: block;
+  font-size: 0.9rem;
+}
+.basecamp-work-link {
+  align-items: center;
+  background: none;
+  border: 1px solid var(--primary-underline);
+  border-radius: 0.25rem;
+  display: flex;
+  font-size: 0.8rem;
+  justify-content: space-between;
+  margin: 0.5rem auto 1rem;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+.basecamp-work-link:hover {
+  border-color: var(--primary);
+}
+.basecamp-work-link img {
+  height: 5rem;
+}
+
+/* BC - Skills & Education */
+#basecamp-skills div,
+#basecamp-education div {
+  margin: var(--gap-sm) auto;
+}
+@media (min-width: 700px) {
+  #basecamp-skills div {
+    display: grid;
+    grid-template-columns: 7rem 1fr;
+  }
+  #basecamp-skills ul {
+    margin: 0;
+  }
+}
+
+/* BC - Post */
+#post-content > .basecamp-project-details {
+  background: var(--code-background);
+  font-size: 0.8rem;
+  margin-top: var(--gap-md);
+  padding: 1.5rem;
+}

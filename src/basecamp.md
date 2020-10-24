@@ -1,7 +1,6 @@
 ---
 layout: layouts/basecamp.njk
 title: Basecamp Senior Designer Application
-description: Hey!
 ---
 
 👋 To Jason, David, and the team at Basecamp,
