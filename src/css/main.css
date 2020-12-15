@@ -8,13 +8,13 @@
   --code-dark-text: #d6d5cc;
   --font-mono: 'LG Mono', Monaco, monospace;
   --font-sans: 'LG', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --gap-sm: 1.75rem;
-  --gap-md: calc(var(--gap-sm) * 2);
-  --max-width-sm: 34rem;
+  --gap-sm: 2rem;
+  --gap-md: 3.5rem;
+  --max-width-sm: 36rem;
   --max-width-md: 40rem;
-  --max-width-lg: 45rem;
-  --primary: rgba(0, 0, 200, 1);
-  --primary-underline: rgba(0, 0, 200, 0.2);
+  --max-width-lg: 48rem;
+  --primary: rgba(0, 0, 205, 1);
+  --primary-underline: rgba(0, 0, 205, 0.2);
   --text: rgba(0, 0, 0, 0.9);
   --text-medium: rgba(0, 0, 0, 0.6);
   --text-light: rgba(0, 0, 0, 0.3);
@@ -99,12 +99,12 @@ html {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
 }
-@media (max-width: 700px) {
+/* @media (max-width: 700px) {
   html { font-size: 1.125rem; }
 }
 @media (min-width: 1600px) {
   html { font-size: 1.375rem; }
-}
+} */
 body {
   background-color: var(--background);
   color: var(--text);
@@ -113,7 +113,7 @@ body {
   font-size: 1rem;
   font-variation-settings: 'wght' 400;
   font-weight: 400;
-  line-height: 1.4;
+  line-height: 1.5rem;
   margin: auto;
   max-width: var(--max-width-lg);
   padding: 0 1rem;
@@ -126,12 +126,12 @@ h1, h2, h3, h4, h5, h6 {
   margin: auto;
 }
 h1 {
-  font-size: 1.8rem;
-  line-height: 1.2;
+  font-size: 1.75rem;
+  line-height: 2rem;
 }
 h2 {
-  font-size: 1.3rem;
-  line-height: 1.3;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 img {
   max-width: 100%;
@@ -165,7 +165,7 @@ main {
 
 /* Header */
 #header {
-  padding: var(--gap-sm) 0 var(--gap-md);
+  padding: var(--gap-sm) 0;
   text-align: center;
 }
 
@@ -182,7 +182,7 @@ main {
 }
 .footer-nav {
   list-style: none;
-  margin: auto auto 0.5rem;
+  margin: auto;
   padding: 0;
 }
 .footer-nav li {
@@ -196,18 +196,18 @@ main {
 
 
 /* Home */
-#home-header {
-  margin-bottom: 8vh;
-  text-align: center;
+#home-main {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--max-width-sm);
 }
 #home-header img {
-  border-radius: 10rem;
-  display: inline-block;
-  width: 10rem;
+  border-radius: 0.5rem;
+  display: block;
+  object-fit: cover;
 }
 #home-content {
-  font-size: 1.3rem;
-  margin-bottom: var(--gap-sm);
+  margin-bottom: 10vh;
 }
 #home-content p:first-of-type {
   margin-top: 0;
@@ -221,11 +221,6 @@ main {
 #home-content a {
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
-}
-@media (min-width: 700px) {
-  #home-content {
-    font-size: 1.5rem;
-  }
 }
 
 
@@ -315,6 +310,7 @@ main {
 #post-content > figure > figcaption {
   color: var(--text-medium);
   font-size: 0.7rem;
+  line-height: 1.25rem;
   margin-top: 0.5rem;
   padding: 0 2rem;
   text-align: center;
@@ -362,7 +358,6 @@ main {
 @media all {
   code {
     font-family: var(--font-mono);
-    font-size: 0.9rem;
   }
   :not(pre) > code {
     background: var(--code-background);
@@ -373,6 +368,7 @@ main {
   #post-content > pre[class*="language-"] {
     background: var(--code-dark-background);
     color: var(--code-dark-text);
+    font-size: inherit;
     hyphens: none;
     line-height: 1.3;
     overflow: auto;

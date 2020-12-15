@@ -30,11 +30,11 @@ In the years since, I’ve found myself returning to The Heavy Edition often. A 
 
 When I visit the site now I think “Wow this song/band/video was awesome, I forgot about this.” I noticed that some bands are still around today, and many are not.
 
-So it goes, I guess.
+So it goes.
 
-But it got me thinking: This was only a couple years, nearly 500 posts, and so many of these bands I just don’t hear about again. And I started thinking about all the bands I didn’t know, from years before I started The Heavy Edition, that were probably damn good (at least to me).
+But it got me thinking: This was only a couple years, nearly 500 posts, and so many of these bands I just never hear about again. And I started thinking about all the bands I didn’t know, from years before I started The Heavy Edition and years after I stopped, that were probably damn good and you’d never hear anymore.
 
-I wonder how many fucking awesome bands in the 70s and 80s are just lost forever… damn.
+How many fucking awesome bands in the 70s and 80s are just lost forever? Damn…
 
 It’s easier now than ever before for anyone to make music, and distributing and getting your name out there with social networks and apps like Rdio and Spotify makes it even viable, but breaking that last wall is still a challenge. That wall of making it into someone’s heavy rotation, of reaching a fan to the point that they pay money to see you in concert or buy your merch. *That wall of making people remember you after they heard you only once or twice*.
 
