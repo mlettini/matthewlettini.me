@@ -66,6 +66,8 @@ a {
   flex-direction: column;
   justify-content: space-between;
   left: 0;
+  margin: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  overflow: auto;
   padding-bottom: 16px;
   position: fixed;
   top: 0;
@@ -74,9 +76,11 @@ a {
 }
 #left-nav .logo {
   align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   color: var(--orange-nav-color);
   display: flex;
   height: 56px;
+  margin-bottom: 16px;
   padding: 0 20px;
 }
 #left-nav nav {
@@ -142,57 +146,30 @@ a {
 
 
 /* Mobile Footer Nav */
-#mobile-footer-nav {
+.mobile-menu-button {
+  align-items: center;
   background: var(--orange-nav-background);
-  bottom: 0;
+  border-radius: 100px;
+  bottom: 16px;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
-  height: auto;
+  color: var(--orange-nav-color);
   display: none;
   flex-direction: column;
-  justify-content: space-between;
-  left: 0;
-  position: fixed;
-  width: 100vw;
-  z-index: 1;
-}
-#mobile-footer-nav .logo {
-  align-items: center;
-  color: var(--orange-nav-color);
-  display: flex;
-  height: 56px;
-  padding: 0 20px;
-}
-#mobile-footer-nav nav {
-  display: flex;
-  justify-content: space-around;
-}
-#mobile-footer-nav nav > a {
-  align-items: center;
-  color: var(--orange-nav-color);
-  display: flex;
-  flex-direction: column;
   font-size: 13px;
-  padding: 8px 0;
+  height: 60px;
+  justify-content: center;
+  left: 16px;
+  margin-bottom: env(safe-area-inset-bottom);
+  margin-left: env(safe-area-inset-bottom);
+  position: fixed;
   text-decoration: none;
   transition: 100ms;
-  width: 100%;
+  width: 60px;
+  z-index: 1;
 }
-#mobile-footer-nav nav > a:hover,
-#mobile-footer-nav nav > a.is-active {
+.mobile-menu-button:hover {
   background: var(--orange-nav-highlight);
   opacity: 1;
-}
-@media (prefers-color-scheme: dark) {
-  #mobile-footer-nav nav > a:hover,
-  #mobile-footer-nav nav > a.is-active {
-    color: #fff;
-    box-shadow: inset 0 3px 0 var(--orange);
-  }
-}
-#mobile-footer-nav nav > a > img {
-  border-radius: 24px;
-  height: 24px;
-  width: 24px;
 }
 
 
@@ -329,9 +306,6 @@ main {
 
 /* Responsive Test */
 @media (max-width: 1000px) {
-  :root {
-    --left-nav-width: 100vw;
-  }
   body {
     margin-left: 0;
   }
@@ -339,8 +313,8 @@ main {
     display: none;
   }
   #left-nav .logo,
-  #mobile-footer-nav,
-  #left-nav nav > a.close-menu {
+  #left-nav nav > a.close-menu,
+  .mobile-menu-button {
     display: flex;
   }
   #top-nav,
@@ -350,5 +324,10 @@ main {
   }
   main {
     margin-bottom: 100px;
+  }
+}
+@media (max-width: 600px) {
+  :root {
+    --left-nav-width: 100vw;
   }
 }
