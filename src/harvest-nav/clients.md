@@ -5,7 +5,7 @@ title: Clients Nav
 
 <header id="top-nav">
   <nav>
-    <a href="#" class="is-active">Overview</a>
+    <a href="#" class="is-active">Manage clients</a>
     <a href="#">Manage contacts</a>
   </nav>
 </header>

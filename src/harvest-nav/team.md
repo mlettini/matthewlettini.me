@@ -5,7 +5,7 @@ title: Team Nav
 
 <header id="top-nav">
   <nav>
-    <a href="#" class="is-active">Overview</a>
+    <a href="#" class="is-active">Manage people</a>
     <a href="#">Manage roles</a>
   </nav>
 </header>
