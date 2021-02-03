@@ -12,11 +12,11 @@ title: Projects Nav
 
 <main>
   <div id="action-bar">
-    <div>
-      <button>New project</button>
-      <button>Import</button>
-      <button>Export</button>
+    <div class="flex">
+      <button class="button primary">New project</button>
+      <button class="button">Import</button>
+      <button class="button">Export</button>
     </div>
-    <input type="text" placeholder="Find a project…">
+    <input class="input" type="text" placeholder="Find a project…">
   </div>
 </main>

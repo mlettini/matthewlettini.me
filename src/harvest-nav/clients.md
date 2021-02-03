@@ -12,11 +12,11 @@ title: Clients Nav
 
 <main>
   <div id="action-bar">
-    <div>
-      <button>New client</button>
-      <button>Import</button>
-      <button>Export</button>
+    <div class="flex">
+      <button class="button primary">New client</button>
+      <button class="button">Import</button>
+      <button class="button">Export</button>
     </div>
-    <input type="text" placeholder="Find a client…">
+    <input class="input" type="text" placeholder="Find a client…">
   </div>
 </main>

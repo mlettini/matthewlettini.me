@@ -14,7 +14,7 @@ title: Invoices Nav
 
 <main>
   <div id="action-bar">
-    <button>New invoice</button>
-    <input type="text" placeholder="Find an invoice…">
+    <button class="button primary">New invoice</button>
+    <input class="input" type="text" placeholder="Find an invoice…">
   </div>
 </main>

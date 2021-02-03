@@ -13,6 +13,6 @@ title: Expenses Nav
 
 <main>
   <div id="action-bar">
-    <button>New expense</button>
+    <button class="button primary">New expense</button>
   </div>
 </main>

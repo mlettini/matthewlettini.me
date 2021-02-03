@@ -7,6 +7,6 @@ title: Time Nav
   <nav>
     <a href="#" class="is-active">Track time</a>
     <a href="#">Approve time</a>
-    <a href="#">Reminders</a>
+    <a href="#">Configure reminders</a>
   </nav>
 </header>

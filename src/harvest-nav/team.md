@@ -12,11 +12,11 @@ title: Team Nav
 
 <main>
   <div id="action-bar">
-    <div>
-      <button>Invite teammate</button>
-      <button>Import</button>
-      <button>Export</button>
+    <div class="flex">
+      <button class="button primary">Invite teammate</button>
+      <button class="button">Import</button>
+      <button class="button">Export</button>
     </div>
-    <input type="text" placeholder="Find a person…">
+    <input class="input" type="text" placeholder="Find a person…">
   </div>
 </main>
