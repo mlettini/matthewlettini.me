@@ -1,6 +1,6 @@
 ---
 layout: layouts/harvest-nav.njk
-title: Expenses Nav
+title: Settings Nav
 ---
 
 <header id="top-nav">
