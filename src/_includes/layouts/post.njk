@@ -1,6 +1,11 @@
 {% extends 'layouts/base.njk' %}
 {% set pageType = 'post' %}
 
+{% block header_content %}
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="/css/posts.css">
+{% endblock %}
+
 {% block content %}
   <header id="header">
     🚧 Area under-construction 🚧
@@ -19,7 +24,7 @@
     </article>
   </main>
 
-  <section id="post-nav">
+  <section id="post-nav" class="do-not-print">
     <nav>
       <ul class="post-nav">
         {% if prevPost.url %}
@@ -39,7 +44,7 @@
   </section>
 
   <footer id="footer">
-    <nav>
+    <nav class="do-not-print">
       <ul class="footer-nav">
         <li><a href="/">Home</a></li>
         <li><a href="/posts">All posts</a></li>

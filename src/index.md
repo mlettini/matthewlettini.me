@@ -4,10 +4,12 @@ title: Home
 description: Brooklyn-based product designer building great things at Harvest.
 ---
 
-[👋](mailto:mlettini@hey.com) Hey, I’m <strong>Matthew Lettini</strong>, a Senior Product Designer working remotely from Brooklyn, NYC. My goal is to make life easier for people, one pixel at a time.
+[👋](mailto:mlettini@hey.com) Hey there!
 
-For the past decade, I’ve been doing this alongside a team of wonderful humans building great things at [Harvest](https://getharvest.com). Highlights of my work include new timesheet and report tools, the creation of [Forecast](https://getharvest.com/forecast), designing our first Mac and iOS apps, simplified onboarding and offboarding flows, and [Chosen](https://github.com/harvesthq/chosen).
+My name is **Matthew Lettini** and I’m a product designer working remotely from Brooklyn, NYC. My goal is to make life easier for people, one pixel at a time.
 
-Beyond the desk I share a love of [photography](https://photos.matthewlettini.me), scary movies, basketball, karaoke, dungeon crawling, playing drums and guitar, cognac and tiki drinks, hiking, the great outdoors, and apparently comma-separated lists.
+For the past decade, I’ve been helping build a world-class time tracking product with the team at [Harvest](https://getharvest.com). I’ve worked on just about everything, but highlights include redesigning the core timesheet and reporting suite, leading the creation of [Forecast](https://getharvest.com/forecast), designing our first Mac and iPhone apps, and [Chosen](https://github.com/harvesthq/chosen).
 
-My social presence is lacking, but you can find me @mlettini in the usual places: [Twitter](https://twitter.com/mlettini), [Instagram](https://instagram.com/mlettini), [Spotify](https://open.spotify.com/user/mlettini), and [Github](https://github.com/mlettini).
+Beyond the desk I’m usually [behind a camera](https://photos.matthewlettini.me), behind a drumset, on a basketball court, jamming at karaoke, or min-maxing a new D&D character.
+
+My social presence is lacking but you can usually find me @mlettini in places like [Twitter](https://twitter.com/mlettini), [Instagram](https://instagram.com/mlettini), [Spotify](https://open.spotify.com/user/mlettini), [Github](https://github.com/mlettini), and elsewhere. You can [say hey here](mailto:mlettini@hey.com).

@@ -6,9 +6,7 @@ tags:
   - development
 ---
 
-This post was originally written for [Harvest’s Tech Time developer blog](http://techtime.getharvest.com/blog/in-defense-of-rem-units). Some of what’s written here hasn’t aged well, but I still use rem units and you should too!
-
----
+> This post was originally written for [Harvest’s Tech Time developer blog](http://techtime.getharvest.com/blog/in-defense-of-rem-units) back in 2013. Some of what’s written here hasn’t aged well, but I still use rem units and you should too!
 
 Over the past couple weeks, I’ve had the opportunity to design and build [Harvest’s 2012 Year In Work](http://getharvest.com/2012-year-in-work?utm_source=techtime), which afforded me a chance to try out something new: the **rem unit** of measurement.
 
@@ -16,10 +14,12 @@ You’re probably already familiar with [em units](http://www.w3.org/TR/css3-val
 of 2em, and the div it’s inside of has a `font-size` of 10px, then the effective `font-size` of the paragraph is 10px × 2em, which is 20px.
 
 ```css
+html {
+  font-size: 16px; }
 .parent {
   font-size: 10px; }
 .parent p.child {
-  font-size: 2em; /* outputs to 20px */ }
+  font-size: 2em; } /* outputs to 20px */
 ```
 
 “Rem” stands for “root em”. Similar to em units, they calculate size based on an ancestor element’s `font-size`, except rem units always calculate against the html/root element’s base size. So if the html element has a `font-size` of 16px, then a paragraph with `font-size` of 2rem will always be 32px, regardless of the parent div or any other element.
@@ -30,7 +30,7 @@ html {
 .parent {
   font-size: 10px; }
 .parent p.child {
-  font-size: 2rem; /* relative to html - outputs to 32px */ }
+  font-size: 2rem; } /* outputs to 32px */
 ```
 
 This is incredibly compelling, particularly because…
@@ -77,7 +77,7 @@ html
 
 While this isn’t appropriate for every design, being able to set a base size for your entire layout for every breakpoint can be incredibly useful.
 
-> Pro-tip: While I used pixel values, you could use % values as well.
+*Note: While I used pixel values, you could use % values as well.*
 
 
 ## 2. They’re great for rapid prototyping
@@ -88,14 +88,7 @@ Set the html `font-size` to 16px, or whatever you want, and then quickly estimat
 
 This is how I designed the Year In Work actually… there were no layout PSDs.
 
-> Pro-tip: Just like with ems, you’ll find you need to use
-> fractions like 2.25 for some values. I always stuck to .25, .5, or .75
-> when not using a whole number, since my base size is 16px. However, as
-> you can see in the screenshot above, the base size can change to 13px,
-> which at 2.25rem is 29.25px. Since you can’t have a quarter pixel,
-> some browsers render this as 29px, others as 30px. I found this to be
-> a minor trade-off (but something to keep in mind) for the ease of the
-> responsive layout that I explained above.
+*Note: Just like with ems, you’ll find you need to use fractions like 2.25 for some values. I always stuck to .25, .5, or .75 when not using a whole number, since my base size is 16px. However, as you can see in the screenshot above, the base size can change to 13px, which at 2.25rem is 29.25px. Since you can’t have a quarter pixel, some browsers render this as 29px, others as 30px. I found this to be a minor trade-off (but something to keep in mind) for the ease of the responsive layout that I explained above.*
 
 
 ## 3. All sizes should be in rem units
@@ -104,10 +97,7 @@ Some developers prefer a mix of pixels, percentages, and ems for different style
 
 This doesn’t work well when using rem units, though. Using rems on only some styles doesn’t offer any advantage – you might as well just use pixels. You have to commit to replacing all pixel values with rem units if you want the responsive advantages.
 
-> Pro-tip: You can use ems and rems together, though. Check out
-> [the h3 on slide 3](http://cl.ly/image/2R0j181Y3W3r) of The Year In
-> Work – I didn’t feel like calculating the size of the “21”, so I gave
-> it a font-size of 1.25em.
+*Note: You can use ems and rems together, though. Check out [the h3 on slide 3](http://cl.ly/image/2R0j181Y3W3r) of The Year In Work – I didn’t feel like calculating the size of the “21”, so I gave it a font-size of 1.25em.*
 
 
 ## 4. They can influence your design style
