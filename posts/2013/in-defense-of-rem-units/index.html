@@ -22,7 +22,9 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Posts">
     
-    
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="/css/posts.css">
+
   </head>
   <body id="post">
 
@@ -39,14 +41,15 @@
       </header>
 
       <section id="post-content">
-        <p>This post was originally written for <a href="http://techtime.getharvest.com/blog/in-defense-of-rem-units">Harvest’s Tech Time developer blog</a>. Some of what’s written here hasn’t aged well, but I still use rem units and you should too!</p>
-<hr>
+        <blockquote>
+<p>This post was originally written for <a href="http://techtime.getharvest.com/blog/in-defense-of-rem-units">Harvest’s Tech Time developer blog</a> back in 2013. Some of what’s written here hasn’t aged well, but I still use rem units and you should too!</p>
+</blockquote>
 <p>Over the past couple weeks, I’ve had the opportunity to design and build <a href="http://getharvest.com/2012-year-in-work?utm_source=techtime">Harvest’s 2012 Year In Work</a>, which afforded me a chance to try out something new: the <strong>rem unit</strong> of measurement.</p>
 <p>You’re probably already familiar with <a href="http://www.w3.org/TR/css3-values/#em-unit">em units</a> – they’ve been a common feature of CSS for the past decade – but a crash course: elements specified using em units are sized relative to the <code>font-size</code> of their parent element. For example, if a paragraph has a specified <code>font-size</code>
 of 2em, and the div it’s inside of has a <code>font-size</code> of 10px, then the effective <code>font-size</code> of the paragraph is 10px × 2em, which is 20px.</p>
-<pre class="language-css"><code class="language-css"><span class="token selector">.parent</span> <span class="token punctuation">{</span><br>  <span class="token property">font-size</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span> <span class="token punctuation">}</span><br><span class="token selector">.parent p.child</span> <span class="token punctuation">{</span><br>  <span class="token property">font-size</span><span class="token punctuation">:</span> 2em<span class="token punctuation">;</span> <span class="token comment">/* outputs to 20px */</span> <span class="token punctuation">}</span></code></pre>
+<pre class="language-css"><code class="language-css"><span class="token selector">html</span> <span class="token punctuation">{</span><br>  <span class="token property">font-size</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span> <span class="token punctuation">}</span><br><span class="token selector">.parent</span> <span class="token punctuation">{</span><br>  <span class="token property">font-size</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span> <span class="token punctuation">}</span><br><span class="token selector">.parent p.child</span> <span class="token punctuation">{</span><br>  <span class="token property">font-size</span><span class="token punctuation">:</span> 2em<span class="token punctuation">;</span> <span class="token punctuation">}</span> <span class="token comment">/* outputs to 20px */</span></code></pre>
 <p>“Rem” stands for “root em”. Similar to em units, they calculate size based on an ancestor element’s <code>font-size</code>, except rem units always calculate against the html/root element’s base size. So if the html element has a <code>font-size</code> of 16px, then a paragraph with <code>font-size</code> of 2rem will always be 32px, regardless of the parent div or any other element.</p>
-<pre class="language-css"><code class="language-css"><span class="token selector">html</span> <span class="token punctuation">{</span><br>  <span class="token property">font-size</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span> <span class="token punctuation">}</span><br><span class="token selector">.parent</span> <span class="token punctuation">{</span><br>  <span class="token property">font-size</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span> <span class="token punctuation">}</span><br><span class="token selector">.parent p.child</span> <span class="token punctuation">{</span><br>  <span class="token property">font-size</span><span class="token punctuation">:</span> 2rem<span class="token punctuation">;</span> <span class="token comment">/* relative to html - outputs to 32px */</span> <span class="token punctuation">}</span></code></pre>
+<pre class="language-css"><code class="language-css"><span class="token selector">html</span> <span class="token punctuation">{</span><br>  <span class="token property">font-size</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span> <span class="token punctuation">}</span><br><span class="token selector">.parent</span> <span class="token punctuation">{</span><br>  <span class="token property">font-size</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span> <span class="token punctuation">}</span><br><span class="token selector">.parent p.child</span> <span class="token punctuation">{</span><br>  <span class="token property">font-size</span><span class="token punctuation">:</span> 2rem<span class="token punctuation">;</span> <span class="token punctuation">}</span> <span class="token comment">/* outputs to 32px */</span></code></pre>
 <p>This is incredibly compelling, particularly because…</p>
 <h2>I try to avoid em units</h2>
 <p>Em units are useful for a variety of reasons, the most important being that they’re <a href="http://trentwalton.com/2013/01/07/flexible-foundations/">flexible</a> and <a href="http://blog.cloudfour.com/the-ems-have-it-proportional-media-queries-ftw/">scalable</a>. You can set the highest parent element, html, to have a relative <code>font-size</code> specified with an em value or a percentage, and it will calculate a specific value based on the browser’s default <code>font-size</code>. This is great for printed documents (the typical default browser print size is 12px vs. 16px for screen display), and it allows your site to scale with the user’s preference, especially in older browsers that have a harder time with page/text zoom.</p>
@@ -60,32 +63,16 @@ of 2em, and the div it’s inside of has a <code>font-size</code> of 10px, then 
 <p>Since all rem units are relative to a single number – the html <code>font-size</code> – you need only set the breakpoints on this number for a simple responsive layout. Here’s the actual code used in the Year In Work’s <a href="http://sass-lang.com/">Sass</a> file:</p>
 <pre class="language-scss"><code class="language-scss">html<br>  <span class="token property">font-size</span><span class="token punctuation">:</span> 16px<br>  @media screen <span class="token operator">and</span> <span class="token punctuation">(</span><span class="token property">min-width</span><span class="token punctuation">:</span> 1600px<span class="token punctuation">)</span>  <span class="token comment">// Large Monitors</span><br>    <span class="token property">font-size</span><span class="token punctuation">:</span> 18px<br>  @media screen <span class="token operator">and</span> <span class="token punctuation">(</span><span class="token property">min-width</span><span class="token punctuation">:</span> 1400px<span class="token punctuation">)</span>  <span class="token comment">// Small Laptops</span><br>    <span class="token property">font-size</span><span class="token punctuation">:</span> 14px<br>  @media screen <span class="token operator">and</span> <span class="token punctuation">(</span><span class="token property">min-width</span><span class="token punctuation">:</span> 1100px<span class="token punctuation">)</span>  <span class="token comment">// Tablet Landscape</span><br>    <span class="token property">font-size</span><span class="token punctuation">:</span> 13px<br>  @media screen <span class="token operator">and</span> <span class="token punctuation">(</span><span class="token property">min-width</span><span class="token punctuation">:</span> 800px<span class="token punctuation">)</span>   <span class="token comment">// Tablet Portrait</span><br>    <span class="token property">font-size</span><span class="token punctuation">:</span> 12px<br>  @media screen <span class="token operator">and</span> <span class="token punctuation">(</span><span class="token property">min-width</span><span class="token punctuation">:</span> 500px<span class="token punctuation">)</span>   <span class="token comment">// Mobile Landscape</span><br>    <span class="token property">font-size</span><span class="token punctuation">:</span> 7px<br>  @media screen <span class="token operator">and</span> <span class="token punctuation">(</span><span class="token property">min-width</span><span class="token punctuation">:</span> 400px<span class="token punctuation">)</span>   <span class="token comment">// Mobile Portrait</span><br>    <span class="token property">font-size</span><span class="token punctuation">:</span> 5px</code></pre>
 <p>While this isn’t appropriate for every design, being able to set a base size for your entire layout for every breakpoint can be incredibly useful.</p>
-<blockquote>
-<p>Pro-tip: While I used pixel values, you could use % values as well.</p>
-</blockquote>
+<p><em>Note: While I used pixel values, you could use % values as well.</em></p>
 <h2>2. They’re great for rapid prototyping</h2>
 <p>I’ve signed on to the theory of prototyping a design directly in HTML/CSS, and avoiding Photoshop altogether (sometimes). When experimenting with a design right within the browser, the last thing you want to worry about is getting the sizes exactly right.</p>
 <p>Set the html <code>font-size</code> to 16px, or whatever you want, and then quickly estimate the sizes for everything else and run with them. The h1 is probably 2.5x that size, h2 probably 2x, h3 probably 1.75x… etc. It’s fast. While you can use em units for this as well, using rem units avoids the issue of having to resize the h3 after putting it inside a div with a <code>font-size</code> on it – which is more likely as you tend to move things around quickly during rapid prototyping.</p>
 <p>This is how I designed the Year In Work actually… there were no layout PSDs.</p>
-<blockquote>
-<p>Pro-tip: Just like with ems, you’ll find you need to use
-fractions like 2.25 for some values. I always stuck to .25, .5, or .75
-when not using a whole number, since my base size is 16px. However, as
-you can see in the screenshot above, the base size can change to 13px,
-which at 2.25rem is 29.25px. Since you can’t have a quarter pixel,
-some browsers render this as 29px, others as 30px. I found this to be
-a minor trade-off (but something to keep in mind) for the ease of the
-responsive layout that I explained above.</p>
-</blockquote>
+<p><em>Note: Just like with ems, you’ll find you need to use fractions like 2.25 for some values. I always stuck to .25, .5, or .75 when not using a whole number, since my base size is 16px. However, as you can see in the screenshot above, the base size can change to 13px, which at 2.25rem is 29.25px. Since you can’t have a quarter pixel, some browsers render this as 29px, others as 30px. I found this to be a minor trade-off (but something to keep in mind) for the ease of the responsive layout that I explained above.</em></p>
 <h2>3. All sizes should be in rem units</h2>
 <p>Some developers prefer a mix of pixels, percentages, and ems for different styles on different elements, all within the same page. Personally, I think this makes development confusing, but it can work.</p>
 <p>This doesn’t work well when using rem units, though. Using rems on only some styles doesn’t offer any advantage – you might as well just use pixels. You have to commit to replacing all pixel values with rem units if you want the responsive advantages.</p>
-<blockquote>
-<p>Pro-tip: You can use ems and rems together, though. Check out
-<a href="http://cl.ly/image/2R0j181Y3W3r">the h3 on slide 3</a> of The Year In
-Work – I didn’t feel like calculating the size of the “21”, so I gave
-it a font-size of 1.25em.</p>
-</blockquote>
+<p><em>Note: You can use ems and rems together, though. Check out <a href="http://cl.ly/image/2R0j181Y3W3r">the h3 on slide 3</a> of The Year In Work – I didn’t feel like calculating the size of the “21”, so I gave it a font-size of 1.25em.</em></p>
 <h2>4. They can influence your design style</h2>
 <p>Sometimes you need an element to be only 3px – this translates to 0.1875rem… not very conducive to simplified design code. However, you can allow this to influence your design, and decide to just use 0.2rem (or 0.25rem, like I mentioned above). Often the difference isn’t important.</p>
 <p>Or, if that 3px is a border-radius, maybe you decide to remove it entirely. Those are design decisions you have to make. I increasingly found that I prefer numbers to end in 0 or 5, or at least an even number. If an element was 9rem wide, I would just make it 10rem and see how that felt. The majority of the time it worked out just fine, and psychologically I felt like my code and design was clearer, cleaner, and easier to work with.</p>
@@ -106,7 +93,7 @@ it a font-size of 1.25em.</p>
     </article>
   </main>
 
-  <section id="post-nav">
+  <section id="post-nav" class="do-not-print">
     <nav>
       <ul class="post-nav">
         
@@ -126,7 +113,7 @@ it a font-size of 1.25em.</p>
   </section>
 
   <footer id="footer">
-    <nav>
+    <nav class="do-not-print">
       <ul class="footer-nav">
         <li><a href="/">Home</a></li>
         <li><a href="/posts">All posts</a></li>

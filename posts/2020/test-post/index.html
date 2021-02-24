@@ -22,7 +22,9 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Posts">
     
-    
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="/css/posts.css">
+
   </head>
   <body id="post">
 
@@ -42,11 +44,10 @@
         <p>I’m not sure how much I’ll actually write on here, but I’m creating this blog post as a way to test the design while I figure out Eleventy. This post should contain everything I’ll need for a future blog post, including headers, lists, blockquotes, code, photos, etc.</p>
 <p><em>Here’s an italicised sentence.</em> <strong>Here’s a bolded sentence.</strong> <a href="">Here’s a link.</a> <code>Here’s some inline code</code>. Isn’t this fun?</p>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
-<h1>Header one</h1>
+<hr>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
 <h2>Header two</h2>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
-<h3>Header three</h3>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
 <ul>
 <li>Lorem ipsum dolor sit amet.</li>
@@ -63,7 +64,7 @@
 </ol>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
 <blockquote>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+<p>Blockquotes are not supported yet... Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
 </blockquote>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
 <figure>
@@ -84,14 +85,13 @@
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
 <pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">name</span><span class="token punctuation">:</span> Eleventy Build<br><br><span class="token key atrule">on</span><span class="token punctuation">:</span><br>  <span class="token key atrule">push</span><span class="token punctuation">:</span><br>    <span class="token key atrule">branches</span><span class="token punctuation">:</span><br>      <span class="token punctuation">-</span> master<br><br><span class="token key atrule">jobs</span><span class="token punctuation">:</span><br>  <span class="token key atrule">deploy</span><span class="token punctuation">:</span><br>    <span class="token key atrule">runs-on</span><span class="token punctuation">:</span> ubuntu<span class="token punctuation">-</span><span class="token number">18.04</span><br>    <span class="token key atrule">steps</span><span class="token punctuation">:</span><br>      <span class="token punctuation">-</span> <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/checkout@v2<br><br>      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Setup Node<br>        <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/setup<span class="token punctuation">-</span>node@v1<br>        <span class="token key atrule">with</span><span class="token punctuation">:</span><br>          <span class="token key atrule">node-version</span><span class="token punctuation">:</span> ’10.x’<br><br>      <span class="token punctuation">-</span> <span class="token key atrule">run</span><span class="token punctuation">:</span> npm ci<br><br>      <span class="token punctuation">-</span> <span class="token key atrule">run</span><span class="token punctuation">:</span> npm run build<br><br>      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Deploy<br>        <span class="token key atrule">uses</span><span class="token punctuation">:</span> peaceiris/actions<span class="token punctuation">-</span>gh<span class="token punctuation">-</span>pages@v3<br>        <span class="token key atrule">with</span><span class="token punctuation">:</span><br>          <span class="token key atrule">deploy_key</span><span class="token punctuation">:</span> $<span class="token punctuation">{</span><span class="token punctuation">{</span> secrets.ACTIONS_DEPLOY_KEY <span class="token punctuation">}</span><span class="token punctuation">}</span><br>          <span class="token key atrule">publish_dir</span><span class="token punctuation">:</span> ./dist</code></pre>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
-<hr>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
 
       </section>
     </article>
   </main>
 
-  <section id="post-nav">
+  <section id="post-nav" class="do-not-print">
     <nav>
       <ul class="post-nav">
         
@@ -106,7 +106,7 @@
   </section>
 
   <footer id="footer">
-    <nav>
+    <nav class="do-not-print">
       <ul class="footer-nav">
         <li><a href="/">Home</a></li>
         <li><a href="/posts">All posts</a></li>

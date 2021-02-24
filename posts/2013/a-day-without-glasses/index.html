@@ -22,7 +22,9 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Posts">
     
-    
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="/css/posts.css">
+
   </head>
   <body id="post">
 
@@ -51,7 +53,7 @@
     </article>
   </main>
 
-  <section id="post-nav">
+  <section id="post-nav" class="do-not-print">
     <nav>
       <ul class="post-nav">
         
@@ -66,7 +68,7 @@
   </section>
 
   <footer id="footer">
-    <nav>
+    <nav class="do-not-print">
       <ul class="footer-nav">
         <li><a href="/">Home</a></li>
         <li><a href="/posts">All posts</a></li>

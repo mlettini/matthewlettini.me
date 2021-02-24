@@ -1,4 +1,7 @@
 /* BC - Base styles */
+.bordered {
+  border: 1px solid var(--border-color);
+}
 #basecamp {
   max-width: var(--max-width-md);
 }
