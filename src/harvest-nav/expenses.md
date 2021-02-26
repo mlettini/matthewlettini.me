@@ -14,5 +14,6 @@ title: Expenses Nav
 <main>
   <div id="action-bar">
     <button class="button primary">New expense</button>
+    <button class="button">Teammates</button>
   </div>
 </main>

@@ -5,7 +5,7 @@ title: Profile Nav
 
 <header id="top-nav">
   <nav>
-    <a href="#" class="is-active">Basic Info</a>
+    <a href="#" class="is-active">Basic info</a>
     <a href="#">Assigned projects</a>
     <a href="#">Assigned people</a>
     <a href="#">Notifications</a>
