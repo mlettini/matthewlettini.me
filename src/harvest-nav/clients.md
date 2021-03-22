@@ -11,11 +11,11 @@ title: Clients Nav
 </header>
 
 <main>
-  <div id="action-bar">
+  <div class="flex justify-space-between">
     <div class="flex">
-      <button class="button primary">New client</button>
-      <button class="button">Import</button>
-      <button class="button">Export</button>
+      <button class="button primary mr-4">New client</button>
+      <button class="button mr-4">Import</button>
+      <button class="button mr-4">Export</button>
     </div>
     <input class="input" type="text" placeholder="Find a client…">
   </div>

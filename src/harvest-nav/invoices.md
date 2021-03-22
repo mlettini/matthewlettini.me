@@ -12,10 +12,10 @@ title: Invoices Nav
 </header>
 
 <main>
-  <div id="action-bar">
+  <div class="flex justify-space-between">
     <button class="button primary">New invoice</button>
     <div class="flex">
-      <button class="button">Configure</button>
+      <button class="button mr-4">Configure</button>
       <input class="input" type="text" placeholder="Find an invoice…">
     </div>
   </div>
