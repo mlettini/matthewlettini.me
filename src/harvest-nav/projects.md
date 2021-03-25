@@ -13,10 +13,27 @@ title: Projects Nav
 <main>
   <div class="flex justify-space-between">
     <div class="flex">
-      <button class="button primary mr-4">New project</button>
+      <button class="button primary mr-4">✚ New project</button>
       <button class="button mr-4">Import</button>
       <button class="button mr-4">Export</button>
+      <button class="button mr-4">Archived projects</button>
     </div>
-    <input class="input" type="text" placeholder="Find a project…">
+    <div class="flex">
+      <input class="input" type="text" placeholder="Find a projects…">
+    </div>
+  </div>
+
+  <hr class="mt-16 mb-24">
+
+  <div class="flex justify-space-between">
+    <div class="flex">
+      <div class="button-group">
+        <button class="button"><span>View:</span> Active projects (50) &darr;</button>
+      </div>
+    </div>
+    <div class="flex">
+      <button class="button ml-4"><span>Client:</span>Apple Computers &darr;</button>
+      <button class="button ml-4"><span>Managed by:</span> Daniel M. &darr;</button>
+    </div>
   </div>
 </main>
