@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Clients Nav • Matthew Lettini</title>
+    <title>Clients • Matthew Lettini</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -97,7 +97,7 @@
             <span>Team</span>
           </a>
           <hr>
-          <a href="/harvest-nav/settings">
+          <a href="/harvest-nav/settings" class="">
             <svg width="24" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M18.5632 6.1875H3.43817C3.05848 6.1875 2.75067 6.4953 2.75067 6.875V17.875C2.75067 18.2547 3.05848 18.5625 3.43817 18.5625H18.5632C18.9429 18.5625 19.2507 18.2547 19.2507 17.875V6.875C19.2507 6.4953 18.9429 6.1875 18.5632 6.1875Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14.4375 18.5625V4.125C14.4375 3.94266 14.3651 3.7678 14.2361 3.63886C14.1072 3.50993 13.9323 3.4375 13.75 3.4375H8.25C8.06766 3.4375 7.8928 3.50993 7.76386 3.63886C7.63493 3.7678 7.5625 3.94266 7.5625 4.125V18.5625" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -133,17 +133,33 @@
     <a href="#">Manage contacts</a>
   </nav>
 </header>
-<main>
+<main class="narrow">
   <div class="flex justify-space-between">
     <div class="flex">
-      <button class="button primary mr-4">✚ New client</button>
-      <button class="button mr-4">Import</button>
-      <button class="button mr-4">Export</button>
-      <button class="button mr-4">Archived clients</button>
+      <h1>Clients</h1>
+      <button class="button primary ml-8">+ New client</button>
     </div>
-    <input class="input" type="text" placeholder="Find a client…">
+    <div class="flex">
+      <button class="button">Import</button>
+      <button class="button">Archived clients</button>
+      <input class="input" type="text" placeholder="Find a client…">
+    </div>
   </div>
-  <hr class="mt-16 mb-24">
+  <hr class="mt-16 mb-16">
+  <div class="flex justify-space-between">
+    <div class="flex">
+      <button class="button button-sm">+ New contact</button>
+    </div>
+    <div class="flex">
+      <small class="mr-4">Page 1 of 4</small>
+      <div class="button-group">
+        <button class="button button-sm is-disabled">&larr;</button>
+        <button class="button button-sm">&rarr;</button>
+      </div>
+      <button class="button button-sm">Filter by currency &darr;</button>
+      <button class="button button-sm">Export &darr;</button>
+    </div>
+  </div>
 </main>
 
   </body>
