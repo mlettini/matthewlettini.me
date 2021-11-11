@@ -1,6 +1,6 @@
 ---
 layout: layouts/harvest-nav.njk
-title: Schedule Nav
+title: Schedule
 ---
 
 <header id="top-nav">

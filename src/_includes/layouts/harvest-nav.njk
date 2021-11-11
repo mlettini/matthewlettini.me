@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>{% if (pageType) == 'home' %}{{ site.authorName }} • Product Designer • NYC{% else %}{{ title }} • {{ site.authorName }}{% endif %}</title>
+    <title>{{ title }} • {{ site.authorName }}</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -27,14 +27,14 @@
           </svg>
         </div>
         <nav>
-          <a href="/harvest-nav/time" class="{% if title == 'Time Nav' %}is-active{% endif %}">
+          <a href="/harvest-nav/time" class="{% if title == 'Time' %}is-active{% endif %}">
             <svg width="24" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M11 19.25C15.5563 19.25 19.25 15.5563 19.25 11C19.25 6.44365 15.5563 2.75 11 2.75C6.44365 2.75 2.75 6.44365 2.75 11C2.75 15.5563 6.44365 19.25 11 19.25Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"/>
               <path d="M11 6.1875V11H15.8125" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
             <span>Time</span>
           </a>
-          <a href="/harvest-nav/expenses" class="{% if title == 'Expenses Nav' %}is-active{% endif %}">
+          <a href="/harvest-nav/expenses" class="{% if title == 'Expenses' %}is-active{% endif %}">
             <svg width="24" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M7.21875 2.75V6.1875" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M7.21875 9.96875V19.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -43,7 +43,7 @@
               </svg>
             <span>Expenses</span>
           </a>
-          <a href="/harvest-nav/invoices" class="{% if title == 'Invoices Nav' %}is-active{% endif %}">
+          <a href="/harvest-nav/invoices" class="{% if title == 'Invoices' %}is-active{% endif %}">
             <svg width="24" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M6.53125 8.9375H15.4688" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M6.53125 11.6875H15.4688" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -51,7 +51,7 @@
             </svg>
             <span>Invoices</span>
           </a>
-          <a href="/harvest-nav/estimates" class="{% if title == 'Estimates Nav' %}is-active{% endif %}">
+          <a href="/harvest-nav/estimates" class="{% if title == 'Estimates' %}is-active{% endif %}">
             <svg width="24" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M6.53125 8.9375H15.4688" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M6.53125 11.6875H15.4688" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -59,7 +59,7 @@
             </svg>
             <span>Estimates</span>
           </a>
-          <a href="/harvest-nav/schedule" class="{% if title == 'Schedule Nav' %}is-active{% endif %}">
+          <a href="/harvest-nav/schedule" class="{% if title == 'Schedule' %}is-active{% endif %}">
             <svg width="24" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M6.53125 8.9375H15.4688" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M6.53125 11.6875H15.4688" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -68,28 +68,28 @@
             <span>Schedule</span>
           </a>
           <hr>
-          <a href="/harvest-nav/reports" class="{% if title == 'Reports Nav' %}is-active{% endif %}">
+          <a href="/harvest-nav/reports" class="{% if title == 'Reports' %}is-active{% endif %}">
             <svg width="24" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M19.25 17.875H2.75V4.125" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M19.2502 8.25L13.7502 13.0625L8.25017 8.9375L2.75017 13.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
             <span>Reports</span>
           </a>
-          <a href="/harvest-nav/clients" class="{% if title == 'Clients Nav' %}is-active{% endif %}">
+          <a href="/harvest-nav/clients" class="{% if title == 'Clients' %}is-active{% endif %}">
             <svg width="24" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M18.5632 6.1875H3.43817C3.05848 6.1875 2.75067 6.4953 2.75067 6.875V17.875C2.75067 18.2547 3.05848 18.5625 3.43817 18.5625H18.5632C18.9429 18.5625 19.2507 18.2547 19.2507 17.875V6.875C19.2507 6.4953 18.9429 6.1875 18.5632 6.1875Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14.4375 18.5625V4.125C14.4375 3.94266 14.3651 3.7678 14.2361 3.63886C14.1072 3.50993 13.9323 3.4375 13.75 3.4375H8.25C8.06766 3.4375 7.8928 3.50993 7.76386 3.63886C7.63493 3.7678 7.5625 3.94266 7.5625 4.125V18.5625" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
             <span>Clients</span>
           </a>
-          <a href="/harvest-nav/projects" class="{% if title == 'Projects Nav' %}is-active{% endif %}">
+          <a href="/harvest-nav/projects" class="{% if title == 'Projects' %}is-active{% endif %}">
             <svg width="24" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M18.5632 6.1875H3.43817C3.05848 6.1875 2.75067 6.4953 2.75067 6.875V17.875C2.75067 18.2547 3.05848 18.5625 3.43817 18.5625H18.5632C18.9429 18.5625 19.2507 18.2547 19.2507 17.875V6.875C19.2507 6.4953 18.9429 6.1875 18.5632 6.1875Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14.4375 18.5625V4.125C14.4375 3.94266 14.3651 3.7678 14.2361 3.63886C14.1072 3.50993 13.9323 3.4375 13.75 3.4375H8.25C8.06766 3.4375 7.8928 3.50993 7.76386 3.63886C7.63493 3.7678 7.5625 3.94266 7.5625 4.125V18.5625" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
             <span>Projects</span>
           </a>
-          <a href="/harvest-nav/team" class="{% if title == 'Team Nav' %}is-active{% endif %}">
+          <a href="/harvest-nav/team" class="{% if title == 'Team' %}is-active{% endif %}">
             <svg width="24" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M18.5632 6.1875H3.43817C3.05848 6.1875 2.75067 6.4953 2.75067 6.875V17.875C2.75067 18.2547 3.05848 18.5625 3.43817 18.5625H18.5632C18.9429 18.5625 19.2507 18.2547 19.2507 17.875V6.875C19.2507 6.4953 18.9429 6.1875 18.5632 6.1875Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14.4375 18.5625V4.125C14.4375 3.94266 14.3651 3.7678 14.2361 3.63886C14.1072 3.50993 13.9323 3.4375 13.75 3.4375H8.25C8.06766 3.4375 7.8928 3.50993 7.76386 3.63886C7.63493 3.7678 7.5625 3.94266 7.5625 4.125V18.5625" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -97,7 +97,7 @@
             <span>Team</span>
           </a>
           <hr>
-          <a href="/harvest-nav/settings">
+          <a href="/harvest-nav/settings" class="{% if title == 'Settings' %}is-active{% endif %}">
             <svg width="24" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M18.5632 6.1875H3.43817C3.05848 6.1875 2.75067 6.4953 2.75067 6.875V17.875C2.75067 18.2547 3.05848 18.5625 3.43817 18.5625H18.5632C18.9429 18.5625 19.2507 18.2547 19.2507 17.875V6.875C19.2507 6.4953 18.9429 6.1875 18.5632 6.1875Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14.4375 18.5625V4.125C14.4375 3.94266 14.3651 3.7678 14.2361 3.63886C14.1072 3.50993 13.9323 3.4375 13.75 3.4375H8.25C8.06766 3.4375 7.8928 3.50993 7.76386 3.63886C7.63493 3.7678 7.5625 3.94266 7.5625 4.125V18.5625" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>

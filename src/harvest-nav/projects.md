@@ -1,39 +1,50 @@
 ---
 layout: layouts/harvest-nav.njk
-title: Projects Nav
+title: Projects
 ---
 
 <header id="top-nav">
   <nav>
     <a href="#" class="is-active">Manage projects</a>
-    <a href="#">Manage tasks</a>
+    <a href="/harvest-nav/tasks">Manage tasks</a>
   </nav>
 </header>
 
 <main>
   <div class="flex justify-space-between">
     <div class="flex">
-      <button class="button primary mr-4">✚ New project</button>
-      <button class="button mr-4">Import</button>
-      <button class="button mr-4">Export</button>
-      <button class="button mr-4">Archived projects</button>
+      <h1>Projects</h1>
+      <button class="button primary ml-8">+ New project</button>
     </div>
     <div class="flex">
-      <input class="input" type="text" placeholder="Find a projects…">
+      <button class="button">Import</button>
+      <button class="button">Archived projects</button>
+      <input class="input" type="text" placeholder="Find a project…">
     </div>
   </div>
 
-  <hr class="mt-16 mb-24">
+  <div class="tabs mt-24 mb-16">
+    <nav>
+      <a href="#" class="is-active">Active (50)</a>
+      <a href="#">Budgeted (42)</a>
+      <a href="#">Stale (23)</a>
+      <a href="#">Archived (193)</a>
+    </nav>
+  </div>
 
   <div class="flex justify-space-between">
     <div class="flex">
-      <div class="button-group">
-        <button class="button"><span>View:</span> Active projects (50) &darr;</button>
-      </div>
+      &nbsp;
     </div>
     <div class="flex">
-      <button class="button ml-4"><span>Client:</span>Apple Computers &darr;</button>
-      <button class="button ml-4"><span>Managed by:</span> Daniel M. &darr;</button>
+      <small class="mr-4">Page 1 of 4</small>
+      <div class="button-group">
+        <button class="button button-sm is-disabled">&larr;</button>
+        <button class="button button-sm">&rarr;</button>
+      </div>
+      <button class="button button-sm is-filtered"><span>Client:</span>Apple Computers &darr;</button>
+      <button class="button button-sm is-filtered"><span>Managed by:</span> Daniel M. &darr;</button>
+      <button class="button button-sm">Export &darr;</button>
     </div>
   </div>
 </main>

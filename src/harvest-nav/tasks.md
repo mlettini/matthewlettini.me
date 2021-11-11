@@ -1,25 +1,24 @@
 ---
 layout: layouts/harvest-nav.njk
-title: Clients
+title: Tasks
 ---
 
 <header id="top-nav">
   <nav>
-    <a href="#" class="is-active">Manage clients</a>
-    <a href="#">Manage contacts</a>
+    <a href="/harvest-nav/projects">Manage projects</a>
+    <a href="#" class="is-active">Manage tasks</a>
   </nav>
 </header>
 
 <main class="narrow">
   <div class="flex justify-space-between">
     <div class="flex">
-      <h1>Clients</h1>
-      <button class="button primary ml-8">+ New client</button>
+      <h1>Tasks</h1>
+      <button class="button primary ml-8">+ New task</button>
     </div>
     <div class="flex">
-      <button class="button">Import</button>
-      <button class="button">Archived clients</button>
-      <input class="input" type="text" placeholder="Find a client…">
+      <button class="button">Archived tasks</button>
+      <input class="input" type="text" placeholder="Find a task…">
     </div>
   </div>
 
@@ -27,7 +26,7 @@ title: Clients
 
   <div class="flex justify-space-between">
     <div class="flex">
-      <button class="button button-sm">+ New contact</button>
+      &nbsp;
     </div>
     <div class="flex">
       <small class="mr-4">Page 1 of 4</small>
@@ -35,7 +34,6 @@ title: Clients
         <button class="button button-sm is-disabled">&larr;</button>
         <button class="button button-sm">&rarr;</button>
       </div>
-      <button class="button button-sm">Filter by currency &darr;</button>
       <button class="button button-sm">Export &darr;</button>
     </div>
   </div>
