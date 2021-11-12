@@ -17,9 +17,8 @@ title: Projects
       <button class="button primary ml-8">+ New project</button>
     </div>
     <div class="flex">
-      <button class="button">Import</button>
-      <button class="button">Archived projects</button>
       <input class="input" type="text" placeholder="Find a project…">
+      <button class="button">Import</button>
     </div>
   </div>
 

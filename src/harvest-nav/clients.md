@@ -17,13 +17,18 @@ title: Clients
       <button class="button primary ml-8">+ New client</button>
     </div>
     <div class="flex">
-      <button class="button">Import</button>
-      <button class="button">Archived clients</button>
+      <!-- <button class="button">Archived clients</button> -->
       <input class="input" type="text" placeholder="Find a client…">
+      <button class="button">Import</button>
     </div>
   </div>
 
-  <hr class="mt-16 mb-16">
+  <div class="tabs mt-24 mb-16">
+    <nav>
+      <a href="#" class="is-active">Active (20)</a>
+      <a href="#">Archived (0)</a>
+    </nav>
+  </div>
 
   <div class="flex justify-space-between">
     <div class="flex">

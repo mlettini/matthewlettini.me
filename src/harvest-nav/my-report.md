@@ -16,7 +16,7 @@ title: My Time Report
 
 <main>
   <div class="flex mb-16">
-    <a href="/harvest-nav/reports" class="mr-4">Time report</a> &rarr;
+    &larr; <a href="/harvest-nav/reports" class="ml-4">Back to time report</a>
   </div>
 
   <div class="flex justify-space-between">

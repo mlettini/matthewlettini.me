@@ -12,7 +12,7 @@ title: Team Analysis
 
 <main>
   <div class="flex mb-16">
-    <a href="/harvest-nav/projects" class="is-active mr-4">Projects report</a> &rarr;
+    &larr; <a href="/harvest-nav/projects" class="is-active ml-4">Back to projects</a>
   </div>
 
   <div class="flex justify-space-between">

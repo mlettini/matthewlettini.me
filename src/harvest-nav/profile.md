@@ -12,8 +12,7 @@ title: Profile
 
 <main>
   <div class="flex mb-16">
-    <a href="/harvest-nav/team" class="is-active mr-4">Team report</a> &rarr;
-    <a href="/harvest-nav/team-analysis" class="is-active ml-4 mr-4">Matthew’s report</a> &rarr;
+    &larr; <a href="/harvest-nav/team-analysis" class="is-active ml-4">Back to Matthew’s report</a>
   </div>
 
   <h1>Matthew Lettini’s Profile</h1>

@@ -17,16 +17,20 @@ title: Tasks
       <button class="button primary ml-8">+ New task</button>
     </div>
     <div class="flex">
-      <button class="button">Archived tasks</button>
       <input class="input" type="text" placeholder="Find a task…">
     </div>
   </div>
 
-  <hr class="mt-16 mb-16">
+  <div class="tabs mt-24 mb-16">
+    <nav>
+      <a href="#" class="is-active">Active (20)</a>
+      <a href="#">Billable (5)</a>
+      <a href="#">Archived (0)</a>
+    </nav>
+  </div>
 
   <div class="flex justify-space-between">
     <div class="flex">
-      <button class="button button-sm">Filter by status &darr;</button>
       <button class="button button-sm">Filter by project &darr;</button>
     </div>
     <div class="flex">
