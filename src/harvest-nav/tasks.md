@@ -26,6 +26,8 @@ title: Tasks
 
   <div class="flex justify-space-between">
     <div class="flex">
+      <button class="button button-sm">Filter by status &darr;</button>
+      <button class="button button-sm">Filter by project &darr;</button>
     </div>
     <div class="flex">
       <small class="mr-4">Page 1 of 4</small>

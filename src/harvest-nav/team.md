@@ -27,6 +27,7 @@ title: Team
 
   <div class="flex justify-space-between">
     <div class="flex">
+      <button class="button button-sm is-filtered"><span>Filter:</span> NYC role &darr;</button>
       <button class="button button-sm">Week &darr;</button>
       <div class="button-group">
         <button class="button button-sm">&larr;</button>
@@ -36,7 +37,6 @@ title: Team
       <h3 class="ml-4">Last week: <span class="text-400">1 – 7 Mar 2021</span></h3>
     </div>
     <div class="flex">
-      <button class="button button-sm is-filtered"><span>Filter:</span> NYC role &darr;</button>
       <button class="button button-sm">Export &darr;</button>
     </div>
   </div>
@@ -59,140 +59,142 @@ title: Team
     </div>
   </div>
 
-  <table border="0" class="table" cellpadding="0" cellspacing="0">
-    <tbody>
-      <tr>
-        <th class="no-width"><input type="checkbox"></th>
-        <th class="no-width">•</th>
-        <th class="is-sorted">Teammates (3)</th>
-        <th class="no-width text-right nowrap">Total hours</th>
-        <th class="no-width text-right nowrap">Billable hours</th>
-        <th class="no-width"></th>
-        <th class="no-width text-right">Capacity</th>
-        <th class="no-width">Permission</th>
-        <th class="no-width">Type</th>
-        <th class="no-width"></th>
-      </tr>
-    </tbody>
-    <tbody>
-      <tr>
-        <td class="no-width"><input type="checkbox"></td>
-        <td class="no-width">•</td>
-        <td>
-          <div class="flex">
-            <img src="/images/matthew-lettini-header.jpg" width="30" height="30" class="avatar mr-4">
-            Person Name
-          </div>
-        </td>
-        <td class="no-width text-right">12.34</td>
-        <td class="no-width text-right">2.34</td>
-        <td class="no-width"><div class="meter"></div></td>
-        <td class="no-width text-right">35.00</td>
-        <td class="no-width">Administrator</td>
-        <td class="no-width">Employee</td>
-        <td class="no-width"><a href="/harvest-nav/team-analysis" class="button button-sm">•••</a></td>
-      </tr>
-      <tr>
-        <td class="no-width"><input type="checkbox"></td>
-        <td class="no-width">•</td>
-        <td>
-          <div class="flex">
-            <img src="/images/matthew-lettini-header.jpg" width="30" height="30" class="avatar mr-4">
-            Person Name
-          </div>
-        </td>
-        <td class="no-width text-right">12.34</td>
-        <td class="no-width text-right">2.34</td>
-        <td class="no-width"><div class="meter"></div></td>
-        <td class="no-width text-right">35.00</td>
-        <td class="no-width">Administrator</td>
-        <td class="no-width">Employee</td>
-        <td class="no-width"><button class="button button-sm">•••</button></td>
-      </tr>
-      <tr>
-        <td class="no-width"><input type="checkbox"></td>
-        <td class="no-width">•</td>
-        <td>
-          <div class="flex">
-            <img src="/images/matthew-lettini-header.jpg" width="30" height="30" class="avatar mr-4">
-            Person Name
-          </div>
-        </td>
-        <td class="no-width text-right">12.34</td>
-        <td class="no-width text-right">2.34</td>
-        <td class="no-width"><div class="meter"></div></td>
-        <td class="no-width text-right">35.00</td>
-        <td class="no-width">Administrator</td>
-        <td class="no-width">Employee</td>
-        <td class="no-width"><button class="button button-sm">•••</button></td>
-      </tr>
-    </tbody>
-    <tbody>
-      <tr>
-        <th class="no-width"><input type="checkbox"></th>
-        <th class="no-width">•</th>
-        <th class="is-sorted">Teammates (3)</th>
-        <th class="no-width text-right nowrap">Total hours</th>
-        <th class="no-width text-right nowrap">Billable hours</th>
-        <th class="no-width"></th>
-        <th class="no-width text-right">Capacity</th>
-        <th class="no-width">Permission</th>
-        <th class="no-width">Type</th>
-        <th class="no-width"></th>
-      </tr>
-    </tbody>
-    <tbody>
-      <tr>
-        <td class="no-width"><input type="checkbox"></td>
-        <td class="no-width">•</td>
-        <td>
-          <div class="flex">
-            <img src="/images/matthew-lettini-header.jpg" width="30" height="30" class="avatar mr-4">
-            Person Name
-          </div>
-        </td>
-        <td class="no-width text-right">12.34</td>
-        <td class="no-width text-right">2.34</td>
-        <td class="no-width"><div class="meter"></div></td>
-        <td class="no-width text-right">35.00</td>
-        <td class="no-width">Administrator</td>
-        <td class="no-width">Employee</td>
-        <td class="no-width"><button class="button button-sm">•••</button></td>
-      </tr>
-      <tr>
-        <td class="no-width"><input type="checkbox"></td>
-        <td class="no-width">•</td>
-        <td>
-          <div class="flex">
-            <img src="/images/matthew-lettini-header.jpg" width="30" height="30" class="avatar mr-4">
-            Person Name
-          </div>
-        </td>
-        <td class="no-width text-right">12.34</td>
-        <td class="no-width text-right">2.34</td>
-        <td class="no-width"><div class="meter"></div></td>
-        <td class="no-width text-right">35.00</td>
-        <td class="no-width">Administrator</td>
-        <td class="no-width">Employee</td>
-        <td class="no-width"><button class="button button-sm">•••</button></td>
-      </tr>
-      <tr>
-        <td class="no-width"><input type="checkbox"></td>
-        <td class="no-width">•</td>
-        <td>
-          <div class="flex">
-            <img src="/images/matthew-lettini-header.jpg" width="30" height="30" class="avatar mr-4">
-            Person Name
-          </div>
-        </td>
-        <td class="no-width text-right">12.34</td>
-        <td class="no-width text-right">2.34</td>
-        <td class="no-width"><div class="meter"></div></td>
-        <td class="no-width text-right">35.00</td>
-        <td class="no-width">Administrator</td>
-        <td class="no-width">Employee</td>
-        <td class="no-width"><button class="button button-sm">•••</button></td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="table-wrapper">
+    <table border="0" class="table" cellpadding="0" cellspacing="0">
+      <tbody>
+        <tr>
+          <th class="no-width"><input type="checkbox"></th>
+          <th class="no-width">•</th>
+          <th class="is-sorted nowrap">Teammates (3)</th>
+          <th class="no-width text-right nowrap">Total hours</th>
+          <th class="no-width text-right nowrap">Billable hours</th>
+          <th class="no-width"></th>
+          <th class="no-width text-right">Capacity</th>
+          <th class="no-width">Permission</th>
+          <th class="no-width">Type</th>
+          <th class="no-width"></th>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td class="no-width"><input type="checkbox"></td>
+          <td class="no-width">•</td>
+          <td>
+            <div class="flex nowrap">
+              <img src="/images/matthew-lettini-header.jpg" width="30" height="30" class="avatar mr-4">
+              Person Name
+            </div>
+          </td>
+          <td class="no-width text-right">12.34</td>
+          <td class="no-width text-right">2.34</td>
+          <td class="no-width"><div class="meter"></div></td>
+          <td class="no-width text-right">35.00</td>
+          <td class="no-width">Administrator</td>
+          <td class="no-width">Employee</td>
+          <td class="no-width"><a href="/harvest-nav/team-analysis" class="button button-sm">•••</a></td>
+        </tr>
+        <tr>
+          <td class="no-width"><input type="checkbox"></td>
+          <td class="no-width">•</td>
+          <td>
+            <div class="flex nowrap">
+              <img src="/images/matthew-lettini-header.jpg" width="30" height="30" class="avatar mr-4">
+              Person Name
+            </div>
+          </td>
+          <td class="no-width text-right">12.34</td>
+          <td class="no-width text-right">2.34</td>
+          <td class="no-width"><div class="meter"></div></td>
+          <td class="no-width text-right">35.00</td>
+          <td class="no-width">Administrator</td>
+          <td class="no-width">Employee</td>
+          <td class="no-width"><button class="button button-sm">•••</button></td>
+        </tr>
+        <tr>
+          <td class="no-width"><input type="checkbox"></td>
+          <td class="no-width">•</td>
+          <td>
+            <div class="flex nowrap">
+              <img src="/images/matthew-lettini-header.jpg" width="30" height="30" class="avatar mr-4">
+              Person Name
+            </div>
+          </td>
+          <td class="no-width text-right">12.34</td>
+          <td class="no-width text-right">2.34</td>
+          <td class="no-width"><div class="meter"></div></td>
+          <td class="no-width text-right">35.00</td>
+          <td class="no-width">Administrator</td>
+          <td class="no-width">Employee</td>
+          <td class="no-width"><button class="button button-sm">•••</button></td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <th class="no-width"><input type="checkbox"></th>
+          <th class="no-width">•</th>
+          <th class="is-sorted nowrap">Teammates (3)</th>
+          <th class="no-width text-right nowrap">Total hours</th>
+          <th class="no-width text-right nowrap">Billable hours</th>
+          <th class="no-width"></th>
+          <th class="no-width text-right">Capacity</th>
+          <th class="no-width">Permission</th>
+          <th class="no-width">Type</th>
+          <th class="no-width"></th>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td class="no-width"><input type="checkbox"></td>
+          <td class="no-width">•</td>
+          <td>
+            <div class="flex nowrap">
+              <img src="/images/matthew-lettini-header.jpg" width="30" height="30" class="avatar mr-4">
+              Person Name
+            </div>
+          </td>
+          <td class="no-width text-right">12.34</td>
+          <td class="no-width text-right">2.34</td>
+          <td class="no-width"><div class="meter"></div></td>
+          <td class="no-width text-right">35.00</td>
+          <td class="no-width">Administrator</td>
+          <td class="no-width">Employee</td>
+          <td class="no-width"><button class="button button-sm">•••</button></td>
+        </tr>
+        <tr>
+          <td class="no-width"><input type="checkbox"></td>
+          <td class="no-width">•</td>
+          <td>
+            <div class="flex nowrap">
+              <img src="/images/matthew-lettini-header.jpg" width="30" height="30" class="avatar mr-4">
+              Person Name
+            </div>
+          </td>
+          <td class="no-width text-right">12.34</td>
+          <td class="no-width text-right">2.34</td>
+          <td class="no-width"><div class="meter"></div></td>
+          <td class="no-width text-right">35.00</td>
+          <td class="no-width">Administrator</td>
+          <td class="no-width">Employee</td>
+          <td class="no-width"><button class="button button-sm">•••</button></td>
+        </tr>
+        <tr>
+          <td class="no-width"><input type="checkbox"></td>
+          <td class="no-width">•</td>
+          <td>
+            <div class="flex nowrap">
+              <img src="/images/matthew-lettini-header.jpg" width="30" height="30" class="avatar mr-4">
+              Person Name
+            </div>
+          </td>
+          <td class="no-width text-right">12.34</td>
+          <td class="no-width text-right">2.34</td>
+          <td class="no-width"><div class="meter"></div></td>
+          <td class="no-width text-right">35.00</td>
+          <td class="no-width">Administrator</td>
+          <td class="no-width">Employee</td>
+          <td class="no-width"><button class="button button-sm">•••</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </main>

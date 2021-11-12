@@ -27,10 +27,9 @@ title: Clients
 
   <div class="flex justify-space-between">
     <div class="flex">
-      <button class="button button-sm">+ New contact</button>
+      <button class="button button-sm">Filter by currency &darr;</button>
     </div>
     <div class="flex">
-      <button class="button button-sm">Filter by currency &darr;</button>
       <small class="ml-8 mr-4">Page 1 of 4</small>
       <div class="button-group">
         <button class="button button-sm is-disabled">&larr;</button>

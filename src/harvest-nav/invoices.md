@@ -46,6 +46,8 @@ title: Invoices
 
   <div class="flex justify-space-between mb-4">
     <div class="flex">
+      <button class="button button-sm is-filtered"><span>Status:</span> Open &darr;</button>
+      <button class="button button-sm is-filtered"><span>Client:</span> Apple Computers &darr;</button>
       <button class="button button-sm">Year &darr;</button>
       <div class="button-group">
         <button class="button button-sm">&larr;</button>
@@ -55,8 +57,6 @@ title: Invoices
       <h3 class="ml-4">This year: <span class="text-400">2021</span></h3>
     </div>
     <div class="flex">
-      <button class="button button-sm is-filtered"><span>Status:</span> Open &darr;</button>
-      <button class="button button-sm is-filtered"><span>Client:</span> Apple Computers &darr;</button>
       <small class="ml-8 mr-4">Page 1 of 4</small>
       <div class="button-group">
         <button class="button button-sm is-disabled">&larr;</button>
