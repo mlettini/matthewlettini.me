@@ -11,7 +11,7 @@ title: Team Analysis
 </header>
 
 <main>
-  <div class="flex mb-8">
+  <div class="flex mb-16">
     <a href="/harvest-nav/team" class="is-active mr-4">Team report</a> &rarr;
   </div>
 
