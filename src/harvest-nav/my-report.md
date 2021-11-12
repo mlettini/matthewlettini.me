@@ -1,6 +1,6 @@
 ---
 layout: layouts/harvest-nav.njk
-title: Reports
+title: My Time Report
 ---
 
 <header id="top-nav">
@@ -15,21 +15,23 @@ title: Reports
 </header>
 
 <main>
+  <div class="flex mb-8">
+    <a href="/harvest-nav/reports" class="mr-4">Time report</a> &rarr;
+  </div>
+
   <div class="flex justify-space-between">
-    <h1>Time report</h1>
-    <a href="/harvest-nav/my-report" class="button">My time report</a>
+    <h1>Matthew Lettini</h1>
+    <!-- <button class="button">My time report</button> -->
   </div>
 
   <div class="tabs mt-24 mb-16">
     <nav>
-      <a href="#" class="is-active">Clients</a>
-      <a href="#">Projects</a>
+      <a href="#" class="is-active">Projects</a>
       <a href="#">Tasks</a>
-      <a href="#">People</a>
     </nav>
   </div>
 
-  <div class="flex justify-space-between mt-16">
+  <div class="flex justify-space-between">
     <div class="flex">
       <button class="button button-sm">Month &darr;</button>
       <div class="button-group">

@@ -66,8 +66,10 @@ title: Team
         <td class="no-width"><input type="checkbox"></td>
         <td class="no-width">•</td>
         <td>
-          <img src="/images/matthew-lettini-header.jpg" width="28" height="28" class="avatar mr-4">
-          Person Name
+          <div class="flex">
+            <img src="/images/matthew-lettini-header.jpg" width="30" height="30" class="avatar mr-4">
+            Person Name
+          </div>
         </td>
         <td class="no-width text-right">12.34</td>
         <td class="no-width text-right">2.34</td>
@@ -81,8 +83,10 @@ title: Team
         <td class="no-width"><input type="checkbox"></td>
         <td class="no-width">•</td>
         <td>
-          <img src="/images/matthew-lettini-header.jpg" width="28" height="28" class="avatar mr-4">
-          Person Name
+          <div class="flex">
+            <img src="/images/matthew-lettini-header.jpg" width="30" height="30" class="avatar mr-4">
+            Person Name
+          </div>
         </td>
         <td class="no-width text-right">12.34</td>
         <td class="no-width text-right">2.34</td>
@@ -96,8 +100,10 @@ title: Team
         <td class="no-width"><input type="checkbox"></td>
         <td class="no-width">•</td>
         <td>
-          <img src="/images/matthew-lettini-header.jpg" width="28" height="28" class="avatar mr-4">
-          Person Name
+          <div class="flex">
+            <img src="/images/matthew-lettini-header.jpg" width="30" height="30" class="avatar mr-4">
+            Person Name
+          </div>
         </td>
         <td class="no-width text-right">12.34</td>
         <td class="no-width text-right">2.34</td>
@@ -127,8 +133,10 @@ title: Team
         <td class="no-width"><input type="checkbox"></td>
         <td class="no-width">•</td>
         <td>
-          <img src="/images/matthew-lettini-header.jpg" width="28" height="28" class="avatar mr-4">
-          Person Name
+          <div class="flex">
+            <img src="/images/matthew-lettini-header.jpg" width="30" height="30" class="avatar mr-4">
+            Person Name
+          </div>
         </td>
         <td class="no-width text-right">12.34</td>
         <td class="no-width text-right">2.34</td>
@@ -142,8 +150,10 @@ title: Team
         <td class="no-width"><input type="checkbox"></td>
         <td class="no-width">•</td>
         <td>
-          <img src="/images/matthew-lettini-header.jpg" width="28" height="28" class="avatar mr-4">
-          Person Name
+          <div class="flex">
+            <img src="/images/matthew-lettini-header.jpg" width="30" height="30" class="avatar mr-4">
+            Person Name
+          </div>
         </td>
         <td class="no-width text-right">12.34</td>
         <td class="no-width text-right">2.34</td>
@@ -157,8 +167,10 @@ title: Team
         <td class="no-width"><input type="checkbox"></td>
         <td class="no-width">•</td>
         <td>
-          <img src="/images/matthew-lettini-header.jpg" width="28" height="28" class="avatar mr-4">
-          Person Name
+          <div class="flex">
+            <img src="/images/matthew-lettini-header.jpg" width="30" height="30" class="avatar mr-4">
+            Person Name
+          </div>
         </td>
         <td class="no-width text-right">12.34</td>
         <td class="no-width text-right">2.34</td>

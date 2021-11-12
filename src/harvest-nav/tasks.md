@@ -26,7 +26,6 @@ title: Tasks
 
   <div class="flex justify-space-between">
     <div class="flex">
-      &nbsp;
     </div>
     <div class="flex">
       <small class="mr-4">Page 1 of 4</small>

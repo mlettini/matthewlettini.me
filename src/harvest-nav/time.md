@@ -10,7 +10,9 @@ title: Time
   </nav>
 </header>
 
-<main>
+<main class="narrow">
+  <h1 class="mb-16">Timesheet: <span class="text-400">Thursday, 25 Mar 2021</span></h1>
+
   <div class="flex justify-space-between">
     <div class="flex">
       <div class="button-group">
@@ -19,7 +21,6 @@ title: Time
         <button class="button">&rarr;</button>
       </div>
       <button class="button">Return to today</button>
-      <h2 class="ml-4"><span class="text-400">Thursday, 25 Mar 2021</span></h2>
     </div>
     <div class="flex">
       <div class="button-group">
@@ -30,7 +31,7 @@ title: Time
     </div>
   </div>
 
-  <div class="tabs time-tabs mt-24 mb-16">
+  <div class="tabs time-tabs mt-16 mb-16">
     <nav>
       <a href="#" class="is-active">Mon 🎉<br>3:54</a>
       <a href="#">Tue<br>0:00</a>

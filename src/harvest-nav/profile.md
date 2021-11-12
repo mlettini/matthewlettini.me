@@ -3,10 +3,17 @@ layout: layouts/harvest-nav.njk
 title: Profile
 ---
 
-<main class="narrow">
+<header id="top-nav">
+  <nav>
+    <a href="/harvest-nav/team" class="is-active">Manage people</a>
+    <a href="#">Manage roles</a>
+  </nav>
+</header>
+
+<main>
   <div class="flex mb-8">
-    <a href="/harvest-nav/team" class="is-active mr-4">Team overview</a> &rarr;
-    <a href="/harvest-nav/team-analysis" class="is-active ml-4 mr-4">Matthew Lettini</a> &rarr;
+    <a href="/harvest-nav/team" class="is-active mr-4">Team report</a> &rarr;
+    <a href="/harvest-nav/team-analysis" class="is-active ml-4 mr-4">Matthew’s report</a> &rarr;
   </div>
 
   <h1>Matthew Lettini’s Profile</h1>

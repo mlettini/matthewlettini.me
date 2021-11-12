@@ -46,13 +46,13 @@ title: Invoices
       <h3 class="ml-4">This year: <span class="text-400">2021</span></h3>
     </div>
     <div class="flex">
-      <small class="mr-4">Page 1 of 4</small>
+      <button class="button button-sm is-filtered"><span>Status:</span> Open &darr;</button>
+      <button class="button button-sm is-filtered"><span>Client:</span> Apple Computers &darr;</button>
+      <small class="ml-8 mr-4">Page 1 of 4</small>
       <div class="button-group">
         <button class="button button-sm is-disabled">&larr;</button>
         <button class="button button-sm">&rarr;</button>
       </div>
-      <button class="button button-sm is-filtered"><span>Status:</span> Open &darr;</button>
-      <button class="button button-sm is-filtered"><span>Client:</span> Apple Computers &darr;</button>
       <button class="button button-sm">Export &darr;</button>
     </div>
   </div>
