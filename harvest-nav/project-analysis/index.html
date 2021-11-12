@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Projects • Matthew Lettini</title>
+    <title>Team Analysis • Matthew Lettini</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -82,7 +82,7 @@
             </svg>
             <span>Clients</span>
           </a>
-          <a href="/harvest-nav/projects" class="is-active">
+          <a href="/harvest-nav/projects" class="">
             <svg width="24" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M18.5632 6.1875H3.43817C3.05848 6.1875 2.75067 6.4953 2.75067 6.875V17.875C2.75067 18.2547 3.05848 18.5625 3.43817 18.5625H18.5632C18.9429 18.5625 19.2507 18.2547 19.2507 17.875V6.875C19.2507 6.4953 18.9429 6.1875 18.5632 6.1875Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14.4375 18.5625V4.125C14.4375 3.94266 14.3651 3.7678 14.2361 3.63886C14.1072 3.50993 13.9323 3.4375 13.75 3.4375H8.25C8.06766 3.4375 7.8928 3.50993 7.76386 3.63886C7.63493 3.7678 7.5625 3.94266 7.5625 4.125V18.5625" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -129,79 +129,35 @@
 
     <header id="top-nav">
   <nav>
-    <a href="#" class="is-active">Manage projects</a>
-    <a href="/harvest-nav/tasks">Manage tasks</a>
+    <a href="/harvest-nav/projects" class="is-active">Manage projects</a>
+    <a href="#">Manage tasks</a>
   </nav>
 </header>
 <main>
+  <div class="flex mb-8">
+    <a href="/harvest-nav/projects" class="is-active mr-4">Projects report</a> &rarr;
+  </div>
   <div class="flex justify-space-between">
-    <div class="flex">
-      <h1>Projects</h1>
-      <button class="button primary ml-8">+ New project</button>
+    <div>
+      Client Name
+      <h1>[CODE] Project Name</h1>
     </div>
     <div class="flex">
-      <button class="button">Import</button>
-      <button class="button">Archived projects</button>
-      <input class="input" type="text" placeholder="Find a project…">
+      <button class="button">Edit project</button>
+      <button class="button">•••</button>
     </div>
+  </div>
+  <div class="mt-24">
+    Total hours<br>
+    <h1>123.45</h1>
   </div>
   <div class="tabs mt-24 mb-16">
     <nav>
-      <a href="#" class="is-active">Active (50)</a>
-      <a href="#">Budgeted (42)</a>
-      <a href="#">My assigned (12)</a>
-      <a href="#">Stale (23)</a>
-      <a href="#">Archived (193)</a>
+      <a href="#" class="is-active">Tasks</a>
+      <a href="#">Team</a>
+      <a href="#">Invoices</a>
     </nav>
   </div>
-  <div class="flex justify-space-between">
-    <div class="flex">
-    </div>
-    <div class="flex">
-      <button class="button button-sm">Filter by client &darr;</button>
-      <button class="button button-sm is-filtered"><span>Managed by:</span> Matthew L. &darr;</button>
-      <small class="ml-8 mr-4">Page 1 of 4</small>
-      <div class="button-group">
-        <button class="button button-sm is-disabled">&larr;</button>
-        <button class="button button-sm">&rarr;</button>
-      </div>
-      <button class="button button-sm">Export &darr;</button>
-    </div>
-  </div>
-  <table border="0" class="table mt-24" cellpadding="0" cellspacing="0">
-    <tbody>
-      <tr>
-        <th class="no-width"><input type="checkbox"></th>
-        <th class="no-width">•</th>
-        <th>Client name</th>
-        <th class="no-width text-right">Budget</th>
-        <th class="no-width text-right">Spent</th>
-        <th class="no-width"></th>
-        <th class="no-width text-right">Remaining</th>
-        <th class="no-width text-right">Costs</th>
-        <th class="no-width">Managers</th>
-        <th class="no-width"></th>
-      </tr>
-    </tbody>
-    <tbody>
-      <tr>
-        <td class="no-width"><input type="checkbox"></td>
-        <td class="no-width">•</td>
-        <td>
-          [CODE] Project name
-        </td>
-        <td class="no-width text-right">$30,000.00</td>
-        <td class="no-width text-right">$10,000.00</td>
-        <td class="no-width"><div class="meter"></div></td>
-        <td class="no-width text-right nowrap">$20,000.00 (75%)</td>
-        <td class="no-width text-right">$30,000.00</td>
-        <td class="no-width">
-          <img src="/images/matthew-lettini-header.jpg" width="30" height="30" class="avatar">
-        </td>
-        <td class="no-width"><a href="/harvest-nav/project-analysis" class="button button-sm">•••</a></td>
-      </tr>
-    </tbody>
-  </table>
 </main>
 
   </body>
