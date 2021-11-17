@@ -1,6 +1,6 @@
 ---
 layout: layouts/harvest-nav.njk
-title: Profile
+title: Team
 ---
 
 <header id="top-nav">
@@ -12,11 +12,17 @@ title: Profile
 
 <main>
   <div class="flex mb-16">
-    &larr; <a href="/harvest-nav/team-analysis" class="is-active ml-4">Back to Matthew’s report</a>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+    <a href="/harvest-nav/team-analysis" class="is-active">Back to team</a>
   </div>
 
-  <h1>Matthew Lettini’s Profile</h1>
-  mlettini@getharvest.com
+  <div class="flex">
+    <img src="https://matthewlettini.me/images/matthew-lettini-header.jpg" class="avatar" width="60" height="60">
+    <div class="ml-8">
+      <h1>Matthew Lettini’s Profile</h1>
+      mlettini@getharvest.com
+    </div>
+  </div>
 
   <div class="tabs mt-16 mb-16">
     <nav>

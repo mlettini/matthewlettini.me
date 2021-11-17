@@ -14,11 +14,17 @@ title: Projects
   <div class="flex justify-space-between">
     <div class="flex">
       <h1>Projects</h1>
-      <button class="button primary ml-8">+ New project</button>
     </div>
     <div class="flex">
+      <button class="button primary ml-8">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        New project
+      </button>
+      <button class="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-upload"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+        Import
+      </button>
       <input class="input" type="text" placeholder="Find a project…">
-      <button class="button">Import</button>
     </div>
   </div>
 
@@ -34,16 +40,16 @@ title: Projects
 
   <div class="flex justify-space-between">
     <div class="flex">
-      <button class="button button-sm">Filter by client &darr;</button>
-      <button class="button button-sm is-filtered"><span>Managed by:</span> Matthew L. &darr;</button>
+      <button class="button button-sm">Filter by client <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+      <button class="button button-sm is-filtered"><span>Managed by:</span> Matthew L. <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
     </div>
     <div class="flex">
       <small class="ml-8 mr-4">Page 1 of 4</small>
       <div class="button-group">
-        <button class="button button-sm is-disabled">&larr;</button>
-        <button class="button button-sm">&rarr;</button>
+        <button class="button button-sm button-icon is-disabled"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg></button>
+        <button class="button button-sm button-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></button>
       </div>
-      <button class="button button-sm">Export &darr;</button>
+      <button class="button button-sm">Export <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
     </div>
   </div>
 
@@ -78,7 +84,11 @@ title: Projects
           <td class="no-width">
             <img src="/images/matthew-lettini-header.jpg" width="30" height="30" class="avatar">
           </td>
-          <td class="no-width"><a href="/harvest-nav/project-analysis" class="button button-sm">•••</a></td>
+          <td class="no-width">
+            <a href="/harvest-nav/project-analysis" class="button button-sm">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+            </a>
+          </td>
         </tr>
       </tbody>
     </table>

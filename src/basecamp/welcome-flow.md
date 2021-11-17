@@ -117,7 +117,7 @@ The last design decisions to make were for each individual step, how they should
 
 Now that I had an outline of how we’d design and build the welcome flow, I pulled images out of Whimsical and built an interactive prototype with [Marvel](https://marvelapp.com/prototype/562c1g0/screen/59600932). I tested this prototype internally with my team and other members of the Customer Experience team.
 
-**[Click here to try the prototype yourself &rarr;](https://marvelapp.com/prototype/562c1g0/screen/59600932)**
+**[Click here to try the prototype yourself <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>](https://marvelapp.com/prototype/562c1g0/screen/59600932)**
 
 After solid feedback and a few minor iterations, it was time to build it.
 
