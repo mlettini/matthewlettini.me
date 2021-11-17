@@ -124,7 +124,7 @@ hr {
   color: var(--warm-white);
   display: flex;
   height: 40px;
-  padding: 0 16px 1px;
+  padding: 0 16px;
   text-decoration: none;
   transition: background-color 100ms;
 }
@@ -144,9 +144,9 @@ hr {
   margin-left: 8px;
 }
 #left-nav nav > a > img {
-  border-radius: 24px;
-  height: 24px;
-  width: 24px;
+  border-radius: 20px;
+  height: 20px;
+  width: 20px;
 }
 #left-nav nav > hr {
   background: var(--orange);
@@ -157,7 +157,7 @@ hr {
 }
 #left-nav nav > span {
   color: #fff;
-  font-size: 12px;
+  font-size: 16px;
   padding: 24px 8px 4px;
   opacity: 0.7;
   text-transform: uppercase;
@@ -199,7 +199,7 @@ hr {
   align-items: center;
   border: 2px solid var(--orange);
   border-radius: 40px;
-  bottom: 12px;
+  bottom: 16px;
   /* box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1); */
   color: var(--orange);
   display: flex;
@@ -212,7 +212,7 @@ hr {
   margin-right: env(safe-area-inset-bottom);
   overflow: hidden;
   position: fixed;
-  right: 12px;
+  right: 16px;
   text-decoration: none;
   width: 32px;
   z-index: 100;
@@ -247,7 +247,7 @@ hr {
   display: flex;
   color: var(--color-secondary);
   height: 100%;
-  padding: 12px 0 10px;
+  padding: 16px 0 10px;
   position: relative;
   text-decoration: none;
   transition: border 100ms, color 100ms;
@@ -287,17 +287,18 @@ main.narrow {
   background-clip: padding-box;
   background-color: var(--white);
   border: 1px solid var(--gray-alpha-300);
-  /* box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1); */
   border-radius: 5px;
   color: var(--color);
   cursor: pointer;
   display: inline-flex;
   font-family: inherit;
   font-size: inherit;
+  gap: 4px;
   height: 36px;
+  justify-content: center;
   line-height: 36px;
   margin: 0;
-  padding: 0 12px;
+  padding: 0 16px;
   position: relative;
   transition: background-color 100ms, border 100ms, box-shadow 100ms;
   vertical-align: middle;
@@ -305,16 +306,13 @@ main.narrow {
 }
 .button:hover {
   border-color: var(--gray-alpha-500);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   z-index: 1;
 }
 .button:active {
   background-color: var(--gray-alpha-100);
   box-shadow: none !important;
   transform: translateY(1px);
-}
-.button span {
-  color: var(--color-secondary);
-  margin-right: 4px;
 }
 .button-sm {
   font-size: 13px;
@@ -326,12 +324,11 @@ main.narrow {
   background-clip: border-box;
   background-color: var(--green);
   border-color: var(--green-700);
-  /* box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25); */
   color: #fff;
-  /* font-weight: 500; */
 }
 .button.primary:hover {
   background-color: var(--green-600);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
 }
 .button.primary:active {
   background-color: var(--green-700);
@@ -359,6 +356,16 @@ main.narrow {
 a.button {
   text-decoration: none;
 }
+.button span {
+  color: var(--color-secondary);
+}
+.button-icon {
+  padding: 0;
+  width: 35px;
+}
+.button-sm.button-icon {
+  width: 31px;
+}
 
 .input {
   align-items: center;
@@ -373,7 +380,7 @@ a.button {
   height: 36px;
   line-height: inherit;
   margin: 0;
-  padding: 0 12px;
+  padding: 0 8px;
   transition: border 100ms;
   vertical-align: middle;
 }
@@ -465,7 +472,7 @@ input[type="checkbox"]:checked {
 .tabs nav {
   align-items: center;
   display: flex;
-  gap: 12px;
+  gap: 16px;
   width: 100%;
 }
 .tabs nav > a {
@@ -502,7 +509,7 @@ input[type="checkbox"]:checked {
 }
 .tabs.time-tabs div {
   border-bottom: 3px solid transparent;
-  padding: 0 4px 8px;
+  padding: 8px 4px;
   text-align: right;
 }
 
@@ -516,7 +523,7 @@ input[type="checkbox"]:checked {
   background: var(--blue);
   border: 1px solid var(--blue-600);
   border-radius: 2px;
-  height: 12px;
+  height: 16px;
   width: 100px;
 }
 
