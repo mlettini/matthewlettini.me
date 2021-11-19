@@ -107,6 +107,5 @@ title: Invoices
 
   <div class="empty mt-16">
     No invoices match your current filters.
-    <a href="#">Clear filters</a>
   </div>
 </main>
