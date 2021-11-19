@@ -6,7 +6,7 @@ title: Reports
 <header id="top-nav">
   <nav>
     <a href="#" class="is-active">Time</a>
-    <a href="#">Detailed time</a>
+    <a href="/harvest-nav/detailed-report">Detailed time</a>
     <a href="#">Detailed expense</a>
     <a href="#">Contractor</a>
     <a href="#">Invoiced</a>
@@ -48,7 +48,7 @@ title: Reports
   <div class="summary mt-24">
     <div class="summary-box">
       Total hours<br>
-      <h1>123.45</h1>
+      <h2>123.45</h2>
     </div>
     <div class="summary-box">
       Billable<br>
@@ -56,11 +56,11 @@ title: Reports
     </div>
     <div class="summary-box">
       Billable amount<br>
-      <h1>$123.45</h1>
+      <h2>$123.45</h2>
     </div>
     <div class="summary-box">
       Uninvoiced amount<br>
-      <h1>$123.45</h1>
+      <h2>$123.45</h2>
     </div>
   </div>
 </main>

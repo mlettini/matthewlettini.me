@@ -24,23 +24,20 @@ title: Team
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-upload"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
         Import
       </button>
-      <input class="input" type="text" placeholder="Find a person…">
+      <input class="input search" type="text" placeholder="Find a person…">
     </div>
   </div>
 
   <div class="tabs mt-24 mb-16">
     <nav>
       <a href="#" class="is-active">Active (20)</a>
-      <a href="#">Archived (0)</a>
+      <a href="#">My pins (0)</a>
+      <a href="#">Archived</a>
     </nav>
   </div>
 
   <div class="flex justify-space-between">
     <div class="flex">
-      <button class="button button-sm is-filtered">
-        <span>Filter:</span> NYC role
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
-      </button>
       <button class="button button-sm">
         Week
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
@@ -58,6 +55,10 @@ title: Team
     </div>
     <div class="flex">
       <button class="button button-sm">
+        Filter by role
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </button>
+      <button class="button button-sm">
         Export
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
       </button>
@@ -67,11 +68,11 @@ title: Team
   <div class="summary mt-24 mb-24">
     <div class="summary-box">
       Total hours<br>
-      <h1>123.45</h1>
+      <h2>123.45</h2>
     </div>
     <div class="summary-box">
       Capacity<br>
-      <h1>123.45</h1>
+      <h2>123.45</h2>
     </div>
     <div class="summary-box">
       Billable<br>

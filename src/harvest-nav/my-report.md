@@ -15,7 +15,7 @@ title: My Time Report
 </header>
 
 <main>
-  <div class="flex mb-16">
+  <div class="flex back-to mb-16">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
     <a href="/harvest-nav/reports">Back to time report</a>
   </div>
@@ -54,7 +54,7 @@ title: My Time Report
   <div class="summary mt-24">
     <div class="summary-box">
       Total hours<br>
-      <h1>123.45</h1>
+      <h2>123.45</h2>
     </div>
     <div class="summary-box">
       Billable<br>
@@ -62,11 +62,11 @@ title: My Time Report
     </div>
     <div class="summary-box">
       Billable amount<br>
-      <h1>$123.45</h1>
+      <h2>$123.45</h2>
     </div>
     <div class="summary-box">
       Uninvoiced amount<br>
-      <h1>$123.45</h1>
+      <h2>$123.45</h2>
     </div>
   </div>
 </main>
