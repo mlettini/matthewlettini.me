@@ -29,5 +29,9 @@ title: Home
       <strong>New UX</strong><br>
       Testing things like a new filter design, pagination design, and add-buttons on the right.
     </li>
+    <li class="mb-16">
+      <strong>No “Manage” section</strong><br>
+      This is a confusing section. Move these pages into more helpful places.
+    </li>
   </ul>
 </main>
