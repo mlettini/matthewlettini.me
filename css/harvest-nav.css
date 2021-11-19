@@ -54,7 +54,7 @@ html {
 }
 body {
   color: var(--color);
-  font-family: Muoto, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: "Muoto VAR", -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 15px;
   line-height: 1.4;
   margin: 0 0 0 var(--left-nav-width);
@@ -251,6 +251,7 @@ hr {
   align-items: center;
   display: flex;
   gap: 16px;
+  margin-right: 16px;
 }
 #top-nav nav > a {
   align-items: center;
@@ -318,7 +319,6 @@ main.narrow {
 }
 .button:hover {
   border-color: var(--gray-alpha-500);
-  /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); */
   z-index: 1;
 }
 .button:active {
@@ -341,7 +341,6 @@ main.narrow {
 .button.primary:hover {
   background-color: var(--gray-alpha-900);
   border-color: transparent;
-  /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25); */
 }
 .button.primary:active {
   background-color: var(--gray-alpha-800);
@@ -401,6 +400,7 @@ a.button {
   background-color: var(--white);
   border: 1px solid var(--gray-alpha-300);
   border-radius: 5px;
+  caret-color: var(--charcoal);
   color: inherit;
   display: inline-flex;
   font-family: inherit;
@@ -490,13 +490,24 @@ input[type="radio"]:checked {
 .table th {
   background-color: var(--gray-alpha-100);
   color: var(--color-secondary);
+  cursor: pointer;
   font-size: 13px;
   font-weight: 400;
   z-index: 1;
 }
-.table th.is-sorted:after {
-  color: var(--orange-400);
-  content: " ↓";
+.table th.is-sorted {
+  cursor: pointer;
+  font-weight: 500;
+}
+.table th.is-sorted:hover {
+  background-color: var(--gray-alpha-150);
+  color: var(--charcoal);
+}
+.table th.is-sorted svg {
+  color: var(--orange);
+  display: inline-block;
+  margin-top: -2px;
+  vertical-align: middle;
 }
 .table tr:hover td {
   background-color: var(--gray-alpha-100);
@@ -609,26 +620,32 @@ input[type="radio"]:checked {
   border: 1px solid var(--orange-300);
   padding: 24px;
 }
-.field {
-  display: grid;
-  grid-template-columns: 120px 1fr;
-  gap: 16px;
-}
 label {
   cursor: pointer;
 }
 .field .left label {
-  align-items: center;
-  cursor: text;
-  display: flex;
   font-weight: 500;
-  height: 36px;
+  margin-bottom: 4px;
 }
 .field .right {
   width: 100%;
 }
-.submit {
-  margin-left: 136px;
+@media (min-width: 600px) {
+  .field {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 16px;
+  }
+  .field .left label {
+    align-items: center;
+    cursor: text;
+    display: flex;
+    height: 36px;
+    margin: 0;
+  }
+  .submit {
+    margin-left: 136px;
+  }
 }
 
 
@@ -661,6 +678,9 @@ label {
   flex-wrap: wrap;
   gap: 4px;
   justify-content: flex-start;
+}
+.align-items-baseline {
+  align-items: baseline;
 }
 .align-items-center {
   align-items: center;
