@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Team • Matthew Lettini</title>
+    <title>Reports • Matthew Lettini</title>
     <meta charset="utf-8">
     <meta name="viewport" content="maximum-scale=1, initial-scale=1, viewport-fit=cover, width=device-width">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -53,7 +53,7 @@
             <span>Schedule</span>
           </a>
           <hr>
-          <a href="/harvest-nav/reports" class="">
+          <a href="/harvest-nav/reports" class="is-active">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
             <span>Reports</span>
           </a>
@@ -65,7 +65,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-briefcase"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
             <span>Clients</span>
           </a>
-          <a href="/harvest-nav/team" class="is-active">
+          <a href="/harvest-nav/team" class="">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
             <span>Team</span>
           </a>
@@ -102,31 +102,141 @@
 
     <header id="top-nav">
   <nav>
-    <a href="/harvest-nav/team" class="is-active">Manage people</a>
-    <a href="#">Manage roles</a>
+    <a href="/harvest-nav/reports">Time</a>
+    <a href="#" class="is-active">Detailed time</a>
+    <a href="#">Detailed expense</a>
+    <a href="#">Contractor</a>
+    <a href="#">Invoiced</a>
+    <a href="#">Uninvoiced</a>
   </nav>
 </header>
-<main class="narrow">
-  <div class="flex back-to mb-16">
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
-    <a href="/harvest-nav/team-analysis" class="is-active">Back to team</a>
+<main>
+  <div class="flex justify-space-between">
+    <h1>Detailed time report: 01/01/2021 — 12/31/2021</h1>
+    <button class="button primary">Change filters</button>
   </div>
-  <div class="flex">
-    <img src="https://matthewlettini.me/images/matthew-lettini-header.jpg" class="avatar" width="60" height="60">
-    <div class="ml-8">
-      <h1>Matthew Lettini’s Profile</h1>
-      mlettini@getharvest.com
+  <!--
+  <div class="form-box mt-16">
+    <div class="field mb-8">
+      <div class="left">
+        <label>Timeframe</label>
+      </div>
+      <div class="right">
+        <input class="input" type="text" autofocus>
+      </div>
+    </div>
+    <div class="field mb-8">
+      <div class="left">
+        <label>Clients</label>
+      </div>
+      <div class="right">
+        <input class="input" type="text">
+      </div>
+    </div>
+    <div class="field mb-8">
+      <div class="left">
+        <label>Projects</label>
+      </div>
+      <div class="right">
+        <input class="input" type="text">
+      </div>
+    </div>
+    <div class="field mb-8">
+      <div class="left">
+        <label>Tasks</label>
+      </div>
+      <div class="right">
+        <input class="input" type="text">
+      </div>
+    </div>
+    <div class="field mb-16">
+      <div class="left">
+        <label>People</label>
+      </div>
+      <div class="right">
+        <input class="input" type="text">
+      </div>
+    </div>
+    <div class="submit">
+      <button class="button primary">Update report</button>
+      <button class="button cancel">Cancel</button>
     </div>
   </div>
-  <div class="tabs mt-16 mb-16">
-    <nav>
-      <a href="#" class="is-active">Basic info</a>
-      <a href="#">Assigned projects</a>
-      <a href="#">Assigned people</a>
-      <a href="#">Notifications</a>
-      <a href="#">Permissions</a>
-      <a href="#">Security</a>
-    </nav>
+  -->
+  <hr class="mt-16 mb-24">
+  <div class="summary">
+    <div class="summary-box">
+      Total hours<br>
+      <h2>123.45</h2>
+    </div>
+    <div class="summary-box">
+      Uninvoiced billable hours<br>
+      <h2>23.45</h2>
+    </div>
+    <div class="summary-box">
+      Filters<br>
+      <h5>All clients</h5>
+      <h5>All projects</h5>
+    </div>
+    <div class="summary-box">
+      <br>
+      <h5>All tasks</h5>
+      <h5>All people</h5>
+    </div>
+  </div>
+  <div class="flex justify-space-between mt-16">
+    <div class="flex">
+      <button class="button button-sm">
+        <span>Showing:</span> All hours
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </button>
+      <button class="button button-sm">
+        <span>Group by:</span> Date
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </button>
+    </div>
+    <div class="flex">
+      <button class="button button-sm">Bulk actions <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+      <button class="button button-sm">Export <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+    </div>
+  </div>
+  <div class="table-wrapper mt-16">
+    <table border="0" class="table" cellpadding="0" cellspacing="0">
+      <tbody>
+        <tr>
+          <th class="no-width"><input type="checkbox"></th>
+          <th>Client</th>
+          <th>Project</th>
+          <th>Task</th>
+          <th>Person</th>
+          <th class="no-width text-right">Hours</th>
+          <th class="no-width"></th>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <th class="no-width"></th>
+          <th colspan="4">01/01/21</th>
+          <th class="no-width text-right">12.34</th>
+          <th class="no-width"></th>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td class="no-width"><input type="checkbox"></td>
+          <td>Client name</td>
+          <td>Project name</td>
+          <td>Task name</td>
+          <td>Person name</td>
+          <td class="no-width text-right">12.34</td>
+          <td class="no-width">
+            <a href="/harvest-nav/team-analysis" class="button button-sm">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </main>
 
