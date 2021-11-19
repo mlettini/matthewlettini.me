@@ -139,9 +139,9 @@ title: Reports
           <td>Person name</td>
           <td class="no-width text-right">12.34</td>
           <td class="no-width">
-            <a href="/harvest-nav/team-analysis" class="button button-sm">
+            <button class="button button-sm">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
-            </a>
+            </button>
           </td>
         </tr>
       </tbody>

@@ -16,7 +16,7 @@ title: Team
       <h1>Team</h1>
     </div>
     <div class="flex">
-      <button class="button primary ml-8">
+      <button class="button primary">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user-plus"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line></svg>
         Invite teammate
       </button>
@@ -89,7 +89,10 @@ title: Team
         <tr>
           <th class="no-width"><input type="checkbox"></th>
           <th class="no-width">•</th>
-          <th class="is-sorted nowrap">Employees (3)</th>
+          <th class="is-sorted nowrap">
+            Employees (3)
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </th>
           <th class="no-width text-right nowrap">Total hours</th>
           <th class="no-width text-right nowrap">Billable hours</th>
           <th class="no-width"></th>
