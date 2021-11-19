@@ -251,7 +251,7 @@ hr {
   align-items: center;
   display: flex;
   gap: 16px;
-  margin-right: 16px;
+  padding-right: 16px;
 }
 #top-nav nav > a {
   align-items: center;
