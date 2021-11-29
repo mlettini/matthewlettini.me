@@ -1,6 +1,6 @@
 ---
 layout: layouts/harvest-nav.njk
-title: My Time Report
+title: Reports
 ---
 
 <header id="top-nav">
