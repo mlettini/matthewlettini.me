@@ -40,7 +40,7 @@ title: Reports
       <h3 class="ml-4">Last month: <span class="text-400">Mar 2021</span></h3>
     </div>
     <div class="flex">
-      <button class="button button-sm">Detailed report</button>
+      <a href="/harvest-nav/detailed-report" class="button button-sm">Detailed report</a>
       <button class="button button-sm">Export <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
     </div>
   </div>

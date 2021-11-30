@@ -24,7 +24,7 @@ title: Team
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-upload"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
         Import
       </button>
-      <input class="input search" type="text" placeholder="Find a person…">
+      <input class="input search" type="text" placeholder="Find a teammate…">
     </div>
   </div>
 
@@ -91,7 +91,7 @@ title: Team
           <th class="no-width">•</th>
           <th class="is-sorted nowrap">
             Employees (3)
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
           </th>
           <th class="no-width text-right nowrap">Total hours</th>
           <th class="no-width text-right nowrap">Billable hours</th>
@@ -167,7 +167,10 @@ title: Team
         <tr>
           <th class="no-width"><input type="checkbox"></th>
           <th class="no-width">•</th>
-          <th class="is-sorted nowrap">Contractors (3)</th>
+          <th class="is-sorted nowrap">
+            Contractors (3)
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+          </th>
           <th class="no-width text-right nowrap">Total hours</th>
           <th class="no-width text-right nowrap">Billable hours</th>
           <th class="no-width"></th>

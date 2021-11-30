@@ -6,7 +6,7 @@ title: Reports
 <header id="top-nav">
   <nav>
     <a href="#" class="is-active">Time</a>
-    <a href="#">Detailed time</a>
+    <a href="/harvest-nav/detailed-report">Detailed time</a>
     <a href="#">Detailed expense</a>
     <a href="#">Contractor</a>
     <a href="#">Invoiced</a>

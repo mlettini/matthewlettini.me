@@ -11,12 +11,15 @@ title: Team
 </header>
 
 <main>
-  <div class="flex back-to mb-16">
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
-    <a href="/harvest-nav/team" class="is-active">Back to team</a>
+  <div class="flex justify-space-between">
+    <div class="flex back-to mb-16">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+      <a href="/harvest-nav/team" class="is-active">Back to team</a>
+    </div>
+    <input class="input search" type="text" placeholder="Find a teammate…">
   </div>
 
-  <div class="flex justify-space-between">
+  <div class="flex justify-space-between mt-8">
     <div class="flex">
       <img src="https://matthewlettini.me/images/matthew-lettini-header.jpg" class="avatar" width="60" height="60">
       <div class="ml-8">
