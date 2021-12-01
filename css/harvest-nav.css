@@ -52,7 +52,7 @@
   -webkit-font-smoothing: antialiased;
 }
 *:focus {
-  outline-color: var(--orange);
+  outline-color: var(--charcoal);
 }
 html {
   background: var(--white);
@@ -66,6 +66,7 @@ body {
   margin: 0 0 0 var(--left-nav-width);
 }
 h1, h2, h3, h4, h5 {
+  font-weight: 500;
   margin: 0;
 }
 h1 {
@@ -74,24 +75,21 @@ h1 {
   line-height: 1.2;
 }
 h2 {
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 1.25;
+  font-size: 25px;
+  line-height: 1.2;
 }
 h3 {
   font-size: 20px;
-  font-weight: 500;
 }
 h4 {
   font-size: 17px;
-  font-weight: 500;
 }
 h5 {
   font-size: 15px;
-  font-weight: 500;
 }
 a {
   color: var(--charcoal);
+  text-underline-offset: 1px;
 }
 small {
   display: block;
@@ -142,17 +140,18 @@ strong {
   flex-direction: column;
 }
 #left-nav nav > a {
+  -webkit-font-smoothing: subpixel-antialiased;
   align-items: center;
-  color: var(--white);
+  color: var(--warm-white);
   display: flex;
   font-size: 15px;
   padding: 8px 16px;
   text-decoration: none;
-  /* transition: background-color 100ms; */
 }
 #left-nav nav > a:hover,
 #left-nav nav > a.is-active {
   background: var(--orange-600);
+  color: var(--white);
 }
 #left-nav nav > a:active {
   background: var(--orange-700);
@@ -169,7 +168,7 @@ strong {
   width: 20px;
 }
 #left-nav nav > hr {
-  background: var(--orange-300);
+  background: var(--orange-400);
   border: 0;
   height: 1px;
   margin: 8px;
@@ -197,7 +196,6 @@ strong {
   position: relative;
   overflow: hidden;
   text-decoration: none;
-  /* transition: background-color 100ms; */
   width: 100vw;
   z-index: 1;
 }
@@ -232,7 +230,6 @@ strong {
   padding: 12px 4px;
   position: relative;
   text-decoration: none;
-  /* transition: border 100ms, color 100ms; */
   white-space: nowrap;
 }
 #top-nav nav > a:hover,
@@ -285,18 +282,17 @@ main.narrow {
   margin: 0;
   padding: 0 16px;
   position: relative;
-  /* transition: background-color 100ms, border 100ms, box-shadow 100ms; */
   vertical-align: middle;
   white-space: nowrap;
 }
 .button:hover {
   border-color: var(--gray-alpha-600);
+}
+.button:hover, .button:focus {
   z-index: 1;
 }
 .button:active {
   background-color: var(--gray-alpha-100);
-  box-shadow: none !important;
-  /* transform: translateY(1px); */
 }
 .button-sm {
   border-radius: 6px;
@@ -313,19 +309,30 @@ main.narrow {
 }
 .button.primary:hover {
   background-color: var(--gray-alpha-900);
-  border-color: transparent;
 }
 .button.primary:active {
   background-color: var(--gray-alpha-800);
 }
-.button.cancel {
+.button.running {
+  background-color: var(--charcoal);
+  border-color: transparent;
+  color: var(--white);
+  font-weight: 500;
+}
+.button.running:hover {
+  background-color: var(--gray-alpha-900);
+}
+.button.running:active {
+  background-color: var(--gray-alpha-800);
+}
+/* .button.cancel {
   background-color: transparent;
-  border-color: var(--gray-alpha-500);
+  border-color: var(--gray-alpha-400);
 }
 .button.cancel:hover {
-  /* background-color: var(--gray-alpha-100); */
+  /* background-color: var(--gray-alpha-100);
   border-color: var(--charcoal);
-}
+} */
 .button.cancel:active {
   background-color: var(--gray-alpha-100);
 }
@@ -396,7 +403,6 @@ a.button {
   line-height: inherit;
   margin: 0;
   padding: 0 8px;
-  /* transition: border 100ms; */
   width: 100%;
   vertical-align: middle;
 }
@@ -486,7 +492,6 @@ input[type="radio"]:checked {
   line-height: inherit;
   margin: 0;
   padding: 8px;
-  /* transition: background-color 100ms; */
 }
 .table th.no-width, .table td.no-width {
   width: 1px;
@@ -515,8 +520,6 @@ input[type="radio"]:checked {
 }
 .table tbody tr:hover td {
   background-color: var(--orange-100);
-  border-color: var(--orange-300);
-  box-shadow: 0 -1px 0 var(--orange-300);
   cursor: pointer;
 }
 .table tfoot td {
@@ -560,7 +563,6 @@ input[type="radio"]:checked {
   padding: 8px 4px;
   position: relative;
   text-decoration: none;
-  /* transition: border 100ms, color 100ms; */
   white-space: nowrap;
 }
 .tabs nav > a:hover,
@@ -637,11 +639,10 @@ input[type="radio"]:checked {
 }
 
 .form-box {
-  background-clip: padding-box;
-  background-color: var(--white);
+  background-color: var(--gray-alpha-100);
   border: 1px solid var(--gray-alpha-200);
   border-radius: 4px;
-  box-shadow: 0 0.5px 1px rgba(0,0,0,0.015), 0 1px 2px rgba(0,0,0,0.025), 0 1.5px 3px rgba(0,0,0,0.05), 0 2px 4px rgba(0,0,0,0.075);
+  /* box-shadow: 0 0.5px 1px rgba(0,0,0,0.015), 0 1px 2px rgba(0,0,0,0.025), 0 1.5px 3px rgba(0,0,0,0.05), 0 2px 4px rgba(0,0,0,0.075); */
   padding: 24px;
 }
 .form-box-inner {
@@ -668,7 +669,6 @@ label {
     align-items: center;
     cursor: text;
     display: flex;
-    font-weight: 400;
     height: 36px;
     margin: 0;
   }
