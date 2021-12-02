@@ -108,7 +108,7 @@ title: Team
           <td>
             <div class="flex nowrap">
               <img src="/images/matthew-lettini-header.jpg" width="30" height="30" class="avatar mr-4">
-              Person Name
+              <strong>Person Name</strong>
             </div>
           </td>
           <td class="no-width text-right">12.34</td>
@@ -128,7 +128,7 @@ title: Team
           <td>
             <div class="flex nowrap">
               <img src="/images/matthew-lettini-header.jpg" width="30" height="30" class="avatar mr-4">
-              Person Name
+              <strong>Person Name</strong>
             </div>
           </td>
           <td class="no-width text-right">12.34</td>
@@ -148,7 +148,7 @@ title: Team
           <td>
             <div class="flex nowrap">
               <img src="/images/matthew-lettini-header.jpg" width="30" height="30" class="avatar mr-4">
-              Person Name
+              <strong>Person Name</strong>
             </div>
           </td>
           <td class="no-width text-right">12.34</td>
@@ -186,7 +186,7 @@ title: Team
           <td>
             <div class="flex nowrap">
               <img src="/images/matthew-lettini-header.jpg" width="30" height="30" class="avatar mr-4">
-              Person Name
+              <strong>Person Name</strong>
             </div>
           </td>
           <td class="no-width text-right">12.34</td>
@@ -206,7 +206,7 @@ title: Team
           <td>
             <div class="flex nowrap">
               <img src="/images/matthew-lettini-header.jpg" width="30" height="30" class="avatar mr-4">
-              Person Name
+              <strong>Person Name</strong>
             </div>
           </td>
           <td class="no-width text-right">12.34</td>
@@ -226,7 +226,7 @@ title: Team
           <td>
             <div class="flex nowrap">
               <img src="/images/matthew-lettini-header.jpg" width="30" height="30" class="avatar mr-4">
-              Person Name
+              <strong>Person Name</strong>
             </div>
           </td>
           <td class="no-width text-right">12.34</td>

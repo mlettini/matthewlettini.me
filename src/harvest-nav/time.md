@@ -57,21 +57,16 @@ title: Time
     <table border="0" class="table time-table" cellpadding="0" cellspacing="0">
       <tbody>
         <tr>
-          <td style="width:40%">
-            <strong>Task name</strong>
-            <br>
-            <small>1:20pm - 4:20pm / This is a ton of notes that should really break to a new line and push everything over. This is a ton of notes that should really break to a new line and push everything over.</small>
-          </td>
           <td>
-            <strong>[CODE] Project name</strong>
-            <br>
-            <small>Client name</small>
+            <strong>Task name</strong><br>
+            <small>[CODE] Project name (Client Name)</small><br>
+            <small>1:20pm – 4:20pm <span style="color:#666">Here are some notes</span></small>
           </td>
           <td class="no-width text-right nowrap">
             <h3>3.00</h3>
           </td>
           <td class="no-width text-right">
-            <button class="button">Start</button>
+            <button class="button"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> Start</button>
           </td>
           <td class="no-width">
             <a href="/harvest-nav/project-analysis" class="button button-sm">
@@ -80,21 +75,16 @@ title: Time
           </td>
         </tr>
         <tr>
-          <td style="width:40%">
-            <strong>Task name</strong>
-            <br>
-            <small>1:20pm - 4:20pm / Just one note</small>
-          </td>
           <td>
-            <strong>[CODE] Project name</strong>
-            <br>
-            <small>Client name</small>
+            <strong>Task name</strong><br>
+            <small>[CODE] Project name (Client Name)</small><br>
+            <small>1:20pm – 4:20pm</small>
           </td>
           <td class="no-width text-right nowrap">
             <h3>3.00</h3>
           </td>
           <td class="no-width text-right">
-            <button class="button">Start</button>
+            <button class="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Start</button>
           </td>
           <td class="no-width">
             <a href="/harvest-nav/project-analysis" class="button button-sm">
@@ -103,21 +93,16 @@ title: Time
           </td>
         </tr>
         <tr class="is-running">
-          <td style="width:40%">
-            <strong>Task name</strong>
-            <br>
-            <small>1:20pm - 4:20pm</small>
-          </td>
           <td>
-            <strong>[CODE] Project name</strong>
-            <br>
-            <small>Client name</small>
+            <strong>Task name</strong><br>
+            <small>[CODE] Project name (Client Name)</small><br>
+            <small>1:20pm – 4:20pm</small>
           </td>
           <td class="no-width text-right nowrap">
             <h3>3.00</h3>
           </td>
           <td class="no-width text-right">
-            <button class="button running">Stop</button>
+            <button class="button running"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pause"><rect x="6" y="4" width="3" height="16" fill="currentColor"></rect><rect x="15" y="4" width="3" height="16" fill="currentColor"></rect></svg> Stop</button>
           </td>
           <td class="no-width">
             <a href="/harvest-nav/project-analysis" class="button button-sm">
@@ -128,7 +113,6 @@ title: Time
       </tbody>
       <tfoot>
         <tr>
-          <td></td>
           <td class="text-right"><h3>Total</h3></td>
           <td class="text-right"><h3>3.00</h3></td>
           <td></td>
@@ -139,7 +123,7 @@ title: Time
   </div>
 
   <button class="button primary">
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
     New time entry
   </button>
 </main>

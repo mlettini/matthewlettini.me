@@ -17,7 +17,7 @@ title: Projects
     </div>
     <div class="flex">
       <button class="button primary">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
         New project
       </button>
       <button class="button">
@@ -69,7 +69,7 @@ title: Projects
           <td class="no-width"><input type="checkbox"></td>
           <td class="no-width">•</td>
           <td class="nowrap">
-            [CODE] Project name
+            <strong>[CODE] Project name</strong>
           </td>
           <td class="no-width text-right">$30,000.00</td>
           <td class="no-width text-right">$10,000.00</td>
