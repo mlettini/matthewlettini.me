@@ -79,6 +79,7 @@ h1 {
 }
 h2 {
   font-size: 25px;
+  font-weight: 600;
   line-height: 1.2;
 }
 h3 {
@@ -92,7 +93,6 @@ h5 {
 }
 a {
   color: var(--charcoal);
-  font-weight: 500;
   text-underline-offset: 1px;
 }
 small {
@@ -330,17 +330,6 @@ main.narrow {
 .button.running:active {
   background-color: var(--gray-alpha-800);
 }
-/* .button.cancel {
-  background-color: transparent;
-  border-color: var(--gray-alpha-400);
-}
-.button.cancel:hover {
-  /* background-color: var(--gray-alpha-100);
-  border-color: var(--charcoal);
-} */
-.button.cancel:active {
-  background-color: var(--gray-alpha-100);
-}
 .button.is-disabled {
   background-color: var(--gray-alpha-100) !important;
   border-color: var(--gray-alpha-200) !important;
@@ -351,7 +340,7 @@ main.narrow {
   transform: none !important;
 }
 .button.primary.is-disabled {
-  background-color: var(--gray-alpha-300) !important;
+  background-color: var(--green-300) !important;
   border-color: transparent !important;
   color: var(--white) !important;
 }
@@ -524,7 +513,7 @@ input[type="radio"]:checked {
   vertical-align: middle;
 }
 .table tbody tr:hover td {
-  background-color: var(--orange-100);
+  background-color: var(--orange-100) !important;
   cursor: pointer;
 }
 .table tfoot td {
@@ -541,9 +530,6 @@ input[type="radio"]:checked {
 }
 .time-table tr.is-running td {
   background-color: var(--warm-white);
-}
-.time-table tr.is-running:hover td {
-  background-color: var(--orange-100);
 }
 
 .tabs {
@@ -630,7 +616,7 @@ input[type="radio"]:checked {
 
 .empty {
   align-items: center;
-  background: var(--warm-white);
+  background: var(--gray-alpha-100);
   display: flex;
   color: var(--gray-alpha-700);
   flex-direction: column;
