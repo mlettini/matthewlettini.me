@@ -11,27 +11,23 @@ title: Home
   <ul>
     <li class="mb-16">
       <strong>Left-side navigation</strong><br>
-      Offers more space to include iconography, group related sections, and make Harvest full-width.
+      Offers more space to include iconography, group related sections, and fits with a full-width responsive Harvest.
     </li>
     <li class="mb-16">
-      <strong>Headlines</strong><br>
-      Attempting to be consistent in naming and defining every page in the app. This can help with spatial awareness and IA.
+      <strong>Consistent headlines</strong><br>
+      Attempting to directly name and define every page in the app. This is an IA iteration that can help customers with spatial awareness and understanding where they are.
     </li>
     <li class="mb-16">
       <strong>Consistent content</strong><br>
-      Trying to make things like timeframe selectors, filters, export buttons, summaries, and more consistently designed and in the same location regardless of section.
+      Attempting to make things like timeframe selectors, filters, export buttons, summaries, and more consistently designed and in the same location on the page, regardless of section.
     </li>
     <li class="mb-16">
       <strong>Flatter design</strong><br>
       Pulling from the new brand, removing gradients and shadows, and making Harvest feel more modern.
     </li>
     <li class="mb-16">
-      <strong>New UX</strong><br>
-      Testing things like a new filter design, pagination design, and add-buttons on the right.
-    </li>
-    <li class="mb-16">
       <strong>No “Manage” section</strong><br>
-      This is a confusing section. Move these pages into more helpful places.
+      Another IA iteration. This is confusing in Harvest today, so here I experiment with these pages living under different sections.
     </li>
   </ul>
 </main>

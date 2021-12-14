@@ -11,6 +11,7 @@ title: Reports
     <a href="#">Contractor</a>
     <a href="#">Invoiced</a>
     <a href="#">Uninvoiced</a>
+    <a href="#">Payments</a>
   </nav>
 </header>
 

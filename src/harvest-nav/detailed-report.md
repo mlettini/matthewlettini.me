@@ -11,6 +11,7 @@ title: Reports
     <a href="#">Contractor</a>
     <a href="#">Invoiced</a>
     <a href="#">Uninvoiced</a>
+    <a href="#">Payments</a>
   </nav>
 </header>
 
@@ -103,11 +104,11 @@ title: Reports
   <div class="flex justify-space-between mt-16">
     <div class="flex">
       <button class="button button-sm">
-        <span>Showing:</span> All hours
+        Showing: <span>All hours</span>
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
       </button>
       <button class="button button-sm">
-        <span>Group by:</span> Date
+        Group by: <span>Date</span>
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
       </button>
     </div>

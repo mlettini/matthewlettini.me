@@ -30,8 +30,10 @@ title: Team
 
   <div class="tabs mt-24 mb-16">
     <nav>
-      <a href="#" class="is-active">Active (20)</a>
+      <a href="#" class="is-active">Active (6)</a>
       <a href="#">My pins (0)</a>
+      <a href="#">Employees (3)</a>
+      <a href="#">Contractors (3)</a>
       <a href="#">Archived</a>
     </nav>
   </div>
@@ -56,6 +58,10 @@ title: Team
     <div class="flex">
       <button class="button button-sm">
         Filter by role
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </button>
+      <button class="button button-sm">
+        Filter by manager
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
       </button>
       <button class="button button-sm">
