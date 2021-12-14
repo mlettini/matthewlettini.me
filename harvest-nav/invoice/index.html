@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Home • Matthew Lettini</title>
+    <title>Invoices • Matthew Lettini</title>
     <meta charset="utf-8">
     <meta name="viewport" content="maximum-scale=1, initial-scale=1, viewport-fit=cover, width=device-width">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -23,7 +23,7 @@
       <div>
         <div class="logo">H</div>
         <nav>
-          <a href="/harvest-nav" class="is-active">
+          <a href="/harvest-nav" class="">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
             <span>Home</span>
           </a>
@@ -35,7 +35,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-paperclip"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path></svg>
             <span>Expenses</span>
           </a>
-          <a href="/harvest-nav/invoices" class="">
+          <a href="/harvest-nav/invoices" class="is-active">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
             <span>Invoices</span>
           </a>
@@ -90,33 +90,45 @@
       <span>Menu</span>
     </button>
 
-    <div class="scroll-container"><main class="narrow">
-  <h1 class="mb-16">Hello world!</h1>
-  <p class="mb-16">
-    This is a testing ground with various design explorations for Harvestapp and Porchlight. Please approach it with caution and a grain-of-salt. Here be dragons. Some of the ideas I’m exploring include:
-  </p>
-  <ul>
-    <li class="mb-16">
-      <strong>Left-side navigation</strong><br>
-      Offers more space to include iconography, group related sections, and fits with a full-width responsive Harvest.
-    </li>
-    <li class="mb-16">
-      <strong>Consistent headlines</strong><br>
-      Attempting to directly name and define every page in the app. This is an IA iteration that can help customers with spatial awareness and understanding where they are.
-    </li>
-    <li class="mb-16">
-      <strong>Consistent content</strong><br>
-      Attempting to make things like timeframe selectors, filters, export buttons, summaries, and more consistently designed and in the same location on the page, regardless of section.
-    </li>
-    <li class="mb-16">
-      <strong>Flatter design</strong><br>
-      Pulling from the new brand, removing gradients and shadows, and making Harvest feel more modern.
-    </li>
-    <li class="mb-16">
-      <strong>No “Manage” section</strong><br>
-      Another IA iteration. This is confusing in Harvest today, so here I experiment with these pages living under different sections.
-    </li>
-  </ul>
+    <div class="scroll-container"><header id="top-nav">
+  <nav>
+    <a href="#" class="is-active">Manage invoices</a>
+    <a href="#">Manage recurring invoices</a>
+    <a href="#">Manage retainers</a>
+    <a href="#">Configure</a>
+  </nav>
+</header>
+<main>
+  <div class="flex justify-space-between mb-16">
+    <div class="flex back-to">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+      <a href="/harvest-nav/invoices" class="is-active">Back to invoices</a>
+    </div>
+    <input class="input search" type="text" placeholder="Find an invoice…">
+  </div>
+  <div>
+    <h1>Invoice #1234</h1>
+    <a href="#">View history</a>
+  </div>
+  <div class="flex justify-space-between mt-16">
+    <div class="flex">
+      <button class="button primary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-send"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+        Send invoice
+      </button>
+      <button class="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+        Actions
+      </button>
+    </div>
+    <div class="flex">
+      <button class="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        Record payment
+      </button>
+    </div>
+  </div>
+  <hr class="mt-16 mb-16">
 </main>
 </div>
   </body>
