@@ -36,18 +36,52 @@ title: Projects
     <div class="summary-box">
       Total hours<br>
       <h2>123.45</h2>
+      <div class="flex justify-space-between mt-8">
+        Billable <strong>123.00</strong>
+      </div>
+      <div class="flex justify-space-between">
+        Non-billable <strong>0.45</strong>
+      </div>
     </div>
     <div class="summary-box">
-      Budget<br>
+      Remaining budget<br>
       <h2>123.45</h2>
+      <div class="pt-8">
+        <div class="meter" style="width:100%"></div>
+      </div>
+      <div class="flex justify-space-between">
+        Budget <strong>2,000.00</strong>
+      </div>
     </div>
     <div class="summary-box">
       Billable amount<br>
       <h2>$123.45</h2>
+      <div class="flex justify-space-between mt-8">
+        Time <strong>3.00</strong>
+      </div>
+      <div class="flex justify-space-between">
+        Expenses <strong>0.00</strong>
+      </div>
     </div>
     <div class="summary-box">
       Uninvoiced amount<br>
       <h2>$123.45</h2>
+      <div class="flex justify-space-between mt-8">
+        Time <strong>3.00</strong>
+      </div>
+      <div class="flex justify-space-between">
+        Expenses <strong>0.00</strong>
+      </div>
+    </div>
+    <div class="summary-box">
+      Internal costs<br>
+      <h2>$123.45</h2>
+      <div class="flex justify-space-between mt-8">
+        Time <strong>3.00</strong>
+      </div>
+      <div class="flex justify-space-between">
+        Expenses <strong>0.00</strong>
+      </div>
     </div>
   </div>
 
