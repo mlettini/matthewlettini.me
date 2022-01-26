@@ -3,55 +3,37 @@
 
 {% block header_content %}
   <meta name="robots" content="noindex">
-  <link rel="stylesheet" href="/css/posts.css">
+  <link rel="stylesheet" href="/css/post.css">
 {% endblock %}
 
 {% block content %}
-  <header id="header">
-    🚧 Area under-construction 🚧
+  <header id="post-header">
+    <div class="inner">
+      <h2>{{ title }}</h2>
+      <time>{{ date | dateFilter }}</time>
+    </div>
   </header>
 
-  <main>
-    <article>
-      <header id="post-header">
-        <time>{{ date | dateFilter }}</time>
-        <h1 class="m-auto">{{ title }}</h1>
-      </header>
-
-      <section id="post-content">
-        {{ content | safe }}
-      </section>
-    </article>
-  </main>
+  <section class="post">
+    {{ content | safe }}
+  </section>
 
   <section id="post-nav" class="do-not-print">
-    <nav>
+    <nav class="inner">
       <ul class="post-nav">
         {% if prevPost.url %}
           <li class="previous">
-            <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg> Older post</span>
+            <span>&larr; Older</span>
             <a class="previous" href="{{ prevPost.url }}">{{ prevPost.data.title }}</a>
           </li>
         {% endif %}
         {% if nextPost.url %}
           <li class="next">
-            <span>Newer post <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
+            <span>Newer &rarr;</span>
             <a class="next" href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
           </li>
         {% endif %}
       </ul>
     </nav>
   </section>
-
-  <footer id="footer">
-    <nav class="do-not-print">
-      <ul class="footer-nav">
-        <li><a href="/">Home</a></li>
-        <li><a href="/posts">All posts</a></li>
-        <li><a href="/feed.xml">RSS feed</a></li>
-        <li><a href="#">Back to top</a></li>
-      </ul>
-    </nav>
-    <small>Copyright © 2020 Matthew Lettini</small>
-  </footer>
 {% endblock %}

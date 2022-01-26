@@ -1,15 +1,23 @@
 ---
-layout: layouts/home.njk
-title: Home
-description: Brooklyn-based product designer building great things at Harvest.
+layout: layouts/about.njk
+title: About
 ---
 
-[👋](mailto:mlettini@hey.com) Hey there!
+<section>
+  <img class="portrait" src="/images/ml-portrait.jpg" alt="Matthew Lettini" height="449" width="798">
+  <div class="inner">
 
-My name is **Matthew Lettini** and I’m a product designer working remotely from Brooklyn, NYC. My goal is to make life easier for people, one pixel at a time.
+I’m a software designer and developer that’s been building and improving digital product experiences for over 15 years. My goal is to make life easier for people, one pixel at a time.
 
-For the past decade, I’ve been helping build a world-class time tracking product with the team at [Harvest](https://getharvest.com). I’ve worked on just about everything, but highlights include redesigning the core timesheet and reporting suite, leading the creation of [Forecast](https://getharvest.com/forecast), designing our first Mac and iPhone apps, and [Chosen](https://github.com/harvesthq/chosen).
+I’ve spent the past decade doing this at [Harvest](https://getharvest.com), helping to build a world-class time tracking product alongside a world-class team. Previously I was designing new ways to purchase and listen to music online at [Amie Street](https://en.wikipedia.org/wiki/Amie_Street) and [Songza](https://en.wikipedia.org/wiki/Songza).
 
-Beyond the desk I’m usually [behind a camera](https://photos.matthewlettini.me), behind a drumset, on a basketball court, jamming at karaoke, or min-maxing a new D&D character.
+I excel as a product generalist, blurring the line between product design and product management. My experiences extend to creating product strategies, managing projects, leading teams, creating processes, conducting qualitative research and quantitative analysis, and a million other things in between.
 
-My social presence is lacking but you can usually find me @mlettini in places like [Twitter](https://twitter.com/mlettini), [Instagram](https://instagram.com/mlettini), [Spotify](https://open.spotify.com/user/mlettini), [Github](https://github.com/mlettini), and elsewhere. You can [say hey here](mailto:mlettini@hey.com).
+I’m also a designer who codes and spend a lot of my time writing HTML & CSS. Lately I’ve been particularly interested in creating design systems and optimizing information architecture.
+
+Beyond the desk I’m a new puppy dad-in-training, an out-of-practice musician, and an avid gamer always ready to min-max a new D&D character. I love basketball, karaoke, and a good cognac.
+
+I’m currently working remotely from Brooklyn, NYC. You can say hello by emailing [mlettini@gmail.com](mailto:mlettini@gmail.com) or finding me @mlettini in most places.
+
+  </div>
+</section>
