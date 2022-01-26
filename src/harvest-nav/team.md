@@ -118,7 +118,7 @@ title: Team
           <td class="no-width">•</td>
           <td>
             <div class="flex nowrap">
-              <img src="/images/matthew-lettini-header.jpg" width="30" height="30" class="avatar mr-4">
+              <img src="/images/matthew-lettini-avatar.jpg" width="30" height="30" class="avatar mr-4">
               <strong>Person Name</strong>
             </div>
           </td>
@@ -138,7 +138,7 @@ title: Team
           <td class="no-width">•</td>
           <td>
             <div class="flex nowrap">
-              <img src="/images/matthew-lettini-header.jpg" width="30" height="30" class="avatar mr-4">
+              <img src="/images/matthew-lettini-avatar.jpg" width="30" height="30" class="avatar mr-4">
               <strong>Person Name</strong>
             </div>
           </td>
@@ -158,7 +158,7 @@ title: Team
           <td class="no-width">•</td>
           <td>
             <div class="flex nowrap">
-              <img src="/images/matthew-lettini-header.jpg" width="30" height="30" class="avatar mr-4">
+              <img src="/images/matthew-lettini-avatar.jpg" width="30" height="30" class="avatar mr-4">
               <strong>Person Name</strong>
             </div>
           </td>
@@ -196,7 +196,7 @@ title: Team
           <td class="no-width">•</td>
           <td>
             <div class="flex nowrap">
-              <img src="/images/matthew-lettini-header.jpg" width="30" height="30" class="avatar mr-4">
+              <img src="/images/matthew-lettini-avatar.jpg" width="30" height="30" class="avatar mr-4">
               <strong>Person Name</strong>
             </div>
           </td>
@@ -216,7 +216,7 @@ title: Team
           <td class="no-width">•</td>
           <td>
             <div class="flex nowrap">
-              <img src="/images/matthew-lettini-header.jpg" width="30" height="30" class="avatar mr-4">
+              <img src="/images/matthew-lettini-avatar.jpg" width="30" height="30" class="avatar mr-4">
               <strong>Person Name</strong>
             </div>
           </td>
@@ -236,7 +236,7 @@ title: Team
           <td class="no-width">•</td>
           <td>
             <div class="flex nowrap">
-              <img src="/images/matthew-lettini-header.jpg" width="30" height="30" class="avatar mr-4">
+              <img src="/images/matthew-lettini-avatar.jpg" width="30" height="30" class="avatar mr-4">
               <strong>Person Name</strong>
             </div>
           </td>

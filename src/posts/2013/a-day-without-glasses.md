@@ -6,7 +6,7 @@ tags:
   - life
 ---
 
-A minor incident Thursday night left me with broken glasses, shattered lenses, and a scratched cornea. It was an accident, and the scratches would heal in a couple days with no (known) longterm issues. I normally have old glasses around as backups, but I got rid of those during a recent purge. So I spent half my Friday without any vision correctness.
+A minor incident Thursday night left me with broken glasses, shattered lenses, and a scratched cornea. It was an accident, and the scratches would heal in a couple days with no (known) longterm issues. I normally have old glasses around as backups, but I got rid of those during a recent purge. So I spent half my Friday without any vision correctness.
 
 It was an interesting experience.
 

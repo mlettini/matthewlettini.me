@@ -21,7 +21,7 @@ title: Team
 
   <div class="flex justify-space-between mt-8">
     <div class="flex">
-      <img src="https://matthewlettini.me/images/matthew-lettini-header.jpg" class="avatar" width="60" height="60">
+      <img src="https://matthewlettini.me/images/matthew-lettini-avatar.jpg" class="avatar" width="60" height="60">
       <div class="ml-8">
         <h1>Matthew Lettini</h1>
         mlettini@getharvest.com

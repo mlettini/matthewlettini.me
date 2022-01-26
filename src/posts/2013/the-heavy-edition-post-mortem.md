@@ -24,7 +24,7 @@ Damnit, the same thing was happening…
 
 So I switched to a daily collection. As soon as I heard something I liked I posted it. And the site became kinda successful—I think I had around 400 followers at some point. I kept it up until the end of 2010, when I started having less free time and just stopped posting. It had a good run.
 
-## Looking Back
+### Looking Back
 
 In the years since, I’ve found myself returning to The Heavy Edition often. A song I hadn’t heard in awhile would jump into my head and I wanted to go find it, or I would hear someone that sounded familiar and wanted to see if I posted them years earlier.
 

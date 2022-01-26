@@ -35,8 +35,7 @@ html {
 
 This is incredibly compelling, particularly because…
 
-
-## I try to avoid em units
+### I try to avoid em units
 
 Em units are useful for a variety of reasons, the most important being that they’re [flexible](http://trentwalton.com/2013/01/07/flexible-foundations/) and [scalable](http://blog.cloudfour.com/the-ems-have-it-proportional-media-queries-ftw/). You can set the highest parent element, html, to have a relative `font-size` specified with an em value or a percentage, and it will calculate a specific value based on the browser’s default `font-size`. This is great for printed documents (the typical default browser print size is 12px vs. 16px for screen display), and it allows your site to scale with the user’s preference, especially in older browsers that have a harder time with page/text zoom.
 
@@ -44,8 +43,7 @@ However, em units have their drawbacks as well, particularly for web-apps or tea
 
 As both a product designer and an HTML/CSS developer accustomed to decently-sized dev teams, I’ve learned to avoid em units for the bulk of app development. On smaller and less complicated sites, these issues are less apparent, but still necessary to keep in mind and design around.
 
-
-## Enter the rem unit
+### Enter the rem unit
 
 I first heard about rem units [a few years ago](http://snook.ca/archives/html_and_css/font-size-with-rem), but haven’t seen much talk or use since. I’m not sure why, though, as they have always seemed incredibly well-suited for web design – they behave much more predictably like pixels, but retain the flexibility of ems. If an element is always supposed to have a `font-size` of 16px at base size, regardless of the parent element, then rems make more sense than ems. It’s much easier to convert design comps into code without worrying about parent elements. The same goes for `width`, `height`, `padding`, `margin`, and all other style attributes that specify size.
 
@@ -53,8 +51,7 @@ I decided to try rem units for Harvest’s 2012 Year In Work to learn their stre
 
 Here’s what you should know about rem units:
 
-
-## 1. They’re great for responsive design
+### 1. They’re great for responsive design
 
 Since all rem units are relative to a single number – the html `font-size` – you need only set the breakpoints on this number for a simple responsive layout. Here’s the actual code used in the Year In Work’s [Sass](http://sass-lang.com/) file:
 
@@ -79,8 +76,7 @@ While this isn’t appropriate for every design, being able to set a base size f
 
 *Note: While I used pixel values, you could use % values as well.*
 
-
-## 2. They’re great for rapid prototyping
+### 2. They’re great for rapid prototyping
 
 I’ve signed on to the theory of prototyping a design directly in HTML/CSS, and avoiding Photoshop altogether (sometimes). When experimenting with a design right within the browser, the last thing you want to worry about is getting the sizes exactly right.
 
@@ -90,8 +86,7 @@ This is how I designed the Year In Work actually… there were no layout PSDs.
 
 *Note: Just like with ems, you’ll find you need to use fractions like 2.25 for some values. I always stuck to .25, .5, or .75 when not using a whole number, since my base size is 16px. However, as you can see in the screenshot above, the base size can change to 13px, which at 2.25rem is 29.25px. Since you can’t have a quarter pixel, some browsers render this as 29px, others as 30px. I found this to be a minor trade-off (but something to keep in mind) for the ease of the responsive layout that I explained above.*
 
-
-## 3. All sizes should be in rem units
+### 3. All sizes should be in rem units
 
 Some developers prefer a mix of pixels, percentages, and ems for different styles on different elements, all within the same page. Personally, I think this makes development confusing, but it can work.
 
@@ -99,8 +94,7 @@ This doesn’t work well when using rem units, though. Using rems on only some s
 
 *Note: You can use ems and rems together, though. Check out [the h3 on slide 3](http://cl.ly/image/2R0j181Y3W3r) of The Year In Work – I didn’t feel like calculating the size of the “21”, so I gave it a font-size of 1.25em.*
 
-
-## 4. They can influence your design style
+### 4. They can influence your design style
 
 Sometimes you need an element to be only 3px – this translates to 0.1875rem… not very conducive to simplified design code. However, you can allow this to influence your design, and decide to just use 0.2rem (or 0.25rem, like I mentioned above). Often the difference isn’t important.
 
@@ -110,15 +104,14 @@ It’s because of this reason that rem units probably aren’t the best for soph
 
 However, if you put the last two points together, and you fully use rems from the start while allowing yourself to design around the strengths and weaknesses of rem units, you could end up with a nice web-app that scales nicely between browser and tablet sizes and page zooms.
 
-
-## 5. They do not work in IE8
+### 5. They do not work in IE8
 
 This may be the biggest reason why we don’t hear about rem units too often currently, as many sites (especially web-apps) still need to support IE8. Luckily, that was not a requirement for the Year In Work, which we decided should be a showcase of some forward-thinking design and techniques.
 
 If you’re working on a personal or small site, I doubt this will be a big issue for you.
 
 
-## Final thoughts
+### Final thoughts
 
 Rem units aren’t great for every occasion, but for some sites they can be a great tool. They are worth trying regardless of what you’re normally comfortable with:
 
