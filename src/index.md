@@ -4,7 +4,7 @@ title: About
 ---
 
 <section>
-  <img class="portrait" src="/images/ml-portrait.jpg" alt="Matthew Lettini" height="449" width="798">
+  <img class="portrait" src="/images/matthew-lettini-portrait.jpg" alt="Matthew Lettini" height="449" width="798">
   <div class="inner">
 
 I’m a software designer and developer that’s been building and improving digital product experiences for over 15 years. My goal is to make life easier for people, one pixel at a time.

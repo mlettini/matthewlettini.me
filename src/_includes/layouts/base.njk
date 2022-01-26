@@ -5,24 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="keywords" content="matthew lettini, matthew, mathew, matt, lettini, lentini, lettin, new york, nyc, ny, brooklyn, greenpoint, web, design, designer, product, html, css, harvest, forecast, amie street, songza, chosen, mlettini@gmail.com">
-    <meta property="og:image" content="{{ site.url }}/img/matthew-lettini@2x.jpg">
+
+    <meta property="og:image" content="{{ site.url }}/images/matthew-lettini-portrait.jpg">
     <meta property="og:site_name" content="{{ site.authorName }}">
-    <meta property="og:title" content="{{ title }}">
+    <meta property="og:title" content="{% if (pageType) == 'about' %}{{ site.authorName }}{% else %}{{ title }} • {{ site.authorName }}{% endif %}">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ site.url }}">
+
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:image" content="{{ site.url }}/img/matthew-lettini@2x.jpg">
+    <meta name="twitter:image" content="{{ site.url }}/images/matthew-lettini-portrait.jpg">
     <meta name="twitter:site" content="{{ site.authorHandle }}">
-    <meta name="twitter:title" content="{{ title }}">
+    <meta name="twitter:title" content="{% if (pageType) == 'about' %}{{ site.authorName }}{% else %}{{ title }} • {{ site.authorName }}{% endif %}">
+
     {% if description %}
     <meta description="{{ description }}">
     <meta property="og:description" content="{{ description }}">
     <meta name="twitter:description" content="{{ description }}">
     {% endif %}
+
     <title>{% if (pageType) == 'about' %}{{ site.authorName }}{% else %}{{ title }} • {{ site.authorName }}{% endif %}</title>
-    <link rel="apple-touch-icon" href="/images/matthew-lettini-header.jpg" type="image/jpg">
+    <link rel="apple-touch-icon" href="/images/matthew-lettini-avatar.jpg" type="image/jpg">
     <link rel="icon" href="/images/favicon.svg" type="image/svg+xml" >
-    <link rel="mask-icon" href="/img/matthew-lettini-header.jpg" type="image/jpg" color="black">
+    <link rel="mask-icon" href="/img/matthew-lettini-avatar.jpg" type="image/jpg" color="black">
     <link rel="stylesheet" href="/css/base.css">
     <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Posts">
     {% block header_content %}
