@@ -8,14 +8,14 @@
 
     <meta property="og:image" content="{{ site.url }}/images/matthew-lettini-portrait.jpg">
     <meta property="og:site_name" content="{{ site.authorName }}">
-    <meta property="og:title" content="{% if (pageType) == 'about' %}{{ site.authorName }}{% else %}{{ title }} • {{ site.authorName }}{% endif %}">
+    <meta property="og:title" content="{% if (pageType) == 'About' %}{{ site.authorName }}{% else %}{{ title }} • {{ site.authorName }}{% endif %}">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ site.url }}">
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:image" content="{{ site.url }}/images/matthew-lettini-portrait.jpg">
     <meta name="twitter:site" content="{{ site.authorHandle }}">
-    <meta name="twitter:title" content="{% if (pageType) == 'about' %}{{ site.authorName }}{% else %}{{ title }} • {{ site.authorName }}{% endif %}">
+    <meta name="twitter:title" content="{% if (pageType) == 'About' %}{{ site.authorName }}{% else %}{{ title }} • {{ site.authorName }}{% endif %}">
 
     {% if description %}
     <meta description="{{ description }}">
@@ -23,7 +23,7 @@
     <meta name="twitter:description" content="{{ description }}">
     {% endif %}
 
-    <title>{% if (pageType) == 'about' %}{{ site.authorName }}{% else %}{{ title }} • {{ site.authorName }}{% endif %}</title>
+    <title>{% if (pageType) == 'About' %}{{ site.authorName }}{% else %}{{ title }} • {{ site.authorName }}{% endif %}</title>
     <link rel="apple-touch-icon" href="/images/matthew-lettini-avatar.jpg" type="image/jpg">
     <link rel="icon" href="/images/favicon.svg" type="image/svg+xml" >
     <link rel="mask-icon" href="/img/matthew-lettini-avatar.jpg" type="image/jpg" color="black">
@@ -39,10 +39,10 @@
       <nav>
         <ul>
           <li>
-            <a href="/"{% if (pageType) == 'about' %} class="selected"{% endif %}>About</a>
+            <a href="/"{% if (pageType) == 'About' %} class="selected"{% endif %}>About</a>
           </li>
           <li>
-            <a href="/work"{% if (pageType) == 'work' %} class="selected"{% endif %}>Work</a>
+            <a href="/work"{% if (pageType) == 'Work' %} class="selected"{% endif %}>Work</a>
           </li>
         </ul>
       </nav>

@@ -1,5 +1,6 @@
 ---
-layout: layouts/about.njk
+layout: layouts/blank.njk
+pageType: About
 title: About
 ---
 

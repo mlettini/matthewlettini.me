@@ -1,5 +1,4 @@
 ---
-layout: layouts/harvest-nav.njk
 title: Settings
 ---
 

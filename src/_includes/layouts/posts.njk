@@ -1,5 +1,4 @@
 {% extends 'layouts/base.njk' %}
-{% set pageType = 'posts' %}
 
 {% block header_content %}
   <meta name="robots" content="noindex">
@@ -20,4 +19,6 @@
       <a href="/feed.xml">RSS feed</a>
     </div>
   </section>
+
+  {{ content | safe }}
 {% endblock %}
