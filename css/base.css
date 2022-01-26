@@ -166,7 +166,7 @@ section {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 22rem) {
+@media (min-width: 20rem) {
   #base-header {
     align-items: center;
     flex-direction: row;
@@ -179,6 +179,7 @@ section {
   gap: 1rem;
   list-style: none;
   margin: 0;
+  padding: 0;
 }
 #base-header a {
   text-decoration: none;
