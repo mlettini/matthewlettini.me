@@ -1,47 +1,62 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>In Defense of Rem Units • Matthew Lettini</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="keywords" content="matthew lettini, matthew, mathew, matt, lettini, lentini, lettin, new york, nyc, ny, brooklyn, greenpoint, web, design, designer, product, html, css, harvest, forecast, amie street, songza, chosen, mlettini@gmail.com">
-    <meta property="og:image" content="https://matthewlettini.me/img/matthew-lettini@2x.jpg">
+
+    <meta property="og:image" content="https://matthewlettini.me/images/matthew-lettini-portrait.jpg">
     <meta property="og:site_name" content="Matthew Lettini">
-    <meta property="og:title" content="In Defense of Rem Units">
+    <meta property="og:title" content="In Defense of Rem Units • Matthew Lettini">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://matthewlettini.me">
+
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:image" content="https://matthewlettini.me/img/matthew-lettini@2x.jpg">
+    <meta name="twitter:image" content="https://matthewlettini.me/images/matthew-lettini-portrait.jpg">
     <meta name="twitter:site" content="@mlettini">
-    <meta name="twitter:title" content="In Defense of Rem Units">
+    <meta name="twitter:title" content="In Defense of Rem Units • Matthew Lettini">
+
     
-    <link rel="apple-touch-icon" href="/images/matthew-lettini-header.jpg" type="image/jpg">
-    <link rel="icon" href="/images/matthew-lettini-header.jpg" type="image/jpg">
-    <link rel="mask-icon" href="/img/matthew-lettini-header.jpg" type="image/jpg" color="black">
-    <link rel="stylesheet" href="/css/main.css">
+
+    <title>In Defense of Rem Units • Matthew Lettini</title>
+    <link rel="apple-touch-icon" href="/images/matthew-lettini-avatar.jpg" type="image/jpg">
+    <link rel="icon" href="/images/favicon.svg" type="image/svg+xml" >
+    <link rel="mask-icon" href="/img/matthew-lettini-avatar.jpg" type="image/jpg" color="black">
+    <link rel="stylesheet" href="/css/base.css">
     <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Posts">
     
   <meta name="robots" content="noindex">
-  <link rel="stylesheet" href="/css/posts.css">
+  <link rel="stylesheet" href="/css/post.css">
 
   </head>
   <body id="post">
 
-    
-  <header id="header">
-    🚧 Area under-construction 🚧
+    <header id="base-header">
+      <h1>Matthew Lettini</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="/">About</a>
+          </li>
+          <li>
+            <a href="/work">Work</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      
+  <header id="post-header">
+    <div class="inner">
+      <h2>In Defense of Rem Units</h2>
+      <time>February 1, 2013</time>
+    </div>
   </header>
 
-  <main>
-    <article>
-      <header id="post-header">
-        <time>February 1, 2013</time>
-        <h1 class="m-auto">In Defense of Rem Units</h1>
-      </header>
-
-      <section id="post-content">
-        <blockquote>
+  <section class="post">
+    <blockquote>
 <p>This post was originally written for <a href="http://techtime.getharvest.com/blog/in-defense-of-rem-units">Harvest’s Tech Time developer blog</a> back in 2013. Some of what’s written here hasn’t aged well, but I still use rem units and you should too!</p>
 </blockquote>
 <p>Over the past couple weeks, I’ve had the opportunity to design and build <a href="http://getharvest.com/2012-year-in-work?utm_source=techtime">Harvest’s 2012 Year In Work</a>, which afforded me a chance to try out something new: the <strong>rem unit</strong> of measurement.</p>
@@ -51,37 +66,37 @@ of 2em, and the div it’s inside of has a <code>font-size</code> of 10px, then 
 <p>“Rem” stands for “root em”. Similar to em units, they calculate size based on an ancestor element’s <code>font-size</code>, except rem units always calculate against the html/root element’s base size. So if the html element has a <code>font-size</code> of 16px, then a paragraph with <code>font-size</code> of 2rem will always be 32px, regardless of the parent div or any other element.</p>
 <pre class="language-css"><code class="language-css"><span class="token selector">html</span> <span class="token punctuation">{</span><br>  <span class="token property">font-size</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span> <span class="token punctuation">}</span><br><span class="token selector">.parent</span> <span class="token punctuation">{</span><br>  <span class="token property">font-size</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span> <span class="token punctuation">}</span><br><span class="token selector">.parent p.child</span> <span class="token punctuation">{</span><br>  <span class="token property">font-size</span><span class="token punctuation">:</span> 2rem<span class="token punctuation">;</span> <span class="token punctuation">}</span> <span class="token comment">/* outputs to 32px */</span></code></pre>
 <p>This is incredibly compelling, particularly because…</p>
-<h2>I try to avoid em units</h2>
+<h3>I try to avoid em units</h3>
 <p>Em units are useful for a variety of reasons, the most important being that they’re <a href="http://trentwalton.com/2013/01/07/flexible-foundations/">flexible</a> and <a href="http://blog.cloudfour.com/the-ems-have-it-proportional-media-queries-ftw/">scalable</a>. You can set the highest parent element, html, to have a relative <code>font-size</code> specified with an em value or a percentage, and it will calculate a specific value based on the browser’s default <code>font-size</code>. This is great for printed documents (the typical default browser print size is 12px vs. 16px for screen display), and it allows your site to scale with the user’s preference, especially in older browsers that have a harder time with page/text zoom.</p>
 <p>However, em units have their drawbacks as well, particularly for web-apps or teams where many people touch the CSS. Consider Harvest, a web-app with thousands of lines of CSS code. We use modularized CSS for various designs and extensions used in various places throughout the app (like our calendar pop-over). If any of our styles were set in ems, then there’s a possibility that the pop-over would get added to too many different parent elements in too many different places with various <code>font-size</code>s, causing it to look different each time and ruining the consistency.</p>
 <p>As both a product designer and an HTML/CSS developer accustomed to decently-sized dev teams, I’ve learned to avoid em units for the bulk of app development. On smaller and less complicated sites, these issues are less apparent, but still necessary to keep in mind and design around.</p>
-<h2>Enter the rem unit</h2>
+<h3>Enter the rem unit</h3>
 <p>I first heard about rem units <a href="http://snook.ca/archives/html_and_css/font-size-with-rem">a few years ago</a>, but haven’t seen much talk or use since. I’m not sure why, though, as they have always seemed incredibly well-suited for web design – they behave much more predictably like pixels, but retain the flexibility of ems. If an element is always supposed to have a <code>font-size</code> of 16px at base size, regardless of the parent element, then rems make more sense than ems. It’s much easier to convert design comps into code without worrying about parent elements. The same goes for <code>width</code>, <code>height</code>, <code>padding</code>, <code>margin</code>, and all other style attributes that specify size.</p>
 <p>I decided to try rem units for Harvest’s 2012 Year In Work to learn their strengths and weaknesses first-hand in a real world environment. I found them to be very useful, and a joy to use for a variety of reasons.</p>
 <p>Here’s what you should know about rem units:</p>
-<h2>1. They’re great for responsive design</h2>
+<h3>1. They’re great for responsive design</h3>
 <p>Since all rem units are relative to a single number – the html <code>font-size</code> – you need only set the breakpoints on this number for a simple responsive layout. Here’s the actual code used in the Year In Work’s <a href="http://sass-lang.com/">Sass</a> file:</p>
 <pre class="language-scss"><code class="language-scss">html<br>  <span class="token property">font-size</span><span class="token punctuation">:</span> 16px<br>  @media screen <span class="token operator">and</span> <span class="token punctuation">(</span><span class="token property">min-width</span><span class="token punctuation">:</span> 1600px<span class="token punctuation">)</span>  <span class="token comment">// Large Monitors</span><br>    <span class="token property">font-size</span><span class="token punctuation">:</span> 18px<br>  @media screen <span class="token operator">and</span> <span class="token punctuation">(</span><span class="token property">min-width</span><span class="token punctuation">:</span> 1400px<span class="token punctuation">)</span>  <span class="token comment">// Small Laptops</span><br>    <span class="token property">font-size</span><span class="token punctuation">:</span> 14px<br>  @media screen <span class="token operator">and</span> <span class="token punctuation">(</span><span class="token property">min-width</span><span class="token punctuation">:</span> 1100px<span class="token punctuation">)</span>  <span class="token comment">// Tablet Landscape</span><br>    <span class="token property">font-size</span><span class="token punctuation">:</span> 13px<br>  @media screen <span class="token operator">and</span> <span class="token punctuation">(</span><span class="token property">min-width</span><span class="token punctuation">:</span> 800px<span class="token punctuation">)</span>   <span class="token comment">// Tablet Portrait</span><br>    <span class="token property">font-size</span><span class="token punctuation">:</span> 12px<br>  @media screen <span class="token operator">and</span> <span class="token punctuation">(</span><span class="token property">min-width</span><span class="token punctuation">:</span> 500px<span class="token punctuation">)</span>   <span class="token comment">// Mobile Landscape</span><br>    <span class="token property">font-size</span><span class="token punctuation">:</span> 7px<br>  @media screen <span class="token operator">and</span> <span class="token punctuation">(</span><span class="token property">min-width</span><span class="token punctuation">:</span> 400px<span class="token punctuation">)</span>   <span class="token comment">// Mobile Portrait</span><br>    <span class="token property">font-size</span><span class="token punctuation">:</span> 5px</code></pre>
 <p>While this isn’t appropriate for every design, being able to set a base size for your entire layout for every breakpoint can be incredibly useful.</p>
 <p><em>Note: While I used pixel values, you could use % values as well.</em></p>
-<h2>2. They’re great for rapid prototyping</h2>
+<h3>2. They’re great for rapid prototyping</h3>
 <p>I’ve signed on to the theory of prototyping a design directly in HTML/CSS, and avoiding Photoshop altogether (sometimes). When experimenting with a design right within the browser, the last thing you want to worry about is getting the sizes exactly right.</p>
 <p>Set the html <code>font-size</code> to 16px, or whatever you want, and then quickly estimate the sizes for everything else and run with them. The h1 is probably 2.5x that size, h2 probably 2x, h3 probably 1.75x… etc. It’s fast. While you can use em units for this as well, using rem units avoids the issue of having to resize the h3 after putting it inside a div with a <code>font-size</code> on it – which is more likely as you tend to move things around quickly during rapid prototyping.</p>
 <p>This is how I designed the Year In Work actually… there were no layout PSDs.</p>
 <p><em>Note: Just like with ems, you’ll find you need to use fractions like 2.25 for some values. I always stuck to .25, .5, or .75 when not using a whole number, since my base size is 16px. However, as you can see in the screenshot above, the base size can change to 13px, which at 2.25rem is 29.25px. Since you can’t have a quarter pixel, some browsers render this as 29px, others as 30px. I found this to be a minor trade-off (but something to keep in mind) for the ease of the responsive layout that I explained above.</em></p>
-<h2>3. All sizes should be in rem units</h2>
+<h3>3. All sizes should be in rem units</h3>
 <p>Some developers prefer a mix of pixels, percentages, and ems for different styles on different elements, all within the same page. Personally, I think this makes development confusing, but it can work.</p>
 <p>This doesn’t work well when using rem units, though. Using rems on only some styles doesn’t offer any advantage – you might as well just use pixels. You have to commit to replacing all pixel values with rem units if you want the responsive advantages.</p>
 <p><em>Note: You can use ems and rems together, though. Check out <a href="http://cl.ly/image/2R0j181Y3W3r">the h3 on slide 3</a> of The Year In Work – I didn’t feel like calculating the size of the “21”, so I gave it a font-size of 1.25em.</em></p>
-<h2>4. They can influence your design style</h2>
+<h3>4. They can influence your design style</h3>
 <p>Sometimes you need an element to be only 3px – this translates to 0.1875rem… not very conducive to simplified design code. However, you can allow this to influence your design, and decide to just use 0.2rem (or 0.25rem, like I mentioned above). Often the difference isn’t important.</p>
 <p>Or, if that 3px is a border-radius, maybe you decide to remove it entirely. Those are design decisions you have to make. I increasingly found that I prefer numbers to end in 0 or 5, or at least an even number. If an element was 9rem wide, I would just make it 10rem and see how that felt. The majority of the time it worked out just fine, and psychologically I felt like my code and design was clearer, cleaner, and easier to work with.</p>
 <p>It’s because of this reason that rem units probably aren’t the best for sophisticated web-apps. They worked great for the Year In Work, but I don’t see us using them in Harvest anytime soon – that would probably slow down development rather than speed it up. There are just too many small pixel sizes in various places for rem units to be useful.</p>
 <p>However, if you put the last two points together, and you fully use rems from the start while allowing yourself to design around the strengths and weaknesses of rem units, you could end up with a nice web-app that scales nicely between browser and tablet sizes and page zooms.</p>
-<h2>5. They do not work in IE8</h2>
+<h3>5. They do not work in IE8</h3>
 <p>This may be the biggest reason why we don’t hear about rem units too often currently, as many sites (especially web-apps) still need to support IE8. Luckily, that was not a requirement for the Year In Work, which we decided should be a showcase of some forward-thinking design and techniques.</p>
 <p>If you’re working on a personal or small site, I doubt this will be a big issue for you.</p>
-<h2>Final thoughts</h2>
+<h3>Final thoughts</h3>
 <p>Rem units aren’t great for every occasion, but for some sites they can be a great tool. They are worth trying regardless of what you’re normally comfortable with:</p>
 <ul>
 <li>If you’re coming from a background that always uses pixels, rems are virtually the same thing, but they add the responsiveness that was missing in your old designs.</li>
@@ -89,22 +104,20 @@ of 2em, and the div it’s inside of has a <code>font-size</code> of 10px, then 
 </ul>
 <p>Either way, I hope to see more rem usage in the future. I don’t feel like it’s been fully explored yet, and think there’s still some use cases that haven’t been discovered.</p>
 
-      </section>
-    </article>
-  </main>
+  </section>
 
   <section id="post-nav" class="do-not-print">
-    <nav>
+    <nav class="inner">
       <ul class="post-nav">
         
           <li class="previous">
-            <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg> Older post</span>
+            <span>&larr; Older</span>
             <a class="previous" href="/posts/2013/a-day-without-glasses/">A Day Without Glasses</a>
           </li>
         
         
           <li class="next">
-            <span>Newer post <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
+            <span>Newer &rarr;</span>
             <a class="next" href="/posts/2013/the-heavy-edition-post-mortem/">The Heavy Edition: Port-Mortem</a>
           </li>
         
@@ -112,18 +125,42 @@ of 2em, and the div it’s inside of has a <code>font-size</code> of 10px, then 
     </nav>
   </section>
 
-  <footer id="footer">
-    <nav class="do-not-print">
-      <ul class="footer-nav">
-        <li><a href="/">Home</a></li>
-        <li><a href="/posts">All posts</a></li>
-        <li><a href="/feed.xml">RSS feed</a></li>
-        <li><a href="#">Back to top</a></li>
-      </ul>
-    </nav>
-    <small>Copyright © 2020 Matthew Lettini</small>
-  </footer>
+    </main>
 
+    <footer id="base-footer" class="do-not-print">
+      <ul id="connect">
+        <li>
+          <a href="mailto:mlettini@gmail.com">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-label="Email me"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/mlettini" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-label="Follow me on Twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://instagram.com/mlettini" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-label="Follow me on Instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://photos.matthewlettini.me" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-label="See my photo library"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://open.spotify.com/user/mlettini" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-label="Follow me on Spotify"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-label="Back to top"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+          </a>
+        </li>
+      </ul>
+    </footer>
 
   </body>
 </html>
