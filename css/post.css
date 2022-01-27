@@ -13,8 +13,13 @@
 
 
 /* Post */
+#post-header h2 {
+  font-size: 1.4rem;
+  line-height: 1.2;
+}
 #post-header time {
   color: var(--text-lt);
+  line-height: 1.6;
 }
 .post h3,
 .post h4,
@@ -35,7 +40,7 @@
 .post h6 {
   font-weight: 600;
   font-weight: 600;
-  margin-top: 2rem;
+  margin-top: calc(var(--line-height) * 2);
 }
 .post figure {
   margin-bottom: 2rem;
