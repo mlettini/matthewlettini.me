@@ -1,6 +1,6 @@
 /* Variables */
 :root {
-  --bg:      #fcfcfc;
+  --bg:      #fafafa;
   --text:    #333;
   --text-lt: #777;
   --color:   blue;
@@ -87,6 +87,9 @@ html {
   html {
     font-size: 14px !important;
   }
+  .do-not-print {
+    display: none !important;
+  }
 }
 body {
   background-color: var(--bg);
@@ -95,7 +98,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: var(--line-height);
-  margin: auto;
+  margin: 0;
   padding: 0 1rem;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -119,8 +122,10 @@ a {
   text-underline-offset: 3px;
   transition: 50ms;
 }
+@media (pointer: fine) {
 a:hover {
   color: var(--color);
+  }
 }
 img, picture, video, canvas, svg {
   display: block;
@@ -133,11 +138,6 @@ hr {
   margin-bottom: var(--line-height);
   margin-top: var(--line-height);
   opacity: 0.5;
-}
-@media print {
-  .do-not-print {
-    display: none !important;
-  }
 }
 
 
@@ -157,7 +157,7 @@ section {
   max-width: var(--max-width-sm);
 }
 #base-footer {
-  margin: var(--clamp-lg) auto;
+  margin: var(--clamp-sm) auto;
   max-width: var(--max-width-sm);
 }
 
@@ -204,6 +204,24 @@ section {
   height: 1.2rem;
   width: 1.2rem;
 }
+@media (pointer: fine) {
+  #connect a::before {
+    bottom: 1.2rem;
+    color: var(--color);
+    content: attr(data-label);
+    font-size: 0.8em;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    transition: 50ms;
+    user-select: none;
+  }
+  #connect a:hover::before {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
 
 
 
@@ -221,21 +239,4 @@ section {
 /* Work */
 #work {
   list-style: none;
-}
-
-
-
-/* Archives */
-.archive-list {
-  list-style: none;
-  margin: 1rem auto;
-  padding: 0;
-}
-.archive-list li {
-  margin: 1rem 0;
-}
-.archive-list time {
-  color: var(--text-medium);
-  display: block;
-  font-size: 0.9rem;
 }
