@@ -12,6 +12,23 @@
 
 
 
+/* Archives */
+.archive-list {
+  list-style: none;
+  margin: 1rem auto;
+  padding: 0;
+}
+.archive-list li {
+  margin: 1rem 0;
+}
+.archive-list time {
+  color: var(--text-medium);
+  display: block;
+  font-size: 0.9rem;
+}
+
+
+
 /* Post */
 #post-header h2 {
   font-size: 1.4rem;
