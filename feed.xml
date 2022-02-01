@@ -17,7 +17,8 @@
       <updated>2020-04-05T00:00:00-00:00</updated>
       <id>https://matthewlettini.me/posts/2020/test-post/</id>
       <content type="html"><![CDATA[
-        <p>I’m not sure how much I’ll actually write on here, but I’m creating this blog post as a way to test the design while I figure out Eleventy. This post should contain everything I’ll need for a future blog post, including headers, lists, blockquotes, code, photos, etc.</p>
+        <div class="inner">
+<p>I’m not sure how much I’ll actually write on here, but I’m creating this blog post as a way to test the design while I figure out Eleventy. This post should contain everything I’ll need for a future blog post, including headers, lists, blockquotes, code, photos, etc.</p>
 <p><em>Here’s an italicised sentence.</em> <strong>Here’s a bolded sentence.</strong> <a href="">Here’s a link.</a> <code>Here’s some inline code</code>. Isn’t this fun?</p>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
 <hr>
@@ -43,25 +44,34 @@
 <p>Blockquotes are not supported yet... Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
 </blockquote>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+</div>
 <figure>
   <img src="/images/posts/test1.jpg" alt="">
   <img src="/images/posts/test2.jpg" alt="">
   <figcaption>This is a single figure with multiple images</figcaption>
 </figure>
+<div class="inner">
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+</div>
 <figure>
   <img src="/images/posts/test4.jpg" alt="">
   <figcaption>This is a wider horizontal image</figcaption>
 </figure>
+<div class="inner">
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+</div>
 <figure>
   <img src="/images/posts/test3.jpg" alt="">
   <figcaption>This is a taller vertical image that gets cut</figcaption>
 </figure>
+<div class="inner">
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+</div>
 <pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">name</span><span class="token punctuation">:</span> Eleventy Build<br><br><span class="token key atrule">on</span><span class="token punctuation">:</span><br>  <span class="token key atrule">push</span><span class="token punctuation">:</span><br>    <span class="token key atrule">branches</span><span class="token punctuation">:</span><br>      <span class="token punctuation">-</span> master<br><br><span class="token key atrule">jobs</span><span class="token punctuation">:</span><br>  <span class="token key atrule">deploy</span><span class="token punctuation">:</span><br>    <span class="token key atrule">runs-on</span><span class="token punctuation">:</span> ubuntu<span class="token punctuation">-</span><span class="token number">18.04</span><br>    <span class="token key atrule">steps</span><span class="token punctuation">:</span><br>      <span class="token punctuation">-</span> <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/checkout@v2<br><br>      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Setup Node<br>        <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/setup<span class="token punctuation">-</span>node@v1<br>        <span class="token key atrule">with</span><span class="token punctuation">:</span><br>          <span class="token key atrule">node-version</span><span class="token punctuation">:</span> ’10.x’<br><br>      <span class="token punctuation">-</span> <span class="token key atrule">run</span><span class="token punctuation">:</span> npm ci<br><br>      <span class="token punctuation">-</span> <span class="token key atrule">run</span><span class="token punctuation">:</span> npm run build<br><br>      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Deploy<br>        <span class="token key atrule">uses</span><span class="token punctuation">:</span> peaceiris/actions<span class="token punctuation">-</span>gh<span class="token punctuation">-</span>pages@v3<br>        <span class="token key atrule">with</span><span class="token punctuation">:</span><br>          <span class="token key atrule">deploy_key</span><span class="token punctuation">:</span> $<span class="token punctuation">{</span><span class="token punctuation">{</span> secrets.ACTIONS_DEPLOY_KEY <span class="token punctuation">}</span><span class="token punctuation">}</span><br>          <span class="token key atrule">publish_dir</span><span class="token punctuation">:</span> ./dist</code></pre>
+<div class="inner">
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+</div>
 
       ]]></content>
     </entry>
@@ -73,7 +83,8 @@
       <updated>2013-02-24T00:00:00-00:00</updated>
       <id>https://matthewlettini.me/posts/2013/the-heavy-edition-post-mortem/</id>
       <content type="html"><![CDATA[
-        <p>Years ago I was a member of my college radio station, where we frequently got the newest albums and artists to play. My cohost and I always had a great time, being idiots on the air and playing awesome new music.</p>
+        <div class="inner">
+<p>Years ago I was a member of my college radio station, where we frequently got the newest albums and artists to play. My cohost and I always had a great time, being idiots on the air and playing awesome new music.</p>
 <p>Somewhere along the line, I noticed something peculiar: When I would go back and listen to a “new” track that I hadn’t heard in a few weeks, it would feel “old.”</p>
 <p>I hated that. Here’s an artist I liked, that hasn’t even made it yet, and they’ve already been replaced in my rotation for newer music. And I talked to others at the time that felt the same. Sad.</p>
 <p>After graduating, I began falling behind on my new music knowledge, so I created a simple music blog: <a href="http://theheavyedition.com">The Heavy Edition</a>.</p>
@@ -91,6 +102,7 @@
 <p>It’s easier now than ever before for anyone to make music, and distributing and getting your name out there with social networks and apps like Rdio and Spotify makes it even viable, but breaking that last wall is still a challenge. That wall of making it into someone’s heavy rotation, of reaching a fan to the point that they pay money to see you in concert or buy your merch. <em>That wall of making people remember you after they heard you only once or twice</em>.</p>
 <p>It’s a bit ironic, but as I look back I realize my first post is a video for a band I haven’t heard since I posted them (<a href="http://vimeo.com/2030699">The Boxing Lesson – Dark Side of the Moog</a>) and my second post, also a video, is for a band I went to see in concert only a few months ago (<a href="http://youtu.be/Y3Vcoq-QRo4">Red Fang – Prehistoric Dog</a>).</p>
 <p>Both were/are great.</p>
+</div>
 
       ]]></content>
     </entry>
@@ -102,15 +114,20 @@
       <updated>2013-02-01T00:00:00-00:00</updated>
       <id>https://matthewlettini.me/posts/2013/in-defense-of-rem-units/</id>
       <content type="html"><![CDATA[
-        <blockquote>
+        <div class="inner">
+<blockquote>
 <p>This post was originally written for <a href="http://techtime.getharvest.com/blog/in-defense-of-rem-units">Harvest’s Tech Time developer blog</a> back in 2013. Some of what’s written here hasn’t aged well, but I still use rem units and you should too!</p>
 </blockquote>
 <p>Over the past couple weeks, I’ve had the opportunity to design and build <a href="http://getharvest.com/2012-year-in-work?utm_source=techtime">Harvest’s 2012 Year In Work</a>, which afforded me a chance to try out something new: the <strong>rem unit</strong> of measurement.</p>
 <p>You’re probably already familiar with <a href="http://www.w3.org/TR/css3-values/#em-unit">em units</a> – they’ve been a common feature of CSS for the past decade – but a crash course: elements specified using em units are sized relative to the <code>font-size</code> of their parent element. For example, if a paragraph has a specified <code>font-size</code>
 of 2em, and the div it’s inside of has a <code>font-size</code> of 10px, then the effective <code>font-size</code> of the paragraph is 10px × 2em, which is 20px.</p>
+</div>
 <pre class="language-css"><code class="language-css"><span class="token selector">html</span> <span class="token punctuation">{</span><br>  <span class="token property">font-size</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span> <span class="token punctuation">}</span><br><span class="token selector">.parent</span> <span class="token punctuation">{</span><br>  <span class="token property">font-size</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span> <span class="token punctuation">}</span><br><span class="token selector">.parent p.child</span> <span class="token punctuation">{</span><br>  <span class="token property">font-size</span><span class="token punctuation">:</span> 2em<span class="token punctuation">;</span> <span class="token punctuation">}</span> <span class="token comment">/* outputs to 20px */</span></code></pre>
+<div class="inner">
 <p>“Rem” stands for “root em”. Similar to em units, they calculate size based on an ancestor element’s <code>font-size</code>, except rem units always calculate against the html/root element’s base size. So if the html element has a <code>font-size</code> of 16px, then a paragraph with <code>font-size</code> of 2rem will always be 32px, regardless of the parent div or any other element.</p>
+</div>
 <pre class="language-css"><code class="language-css"><span class="token selector">html</span> <span class="token punctuation">{</span><br>  <span class="token property">font-size</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span> <span class="token punctuation">}</span><br><span class="token selector">.parent</span> <span class="token punctuation">{</span><br>  <span class="token property">font-size</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span> <span class="token punctuation">}</span><br><span class="token selector">.parent p.child</span> <span class="token punctuation">{</span><br>  <span class="token property">font-size</span><span class="token punctuation">:</span> 2rem<span class="token punctuation">;</span> <span class="token punctuation">}</span> <span class="token comment">/* outputs to 32px */</span></code></pre>
+<div class="inner">
 <p>This is incredibly compelling, particularly because…</p>
 <h3>I try to avoid em units</h3>
 <p>Em units are useful for a variety of reasons, the most important being that they’re <a href="http://trentwalton.com/2013/01/07/flexible-foundations/">flexible</a> and <a href="http://blog.cloudfour.com/the-ems-have-it-proportional-media-queries-ftw/">scalable</a>. You can set the highest parent element, html, to have a relative <code>font-size</code> specified with an em value or a percentage, and it will calculate a specific value based on the browser’s default <code>font-size</code>. This is great for printed documents (the typical default browser print size is 12px vs. 16px for screen display), and it allows your site to scale with the user’s preference, especially in older browsers that have a harder time with page/text zoom.</p>
@@ -122,7 +139,9 @@ of 2em, and the div it’s inside of has a <code>font-size</code> of 10px, then 
 <p>Here’s what you should know about rem units:</p>
 <h3>1. They’re great for responsive design</h3>
 <p>Since all rem units are relative to a single number – the html <code>font-size</code> – you need only set the breakpoints on this number for a simple responsive layout. Here’s the actual code used in the Year In Work’s <a href="http://sass-lang.com/">Sass</a> file:</p>
+</div>
 <pre class="language-scss"><code class="language-scss">html<br>  <span class="token property">font-size</span><span class="token punctuation">:</span> 16px<br>  @media screen <span class="token operator">and</span> <span class="token punctuation">(</span><span class="token property">min-width</span><span class="token punctuation">:</span> 1600px<span class="token punctuation">)</span>  <span class="token comment">// Large Monitors</span><br>    <span class="token property">font-size</span><span class="token punctuation">:</span> 18px<br>  @media screen <span class="token operator">and</span> <span class="token punctuation">(</span><span class="token property">min-width</span><span class="token punctuation">:</span> 1400px<span class="token punctuation">)</span>  <span class="token comment">// Small Laptops</span><br>    <span class="token property">font-size</span><span class="token punctuation">:</span> 14px<br>  @media screen <span class="token operator">and</span> <span class="token punctuation">(</span><span class="token property">min-width</span><span class="token punctuation">:</span> 1100px<span class="token punctuation">)</span>  <span class="token comment">// Tablet Landscape</span><br>    <span class="token property">font-size</span><span class="token punctuation">:</span> 13px<br>  @media screen <span class="token operator">and</span> <span class="token punctuation">(</span><span class="token property">min-width</span><span class="token punctuation">:</span> 800px<span class="token punctuation">)</span>   <span class="token comment">// Tablet Portrait</span><br>    <span class="token property">font-size</span><span class="token punctuation">:</span> 12px<br>  @media screen <span class="token operator">and</span> <span class="token punctuation">(</span><span class="token property">min-width</span><span class="token punctuation">:</span> 500px<span class="token punctuation">)</span>   <span class="token comment">// Mobile Landscape</span><br>    <span class="token property">font-size</span><span class="token punctuation">:</span> 7px<br>  @media screen <span class="token operator">and</span> <span class="token punctuation">(</span><span class="token property">min-width</span><span class="token punctuation">:</span> 400px<span class="token punctuation">)</span>   <span class="token comment">// Mobile Portrait</span><br>    <span class="token property">font-size</span><span class="token punctuation">:</span> 5px</code></pre>
+<div class="inner">
 <p>While this isn’t appropriate for every design, being able to set a base size for your entire layout for every breakpoint can be incredibly useful.</p>
 <p><em>Note: While I used pixel values, you could use % values as well.</em></p>
 <h3>2. They’re great for rapid prototyping</h3>
@@ -160,13 +179,15 @@ of 2em, and the div it’s inside of has a <code>font-size</code> of 10px, then 
       <updated>2013-01-13T00:00:00-00:00</updated>
       <id>https://matthewlettini.me/posts/2013/a-day-without-glasses/</id>
       <content type="html"><![CDATA[
-        <p>A minor incident Thursday night left me with broken glasses, shattered lenses, and a scratched cornea. It was an accident, and the scratches would heal in a couple days with no (known) longterm issues. I normally have old glasses around as backups, but I got rid of those during a recent purge. So I spent half my Friday without any vision correctness.</p>
+        <div class="inner">
+<p>A minor incident Thursday night left me with broken glasses, shattered lenses, and a scratched cornea. It was an accident, and the scratches would heal in a couple days with no (known) longterm issues. I normally have old glasses around as backups, but I got rid of those during a recent purge. So I spent half my Friday without any vision correctness.</p>
 <p>It was an interesting experience.</p>
 <p>On the positive side, I’m not that blind, only a -3.25 prescription. And the day was mostly spent in comfortable territory. I know my own apartment and the surrounding area well enough. But I had to venture out to the optometrist.</p>
 <p>While they happened to be close by (I didn’t need to read any street signs), it was still an eye-opening (I’m sorry) experience to go through the day without the crutch for a disability I’ve had since elementary school. Where did I put my keys? Is that a bug or just a dot? How do I know I’m not stepping on a nail?</p>
 <p>The oddest part part for me, though, was not being able to see anybody’s face as I walked around town. As mentioned, I knew where I needed to go without having to pay attention to street signs or buildings. But when it came to people I would walk past, their face and most of their body language was a complete blur. Are they looking at me? Are they smiling? Frowning? Are they talking to me? How are they reacting?</p>
 <p>Not knowing was so weird. I knew that I was looking at them, but did not know if they were looking back—I assume I freaked a few people out by staring. It made me feel completely disconnected. The face is important to us humans. We even seek it out in random objects, a phenomenon known as <a href="http://en.wikipedia.org/wiki/Pareidolia">Pareidolia</a>.</p>
 <p>I’m happy the experience didn’t last too long, but it was humbling while it lasted. If you wear glasses, perhaps try it for a day?</p>
+</div>
 
       ]]></content>
     </entry>
