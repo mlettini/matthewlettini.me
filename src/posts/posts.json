@@ -1,4 +1,5 @@
 {
-  "layout": "layouts/post.njk",
-  "pageType": "Posts"
+  "layout": "layouts/blog-post.njk",
+  "pageType": "blog-post",
+  "tag": "post"
 }

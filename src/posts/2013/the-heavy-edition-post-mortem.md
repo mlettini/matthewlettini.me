@@ -6,6 +6,8 @@ tags:
   - life
 ---
 
+<div class="inner">
+
 Years ago I was a member of my college radio station, where we frequently got the newest albums and artists to play. My cohost and I always had a great time, being idiots on the air and playing awesome new music.
 
 Somewhere along the line, I noticed something peculiar: When I would go back and listen to a “new” track that I hadn’t heard in a few weeks, it would feel “old.”
@@ -41,3 +43,5 @@ It’s easier now than ever before for anyone to make music, and distributing an
 It’s a bit ironic, but as I look back I realize my first post is a video for a band I haven’t heard since I posted them ([The Boxing Lesson – Dark Side of the Moog](http://vimeo.com/2030699)) and my second post, also a video, is for a band I went to see in concert only a few months ago ([Red Fang – Prehistoric Dog](http://youtu.be/Y3Vcoq-QRo4)).
 
 Both were/are great.
+
+</div>

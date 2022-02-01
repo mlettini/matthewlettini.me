@@ -1,4 +1,5 @@
 {
-  "layout": "layouts/blank.njk",
-  "pageType": "Work"
+  "layout": "layouts/work-post.njk",
+  "pageType": "work-post",
+  "tag": "work"
 }

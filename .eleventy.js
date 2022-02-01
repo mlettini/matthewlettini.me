@@ -17,6 +17,12 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter('dateFilter', dateFilter)
   eleventyConfig.addFilter('dateFilterShorthand', dateFilterShorthand)
 
+  eleventyConfig.addCollection('work', collection => {
+    return [
+      ...collection.getFilteredByGlob('./src/work/*.md')
+    ].reverse()
+  })
+
   eleventyConfig.addCollection('all_posts', collection => {
     return [
       ...collection.getFilteredByGlob('./src/posts/*/*.md')

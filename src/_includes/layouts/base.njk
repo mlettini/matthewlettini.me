@@ -8,14 +8,14 @@
 
     <meta property="og:image" content="{{ site.url }}/images/matthew-lettini-portrait.jpg">
     <meta property="og:site_name" content="{{ site.authorName }}">
-    <meta property="og:title" content="{% if (pageType) == 'About' %}{{ site.authorName }}{% else %}{{ title }} • {{ site.authorName }}{% endif %}">
+    <meta property="og:title" content="{% if pageType == 'About' %}{{ site.authorName }}{% else %}{{ title }} • {{ site.authorName }}{% endif %}">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ site.url }}">
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:image" content="{{ site.url }}/images/matthew-lettini-portrait.jpg">
     <meta name="twitter:site" content="{{ site.authorHandle }}">
-    <meta name="twitter:title" content="{% if (pageType) == 'About' %}{{ site.authorName }}{% else %}{{ title }} • {{ site.authorName }}{% endif %}">
+    <meta name="twitter:title" content="{% if pageType == 'About' %}{{ site.authorName }}{% else %}{{ title }} • {{ site.authorName }}{% endif %}">
 
     {% if description %}
     <meta description="{{ description }}">
@@ -23,7 +23,7 @@
     <meta name="twitter:description" content="{{ description }}">
     {% endif %}
 
-    <title>{% if (pageType) == 'About' %}{{ site.authorName }}{% else %}{{ title }} • {{ site.authorName }}{% endif %}</title>
+    <title>{% if pageType == 'About' %}{{ site.authorName }}{% else %}{{ title }} • {{ site.authorName }}{% endif %}</title>
     <link rel="apple-touch-icon" href="/images/matthew-lettini-avatar.jpg">
     <link rel="icon" href="/images/favicon.svg">
     <link rel="mask-icon" href="/img/matthew-lettini-avatar.jpg">
@@ -34,20 +34,21 @@
   </head>
   <body id="{{ pageType }}">
 
-    <header id="base-header">
-      <h1>{{ site.authorName }}</h1>
-      {#
+    <header class="base-header">
+      <a href="/">{{ site.authorName }}</a>
       <nav>
         <ul>
-          <li>
-            <a href="/"{% if (pageType) == 'About' %} class="selected"{% endif %}>About</a>
+          {#<li>
+            <a href="/"{% if pageType == 'about' %} class="selected"{% endif %}>About</a>
           </li>
           <li>
-            <a href="/work"{% if (pageType) == 'Work' %} class="selected"{% endif %}>Work</a>
+            <a href="/work"{% if pageType == 'work' or pageType == 'work-post' %} class="selected"{% endif %}>Work</a>
           </li>
+          {#<li>
+            <a href="/posts"{% if pageType == 'blog' %} class="selected"{% endif %}>Writing</a>
+          </li>#}
         </ul>
       </nav>
-      #}
     </header>
 
     <main>
@@ -55,8 +56,8 @@
       {% endblock %}
     </main>
 
-    <footer id="base-footer" class="do-not-print">
-      <ul id="connect">
+    <footer class="base-footer" class="do-not-print">
+      <ul class="connect">
         <li>
           <a href="mailto:mlettini@gmail.com" data-label="Email me">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-label="Email me"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>

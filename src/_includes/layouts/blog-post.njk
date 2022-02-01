@@ -1,0 +1,38 @@
+{% extends 'layouts/base.njk' %}
+
+{% block header_content %}
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="/css/code.css">
+{% endblock %}
+
+{% block content %}
+  <header class="post-header">
+    <div class="inner">
+      <h1>{{ title }}</h1>
+      <time>{{ date | dateFilter }}</time>
+    </div>
+  </header>
+
+  <section class="post">
+    {{ content | safe }}
+  </section>
+
+  <section class="do-not-print">
+    <nav class="inner">
+      <ul class="post-nav">
+        {% if prevPost.url %}
+          <li class="previous">
+            <span>&larr; Older</span>
+            <a class="previous" href="{{ prevPost.url }}">{{ prevPost.data.title }}</a>
+          </li>
+        {% endif %}
+        {% if nextPost.url %}
+          <li class="next">
+            <span>Newer &rarr;</span>
+            <a class="next" href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
+          </li>
+        {% endif %}
+      </ul>
+    </nav>
+  </section>
+{% endblock %}
