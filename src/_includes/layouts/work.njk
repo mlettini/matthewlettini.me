@@ -9,25 +9,20 @@
     <div class="inner">
       <h1>Work</h1>
       {{ content | safe }}
-    </div>
-  </section>
 
-  <section>
-
-    <div class="inner">
-    <ul class="project-list">
-      {% for post in collections.work %}
-        <li>
-          <a href="{{ post.url }}" class="project">
-            <img src="{{ post.data.image }}" alt="">
-            <div>
-              <h3>{{ post.data.title }}</h3>
-              <span>{{ post.data.subtitle }}</span>
-            </div>
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
+      <ul class="project-list">
+        {% for post in collections.work %}
+          <li>
+            <a href="{{ post.url }}" class="project">
+              <div>
+                <h3>{{ post.data.title }}</h3>
+                <span>{{ post.data.subtitle }}</span>
+              </div>
+              {# <img src="{{ post.data.image }}" alt=""> #}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
     </div>
   </section>
 {% endblock %}

@@ -17,22 +17,15 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter('dateFilter', dateFilter)
   eleventyConfig.addFilter('dateFilterShorthand', dateFilterShorthand)
 
-  eleventyConfig.addCollection('work', collection => {
-    return [
-      ...collection.getFilteredByGlob('./src/work/*.md')
-    ].reverse()
-  })
-
-  eleventyConfig.addCollection('all_posts', collection => {
-    return [
-      ...collection.getFilteredByGlob('./src/posts/*/*.md')
-    ].reverse()
-  })
-
-  eleventyConfig.addCollection('recent_posts', collection => {
-    return [
-      ...collection.getFilteredByGlob('./src/posts/*/*.md')
-    ].reverse().slice(0, 2)
+  eleventyConfig.addCollection('work', function(collection) {
+    const coll = collection.getFilteredByGlob('./src/work/*.md');
+    for(let i = 0; i < coll.length ; i++) {
+      const prevPost = coll[i-1];
+      const nextPost = coll[i + 1];
+      coll[i].data['prevPost'] = prevPost;
+      coll[i].data['nextPost'] = nextPost;
+    }
+    return coll.sort((a, b) => a.data.order - b.data.order);
   })
 
   eleventyConfig.addCollection('posts', function(collection) {
@@ -43,7 +36,12 @@ module.exports = function(eleventyConfig) {
       coll[i].data['prevPost'] = prevPost;
       coll[i].data['nextPost'] = nextPost;
     }
-    return coll;
+    return coll.reverse();
+  })
+
+  eleventyConfig.addCollection('recent_posts', collection => {
+    const coll = collection.getFilteredByGlob('./src/posts/*/*.md');
+    return coll.reverse().slice(0, 2);
   })
 
   return {

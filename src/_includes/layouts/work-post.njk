@@ -16,9 +16,27 @@
     {{ content | safe }}
   </section>
 
-  <section>
+  <section class="do-not-print">
     <div class="inner">
-      <a class="back" href="/work">← See other work</a>
+      <a href="/work" class="back">See other work</a>
     </div>
+    {#
+    <nav class="inner">
+      <ul class="post-nav">
+        {% if prevPost.url %}
+          <li class="previous">
+            <span>← Continue</span>
+            <a class="previous" href="{{ prevPost.url }}">{{ prevPost.data.title }}</a>
+          </li>
+        {% endif %}
+        {% if nextPost.url %}
+          <li class="next">
+            <span>Continue →</span>
+            <a class="next" href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
+          </li>
+        {% endif %}
+      </ul>
+    </nav>
+    #}
   </section>
 {% endblock %}

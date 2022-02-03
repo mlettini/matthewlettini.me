@@ -5,11 +5,8 @@ title: About
 ---
 
 <section id="about">
-  <figure>
-    <img src="/images/matthew-lettini-portrait.jpg" alt="Matthew Lettini">
-  </figure>
-
   <div class="inner">
+  <img src="/images/matthew-lettini-portrait.jpg" alt="Matthew Lettini" class="portrait">
 
 I‘m a software designer and developer that’s been building, improving, and shipping digital product experiences since 2008. My goal is to make life easier for people, one pixel at a time.
 

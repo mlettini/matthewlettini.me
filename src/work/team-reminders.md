@@ -1,8 +1,8 @@
 ---
 title: Team Reminders
-subtitle: Subtitle
+subtitle: A prompt to help Harvest customers build a habit with time tracking.
 image: /images/work/test.png
-excerpt: Excerpt
+order: 2
 ---
 
 <div class="inner">
