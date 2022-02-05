@@ -3,6 +3,7 @@ title: Forecast
 subtitle: An all-new Harvest product offering simple time planning for teams.
 image: /images/work/forecast-team.png
 order: 1
+date: 2022-01-01
 ---
 
 <div class="inner">
@@ -13,9 +14,9 @@ Between 2013 and 2018, Forecast was created and maintained by a small team that 
 
 </div>
 
-<figure>
+<figure l>
   <div class="bordered">
-    <img src="/images/work/forecast-team.png" alt="Forecast Team Schedule" class="shadowed">
+    <img src="/images/work/forecast-team.png" alt="Forecast Team Schedule" class="shadowed" data-zoomable>
   </div>
   <figcaption>The “Team Schedule” in Forecast</figcaption>
 </figure>
@@ -24,7 +25,7 @@ Between 2013 and 2018, Forecast was created and maintained by a small team that 
 
 Through extensive research, we learned that many customers typically plan their teams with clunky spreadsheets. These sheets lack the ability to quickly pivot when plans change and are frequently out-of-date. It’s a heavy-handed approach we wanted to modernize.
 
-We spent about a year creating Forecast with beta customers and prototyping different design solutions. We ended up with a design that is heavily influenced by applications like Garageband, offering a visual and fluid experience for managing a team’s time. It supports options like click-and-drag, splitting, moving, timeline shifting, zooming, real-time updating, and more. These features combine to bring real flexibility to the scheduling process.
+We spent about a year prototyping different Forecast designs with beta customers. We found a solution in a design that’s heavily influenced by editing software like Garageband, offering a visual and fluid experience. It supports options like click-and-drag, splitting, moving, timeline shifting, zooming, real-time updating, and more. These features combine to bring real flexibility to managing a team’s time.
 
 We also played with various trade-offs around scheduling projects versus scheduling people, and ended up creating two views of the same information. Customers can seamlessly flip between the two depending on what questions they need answers to (e.g. “What work is coming down the pipe?” versus “Who has availability next month?”).
 
@@ -32,7 +33,7 @@ We also played with various trade-offs around scheduling projects versus schedul
 
 <figure>
   <div class="bordered">
-    <img src="/images/work/forecast-projects.png" alt="Forecast Project Schedule" class="shadowed">
+    <img src="/images/work/forecast-projects.png" alt="Forecast Project Schedule" class="shadowed" data-zoomable>
   </div>
   <figcaption>The “Projects Schedule” in Forecast</figcaption>
 </figure>
@@ -41,15 +42,13 @@ We also played with various trade-offs around scheduling projects versus schedul
 
 As the designer and product lead, it was my job to make the experience of using Forecast easy, learnable, and delightful. Here’s a rough but extensive demo I created for our beta customers prior to the official launch, which demonstrates many of the core concepts that still define the app today:
 
-*Eagle-eyed viewers may pick up on various design changes between the beta in this video and the newer screenshots above.*
-
 </div>
 
 <figure>
   <video controls poster="/images/blackposter.gif">
     <source src="/images/work/forecast-demo-beta.mov" type="video/mp4">
   </video>
-  <figcaption>Full product demo for early beta customers</figcaption>
+  <figcaption>Full product demo for early beta customers<br>(Note the early design compared to the more recent screenshots above)</figcaption>
 </figure>
 
 <div class="inner">
@@ -63,13 +62,13 @@ Beyond the 2014 launch, our team continued to improve Forecast based on customer
     <video controls poster="/images/blackposter.gif">
       <source src="/images/work/forecast-demo-filtering.mp4" type="video/mp4">
     </video>
-    <figcaption>Demo of later “advanced filtering” feature</figcaption>
+    <figcaption>Demo of later advanced filtering feature</figcaption>
   </div>
   <div>
     <video controls poster="/images/blackposter.gif">
       <source src="/images/work/forecast-demo-placeholders.mp4" type="video/mp4">
     </video>
-    <figcaption>Demo of later “placeholder” feature</figcaption>
+    <figcaption>Demo of later placeholder feature</figcaption>
   </div>
 </figure>
 

@@ -15,8 +15,6 @@ Over the past couple weeks, I’ve had the opportunity to design and build [Harv
 You’re probably already familiar with [em units](http://www.w3.org/TR/css3-values/#em-unit) – they’ve been a common feature of CSS for the past decade – but a crash course: elements specified using em units are sized relative to the `font-size` of their parent element. For example, if a paragraph has a specified `font-size`
 of 2em, and the div it’s inside of has a `font-size` of 10px, then the effective `font-size` of the paragraph is 10px × 2em, which is 20px.
 
-</div>
-
 ```css
 html {
   font-size: 16px; }
@@ -26,11 +24,7 @@ html {
   font-size: 2em; } /* outputs to 20px */
 ```
 
-<div class="inner">
-
 “Rem” stands for “root em”. Similar to em units, they calculate size based on an ancestor element’s `font-size`, except rem units always calculate against the html/root element’s base size. So if the html element has a `font-size` of 16px, then a paragraph with `font-size` of 2rem will always be 32px, regardless of the parent div or any other element.
-
-</div>
 
 ```css
 html {
@@ -40,8 +34,6 @@ html {
 .parent p.child {
   font-size: 2rem; } /* outputs to 32px */
 ```
-
-<div class="inner">
 
 This is incredibly compelling, particularly because…
 

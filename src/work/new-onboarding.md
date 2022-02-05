@@ -3,6 +3,7 @@ title: New Onboarding
 subtitle: Updating Harvest’s initial welcome flow towards more successful trials.
 image: /images/work/test2.png
 order: 3
+date: 2022-01-03
 ---
 
 <div class="inner">

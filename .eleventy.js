@@ -14,6 +14,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/js')
   eleventyConfig.addPassthroughCopy('CNAME')
 
+  eleventyConfig.addPassthroughCopy({'node_modules/medium-zoom/dist/medium-zoom.min.js': 'js/medium-zoom.min.js'})
+
   eleventyConfig.addFilter('dateFilter', dateFilter)
   eleventyConfig.addFilter('dateFilterShorthand', dateFilterShorthand)
 
@@ -25,7 +27,8 @@ module.exports = function(eleventyConfig) {
       coll[i].data['prevPost'] = prevPost;
       coll[i].data['nextPost'] = nextPost;
     }
-    return coll.sort((a, b) => a.data.order - b.data.order);
+    // return coll.sort((a, b) => a.data.order - b.data.order);
+    return coll;
   })
 
   eleventyConfig.addCollection('posts', function(collection) {

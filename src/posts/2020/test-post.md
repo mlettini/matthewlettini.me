@@ -43,8 +43,8 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque vo
 </div>
 
 <figure>
-  <img src="/images/posts/test1.jpg" alt="">
-  <img src="/images/posts/test2.jpg" alt="">
+  <img src="/images/posts/test1.jpg" alt="" data-zoomable>
+  <img src="/images/posts/test2.jpg" alt="" data-zoomable>
   <figcaption>This is a single figure with multiple images</figcaption>
 </figure>
 
@@ -55,7 +55,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque vo
 </div>
 
 <figure>
-  <img src="/images/posts/test4.jpg" alt="">
+  <img src="/images/posts/test4.jpg" alt="" data-zoomable>
   <figcaption>This is a wider horizontal image</figcaption>
 </figure>
 
@@ -66,7 +66,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque vo
 </div>
 
 <figure>
-  <img src="/images/posts/test3.jpg" alt="">
+  <img src="/images/posts/test3.jpg" alt="" data-zoomable>
   <figcaption>This is a taller vertical image that gets cut</figcaption>
 </figure>
 

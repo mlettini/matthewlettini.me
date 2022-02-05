@@ -4,6 +4,11 @@
   <meta name="robots" content="noindex">
 {% endblock %}
 
+{% block footer_content %}
+  <script src="{{ '/js/medium-zoom.min.js' }}" defer></script>
+  <script type="module" defer>mediumZoom('[data-zoomable]')</script>
+{% endblock %}
+
 {% block content %}
   <header class="post-header">
     <div class="inner">
@@ -12,31 +17,26 @@
     </div>
   </header>
 
-  <section id="post">
+  <section class="post">
     {{ content | safe }}
   </section>
 
   <section class="do-not-print">
-    <div class="inner">
-      <a href="/work" class="back">See other work</a>
-    </div>
-    {#
     <nav class="inner">
       <ul class="post-nav">
         {% if prevPost.url %}
           <li class="previous">
-            <span>← Continue</span>
+            <span>← Previous</span>
             <a class="previous" href="{{ prevPost.url }}">{{ prevPost.data.title }}</a>
           </li>
         {% endif %}
         {% if nextPost.url %}
           <li class="next">
-            <span>Continue →</span>
+            <span>Next →</span>
             <a class="next" href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
           </li>
         {% endif %}
       </ul>
     </nav>
-    #}
   </section>
 {% endblock %}

@@ -31,7 +31,7 @@ pre[class*="language-"] {
   font-size: 0.9em;
   hyphens: none;
   line-height: var(--line-height);
-  margin: 2rem auto;
+  margin: var(--clamp-sm) auto;
   overflow: auto;
   padding: 2rem;
   text-align: left;
