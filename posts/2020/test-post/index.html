@@ -79,22 +79,22 @@
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
 </div>
 <figure>
-  <img src="/images/posts/test1.jpg" alt="">
-  <img src="/images/posts/test2.jpg" alt="">
+  <img src="/images/posts/test1.jpg" alt="" data-zoomable>
+  <img src="/images/posts/test2.jpg" alt="" data-zoomable>
   <figcaption>This is a single figure with multiple images</figcaption>
 </figure>
 <div class="inner">
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
 </div>
 <figure>
-  <img src="/images/posts/test4.jpg" alt="">
+  <img src="/images/posts/test4.jpg" alt="" data-zoomable>
   <figcaption>This is a wider horizontal image</figcaption>
 </figure>
 <div class="inner">
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
 </div>
 <figure>
-  <img src="/images/posts/test3.jpg" alt="">
+  <img src="/images/posts/test3.jpg" alt="" data-zoomable>
   <figcaption>This is a taller vertical image that gets cut</figcaption>
 </figure>
 <div class="inner">
@@ -162,6 +162,10 @@
         </li>
       </ul>
     </footer>
+
+    
+  <script src="/js/medium-zoom.min.js" defer></script>
+  <script type="module" defer>mediumZoom('[data-zoomable]')</script>
 
   </body>
 </html>

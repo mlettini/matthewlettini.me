@@ -48,37 +48,36 @@
     </div>
   </header>
 
-  <section id="post">
+  <section class="post">
     <div class="inner">
 <p>Time tracking with Harvest helps teams understand their present and their past, but what about their future? How do they plan their time? Back in 2013, Harvest set out to help our customers with this problem. The result was <a href="https://getharvest.com/forecast">Forecast</a>, a companion app with the ability to plot your team’s upcoming assignments along a horizontal timeline.</p>
 <p>Between 2013 and 2018, Forecast was created and maintained by a small team that consisted of just the CEO, myself, and a rotating set of 4 engineers. I was the product lead, responsible for all things product: strategy, research, project management, design, UI &amp; UX, HTML &amp; CSS, beta communication, and even customer support at times. For those few years, Forecast was my baby.</p>
 </div>
-<figure>
+<figure l>
   <div class="bordered">
-    <img src="/images/work/forecast-team.png" alt="Forecast Team Schedule" class="shadowed">
+    <img src="/images/work/forecast-team.png" alt="Forecast Team Schedule" class="shadowed" data-zoomable>
   </div>
   <figcaption>The “Team Schedule” in Forecast</figcaption>
 </figure>
 <div class="inner">
 <p>Through extensive research, we learned that many customers typically plan their teams with clunky spreadsheets. These sheets lack the ability to quickly pivot when plans change and are frequently out-of-date. It’s a heavy-handed approach we wanted to modernize.</p>
-<p>We spent about a year creating Forecast with beta customers and prototyping different design solutions. We ended up with a design that is heavily influenced by applications like Garageband, offering a visual and fluid experience for managing a team’s time. It supports options like click-and-drag, splitting, moving, timeline shifting, zooming, real-time updating, and more. These features combine to bring real flexibility to the scheduling process.</p>
+<p>We spent about a year prototyping different Forecast designs with beta customers. We found a solution in a design that’s heavily influenced by editing software like Garageband, offering a visual and fluid experience. It supports options like click-and-drag, splitting, moving, timeline shifting, zooming, real-time updating, and more. These features combine to bring real flexibility to managing a team’s time.</p>
 <p>We also played with various trade-offs around scheduling projects versus scheduling people, and ended up creating two views of the same information. Customers can seamlessly flip between the two depending on what questions they need answers to (e.g. “What work is coming down the pipe?” versus “Who has availability next month?”).</p>
 </div>
 <figure>
   <div class="bordered">
-    <img src="/images/work/forecast-projects.png" alt="Forecast Project Schedule" class="shadowed">
+    <img src="/images/work/forecast-projects.png" alt="Forecast Project Schedule" class="shadowed" data-zoomable>
   </div>
   <figcaption>The “Projects Schedule” in Forecast</figcaption>
 </figure>
 <div class="inner">
 <p>As the designer and product lead, it was my job to make the experience of using Forecast easy, learnable, and delightful. Here’s a rough but extensive demo I created for our beta customers prior to the official launch, which demonstrates many of the core concepts that still define the app today:</p>
-<p><em>Eagle-eyed viewers may pick up on various design changes between the beta in this video and the newer screenshots above.</em></p>
 </div>
 <figure>
   <video controls poster="/images/blackposter.gif">
     <source src="/images/work/forecast-demo-beta.mov" type="video/mp4">
   </video>
-  <figcaption>Full product demo for early beta customers</figcaption>
+  <figcaption>Full product demo for early beta customers<br>(Note the early design compared to the more recent screenshots above)</figcaption>
 </figure>
 <div class="inner">
 <p>Beyond the 2014 launch, our team continued to improve Forecast based on customer and internal needs. We iterated on behind-the-scenes flows like billing and onboarding, helped unlock insights with reports and exports, and added many features that enhanced the core experience. For example, here’s a couple demos of some later features, narrated by my wonderful coworkers:</p>
@@ -88,13 +87,13 @@
     <video controls poster="/images/blackposter.gif">
       <source src="/images/work/forecast-demo-filtering.mp4" type="video/mp4">
     </video>
-    <figcaption>Demo of later “advanced filtering” feature</figcaption>
+    <figcaption>Demo of later advanced filtering feature</figcaption>
   </div>
   <div>
     <video controls poster="/images/blackposter.gif">
       <source src="/images/work/forecast-demo-placeholders.mp4" type="video/mp4">
     </video>
-    <figcaption>Demo of later “placeholder” feature</figcaption>
+    <figcaption>Demo of later placeholder feature</figcaption>
   </div>
 </figure>
 <div class="inner">
@@ -105,10 +104,17 @@
   </section>
 
   <section class="do-not-print">
-    <div class="inner">
-      <a href="/work" class="back">See other work</a>
-    </div>
-    
+    <nav class="inner">
+      <ul class="post-nav">
+        
+        
+          <li class="next">
+            <span>Next →</span>
+            <a class="next" href="/work/team-reminders/">Timesheet Reminders</a>
+          </li>
+        
+      </ul>
+    </nav>
   </section>
 
     </main>
@@ -151,6 +157,10 @@
         </li>
       </ul>
     </footer>
+
+    
+  <script src="/js/medium-zoom.min.js" defer></script>
+  <script type="module" defer>mediumZoom('[data-zoomable]')</script>
 
   </body>
 </html>

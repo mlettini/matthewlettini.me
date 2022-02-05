@@ -8,18 +8,18 @@
 
     <meta property="og:image" content="https://matthewlettini.me/images/matthew-lettini-portrait.jpg">
     <meta property="og:site_name" content="Matthew Lettini">
-    <meta property="og:title" content="Team Reminders • Matthew Lettini">
+    <meta property="og:title" content="Timesheet Reminders • Matthew Lettini">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://matthewlettini.me">
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:image" content="https://matthewlettini.me/images/matthew-lettini-portrait.jpg">
     <meta name="twitter:site" content="@mlettini">
-    <meta name="twitter:title" content="Team Reminders • Matthew Lettini">
+    <meta name="twitter:title" content="Timesheet Reminders • Matthew Lettini">
 
     
 
-    <title>Team Reminders • Matthew Lettini</title>
+    <title>Timesheet Reminders • Matthew Lettini</title>
     <link rel="apple-touch-icon" href="/images/matthew-lettini-avatar.jpg">
     <link rel="icon" href="/images/favicon.svg">
     <link rel="mask-icon" href="/img/matthew-lettini-avatar.jpg">
@@ -43,30 +43,60 @@
       
   <header class="post-header">
     <div class="inner">
-      <h1>Team Reminders</h1>
-      <h2>A prompt to help Harvest customers build a habit with time tracking.</h2>
+      <h1>Timesheet Reminders</h1>
+      <h2>Prompts to help Harvest customers build a habit with time tracking.</h2>
     </div>
   </header>
 
-  <section id="post">
+  <section class="post">
     <div class="inner">
-<p>Lorem ipsum</p>
+<p>Harvest is team-based time tracking software. It’s built specifically to help teams not only get paid for their time but to also understand their team better. It helps answer questions like “Who is over-loaded and why?” and &quot;Which projects are going over-budget and why?”, so having your team track time diligently is vital to getting value out of Harvest.</p>
+<p>During a research initiative in 2018, one takeaway was that many customers had trouble getting their full team to track time <em>on time</em>. They had “a few bad apples” that wouldn’t track their time until much later. That can be a big problem for us—if insights from time tracking don’t seem trustworthy and realistic, that can cause a customer to churn or a trial to not sign up.</p>
+<p>This led our product team to study how habits are formed, and if we could make time tracking something automatic for users. So we took a class on behavior design taught by <a href="https://www.bjfogg.com">BJ Fogg</a>, and learned quite a bit! In short: Behavior (B) happens when Motivation (M), Ability (A), and a Prompt (P) come together at the same moment. And when you’re looking to create or change a behavior, the first step is to make sure you have the right prompt.</p>
+<p>So to prompt people to track time with Harvest, we built two separate reminder notifications systems. I was the designer and project manager for both.</p>
+<h2>Personal Reminders</h2>
+<p>Our first attempt at tackling timesheet reminders was a prompt individuals could set up for themselves. Since people have different preferences in how they track, we built it to be fully customizable: users could decide what days and times they wanted to be reminded to track time, as well as how they preferred to be reminded: email or desktop notification.</p>
 </div>
-<figure>
-  <img src="/images/work/test.png" alt="">
-  <figcaption>Test</figcaption>
+<figure class="two-up">
+  <img src="/images/work/reminders-personal-email.png" alt="Personal Reminder Email" style="max-height: 400px" data-zoomable>
+  <!-- <figcaption>The personal timesheet reminder email</figcaption> -->
 </figure>
 <div class="inner">
-<p>Lorem ipsum</p>
+<h2>Team Reminders</h2>
+<p>These are reminders that administrators can set up for their team on a weekly basis.</p>
+<hr>
+<ul>
+<li>Teams that don't track time well are more likely to churn</li>
+<li>Trials are more successful when trialing teams are tracking time</li>
+<li>It's difficult to input your time the further away from when you did it is</li>
+<li>BJ Fogg class in 2020 on tiny habits and behavior design</li>
+<li>B=MAP / Behavior = Motivation Ability Prompt</li>
+<li>The first thing to try is making sure you have the right prompt</li>
+<li>Previously had a notification feature but only for timesheet submissions, which was only used by a fraction of Harvest customers, and didn’t provide flexibility on when notification would be sent.</li>
+<li>Team-based notifications based on when managers expected timesheets due</li>
+<li>Led to a significant increase in trials that track time</li>
+</ul>
 </div>
 
   </section>
 
   <section class="do-not-print">
-    <div class="inner">
-      <a href="/work" class="back">See other work</a>
-    </div>
-    
+    <nav class="inner">
+      <ul class="post-nav">
+        
+          <li class="previous">
+            <span>← Previous</span>
+            <a class="previous" href="/work/forecast/">Forecast</a>
+          </li>
+        
+        
+          <li class="next">
+            <span>Next →</span>
+            <a class="next" href="/work/new-onboarding/">New Onboarding</a>
+          </li>
+        
+      </ul>
+    </nav>
   </section>
 
     </main>
@@ -109,6 +139,10 @@
         </li>
       </ul>
     </footer>
+
+    
+  <script src="/js/medium-zoom.min.js" defer></script>
+  <script type="module" defer>mediumZoom('[data-zoomable]')</script>
 
   </body>
 </html>

@@ -46,22 +46,22 @@
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
 </div>
 <figure>
-  <img src="/images/posts/test1.jpg" alt="">
-  <img src="/images/posts/test2.jpg" alt="">
+  <img src="/images/posts/test1.jpg" alt="" data-zoomable>
+  <img src="/images/posts/test2.jpg" alt="" data-zoomable>
   <figcaption>This is a single figure with multiple images</figcaption>
 </figure>
 <div class="inner">
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
 </div>
 <figure>
-  <img src="/images/posts/test4.jpg" alt="">
+  <img src="/images/posts/test4.jpg" alt="" data-zoomable>
   <figcaption>This is a wider horizontal image</figcaption>
 </figure>
 <div class="inner">
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
 </div>
 <figure>
-  <img src="/images/posts/test3.jpg" alt="">
+  <img src="/images/posts/test3.jpg" alt="" data-zoomable>
   <figcaption>This is a taller vertical image that gets cut</figcaption>
 </figure>
 <div class="inner">
@@ -121,13 +121,9 @@
 <p>Over the past couple weeks, I’ve had the opportunity to design and build <a href="http://getharvest.com/2012-year-in-work?utm_source=techtime">Harvest’s 2012 Year In Work</a>, which afforded me a chance to try out something new: the <strong>rem unit</strong> of measurement.</p>
 <p>You’re probably already familiar with <a href="http://www.w3.org/TR/css3-values/#em-unit">em units</a> – they’ve been a common feature of CSS for the past decade – but a crash course: elements specified using em units are sized relative to the <code>font-size</code> of their parent element. For example, if a paragraph has a specified <code>font-size</code>
 of 2em, and the div it’s inside of has a <code>font-size</code> of 10px, then the effective <code>font-size</code> of the paragraph is 10px × 2em, which is 20px.</p>
-</div>
 <pre class="language-css"><code class="language-css"><span class="token selector">html</span> <span class="token punctuation">{</span><br>  <span class="token property">font-size</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span> <span class="token punctuation">}</span><br><span class="token selector">.parent</span> <span class="token punctuation">{</span><br>  <span class="token property">font-size</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span> <span class="token punctuation">}</span><br><span class="token selector">.parent p.child</span> <span class="token punctuation">{</span><br>  <span class="token property">font-size</span><span class="token punctuation">:</span> 2em<span class="token punctuation">;</span> <span class="token punctuation">}</span> <span class="token comment">/* outputs to 20px */</span></code></pre>
-<div class="inner">
 <p>“Rem” stands for “root em”. Similar to em units, they calculate size based on an ancestor element’s <code>font-size</code>, except rem units always calculate against the html/root element’s base size. So if the html element has a <code>font-size</code> of 16px, then a paragraph with <code>font-size</code> of 2rem will always be 32px, regardless of the parent div or any other element.</p>
-</div>
 <pre class="language-css"><code class="language-css"><span class="token selector">html</span> <span class="token punctuation">{</span><br>  <span class="token property">font-size</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span> <span class="token punctuation">}</span><br><span class="token selector">.parent</span> <span class="token punctuation">{</span><br>  <span class="token property">font-size</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span> <span class="token punctuation">}</span><br><span class="token selector">.parent p.child</span> <span class="token punctuation">{</span><br>  <span class="token property">font-size</span><span class="token punctuation">:</span> 2rem<span class="token punctuation">;</span> <span class="token punctuation">}</span> <span class="token comment">/* outputs to 32px */</span></code></pre>
-<div class="inner">
 <p>This is incredibly compelling, particularly because…</p>
 <h3>I try to avoid em units</h3>
 <p>Em units are useful for a variety of reasons, the most important being that they’re <a href="http://trentwalton.com/2013/01/07/flexible-foundations/">flexible</a> and <a href="http://blog.cloudfour.com/the-ems-have-it-proportional-media-queries-ftw/">scalable</a>. You can set the highest parent element, html, to have a relative <code>font-size</code> specified with an em value or a percentage, and it will calculate a specific value based on the browser’s default <code>font-size</code>. This is great for printed documents (the typical default browser print size is 12px vs. 16px for screen display), and it allows your site to scale with the user’s preference, especially in older browsers that have a harder time with page/text zoom.</p>
