@@ -171,7 +171,6 @@ main,
 section {
   margin: var(--clamp-lg) auto;
   max-width: var(--max-width-lg);
-  transition: var(--transition);
 }
 .inner {
   margin: auto;
@@ -329,9 +328,6 @@ img.shadowed {
   .side-by-side .bordered {
     padding: 1rem;
   }
-}
-body.medium-zoom--opened main {
-  filter: blur(0.25rem) !important;
 }
 .medium-zoom-overlay {
   background: var(--zoom-bg) !important;
