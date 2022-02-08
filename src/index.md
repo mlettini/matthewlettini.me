@@ -6,7 +6,7 @@ title: About
 
 <section>
   <div class="inner">
-    <img src="/images/matthew-lettini-portrait.jpg" alt="A portrait of me">
+    <img src="/images/matthew-lettini-portrait.jpg" alt="A portrait of me" data-zoomable>
 
 👋 Hi, I’m Matthew. I’m a software designer and developer that’s been building, improving, and shipping digital product experiences since 2008. My goal is to make life easier for people, one pixel at a time.
 
