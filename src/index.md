@@ -4,13 +4,13 @@ pageType: about
 title: About
 ---
 
-<section id="about">
+<section>
   <div class="inner">
-  <img src="/images/matthew-lettini-portrait.jpg" alt="Matthew Lettini" class="portrait">
+    <img src="/images/matthew-lettini-portrait.jpg" alt="A portrait of me">
 
-👋 Hi, I’m Matthew. I‘m a software designer and developer that’s been building, improving, and shipping digital product experiences since 2008. My goal is to make life easier for people, one pixel at a time.
+👋 Hi, I’m Matthew. I’m a software designer and developer that’s been building, improving, and shipping digital product experiences since 2008. My goal is to make life easier for people, one pixel at a time.
 
-I’ve spent the last decade doing this at [Harvest](https://getharvest.com), building a world-class time tracking product alongside a world-class team. Previously I was designing new ways to purchase and listen to music online at [Songza](https://en.wikipedia.org/wiki/Songza) and [Amie Street](https://en.wikipedia.org/wiki/Amie_Street).
+I’ve spent the last decade doing this at [Harvest](https://getharvest.com), building a world-class time tracking product alongside a world-class team. Previously I was designing new ways to purchase and listen to music online at [Amie Street](https://en.wikipedia.org/wiki/Amie_Street) and [Songza](https://en.wikipedia.org/wiki/Songza).
 
 I excel as a product generalist, blurring the line between product designer and product manager. My experiences and skills have led me to wear many hats, including product strategist, project manager, team lead, customer researcher, data analyst, mentor, and a million other things in between.
 

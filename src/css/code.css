@@ -26,7 +26,6 @@ code {
 }
 pre[class*="language-"] {
   background: var(--block-code-bg);
-  border-radius: 0.5rem;
   color: var(--block-code-text);
   font-size: 0.9em;
   hyphens: none;

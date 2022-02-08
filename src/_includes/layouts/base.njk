@@ -37,14 +37,14 @@
     <header class="base-header">
       <a href="/">{{ site.authorName }}</a>
       <nav>
-        <ul>{#
+        <ul>
           <li>
             <a href="/"{% if pageType == 'about' %} class="selected"{% endif %}>About</a>
           </li>
           <li>
             <a href="/work"{% if pageType == 'work' or pageType == 'work-post' %} class="selected"{% endif %}>Work</a>
           </li>
-          <li>
+          {#<li>
             <a href="/posts"{% if pageType == 'blog' %} class="selected"{% endif %}>Writing</a>
           </li>#}
         </ul>
