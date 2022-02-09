@@ -6,6 +6,7 @@
   --text:    #333;
   --text-lt: #777;
   --color:   blue;
+
   --zoom-bg: rgba(17, 17, 17, 0.9);
 
   --font-mono:  'LG Mono', Monaco, monospace;
@@ -331,9 +332,6 @@ img.shadowed {
 }
 .medium-zoom-overlay {
   background: var(--zoom-bg) !important;
-}
-img.medium-zoom-image--opened.shadowed {
-  box-shadow: none !important;
 }
 
 
