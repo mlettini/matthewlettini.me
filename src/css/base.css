@@ -203,8 +203,8 @@ section {
 .base-header a {
   text-decoration: none;
 }
-.base-header a.selected {
-  color: var(--text) !important;
+.base-header a.selected:not(:hover) {
+  color: var(--text);
 }
 
 
@@ -292,7 +292,7 @@ figure *:not(:first-child) {
 figcaption {
   color: var(--text-lt);
   font-size: 0.8rem;
-  line-height: 1.3;
+  line-height: 1.4;
   margin: 0 !important;
   padding: 0.25rem 0.5rem 0;
   text-align: center;

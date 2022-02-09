@@ -15,7 +15,7 @@ During a research initiative in 2018, one learning was that many customers had t
 
 This led our product team to study how habits are formed, and if we could make time tracking something automatic for users. We took a class on behavior design taught by [BJ Fogg](https://www.bjfogg.com), and learned quite a bit! In summary for portfolio purposes: Behavior (B) happens when Motivation (M), Ability (A), and a Prompt (P) come together at the same moment. And when you’re looking to create or change a behavior, the first step is to make sure you have the right prompt.
 
-So to prompt people to track time with Harvest, we built two separate reminder notifications systems. I was the designer and project manager for both, leading teams that consisted of a product manager and a few front-end engineers.
+So to prompt people to track time with Harvest, we built two separate reminder notification systems. I was the designer and project manager for both, leading teams that consisted of a product manager and a few front-end engineers.
 
 ## Personal Reminders
 
@@ -42,7 +42,7 @@ Reminders are then only sent on the days they chose when they haven’t tracked 
 
 <div class="inner">
 
-Creating the browser-based desktop notification was a fun challenge. Since some browsers implement desktop notifications differently, we only had enough resources to support our most popular browsers. Browser notifications are also an opt-in feature. These two realities created a few error states we had to support and communicate to the user. However, they also allowed us to offer desktop notifications to our desktop applications users, which was an added benefit and source of delight.
+Creating the browser-based desktop notification was a fun challenge. Since some browsers implement desktop notifications differently, we only had enough resources to support our most popular browsers. Browser notifications are also an opt-in feature. These two realities created a few error states we had to support and communicate to the user. However, they also allowed us to offer desktop notifications to our desktop application users, which was an added benefit and delight.
 
 </div>
 
@@ -100,7 +100,7 @@ The screenshots below highlight a bit of my design process. I often start scribb
 
 <div class="inner">
 
-After our 2019 launch we heard many positive reviews and the data showed the feature helped people track time better. Unfortunately, not many people turned on them on. While the wizard seemed helpful, it wasn’t in the right place to market the feature, and was later removed. This taught myself and the team a lesson in product marketing and looking for the best opportunities to highlight new and helpful features.
+After our 2019 launch we heard many positive reviews and the data showed the feature helped people track time better. Unfortunately, not many people turned them on. While the wizard seemed helpful, it wasn’t in the right place to market the feature, and was later removed. This taught myself and the team a lesson in product marketing and looking for the best opportunities to highlight new and helpful features.
 
 Setting up personal reminders has since made its way to other areas of onboarding, however, they’ve also been slightly over-shadowed by…
 
@@ -155,6 +155,6 @@ Teams love this feature because an automated reminder removes awkward IRL “Hey
 
 To learn more, read the launch announcement of timesheet reminders I posted on [the official Harvest Blog](https://www.getharvest.com/blog/2021/04/timesheet-reminders).
 
-These two reminder features may just be simple email notification systems on the surface, but they both presented unique design challenges. They taught me lessons in product marketing, settings UX, and behavior design. These prompts help individuals and teams track time better, so we eventually also highlighted them in the updated [welcome flow](/work/welcome-flow).
+These two reminder features may just be simple email notification systems on the surface, but they both presented unique design challenges. They taught me lessons in product marketing, settings UX, and behavior design. Since these prompts help individuals and teams track time better, we also highlighted them when we updated our [welcome flow](/work/welcome-flow).
 
 </div>

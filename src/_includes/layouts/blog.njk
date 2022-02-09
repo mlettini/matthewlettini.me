@@ -14,7 +14,7 @@
 
   <section>
     <div class="inner">
-      <ul>
+      <ol>
         {% for post in collections.posts %}
     {#  {% for post in collections.recent_posts %}  #}
           <li>
@@ -22,7 +22,7 @@
             <time>{{ post.date | dateFilterShorthand }}</time>
           </li>
         {% endfor %}
-      </ul>
+      </ol>
     </div>
   </section>
 {% endblock %}
