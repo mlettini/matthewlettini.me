@@ -57,26 +57,17 @@ Here’s what you should know about rem units:
 
 Since all rem units are relative to a single number – the html `font-size` – you need only set the breakpoints on this number for a simple responsive layout. Here’s the actual code used in the Year In Work’s [Sass](http://sass-lang.com/) file:
 
-</div>
-
-```scss
-html
-  font-size: 16px
-  @media screen and (min-width: 1600px)  // Large Monitors
-    font-size: 18px
-  @media screen and (min-width: 1400px)  // Small Laptops
-    font-size: 14px
-  @media screen and (min-width: 1100px)  // Tablet Landscape
-    font-size: 13px
-  @media screen and (min-width: 800px)   // Tablet Portrait
-    font-size: 12px
-  @media screen and (min-width: 500px)   // Mobile Landscape
-    font-size: 7px
-  @media screen and (min-width: 400px)   // Mobile Portrait
-    font-size: 5px
+```css
+html {
+  font-size: 16px;
+  @media (min-width: 1600px) { font-size: 18px; }
+  @media (min-width: 1400px) { font-size: 14px; }
+  @media (min-width: 1100px) { font-size: 13px; }
+  @media (min-width:  800px) { font-size: 12px; }
+  @media (min-width:  500px) { font-size:  7px; }
+  @media (min-width:  400px) { font-size:  5px; }
+}
 ```
-
-<div class="inner">
 
 While this isn’t appropriate for every design, being able to set a base size for your entire layout for every breakpoint can be incredibly useful.
 
