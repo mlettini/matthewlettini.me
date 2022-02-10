@@ -1,5 +1,4 @@
 ---
-company: Harvest
 title: Harvest Forecast
 subtitle: Simple, flexible, and visual time planning for teams.
 image: /images/work/forecast-team.png

@@ -1,8 +1,9 @@
 ---
 title: Songza
 subtitle: Where social media meets internet radio.
+image: /images/work/songza-v2.jpg
+order: 2
 date: 2009-11-01
-eleventyExcludeFromCollections: true
 ---
 
 <div class="inner">

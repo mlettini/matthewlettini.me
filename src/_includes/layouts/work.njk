@@ -12,14 +12,34 @@
       {{ content | safe }}
 
       <ol class="project-list">
-        {% for post in collections.work %}
+        {% for post in collections.harvest_work %}
           <li>
             <a href="{{ post.url }}" class="project">
+              {# <img src="{{ post.data.image }}" alt=""> #}
               <div>
-                <h2>{#% if post.data.company == 'Harvest' %}Harvest: {% endif %#}{{ post.data.title }}</h2>
+                <h2>{{ post.data.title }}</h2>
                 <span>{{ post.data.subtitle }}</span>
               </div>
+            </a>
+          </li>
+        {% endfor %}
+      </ol>
+    </div>
+  </section>
+
+  <section>
+    <div class="inner">
+      <p>I also worked on these other things prior to joining Harvest:</p>
+
+      <ol class="project-list">
+        {% for post in collections.older_work %}
+          <li>
+            <a href="{{ post.url }}" class="project">
               {# <img src="{{ post.data.image }}" alt=""> #}
+              <div>
+                <h2>{{ post.data.title }}</h2>
+                <span>{{ post.data.subtitle }}</span>
+              </div>
             </a>
           </li>
         {% endfor %}

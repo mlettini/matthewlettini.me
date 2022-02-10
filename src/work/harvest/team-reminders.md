@@ -1,8 +1,7 @@
 ---
-company: Harvest
 title: Timesheet Reminders
 subtitle: Prompts to help customers build a habit with time tracking.
-image: /images/work/test.png
+image: /images/work/reminders-team-before-email.png
 order: 2
 date: 2021-04-08
 ---

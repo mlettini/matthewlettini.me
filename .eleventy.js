@@ -19,8 +19,20 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter('dateFilter', dateFilter)
   eleventyConfig.addFilter('dateFilterShorthand', dateFilterShorthand)
 
-  eleventyConfig.addCollection('work', function(collection) {
-    const coll = collection.getFilteredByGlob('./src/work/*.md');
+  eleventyConfig.addCollection('harvest_work', function(collection) {
+    const coll = collection.getFilteredByGlob('./src/work/harvest/*.md');
+    for(let i = 0; i < coll.length ; i++) {
+      const prevPost = coll[i-1];
+      const nextPost = coll[i + 1];
+      coll[i].data['prevPost'] = prevPost;
+      coll[i].data['nextPost'] = nextPost;
+    }
+    return coll.sort((a, b) => a.data.order - b.data.order);
+    // return coll.reverse();
+  })
+
+  eleventyConfig.addCollection('older_work', function(collection) {
+    const coll = collection.getFilteredByGlob('./src/work/older/*.md');
     for(let i = 0; i < coll.length ; i++) {
       const prevPost = coll[i-1];
       const nextPost = coll[i + 1];

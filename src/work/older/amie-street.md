@@ -1,8 +1,9 @@
 ---
 title: Amie Street
 subtitle: Ambitious indie online music store start-up.
+image: /images/work/amie-street-page-album.png
+order: 1
 date: 2009-08-01
-eleventyExcludeFromCollections: true
 ---
 
 <div class="inner">
