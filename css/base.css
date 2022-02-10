@@ -211,37 +211,37 @@ section {
 /* Work List */
 .project-list {
   list-style: none;
-  margin-top: 2rem;
   padding: 0;
 }
 .project-list li {
   margin: 0 0 -1px;
 }
 .project {
-  align-items: center;
+  align-items: flex-start;
   border-bottom: 1px solid var(--border);
   border-top: 1px solid var(--border);
   display: flex;
   font-size: 0.9rem;
   gap: 1rem;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   height: 100%;
-  padding: 1.25rem 0;
+  padding: 1rem 0;
   position: relative;
   text-decoration: none;
 }
 @media (min-width: 40rem) {
   .project {
-    padding: 1.25rem 1rem;
+    padding: 1rem 0.5rem;
   }
 }
 .project h2 {
   color: inherit;
   font-size: 1.1rem;
-  margin-bottom: 0.1em;
+  /* font-weight: 600; */
 }
-.project::after {
+.project::before {
   content: "→";
+  padding-top: 0.2rem;
   transition: var(--transition);
 }
 .project:not(:hover) span {
@@ -253,7 +253,7 @@ section {
     color: var(--color);
     z-index: 1;
   }
-  .project:hover::after {
+  .project:hover::before {
     transform: translateX(5px)
   }
 }
