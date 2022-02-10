@@ -1,17 +1,17 @@
 ---
 company: Harvest
-title: Forecast
-subtitle: An all-new product offering simple time planning for teams.
+title: Harvest Forecast
+subtitle: Simple, flexible, and visual time planning for teams.
 image: /images/work/forecast-team.png
 order: 1
-date: 2022-01-01
+date: 2014-07-22
 ---
 
 <div class="inner">
 
 Time tracking with Harvest helps teams understand their present and their past, but what about their future? How do they plan their time? This was the question that set us on a course to develop [Forecast](https://getharvest.com/forecast), a companion app with the ability to plot your team’s upcoming assignments along a horizontal timeline.
 
-Between 2013 and 2018, Forecast was created and maintained by a small team that consisted of just the CEO, myself, and a rotating set of 4 engineers. I was the product lead, responsible for all things product: strategy, research, project management, design, UI & UX, HTML & CSS, beta communication, and even customer support at times. For those few years, Forecast was my baby.
+Between 2013 and 2018, Forecast was created and maintained by a small team that consisted of just the CEO, myself, and four great engineers. I was the product lead, responsible for all things product: strategy, research, project management, design, UI & UX, HTML & CSS, beta communication, and even customer support at times. For those few years, Forecast was my baby.
 
 </div>
 
@@ -54,7 +54,7 @@ As the designer and product lead, it was my job to make the experience of using 
 
 <div class="inner">
 
-Beyond the 2014 launch, our team continued to improve Forecast based on customer and internal needs. We iterated on behind-the-scenes flows like billing and onboarding, helped unlock insights with reports and exports, and added many features that enhanced the core experience. For example, here’s a couple demos of some later features, narrated by my wonderful coworkers:
+Beyond the 2014 launch, our team continued for years to improve Forecast based on customer and internal needs. We iterated on behind-the-scenes flows like billing and onboarding, helped unlock insights with reports and exports, and added many features that enhanced the core experience. For example, here’s a couple demos of some later features, narrated by my wonderful coworkers:
 
 </div>
 

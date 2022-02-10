@@ -8,6 +8,7 @@
   <section>
     <div class="inner">
       <h1>Work</h1>
+      <p>I’ve spent the last 11 years of my career at <a href="https://getharvest.com">Harvest</a>. In that time I’ve worked on just about everything—the core functionality, all new products and apps, big feature flows, small UX iterations, and even swag. Here’s a brief selection of things I’m proud to have helped bring to life during my tenure:</p>
       {{ content | safe }}
 
       <ol class="project-list">
@@ -15,7 +16,7 @@
           <li>
             <a href="{{ post.url }}" class="project">
               <div>
-                <h2>{#% if post.data.company == 'Harvest' %}Harvest {% endif %#}{{ post.data.title }}</h2>
+                <h2>{#% if post.data.company == 'Harvest' %}Harvest: {% endif %#}{{ post.data.title }}</h2>
                 <span>{{ post.data.subtitle }}</span>
               </div>
               {# <img src="{{ post.data.image }}" alt=""> #}

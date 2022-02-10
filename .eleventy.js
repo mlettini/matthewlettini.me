@@ -27,8 +27,8 @@ module.exports = function(eleventyConfig) {
       coll[i].data['prevPost'] = prevPost;
       coll[i].data['nextPost'] = nextPost;
     }
-    // return coll.sort((a, b) => a.data.order - b.data.order);
-    return coll;
+    return coll.sort((a, b) => a.data.order - b.data.order);
+    // return coll.reverse();
   })
 
   eleventyConfig.addCollection('posts', function(collection) {

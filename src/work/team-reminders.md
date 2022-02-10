@@ -1,10 +1,10 @@
 ---
 company: Harvest
 title: Timesheet Reminders
-subtitle: Prompts to help our customers build a habit with time tracking.
+subtitle: Prompts to help customers build a habit with time tracking.
 image: /images/work/test.png
 order: 2
-date: 2022-01-02
+date: 2021-04-08
 ---
 
 <div class="inner">
@@ -65,9 +65,9 @@ Creating the browser-based desktop notification was a fun challenge. Since some 
 
 <div class="inner">
 
-In addition to your typical settings preference, we also built a dialog wizard to help individuals discover this feature and guide them through setup. It would pop up for new users after they tracked a bit of time. It was designed to help people set up reminders based on how they prefer to track while also recommending daily tracking, which data shows is more beneficial to both them and their team.
+In addition to your typical settings preference, we also built a dialog wizard to help individuals discover this feature and guide them through setup. It would pop up for new users after they tracked a bit of time, and was designed to help them set up reminders based on how they prefer to track. This also gave us an opportunity to recommend daily tracking, which data shows is more beneficial to both them and their team.
 
-The screenshots below highlight a bit of my design process. I often start scribbling in a tool like [Whimsical](https://whimsical.com) so I can quickly get ideas and flows down on screen without having to worry yet about specific styles. This allows me to then focus more on the edges of the user experience.
+The screenshots below highlight a bit of my design process. I often start scribbling in a tool like [Whimsical](https://whimsical.com) so I can quickly get ideas and flows down on screen without having to worry yet about specific styles. Wireframing and sketching like this helps me focus more on the edges of the user experience.
 
 </div>
 
@@ -100,7 +100,7 @@ The screenshots below highlight a bit of my design process. I often start scribb
 
 <div class="inner">
 
-After our 2019 launch we heard many positive reviews and the data showed the feature helped people track time better. Unfortunately, not many people turned them on. While the wizard seemed helpful, it wasn’t in the right place to market the feature, and was later removed. This taught myself and the team a lesson in product marketing and looking for the best opportunities to highlight new and helpful features.
+After our 2019 launch, we heard many positive reviews and the data showed the feature helped people track time better. Unfortunately, not many users turned them on. While the wizard seemed helpful, it wasn’t in the right place to market the feature, and was later removed. This taught myself and the team a lesson in product marketing and looking for the best opportunities to highlight new and helpful features.
 
 Setting up personal reminders has since made its way to other areas of onboarding, however, they’ve also been slightly over-shadowed by…
 
