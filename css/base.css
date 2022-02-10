@@ -80,20 +80,20 @@
   overflow-wrap: break-word;
 }
 html {
-  font-size: 20px;
+  font-size: 125%;
   padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
 }
-@media (min-width: 110rem) {
+@media (min-width: 125rem) {
   html {
-    font-size: 22px;
+    font-size: 150%;
   }
 }
 @media print {
   html {
-    font-size: 14px !important;
+    font-size: 75% !important;
   }
   .do-not-print {
     display: none !important;
@@ -163,11 +163,6 @@ hr {
 
 
 /* Layout */
-.base-header,
-.base-footer {
-  margin: var(--clamp-sm) auto;
-  max-width: var(--max-width-sm);
-}
 main,
 section {
   margin: var(--clamp-lg) auto;
@@ -177,11 +172,15 @@ section {
   margin: auto;
   max-width: var(--max-width-sm);
 }
+.base-header,
+.base-footer {
+  margin: var(--clamp-sm) auto;
+}
 
 
 
 /* Header */
-.base-header {
+.base-header .inner {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
@@ -191,7 +190,6 @@ section {
   margin-right: 1rem;
 }
 .base-header ul {
-  color: var(--text-lt);
   display: flex;
   gap: 1rem;
   list-style: none;
@@ -204,8 +202,8 @@ section {
 .base-header a {
   text-decoration: none;
 }
-.base-header a.selected:not(:hover) {
-  color: var(--text);
+.base-header ul a:not(.selected):not(:hover) {
+  color: var(--text-lt);
 }
 
 
@@ -224,7 +222,7 @@ section {
   border-bottom: 1px solid var(--border);
   border-top: 1px solid var(--border);
   display: flex;
-  font-size: 0.9em;
+  font-size: 0.9rem;
   gap: 1rem;
   justify-content: space-between;
   height: 100%;
@@ -263,7 +261,7 @@ section {
 
 
 /* Post */
-.post-header h2,
+.post-header span,
 .post-header time {
   color: var(--text-lt);
   display: block;
@@ -284,12 +282,14 @@ figure {
 figure *:not(:first-child) {
   margin: 0.5rem auto 0;
 }
+/*
 @media (min-height: 30rem) {
   figure img,
   figure video {
     max-height: 95vh;
   }
 }
+*/
 figcaption {
   color: var(--text-lt);
   font-size: 0.8rem;

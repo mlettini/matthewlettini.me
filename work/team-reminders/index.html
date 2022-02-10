@@ -32,18 +32,20 @@
   <body id="work-post">
 
     <header class="base-header">
-      <a href="/">Matthew Lettini</a>
-      <nav>
-        <ul>
-          <li>
-            <a href="/">About</a>
-          </li>
-          <li>
-            <a href="/work" class="selected">Work</a>
-          </li>
-          
-        </ul>
-      </nav>
+      <div class="inner">
+        <a href="/">Matthew Lettini</a>
+        <nav>
+          <ul>
+            <li>
+              <a href="/">About</a>
+            </li>
+            <li>
+              <a href="/work" class="selected">Work</a>
+            </li>
+            
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
@@ -51,7 +53,7 @@
   <header class="post-header">
     <div class="inner">
       <h1>Timesheet Reminders</h1>
-      <h2>Prompts to help our customers build a habit with time tracking.</h2>
+      <span>Prompts to help customers build a habit with time tracking.</span>
     </div>
   </header>
 
@@ -99,8 +101,8 @@
   <figcaption>Opting in to browser-based desktop notifications and examples of potential error states</figcaption>
 </figure>
 <div class="inner">
-<p>In addition to your typical settings preference, we also built a dialog wizard to help individuals discover this feature and guide them through setup. It would pop up for new users after they tracked a bit of time. It was designed to help people set up reminders based on how they prefer to track while also recommending daily tracking, which data shows is more beneficial to both them and their team.</p>
-<p>The screenshots below highlight a bit of my design process. I often start scribbling in a tool like <a href="https://whimsical.com">Whimsical</a> so I can quickly get ideas and flows down on screen without having to worry yet about specific styles. This allows me to then focus more on the edges of the user experience.</p>
+<p>In addition to your typical settings preference, we also built a dialog wizard to help individuals discover this feature and guide them through setup. It would pop up for new users after they tracked a bit of time, and was designed to help them set up reminders based on how they prefer to track. This also gave us an opportunity to recommend daily tracking, which data shows is more beneficial to both them and their team.</p>
+<p>The screenshots below highlight a bit of my design process. I often start scribbling in a tool like <a href="https://whimsical.com">Whimsical</a> so I can quickly get ideas and flows down on screen without having to worry yet about specific styles. Wireframing and sketching like this helps me focus more on the edges of the user experience.</p>
 </div>
 <figure>
   <div class="side-by-side" style="grid-template-columns: 10rem 1fr 1fr">
@@ -128,7 +130,7 @@
   <figcaption>Continued in-progress shots after a few design iterations and with Harvest styles</figcaption>
 </figure>
 <div class="inner">
-<p>After our 2019 launch we heard many positive reviews and the data showed the feature helped people track time better. Unfortunately, not many people turned them on. While the wizard seemed helpful, it wasn’t in the right place to market the feature, and was later removed. This taught myself and the team a lesson in product marketing and looking for the best opportunities to highlight new and helpful features.</p>
+<p>After our 2019 launch, we heard many positive reviews and the data showed the feature helped people track time better. Unfortunately, not many users turned them on. While the wizard seemed helpful, it wasn’t in the right place to market the feature, and was later removed. This taught myself and the team a lesson in product marketing and looking for the best opportunities to highlight new and helpful features.</p>
 <p>Setting up personal reminders has since made its way to other areas of onboarding, however, they’ve also been slightly over-shadowed by…</p>
 <h2>Team Reminders</h2>
 <p>Our second system for timesheet reminders put the control in the hands of team administrators. We learned that usually the people who turned on personal reminders were already decent time trackers, not the “bad apples” who needed help the most. So we built something specifically designed for teams.</p>
@@ -178,7 +180,7 @@
         
           <li class="previous">
             <span>← Previous</span>
-            <a class="previous" href="/work/forecast/">Forecast</a>
+            <a class="previous" href="/work/forecast/">Harvest Forecast</a>
           </li>
         
         
@@ -194,42 +196,44 @@
     </main>
 
     <footer class="base-footer" class="do-not-print">
-      <ul class="connect">
-        <li>
-          <a href="mailto:mlettini@gmail.com" data-label="Email me">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-label="Email me"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/mlettini" target="_blank" rel="noopener" data-label="Twitter">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-label="Follow me on Twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
-          </a>
-        </li>
-        <li>
-          <a href="https://instagram.com/mlettini" target="_blank" rel="noopener" data-label="Instagram">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-label="Follow me on Instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-          </a>
-        </li>
-        <li>
-          <a href="https://photos.matthewlettini.me" target="_blank" rel="noopener" data-label="Photography">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-label="See my photo library"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
-          </a>
-        </li>
-        <li>
-          <a href="https://open.spotify.com/user/mlettini" target="_blank" rel="noopener" data-label="Spotify">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-label="Follow me on Spotify"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/mlettini" target="_blank" rel="noopener" data-label="Github">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-label="Follow me on Github"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
-          </a>
-        <li>
-          <a href="#" data-label="Back to top">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-label="Back to top"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
-          </a>
-        </li>
-      </ul>
+      <div class="inner">
+        <ul class="connect">
+          <li>
+            <a href="mailto:mlettini@gmail.com" data-label="Email me">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-label="Email me"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/mlettini" target="_blank" rel="noopener" data-label="Twitter">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-label="Follow me on Twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com/mlettini" target="_blank" rel="noopener" data-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-label="Follow me on Instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://photos.matthewlettini.me" target="_blank" rel="noopener" data-label="Photography">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-label="See my photo library"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://open.spotify.com/user/mlettini" target="_blank" rel="noopener" data-label="Spotify">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-label="Follow me on Spotify"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/mlettini" target="_blank" rel="noopener" data-label="Github">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-label="Follow me on Github"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </a>
+          <li>
+            <a href="#" data-label="Back to top">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-label="Back to top"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
 
     
