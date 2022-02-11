@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="keywords" content="matthew lettini, matthew, mathew, matt, lettini, lentini, lettin, new york, nyc, ny, brooklyn, greenpoint, web, design, designer, product, html, css, harvest, forecast, amie street, songza, chosen, mlettini@gmail.com">
+
+    <meta property="og:image" content="https://matthewlettini.me/images/matthew-lettini-portrait.jpg">
+    <meta property="og:site_name" content="Matthew Lettini">
+    <meta property="og:title" content="Timesheet Reminders • Matthew Lettini">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://matthewlettini.me">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://matthewlettini.me/images/matthew-lettini-portrait.jpg">
+    <meta name="twitter:site" content="@mlettini">
+    <meta name="twitter:title" content="Timesheet Reminders • Matthew Lettini">
+
+    
+
+    <title>Timesheet Reminders • Matthew Lettini</title>
+    <link rel="apple-touch-icon" href="/images/matthew-lettini-avatar.jpg">
+    <link rel="icon" href="/images/favicon.svg">
+    <link rel="mask-icon" href="/img/matthew-lettini-avatar.jpg">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Posts">
+    
+  <meta name="robots" content="noindex">
+
+  </head>
+  <body id="work-post">
+
+    <header class="base-header">
+      <div class="inner">
+        <a href="/">Matthew Lettini</a>
+        <nav>
+          <ul>
+            <li>
+              <a href="/">About</a>
+            </li>
+            <li>
+              <a href="/work" class="selected">Work</a>
+            </li>
+            
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      
+  <header class="post-header">
+    <div class="inner">
+      <h1>Timesheet Reminders</h1>
+      <span>Prompts to help customers build a habit with time tracking.</span>
+    </div>
+  </header>
+
+  <section class="post">
+    <div class="inner">
+<p>Harvest is team-based time tracking software. It’s built specifically to help teams not only get paid for their time but to also understand their team better. It helps answer questions like “Who is over-loaded and why?” and &quot;Which projects are going over-budget and why?”, so having your team track time diligently is vital to getting value out of Harvest.</p>
+<p>During a research initiative in 2018, one learning was that many customers had trouble getting everyone on their team to track time <em>on time</em>. There’s sometimes “a few bad apples” that wouldn’t track until much later. That can be a problem for our customers and us—if insights from time tracking don’t seem trustworthy and realistic, that can cause a customer to churn or a trial to not sign up.</p>
+<p>This led our product team to study how habits are formed, and if we could make time tracking something automatic for users. We took a class on behavior design taught by <a href="https://www.bjfogg.com">BJ Fogg</a>, and learned quite a bit! In summary for portfolio purposes: Behavior (B) happens when Motivation (M), Ability (A), and a Prompt (P) come together at the same moment. And when you’re looking to create or change a behavior, the first step is to make sure you have the right prompt.</p>
+<p>So to prompt people to track time with Harvest, we built two separate reminder notification systems. I was the designer and project manager for both, leading teams that consisted of a product manager and a few front-end engineers.</p>
+<h2>Personal Reminders</h2>
+<p>Our first system for timesheet reminders was a prompt individuals could set up for themselves. Since people have different preferences in how they track, we built it to be fully customizable. People could decide what days and times they wanted to be reminded to track time, as well as how they preferred to be reminded: by email or desktop notification.</p>
+<p>Reminders are then only sent on the days they chose when they haven’t tracked by the time they chose. Ultimately pretty simple.</p>
+</div>
+<figure class="side-by-side">
+  <div>
+    <div class="bordered">
+      <img src="/images/work/reminders-personal-email-notification.png" alt="" data-zoomable>
+    </div>
+    <figcaption>Email reminder</figcaption>
+  </div>
+  <div>
+    <div class="bordered">
+      <img src="/images/work/reminders-personal-desktop-notification.png" alt="" data-zoomable>
+    </div>
+    <figcaption>Desktop notification reminder</figcaption>
+  </div>
+</figure>
+<div class="inner">
+<p>Creating the browser-based desktop notification was a fun challenge. Since some browsers implement desktop notifications differently, we only had enough resources to support our most popular browsers. Browser notifications are also an opt-in feature. These two realities created a few error states we had to support and communicate to the user. However, they also allowed us to offer desktop notifications to our desktop application users, which was an added benefit and delight.</p>
+</div>
+<figure>
+  <div class="side-by-side" style="grid-template-columns: 38rem 1fr">
+    <div class="bordered">
+      <img src="/images/work/reminders-personal-settings.png" alt="" class="shadowed" data-zoomable>
+    </div>
+    <div>
+      <div class="bordered">
+        <img src="/images/work/reminders-personal-settings-error1.png" alt="" data-zoomable>
+      </div>
+      <div class="bordered">
+        <img src="/images/work/reminders-personal-settings-error2.png" alt="" data-zoomable>
+      </div>
+    </div>
+  </div>
+  <figcaption>Opting in to browser-based desktop notifications and examples of potential error states</figcaption>
+</figure>
+<div class="inner">
+<p>In addition to your typical settings preference, we also built a dialog wizard to help individuals discover this feature and guide them through setup. It would pop up for new users after they tracked a bit of time, and was designed to help them set up reminders based on how they prefer to track. This also gave us an opportunity to recommend daily tracking, which data shows is more beneficial to both them and their team.</p>
+<p>The screenshots below highlight a bit of my design process. I often start scribbling in a tool like <a href="https://whimsical.com">Whimsical</a> so I can quickly get ideas and flows down on screen without having to worry yet about specific styles. Wireframing and sketching like this helps me focus more on the edges of the user experience.</p>
+</div>
+<figure>
+  <div class="side-by-side" style="grid-template-columns: 11rem 1fr 1fr">
+    <div class="bordered whimsical">
+      <img src="/images/work/reminders-personal-whimsical3.png" alt="" data-zoomable>
+    </div>
+    <div class="bordered whimsical">
+      <img src="/images/work/reminders-personal-whimsical1.png" alt="" data-zoomable>
+    </div>
+    <div class="bordered whimsical">
+      <img src="/images/work/reminders-personal-whimsical2.png" alt="" data-zoomable>
+    </div>
+  </div>
+  <figcaption>Early in-progress shots from designing the discovery wizard in <a href="https://whimsical.com">Whimsical</a></figcaption>
+</figure>
+<figure>
+  <div class="side-by-side">
+    <div class="bordered">
+      <img src="/images/work/reminders-personal-discovery-prompt.png" alt="" class="shadowed" data-zoomable>
+    </div>
+    <img src="/images/work/reminders-personal-discovery-step1.png" alt="" data-zoomable>
+    <img src="/images/work/reminders-personal-discovery-step2.png" alt="" data-zoomable>
+    <img src="/images/work/reminders-personal-discovery-step3.png" alt="" data-zoomable>
+  </div>
+  <figcaption>Continued in-progress shots after a few design iterations and with Harvest styles</figcaption>
+</figure>
+<div class="inner">
+<p>After our 2019 launch, we heard many positive reviews and the data showed the feature helped people track time better. Unfortunately, not many users turned them on. While the wizard seemed helpful, it wasn’t in the right place to market the feature, and was later removed. This taught myself and the team a lesson in product marketing and looking for the best opportunities to highlight new and helpful features.</p>
+<p>Setting up personal reminders has since made its way to other areas of onboarding, however, they’ve also been slightly over-shadowed by…</p>
+<h2>Team Reminders</h2>
+<p>Our second system for timesheet reminders put the control in the hands of team administrators. We learned that usually the people who turned on personal reminders were already decent time trackers, not the “bad apples” who needed help the most. So we built something specifically designed for teams.</p>
+<p>This system has an administrator tell us when timesheets are due each week, and we remind team members that the deadline is approaching. In addition, if a team member <em>still</em> misses the deadline, Harvest will automatically notify them again shortly afterwards.</p>
+</div>
+<figure class="side-by-side">
+  <div>
+    <div class="bordered">
+      <img src="/images/work/reminders-team-before-email.png" alt="" data-zoomable>
+    </div>
+    <figcaption>Before deadline email reminder</figcaption>
+  </div>
+  <div>
+    <div class="bordered">
+      <img src="/images/work/reminders-team-after-email.png" alt="" data-zoomable>
+    </div>
+    <figcaption>After deadline email reminder</figcaption>
+  </div>
+</figure>
+<div class="inner">
+<p>Reminders are designed to only notify when needed. Administrators can set how early before and how long after the deadline to notify people, and in addition, how Harvest should decide who needs to be notified.</p>
+<figure>
+  <div class="bordered">
+    <img src="/images/work/reminders-team-settings.png" alt="" data-zoomable>
+  </div>
+  <figcaption>Team reminder settings</figcaption>
+</figure>
+<p>In addition to your typical settings preference, we once again built a more clear way to help people discover team reminders. This time we took what we learned from personal reminders and simplified our approach, moving the setup to a more contextual place: when a new trial is about to add their team.</p>
+</div>
+<figure>
+  <div class="bordered">
+    <img src="/images/work/reminders-team-discovery-prompt.png" alt="" class="shadowed" data-zoomable>
+  </div>
+  <figcaption>Introducing team reminders when people would first invite their team</figcaption>
+</figure>
+<div class="inner">
+<p>Teams love this feature because an automated reminder removes awkward IRL “Hey, you need to get your time in!” conversations between managers and their team members. Those aren’t enjoyable for anyone involved. This feature also led to a significant increase in trials that track time, one of our primary metrics.</p>
+<p>To learn more, read the launch announcement of timesheet reminders I posted on <a href="https://www.getharvest.com/blog/2021/04/timesheet-reminders">the official Harvest Blog</a>.</p>
+<p>These two reminder features may just be simple email notification systems on the surface, but they both presented unique design challenges. They taught me lessons in product marketing, settings UX, and behavior design. Since these prompts help individuals and teams track time better, we also highlighted them when we updated our <a href="/work/welcome-flow">welcome flow</a>.</p>
+</div>
+
+  </section>
+
+  <section class="do-not-print">
+    <nav class="inner">
+      <ul class="post-nav">
+
+        <li class="previous">
+          
+            <span>← Previous</span>
+            <a href="/work/harvest/forecast/">Harvest Forecast</a>
+          
+        </li>
+
+        <li class="next">
+          
+            <span>Next →</span>
+            <a href="/work/harvest/welcome-flow/">Welcome Flow</a>
+          
+        </li>
+
+      </ul>
+    </nav>
+  </section>
+
+    </main>
+
+    <footer class="base-footer" class="do-not-print">
+      <div class="inner">
+        <ul class="connect">
+          <li>
+            <a href="mailto:mlettini@gmail.com" data-label="Email me">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-label="Email me"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/mlettini" target="_blank" rel="noopener" data-label="Twitter">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-label="Follow me on Twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com/mlettini" target="_blank" rel="noopener" data-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-label="Follow me on Instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://photos.matthewlettini.me" target="_blank" rel="noopener" data-label="Photography">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-label="See my photo library"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://open.spotify.com/user/mlettini" target="_blank" rel="noopener" data-label="Spotify">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-label="Follow me on Spotify"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/mlettini" target="_blank" rel="noopener" data-label="Github">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-label="Follow me on Github"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </a>
+          <li>
+            <a href="#" data-label="Back to top">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-label="Back to top"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    
+    
+    <script src="/js/medium-zoom.min.js" defer></script>
+    <script type="module" defer>
+      mediumZoom('[data-zoomable]', { margin: 25, scrollOffset: 0 });
+    </script>
+  </body>
+</html>
