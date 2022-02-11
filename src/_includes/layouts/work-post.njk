@@ -19,18 +19,27 @@
   <section class="do-not-print">
     <nav class="inner">
       <ul class="post-nav">
-        {% if prevPost.url %}
-          <li class="previous">
+
+        <li class="previous">
+          {% if prevPost.url %}
             <span>← Previous</span>
-            <a class="previous" href="{{ prevPost.url }}">{{ prevPost.data.title }}</a>
-          </li>
-        {% endif %}
-        {% if nextPost.url %}
-          <li class="next">
+            <a href="{{ prevPost.url }}">{{ prevPost.data.title }}</a>
+          {% else %}
+            <span>← Back</span>
+            <a href="/work">All Work</a>
+          {% endif %}
+        </li>
+
+        <li class="next">
+          {% if nextPost.url %}
             <span>Next →</span>
-            <a class="next" href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
-          </li>
-        {% endif %}
+            <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
+          {% else %}
+            <span>Back →</span>
+            <a href="/work">All Work</a>
+          {% endif %}
+        </li>
+
       </ul>
     </nav>
   </section>

@@ -7,7 +7,7 @@
   --text-lt: #777;
   --color:   blue;
 
-  --zoom-bg: rgba(17, 17, 17, 0.9);
+  --zoom-bg: rgba(5, 5, 5, 0.9);
 
   --font-mono:  'LG Mono', Monaco, monospace;
   --font-sans:  'LG', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -17,7 +17,7 @@
   --clamp-lg: clamp(3rem, 8vw, 5rem);
 
   --max-width-sm: 35rem;
-  --max-width-lg: 55rem;
+  --max-width-lg: 60rem;
 
   --transition: 100ms;
 }
@@ -141,6 +141,7 @@ a {
   color: inherit;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
+  transition: var(--transition);
 }
 @media (pointer: fine) {
   a:hover {
@@ -254,7 +255,7 @@ section {
     z-index: 1;
   }
   .project:hover::before {
-    transform: translateX(5px)
+    transform: translateX(6px)
   }
 }
 
@@ -307,18 +308,17 @@ figcaption {
 }
 img.shadowed {
   box-shadow: 0 0.25rem 0.5rem -0.25rem rgba(0, 0, 0, 0.3);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 @media (min-width: 40rem) {
   .bordered {
     padding: 2rem;
   }
   img.shadowed {
-    box-shadow: 0 0.5rem 0.75rem -0.25rem rgba(0, 0, 0, 0.2);
-    margin-bottom: 0.5rem;
+    box-shadow: 0 0.5rem 0.75rem -0.25rem rgba(0, 0, 0, 0.25);
   }
   .side-by-side {
-    align-items: center;
+    align-items: flex-start;
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(1rem, 1fr));
@@ -339,6 +339,7 @@ img.shadowed {
 /* Post Nav */
 .post-nav {
   display: flex;
+  justify-content: space-between;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -348,11 +349,7 @@ img.shadowed {
     font-size: 1.2rem;
   }
 }
-.post-nav .previous {
-  margin-right: auto;
-}
 .post-nav .next {
-  margin-left: auto;
   text-align: right;
 }
 .post-nav span {

@@ -1,7 +1,6 @@
 ---
 title: Harvest Forecast
 subtitle: Simple, flexible, and visual time planning for teams.
-image: /images/work/forecast-team.png
 order: 1
 date: 2014-07-22
 ---

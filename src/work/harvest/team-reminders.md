@@ -46,7 +46,7 @@ Creating the browser-based desktop notification was a fun challenge. Since some 
 </div>
 
 <figure>
-  <div class="side-by-side" style="grid-template-columns: 35rem 1fr">
+  <div class="side-by-side" style="grid-template-columns: 38rem 1fr">
     <div class="bordered">
       <img src="/images/work/reminders-personal-settings.png" alt="" class="shadowed" data-zoomable>
     </div>
@@ -71,7 +71,7 @@ The screenshots below highlight a bit of my design process. I often start scribb
 </div>
 
 <figure>
-  <div class="side-by-side" style="grid-template-columns: 10rem 1fr 1fr">
+  <div class="side-by-side" style="grid-template-columns: 11rem 1fr 1fr">
     <div class="bordered whimsical">
       <img src="/images/work/reminders-personal-whimsical3.png" alt="" data-zoomable>
     </div>

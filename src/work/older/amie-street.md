@@ -1,7 +1,6 @@
 ---
 title: Amie Street
-subtitle: Ambitious indie online music store start-up.
-image: /images/work/amie-street-page-album.png
+subtitle: Ambitious indie online music store with dynamic pricing.
 order: 1
 date: 2009-08-01
 ---
@@ -17,7 +16,7 @@ I was brought on as the chief designer tasked with a full rebrand of the product
 <figure>
   <div>
     <div class="bordered">
-      <img src="/images/work/amie-street-page-album.png" alt="" class="shadowed" data-zoomable>
+      <img src="/images/work/amie-street-album.png" alt="" class="shadowed" data-zoomable>
     </div>
     <figcaption>Album page with live-player</figcaption>
   </div>
@@ -26,7 +25,7 @@ I was brought on as the chief designer tasked with a full rebrand of the product
 <figure>
   <div>
     <div class="bordered">
-      <img src="/images/work/amie-street-page-artist.png" alt="" class="shadowed" data-zoomable>
+      <img src="/images/work/amie-street-artist.png" alt="" class="shadowed" data-zoomable>
     </div>
     <figcaption>Artist page with “On Tour” label</figcaption>
   </div>
@@ -35,10 +34,10 @@ I was brought on as the chief designer tasked with a full rebrand of the product
 <figure>
   <div class="side-by-side">
     <div class="bordered">
-      <img src="/images/work/amie-street-page-home2.jpg" alt="" class="shadowed" data-zoomable>
+      <img src="/images/work/amie-street-home2.jpg" alt="" class="shadowed" data-zoomable>
     </div>
     <div class="bordered">
-      <img src="/images/work/amie-street-page-home1.png" alt="" class="shadowed" data-zoomable>
+      <img src="/images/work/amie-street-home1.png" alt="" class="shadowed" data-zoomable>
     </div>
   </div>
   <figcaption>Multiple versions of the Home page during my time at the company</figcaption>
