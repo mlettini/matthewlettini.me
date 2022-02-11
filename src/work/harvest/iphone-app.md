@@ -52,3 +52,5 @@ I lead the product design for Harvest for iPhone v2, alongside other product tea
 * ...and more!
 
 Harvest for iPhone is an excellent companion app loved by many customers for the on-the-go convenience. While the app has since gone through a number of redesigns and modernizations, the features and UX we built into this version are still part of the core features today. It also laid the groundwork for the team that later built Harvest for Android.
+
+</div>
