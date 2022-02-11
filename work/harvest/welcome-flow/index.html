@@ -67,13 +67,21 @@
   <section class="do-not-print">
     <nav class="inner">
       <ul class="post-nav">
-        
-          <li class="previous">
+
+        <li class="previous">
+          
             <span>← Previous</span>
-            <a class="previous" href="/work/harvest/team-reminders/">Timesheet Reminders</a>
-          </li>
-        
-        
+            <a href="/work/harvest/team-reminders/">Timesheet Reminders</a>
+          
+        </li>
+
+        <li class="next">
+          
+            <span>Next →</span>
+            <a href="/work/harvest/cancellation-flow/">Cancellation Flow</a>
+          
+        </li>
+
       </ul>
     </nav>
   </section>
@@ -124,6 +132,8 @@
     
     
     <script src="/js/medium-zoom.min.js" defer></script>
-    <script type="module" defer>mediumZoom('[data-zoomable]')</script>
+    <script type="module" defer>
+      mediumZoom('[data-zoomable]', { margin: 25, scrollOffset: 0 });
+    </script>
   </body>
 </html>

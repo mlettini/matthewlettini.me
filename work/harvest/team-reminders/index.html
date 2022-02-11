@@ -85,7 +85,7 @@
 <p>Creating the browser-based desktop notification was a fun challenge. Since some browsers implement desktop notifications differently, we only had enough resources to support our most popular browsers. Browser notifications are also an opt-in feature. These two realities created a few error states we had to support and communicate to the user. However, they also allowed us to offer desktop notifications to our desktop application users, which was an added benefit and delight.</p>
 </div>
 <figure>
-  <div class="side-by-side" style="grid-template-columns: 35rem 1fr">
+  <div class="side-by-side" style="grid-template-columns: 38rem 1fr">
     <div class="bordered">
       <img src="/images/work/reminders-personal-settings.png" alt="" class="shadowed" data-zoomable>
     </div>
@@ -105,7 +105,7 @@
 <p>The screenshots below highlight a bit of my design process. I often start scribbling in a tool like <a href="https://whimsical.com">Whimsical</a> so I can quickly get ideas and flows down on screen without having to worry yet about specific styles. Wireframing and sketching like this helps me focus more on the edges of the user experience.</p>
 </div>
 <figure>
-  <div class="side-by-side" style="grid-template-columns: 10rem 1fr 1fr">
+  <div class="side-by-side" style="grid-template-columns: 11rem 1fr 1fr">
     <div class="bordered whimsical">
       <img src="/images/work/reminders-personal-whimsical3.png" alt="" data-zoomable>
     </div>
@@ -177,18 +177,21 @@
   <section class="do-not-print">
     <nav class="inner">
       <ul class="post-nav">
-        
-          <li class="previous">
+
+        <li class="previous">
+          
             <span>← Previous</span>
-            <a class="previous" href="/work/harvest/forecast/">Harvest Forecast</a>
-          </li>
-        
-        
-          <li class="next">
+            <a href="/work/harvest/forecast/">Harvest Forecast</a>
+          
+        </li>
+
+        <li class="next">
+          
             <span>Next →</span>
-            <a class="next" href="/work/harvest/welcome-flow/">Welcome Flow</a>
-          </li>
-        
+            <a href="/work/harvest/welcome-flow/">Welcome Flow</a>
+          
+        </li>
+
       </ul>
     </nav>
   </section>
@@ -239,6 +242,8 @@
     
     
     <script src="/js/medium-zoom.min.js" defer></script>
-    <script type="module" defer>mediumZoom('[data-zoomable]')</script>
+    <script type="module" defer>
+      mediumZoom('[data-zoomable]', { margin: 25, scrollOffset: 0 });
+    </script>
   </body>
 </html>

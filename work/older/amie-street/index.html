@@ -53,7 +53,7 @@
   <header class="post-header">
     <div class="inner">
       <h1>Amie Street</h1>
-      <span>Ambitious indie online music store start-up.</span>
+      <span>Ambitious indie online music store with dynamic pricing.</span>
     </div>
   </header>
 
@@ -65,7 +65,7 @@
 <figure>
   <div>
     <div class="bordered">
-      <img src="/images/work/amie-street-page-album.png" alt="" class="shadowed" data-zoomable>
+      <img src="/images/work/amie-street-album.png" alt="" class="shadowed" data-zoomable>
     </div>
     <figcaption>Album page with live-player</figcaption>
   </div>
@@ -73,7 +73,7 @@
 <figure>
   <div>
     <div class="bordered">
-      <img src="/images/work/amie-street-page-artist.png" alt="" class="shadowed" data-zoomable>
+      <img src="/images/work/amie-street-artist.png" alt="" class="shadowed" data-zoomable>
     </div>
     <figcaption>Artist page with “On Tour” label</figcaption>
   </div>
@@ -81,10 +81,10 @@
 <figure>
   <div class="side-by-side">
     <div class="bordered">
-      <img src="/images/work/amie-street-page-home2.jpg" alt="" class="shadowed" data-zoomable>
+      <img src="/images/work/amie-street-home2.jpg" alt="" class="shadowed" data-zoomable>
     </div>
     <div class="bordered">
-      <img src="/images/work/amie-street-page-home1.png" alt="" class="shadowed" data-zoomable>
+      <img src="/images/work/amie-street-home1.png" alt="" class="shadowed" data-zoomable>
     </div>
   </div>
   <figcaption>Multiple versions of the Home page during my time at the company</figcaption>
@@ -109,13 +109,21 @@
   <section class="do-not-print">
     <nav class="inner">
       <ul class="post-nav">
-        
-        
-          <li class="next">
+
+        <li class="previous">
+          
+            <span>← Back</span>
+            <a href="/work">All Work</a>
+          
+        </li>
+
+        <li class="next">
+          
             <span>Next →</span>
-            <a class="next" href="/work/older/songza/">Songza</a>
-          </li>
-        
+            <a href="/work/older/songza/">Songza</a>
+          
+        </li>
+
       </ul>
     </nav>
   </section>
@@ -166,6 +174,8 @@
     
     
     <script src="/js/medium-zoom.min.js" defer></script>
-    <script type="module" defer>mediumZoom('[data-zoomable]')</script>
+    <script type="module" defer>
+      mediumZoom('[data-zoomable]', { margin: 25, scrollOffset: 0 });
+    </script>
   </body>
 </html>

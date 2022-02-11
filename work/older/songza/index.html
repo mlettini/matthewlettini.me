@@ -65,15 +65,19 @@
   <div class="bordered">
     <img src="/images/work/songza-v2.jpg" alt="" class="shadowed" data-zoomable>
   </div>
-  <figcaption>Songza was relaunched as internet radio stations curated by the community</figcaption>
+  <figcaption>Songza was relaunched as internet radio curated by the community</figcaption>
 </figure>
 <figure class="side-by-side">
   <div>
-    <img src="/images/work/songza-sets.jpg" alt="" data-zoomable>
+    <div class="bordered">
+      <img src="/images/work/songza-sets.jpg" alt="" class="shadowed" data-zoomable>
+    </div>
     <figcaption>Songza Sets was internet radio curated by expert musicologists</figcaption>
   </div>
   <div>
-    <img src="/images/work/songza-fm.png" alt="" data-zoomable>
+    <div class="bordered">
+      <img src="/images/work/songza-fm.png" alt="" class="shadowed" data-zoomable>
+    </div>
     <figcaption>Songza.fm was your run-of-the-mill internet radio player</figcaption>
   </div>
 </figure>
@@ -83,13 +87,21 @@
   <section class="do-not-print">
     <nav class="inner">
       <ul class="post-nav">
-        
-          <li class="previous">
+
+        <li class="previous">
+          
             <span>← Previous</span>
-            <a class="previous" href="/work/older/amie-street/">Amie Street</a>
-          </li>
-        
-        
+            <a href="/work/older/amie-street/">Amie Street</a>
+          
+        </li>
+
+        <li class="next">
+          
+            <span>Back →</span>
+            <a href="/work">All Work</a>
+          
+        </li>
+
       </ul>
     </nav>
   </section>
@@ -140,6 +152,8 @@
     
     
     <script src="/js/medium-zoom.min.js" defer></script>
-    <script type="module" defer>mediumZoom('[data-zoomable]')</script>
+    <script type="module" defer>
+      mediumZoom('[data-zoomable]', { margin: 25, scrollOffset: 0 });
+    </script>
   </body>
 </html>
