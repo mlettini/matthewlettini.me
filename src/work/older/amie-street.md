@@ -2,7 +2,8 @@
 title: Amie Street
 subtitle: Ambitious indie online music store with dynamic pricing.
 order: 1
-date: 2009-08-01
+# date: 2009-08-01
+date: 2022-01-01
 ---
 
 <div class="inner">

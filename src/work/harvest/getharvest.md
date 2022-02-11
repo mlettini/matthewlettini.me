@@ -1,7 +1,9 @@
 ---
 title: GetHarvest.com
 subtitle: Multiple redesigns of Harvest’s marketing website.
-order: 5
+order: 7
+# date: ??
+date: 2022-01-07
 ---
 
 <div class="inner">
