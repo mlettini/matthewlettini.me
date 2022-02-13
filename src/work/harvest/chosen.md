@@ -59,7 +59,7 @@ For the initial design of Chosen (above), I stuck with neutral styling in an att
 
 <div class="inner">
 
-You can try Chosen for yourself at its [library demonstration page](https://harvesthq.github.io/chosen). Or you can watch this demo by <a href="https://www.driftingruby.com/episodes/javascript-select-form-fields-with-chosen">David Kimura</a>, which also demonstrates how to install and use Chosen in a ruby project:
+You can try Chosen for yourself at its [library demonstration page](https://harvesthq.github.io/chosen). Or you can watch this ruby installation demo by <a href="https://www.driftingruby.com/episodes/javascript-select-form-fields-with-chosen">David Kimura</a>:
 
 </div>
 

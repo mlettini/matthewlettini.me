@@ -107,7 +107,7 @@ Setting up personal reminders has since made its way to other areas of onboardin
 
 Our second system for timesheet reminders put the control in the hands of team administrators. We learned that usually the people who turned on personal reminders were already decent time trackers, not the “bad apples” who needed help the most. So we built something specifically designed for teams.
 
-This system has an administrator tell us when timesheets are due each week, and we remind team members that the deadline is approaching. In addition, if a team member *still* misses the deadline, Harvest will automatically notify them again shortly afterwards.
+This system has an administrator tell us when timesheets are due each week, and we remind their team that the deadline is approaching. In addition, if a team member *still* misses the deadline, Harvest will automatically notify them again shortly afterwards.
 
 </div>
 

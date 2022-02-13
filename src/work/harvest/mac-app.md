@@ -10,7 +10,7 @@ date: 2022-01-05
 
 Back in 2012, Harvest created an internal company initiative lovingly titled “Harvest Everywhere.” Time is precious, and our customers should be able to easily track time right from where they are, instead of having to navigate to Harvest first. This initiative led to all sorts of improvements that year in areas like integrations and apps.
 
-One thing to come out that year was introducing a brand new Mac desktop app. I did all the product design for the application, and paired with one fantastic engineer as a nimble and small team. It was great to move fast and be able to ship something really useful in a short time.
+One thing to come out that year was introducing a brand new Mac desktop app. I did all the product and UX design for the application, and paired with one engineer as a nimble and small team. It was great to move fast and be able to ship something really useful in a short time.
 
 </div>
 

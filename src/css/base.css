@@ -19,12 +19,12 @@
   --max-width-sm: 35rem;
   --max-width-lg: 60rem;
 
-  --transition: 100ms;
+  --transition: opacity 200ms, transform ease-out 100ms;
 }
 @media (prefers-color-scheme: dark) {
   :root {
     --bg:      #111;
-    --img-bg:  #222;
+    --img-bg:  #1a1a1a;
     --border:  #333;
     --text-lt: #888;
     --text:    #ccc;
@@ -81,10 +81,11 @@
 }
 html {
   font-size: 125%;
+  -webkit-font-smoothing: antialiased;
   padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   text-rendering: optimizelegibility;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
 }
 @media (min-width: 125rem) {
   html {
@@ -110,7 +111,7 @@ body {
   padding: 0 1rem;
 }
 h1, h2, h3, h4, h5, h6 {
-  color: var(--text);
+  color: inherit;
   font-family: inherit;
   font-size: 1rem;
   font-weight: 400;
@@ -141,7 +142,6 @@ a {
   color: inherit;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
-  transition: var(--transition);
 }
 @media (pointer: fine) {
   a:hover {
@@ -224,8 +224,8 @@ section {
   display: flex;
   font-size: 0.9rem;
   gap: 1rem;
-  /* justify-content: space-between; */
   height: 100%;
+  line-height: 1.4;
   padding: 1rem 0;
   position: relative;
   text-decoration: none;
@@ -234,11 +234,6 @@ section {
   .project {
     padding: 1rem 0.5rem;
   }
-}
-.project h2 {
-  color: inherit;
-  font-size: 1.1rem;
-  /* font-weight: 600; */
 }
 .project::before {
   content: "→";
@@ -339,6 +334,7 @@ img.shadowed {
 /* Post Nav */
 .post-nav {
   display: flex;
+  gap: 1rem;
   justify-content: space-between;
   list-style: none;
   margin: 0;
@@ -385,7 +381,7 @@ img.shadowed {
   .connect a::before {
     bottom: 1.2rem;
     color: var(--color);
-    content: attr(data-label);;
+    content: attr(data-label);
     font-size: 0.8rem;
     line-height: 2;
     opacity: 0;
@@ -400,5 +396,6 @@ img.shadowed {
     opacity: 1;
     pointer-events: auto;
     transform: translateY(0);
+    transition: var(--transition);
   }
 }

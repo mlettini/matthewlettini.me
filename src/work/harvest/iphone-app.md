@@ -39,7 +39,7 @@ At the time, Harvest already had an iPhone app, but it was built by external con
 
 <div class="inner">
 
-I lead the product design for Harvest for iPhone v2, alongside other product team members and a few engineers. Besides the design, this new version of the app contained a lot of improvements over the previous version, bringing more of the Harvest experience to customer’s mobile devices:
+I lead the product and UX design for Harvest for iPhone v2, alongside other product managers and a few engineers. Besides the updated design, this new version of the app contained many improvements over the previous version, bringing more of the Harvest experience to customer’s mobile devices:
 
 * A new “Team Status” report offered admins a way to know what their team is working on throughout the day.
 * Better offline support for when tracking time in places like a subway, as well as pull-to-refresh on demand.
