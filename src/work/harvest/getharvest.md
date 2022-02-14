@@ -23,7 +23,7 @@ One of my first projects at the company, our initial design for GetHarvest focus
     <div class="bordered">
       <img src="/images/work/getharvest-2012-home.png" alt="" class="shadowed" data-zoomable>
     </div>
-    <figcaption>Home page</figcaption>
+    <figcaption>2010 Home page</figcaption>
   </div>
 </figure>
 
@@ -32,19 +32,19 @@ One of my first projects at the company, our initial design for GetHarvest focus
     <div class="bordered">
       <img src="/images/work/getharvest-2012-customer-story.png" alt="" class="shadowed" data-zoomable>
     </div>
-    <figcaption>Customer story example</figcaption>
+    <figcaption>2010 Customer story example</figcaption>
   </div>
   <div>
     <div class="bordered">
       <img src="/images/work/getharvest-2012-pricing.png" alt="" class="shadowed" data-zoomable>
     </div>
-    <figcaption>Pricing page</figcaption>
+    <figcaption>2010 Pricing page</figcaption>
   </div>
   <div>
     <div class="bordered">
       <img src="/images/work/getharvest-2012-app.png" alt="" class="shadowed" data-zoomable>
     </div>
-    <figcaption>App page example</figcaption>
+    <figcaption>2010 App page example</figcaption>
   </div>
 </figure>
 
@@ -67,7 +67,7 @@ This design stood with only minor iterations until 2018. You can still [peruse t
     <div class="bordered">
       <img src="/images/work/getharvest-2014-home.png" alt="" class="shadowed" data-zoomable>
     </div>
-    <figcaption>Home page</figcaption>
+    <figcaption>2013 Home page</figcaption>
   </div>
 </figure>
 
@@ -76,18 +76,18 @@ This design stood with only minor iterations until 2018. You can still [peruse t
     <div class="bordered">
       <img src="/images/work/getharvest-2014-customers.png" alt="" class="shadowed" data-zoomable>
     </div>
-    <figcaption>Customer stories page</figcaption>
+    <figcaption>2013 Customer stories page</figcaption>
   </div>
   <div>
     <div class="bordered">
       <img src="/images/work/getharvest-2014-pricing.png" alt="" class="shadowed" data-zoomable>
     </div>
-    <figcaption>Pricing page</figcaption>
+    <figcaption>2013 Pricing page</figcaption>
   </div>
   <div>
     <div class="bordered">
       <img src="/images/work/getharvest-2014-app.png" alt="" class="shadowed" data-zoomable>
     </div>
-    <figcaption>App page example</figcaption>
+    <figcaption>2013 App page example</figcaption>
   </div>
 </figure>

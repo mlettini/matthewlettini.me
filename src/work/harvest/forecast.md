@@ -48,12 +48,14 @@ As the designer and product lead, it was my job to make the experience of using 
   <video controls poster="/images/blackposter.gif">
     <source src="/images/work/forecast-demo-beta.mov" type="video/mp4">
   </video>
-  <figcaption>Full product demo for early beta customers<br>(Note the early design compared to the more recent screenshots above)</figcaption>
+  <figcaption>
+    Full product demo for early beta customers (circa 2014)
+  </figcaption>
 </figure>
 
 <div class="inner">
 
-Beyond the 2014 launch, our team continued for years to improve Forecast based on customer and internal needs. We iterated on behind-the-scenes flows like billing and onboarding, helped unlock insights with reports and exports, and added many features that enhanced the core experience. For example, here’s a couple demos of some later features, narrated by my wonderful coworkers:
+Beyond the 2014 launch, our team continued for years to improve Forecast based on customer and internal needs. We iterated on behind-the-scenes flows like billing and onboarding, helped unlock insights with reports and exports, and added many features that enhanced the core experience. You can see some of these updates on [The Harvest Blog](https://www.getharvest.com/blog/tag/forecast), but here’s a couple demos of some later highlight features, narrated by my wonderful coworkers:
 
 </div>
 
@@ -62,13 +64,13 @@ Beyond the 2014 launch, our team continued for years to improve Forecast based o
     <video controls poster="/images/blackposter.gif">
       <source src="/images/work/forecast-demo-filtering.mp4" type="video/mp4">
     </video>
-    <figcaption>Demo of later advanced filtering feature</figcaption>
+    <figcaption>Demo of advanced filtering feature (circa 2016)</figcaption>
   </div>
   <div>
     <video controls poster="/images/blackposter.gif">
       <source src="/images/work/forecast-demo-placeholders.mp4" type="video/mp4">
     </video>
-    <figcaption>Demo of later placeholder feature</figcaption>
+    <figcaption>Demo of placeholder feature (circa 2017)</figcaption>
   </div>
 </figure>
 

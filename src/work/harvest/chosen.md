@@ -67,7 +67,7 @@ You can try Chosen for yourself at its [library demonstration page](https://harv
   <video controls poster="/images/blackposter.gif">
     <source src="/images/work/chosen-demo.mp4" type="video/mp4">
   </video>
-  <figcaption>Chosen demo by <a href="https://www.driftingruby.com/episodes/javascript-select-form-fields-with-chosen">Drifting Ruby</a> (© David Kimura)</figcaption>
+  <figcaption>Chosen demo by <a href="https://www.driftingruby.com/episodes/javascript-select-form-fields-with-chosen">Drifting Ruby</a> (© David Kimura circa 2017)</figcaption>
 </figure>
 
 <div class="inner">

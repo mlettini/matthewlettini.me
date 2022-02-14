@@ -56,7 +56,7 @@ Here’s a quick product demo I created for the official launch, which demonstra
   <video controls poster="/images/blackposter.gif">
     <source src="/images/work/mac-demo.mov" type="video/mp4">
   </video>
-  <figcaption>Full product demo</figcaption>
+  <figcaption>Full product demo (circa 2012)</figcaption>
 </figure>
 
 <div class="inner">
