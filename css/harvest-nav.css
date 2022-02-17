@@ -4,10 +4,10 @@
   --white:      #fff;
   --charcoal:   #1d1e1c;
 
-  --gray-alpha-100: rgba(29,30,28,0.07);
+  --gray-alpha-100: rgba(29,30,28,0.05);
   --gray-alpha-150: rgba(29,30,28,0.15);
-  --gray-alpha-200: rgba(29,30,28,0.25);
-  --gray-alpha-300: rgba(29,30,28,0.32);
+  --gray-alpha-200: rgba(29,30,28,0.2);
+  --gray-alpha-300: rgba(29,30,28,0.3);
   --gray-alpha-400: rgba(29,30,28,0.4);
   --gray-alpha-500: rgba(29,30,28,0.5);
   --gray-alpha-600: rgba(29,30,28,0.62);
@@ -15,6 +15,7 @@
   --gray-alpha-800: rgba(29,30,28,0.8);
   --gray-alpha-900: rgba(29,30,28,0.9);
 
+  --orange-50:  #FFEFE4;
   --orange-100: #FFE7D9;
   --orange-200: #FFC5A3;
   --orange-300: #FFA26C;
@@ -55,7 +56,7 @@
   outline-color: var(--charcoal);
 }
 html {
-  background: var(--white);
+  background: var(--warm-white);
   height: 100%;
   padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
@@ -615,6 +616,9 @@ input[type="radio"]:checked {
 .tabs.time-tabs nav > a {
   flex: 1;
 }
+.tabs.time-tabs nav > a:not(.is-active):not(:hover){
+  filter: grayscale(1);
+}
 .tabs.time-tabs div {
   border-bottom: 3px solid transparent;
   padding: 8px 4px;
@@ -645,10 +649,7 @@ input[type="radio"]:checked {
   width: 100%;
 }
 .summary-box {
-  /* background: var(--white); */
-  border: 1px solid var(--gray-alpha-200);
-  /* border-radius: 4px; */
-  /* box-shadow: 0 0.5px 1px rgba(0,0,0,0.015), 0 1px 2px rgba(0,0,0,0.025), 0 1.5px 3px rgba(0,0,0,0.05), 0 2px 4px rgba(0,0,0,0.075); */
+  background: var(--orange-50);
   flex: auto;
   padding: 16px;
 }
@@ -686,11 +687,10 @@ input[type="radio"]:checked {
 
 .form-box {
   background-clip: padding-box;
-  background-color: var(--warm-white);
+  background-color: var(--orange-50);
   border: 1px solid var(--orange-300);
-  border-radius: 4px;
   /* box-shadow: 0 0.5px 1px rgba(0,0,0,0.015), 0 1px 2px rgba(0,0,0,0.025), 0 1.5px 3px rgba(0,0,0,0.05), 0 2px 4px rgba(0,0,0,0.075); */
-  padding: 24px;
+  padding: 32px;
 }
 .form-box-inner {
   margin: auto;
@@ -709,7 +709,7 @@ label {
 @media (min-width: 600px) {
   .field {
     display: grid;
-    grid-template-columns: 120px 1fr;
+    grid-template-columns: 140px 1fr;
     gap: 16px;
   }
   .field .left label {
@@ -723,7 +723,7 @@ label {
     height: auto;
   }
   .submit {
-    margin-left: 136px;
+    margin-left: 156px;
   }
 }
 .required {
