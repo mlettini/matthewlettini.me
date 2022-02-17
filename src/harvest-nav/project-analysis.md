@@ -2,7 +2,7 @@
 title: Projects
 ---
 
-<header id="top-nav">
+<header id="top-nav" hidden>
   <nav>
     <a href="/harvest-nav/projects" class="is-active">Manage projects</a>
     <a href="/harvest-nav/tasks">Manage tasks</a>
@@ -86,7 +86,8 @@ title: Projects
 
   <div class="tabs mt-24 mb-16">
     <nav>
-      <a href="#" class="is-active">Tasks</a>
+      <a href="#" class="is-active">Budget</a>
+      <a href="#">Tasks</a>
       <a href="#">Team</a>
       <a href="#">Invoices</a>
     </nav>

@@ -30,7 +30,7 @@ title: Projects
   <div class="tabs mt-24 mb-16">
     <nav>
       <a href="#" class="is-active">Active (50)</a>
-      <a href="#">My pins (12)</a>
+      <a href="#">Pinned (12)</a>
       <a href="#">Budgeted (42)</a>
       <a href="#">Stale (23)</a>
       <a href="#">Archived</a>

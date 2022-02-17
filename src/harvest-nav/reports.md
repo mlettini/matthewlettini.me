@@ -87,4 +87,8 @@ title: Reports
       </div>
     </div>
   </div>
+
+  <div class="empty big mt-16">
+    There are no hours recorded for this time period.
+  </div>
 </main>

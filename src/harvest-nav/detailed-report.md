@@ -90,13 +90,7 @@ title: Reports
     </div>
     <div class="summary-box">
       Filters<br>
-      <h5>All clients</h5>
-      <h5>All projects</h5>
-    </div>
-    <div class="summary-box">
-      <br>
-      <h5>All tasks</h5>
-      <h5>All people</h5>
+      <h4>All clients, projects, tasks, and people</h4>
     </div>
   </div>
 
@@ -112,6 +106,7 @@ title: Reports
       </button>
     </div>
     <div class="flex">
+      <button class="button button-sm">Customize columns</button>
       <button class="button button-sm">Bulk actions <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
       <button class="button button-sm">Export <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
     </div>

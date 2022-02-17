@@ -36,7 +36,7 @@ title: Clients
     </div>
     <div class="field mb-16">
       <div class="left">
-        <label>Currency</label>
+        <label>Preferred currency</label>
       </div>
       <div class="right">
         <input class="input" type="text">

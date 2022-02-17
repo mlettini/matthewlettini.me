@@ -30,7 +30,7 @@ title: Clients
   <div class="tabs mt-24 mb-16">
     <nav>
       <a href="#" class="is-active">Active (20)</a>
-      <a href="#">My pins (12)</a>
+      <a href="#">Pinned (12)</a>
       <a href="#">Stale (0)</a>
       <a href="#">Archived</a>
     </nav>
