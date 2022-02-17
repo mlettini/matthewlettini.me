@@ -649,12 +649,13 @@ input[type="radio"]:checked {
   width: 100%;
 }
 .summary-box {
-  background: var(--orange-50);
+  background: var(--white);
+  border: 1px solid var(--gray-alpha-200);
   flex: auto;
   padding: 16px;
 }
-.summary-box:last-of-type {
-  margin: 0;
+.summary-box h2 {
+  margin-bottom: 2px;
 }
 
 .back-to {
