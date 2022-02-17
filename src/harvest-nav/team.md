@@ -82,13 +82,11 @@ title: Team
       </div>
     </div>
     <div class="summary-box">
-      Capacity<br>
-      <h2>123.45</h2>
-      <div class="pt-8">
-        <div class="meter" style="width:100%"></div>
-      </div>
+      Billable utilization<br>
+      <h2>60%</h2>
+      <div class="meter mt-8" style="width:100%"></div>
       <div class="flex justify-space-between">
-        Default capacity <strong>35.00</strong>
+        Total capacity <strong>123.00</strong>
       </div>
     </div>
   </div>
@@ -127,7 +125,7 @@ title: Team
           <td class="no-width text-right">35.00</td>
           <td class="no-width">Administrator</td>
           <td class="no-width">
-            <a href="/harvest-nav/team-analysis" class="button button-sm">
+            <a href="/harvest-nav/team-analysis" class="button button-sm button-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
             </a>
           </td>
@@ -147,7 +145,7 @@ title: Team
           <td class="no-width text-right">35.00</td>
           <td class="no-width">Administrator</td>
           <td class="no-width">
-            <a href="/harvest-nav/team-analysis" class="button button-sm">
+            <a href="/harvest-nav/team-analysis" class="button button-sm button-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
             </a>
           </td>
@@ -167,7 +165,7 @@ title: Team
           <td class="no-width text-right">35.00</td>
           <td class="no-width">Administrator</td>
           <td class="no-width">
-            <a href="/harvest-nav/team-analysis" class="button button-sm">
+            <a href="/harvest-nav/team-analysis" class="button button-sm button-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
             </a>
           </td>
@@ -205,7 +203,7 @@ title: Team
           <td class="no-width text-right">35.00</td>
           <td class="no-width">Administrator</td>
           <td class="no-width">
-            <a href="/harvest-nav/team-analysis" class="button button-sm">
+            <a href="/harvest-nav/team-analysis" class="button button-sm button-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
             </a>
           </td>
@@ -225,7 +223,7 @@ title: Team
           <td class="no-width text-right">35.00</td>
           <td class="no-width">Administrator</td>
           <td class="no-width">
-            <a href="/harvest-nav/team-analysis" class="button button-sm">
+            <a href="/harvest-nav/team-analysis" class="button button-sm button-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
             </a>
           </td>
@@ -245,7 +243,7 @@ title: Team
           <td class="no-width text-right">35.00</td>
           <td class="no-width">Administrator</td>
           <td class="no-width">
-            <a href="/harvest-nav/team-analysis" class="button button-sm">
+            <a href="/harvest-nav/team-analysis" class="button button-sm button-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
             </a>
           </td>

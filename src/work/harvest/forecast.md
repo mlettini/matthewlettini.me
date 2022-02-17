@@ -46,10 +46,10 @@ As the designer and product lead, it was my job to make the experience of using 
 
 <figure>
   <video controls poster="/images/blackposter.gif">
-    <source src="/images/work/forecast-demo-beta.mov" type="video/mp4">
+    <source src="/images/work/forecast-demo-beta.mp4" type="video/mp4">
   </video>
   <figcaption>
-    Full product demo for early beta customers (circa 2014)
+    Product demo for early beta customers (circa 2014)
   </figcaption>
 </figure>
 

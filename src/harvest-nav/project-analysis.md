@@ -45,7 +45,7 @@ title: Projects
     <div class="summary-box">
       Remaining budget<br>
       <h2>123.45</h2>
-      <div class="pt-8">
+      <div class="mt-8">
         <div class="meter" style="width:100%"></div>
       </div>
       <div class="flex justify-space-between">

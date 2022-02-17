@@ -12,7 +12,7 @@ title: About
 
 I’ve spent the last decade doing this at [Harvest](https://getharvest.com), building a world-class time tracking product alongside a world-class team. Previously I was designing new ways to purchase and listen to music online at [Amie Street](https://en.wikipedia.org/wiki/Amie_Street) and [Songza](https://en.wikipedia.org/wiki/Songza).
 
-I excel as a product generalist, blurring the line between product designer and product manager. My experiences and skills have led me to wear many hats, including product strategist, project manager, team lead, customer researcher, data analyst, mentor, and a million other things in between.
+I excel as a product generalist, blurring the line between product designer and product manager. I  My experiences and skills have led me to wear many hats, including product strategist, project manager, team lead, customer researcher, data analyst, mentor, and a million other things in between.
 
 I’m also a designer who codes and spend a lot of my time designing in and writing HTML & CSS. Lately I’ve been particularly interested in developing design systems and optimizing information architecture.
 

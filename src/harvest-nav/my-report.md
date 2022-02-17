@@ -51,22 +51,46 @@ title: Reports
     </div>
   </div>
 
-  <div class="summary mt-24">
+  <div class="summary mt-16">
     <div class="summary-box">
       Total hours<br>
       <h2>123.45</h2>
-    </div>
-    <div class="summary-box">
-      Billable<br>
-      Non-billable
+      <div class="flex justify-space-between mt-8">
+        Billable <strong>3.00</strong>
+      </div>
+      <div class="flex justify-space-between">
+        Non-billable <strong>0.00</strong>
+      </div>
     </div>
     <div class="summary-box">
       Billable amount<br>
       <h2>$123.45</h2>
+      <div class="flex justify-space-between mt-8">
+        Time <strong>3.00</strong>
+      </div>
+      <div class="flex justify-space-between">
+        Expenses <strong>0.00</strong>
+      </div>
     </div>
     <div class="summary-box">
       Uninvoiced amount<br>
       <h2>$123.45</h2>
+      <div class="flex justify-space-between mt-8">
+        Time <strong>3.00</strong>
+      </div>
+      <div class="flex justify-space-between">
+        Expenses <strong>0.00</strong>
+      </div>
+    </div>
+    <div class="summary-box">
+      Internal costs<br>
+      <h2>$123.45</h2>
+      <div class="flex justify-space-between mt-8">
+        Time <strong>3.00</strong>
+      </div>
+      <div class="flex justify-space-between">
+        Expenses <strong>0.00</strong>
+      </div>
     </div>
   </div>
 </main>

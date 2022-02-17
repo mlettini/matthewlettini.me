@@ -66,15 +66,12 @@ title: Invoices
 
   <div class="summary mt-16">
     <div class="summary-box">
-      <span>Total open</span>
+      <span>Total open amount</span>
       <h2>$123.45</h2>
     </div>
     <div class="summary-box">
-      <span>Total paid amount</span>
+      <span>Total paid amount (this year)</span>
       <h2>$123.45</h2>
-    </div>
-    <div class="summary-box">
-      Graph
     </div>
   </div>
 
