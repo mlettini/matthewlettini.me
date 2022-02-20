@@ -78,6 +78,6 @@ Beyond the 2014 launch, our team continued for years to improve Forecast based o
 
 I worked on Forecast for five years until an organization shift in 2018. It’s always a fantastic experience to both ship a product from scratch and continue to iterate on it based on paying customer feedback, *and* love the team you work with. I could talk your ear off reflecting on what I learned, what we did well, and what we could’ve done better.
 
-Forecast offers customers an important birds-eye-view of their upcoming work and helps them plan around who’s doing what and when. Today, Forecast helps schedule over 82,000 purchased seats and brings in over $4,000,000 dollars in annual revenue for Harvest. You can learn more and even try it out at [https://getharvest.com/forecast](https://www.getharvest.com/forecast) (I also designed the marketing site).
+Forecast offers customers an important birds-eye-view of their upcoming work and helps them plan around who’s doing what and when. Today, Forecast helps schedule over 82,000 purchased seats and contributes a significant amount of revenue to Harvest’s business. You can learn more and even try it out at [https://getharvest.com/forecast](https://www.getharvest.com/forecast) (I also designed the marketing site).
 
 </div>
