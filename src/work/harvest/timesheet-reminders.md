@@ -154,6 +154,6 @@ Teams love this feature because an automated reminder removes awkward IRL “Hey
 
 To learn more, read the launch announcement of timesheet reminders I posted on [the official Harvest Blog](https://www.getharvest.com/blog/2021/04/timesheet-reminders).
 
-These two reminder features may just be simple email notification systems on the surface, but they both presented unique design challenges. They taught me lessons in product marketing, settings UX, and behavior design. Since these prompts help individuals and teams track time better, we also highlighted them when we updated our [welcome flow](/work/welcome-flow).
+These two reminder features may just be simple email notification systems on the surface, but they both presented unique design challenges. They taught me lessons in product marketing, settings UX, and behavior design. Since these prompts help individuals and teams track time better, we also highlighted them when we updated our [welcome flow](/work/harvest/welcome-flow).
 
 </div>
