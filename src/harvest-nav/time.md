@@ -60,7 +60,7 @@ title: Time
         <tr>
           <td>
             <strong>Task name</strong><br>
-            <small>[CODE] Project name &nbsp; (Client Name)</small><br>
+            <small>[CODE] Project name <span class="ml-4">(Client Name)</small><br>
             <small>1:20pm – 4:20pm <span style="color:#666">/ Here are some notes</span></small>
           </td>
           <td class="no-width text-right nowrap">
@@ -79,7 +79,7 @@ title: Time
         <tr>
           <td>
             <strong>Task name</strong><br>
-            <small>[CODE] Project name &nbsp; (Client Name)</small><br>
+            <small>[CODE] Project name <span class="ml-4">(Client Name)</small><br>
             <small>1:20pm – 4:20pm</small>
           </td>
           <td class="no-width text-right nowrap">
@@ -98,7 +98,7 @@ title: Time
         <tr class="is-running">
           <td>
             <strong>Task name</strong><br>
-            <small>[CODE] Project name &nbsp; (Client Name)</small><br>
+            <small>[CODE] Project name <span class="ml-4">(Client Name)</small><br>
             <small>1:20pm – 4:20pm</small>
           </td>
           <td class="no-width text-right nowrap">

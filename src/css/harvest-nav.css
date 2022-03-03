@@ -7,7 +7,7 @@
   --gray-alpha-100: rgba(29,30,28,0.05);
   --gray-alpha-150: rgba(29,30,28,0.15);
   --gray-alpha-200: rgba(29,30,28,0.2);
-  --gray-alpha-300: rgba(29,30,28,0.3);
+  --gray-alpha-300: rgba(29,30,28,0.35);
   --gray-alpha-400: rgba(29,30,28,0.4);
   --gray-alpha-500: rgba(29,30,28,0.5);
   --gray-alpha-600: rgba(29,30,28,0.62);
@@ -56,7 +56,7 @@
   outline-color: var(--charcoal);
 }
 html {
-  background: var(--warm-white);
+  background: var(--white);
   height: 100%;
   padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
@@ -94,7 +94,8 @@ h5 {
 }
 a {
   color: var(--charcoal);
-  text-underline-offset: 1px;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
 }
 small {
   font-size: 13px;
