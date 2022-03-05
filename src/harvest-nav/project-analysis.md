@@ -2,7 +2,7 @@
 title: Projects
 ---
 
-<header id="top-nav" hidden>
+<header id="top-nav">
   <nav>
     <a href="/harvest-nav/projects" class="is-active">Manage projects</a>
     <a href="/harvest-nav/tasks">Manage tasks</a>
@@ -32,6 +32,15 @@ title: Projects
   </div>
 
   <div class="summary mt-24">
+    <div class="summary-box">
+      <div class="flex">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        Expand to see graphs
+      </div>
+    </div>
+  </div>
+
+  <div class="summary mt-8">
     <div class="summary-box">
       Total hours<br>
       <h2>123.45</h2>
