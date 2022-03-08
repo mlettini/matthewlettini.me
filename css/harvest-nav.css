@@ -56,7 +56,7 @@
   outline-color: var(--charcoal);
 }
 html {
-  background: var(--white);
+  background: var(--warm-white);
   height: 100%;
   padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
@@ -93,7 +93,7 @@ h5 {
   font-size: 15px;
 }
 a {
-  color: var(--charcoal);
+  color: var(--blue);
   text-decoration-thickness: 1px;
   text-underline-offset: 2px;
 }
@@ -101,7 +101,7 @@ small {
   font-size: 13px;
 }
 hr {
-  background: var(--gray-alpha-300);
+  background: var(--gray-alpha-200);
   border: 0;
   display: block;
   height: 1px;
@@ -217,7 +217,8 @@ ul {
 
 /* Top Nav */
 #top-nav {
-  /* background-color: var(--gray-alpha-100); */
+  /* background-color: var(--white); */
+  /* background-clip: padding-box; */
   box-shadow: inset 0 -1px 0 var(--gray-alpha-200);
   overflow-x: auto;
   overflow-y: hidden;
@@ -315,30 +316,30 @@ main.narrow {
   line-height: 31px;
   padding: 0 8px;
 }
-.button.primary {
+.button.running {
   background-clip: border-box;
   background-color: var(--charcoal);
   border-color: transparent;
   color: var(--white);
   font-weight: 500;
 }
-.button.primary:hover {
+.button.running:hover {
   background-color: var(--gray-alpha-900);
 }
-.button.primary:active {
+.button.running:active {
   background-color: var(--gray-alpha-800);
 }
-.button.running {
+.button.primary {
   background-clip: border-box;
   background-color: var(--blue);
   border: transparent;
   color: var(--white);
   font-weight: 500;
 }
-.button.running:hover {
+.button.primary:hover {
   background-color: var(--blue-600);
 }
-.button.running:active {
+.button.primary:active {
   background-color: var(--blue-700);
 }
 .button.clear-filters {
@@ -365,7 +366,7 @@ main.narrow {
   transform: none !important;
 }
 .button.primary.is-disabled {
-  background-color: var(--gray-alpha-300) !important;
+  background-color: var(--blue-200) !important;
   border-color: transparent !important;
   color: var(--white) !important;
 }
@@ -571,7 +572,7 @@ input[type="radio"]:checked {
   padding-top: 16px;
 }
 .time-table tr.is-running td {
-  background-color: var(--blue-100);
+  background-color: var(--orange-100);
 }
 
 .tabs {
@@ -633,12 +634,34 @@ input[type="radio"]:checked {
 }
 
 .meter {
-  background: var(--blue);
-  border: 1px solid var(--gray-alpha-150);
+  background: var(--gray-alpha-100);
   border-radius: 3px;
   height: 17px;
   margin: 2px 0;
+  overflow: hidden;
+  position: relative;
   width: 200px;
+}
+.meter:before {
+  background-color: var(--charcoal);
+  box-sizing: border-box;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 65%;
+}
+.meter::after {
+  border: 1px solid var(--gray-alpha-150);
+  border-radius: 3px;
+  box-sizing: border-box;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 .summary {
@@ -649,21 +672,20 @@ input[type="radio"]:checked {
   justify-content: flex-start;
   width: 100%;
 }
+.summary-no-box {
+  flex: auto;
+}
 .summary-box {
-  background: var(--white);
-  border: 1px solid var(--gray-alpha-200);
+  border: 1px solid var(--gray-alpha-150);
   flex: auto;
   padding: 16px;
-}
-.summary-box h2 {
-  margin-bottom: 2px;
 }
 
 .back-to {
   line-height: 1;
 }
 .back-to svg {
-  color: var(--orange);
+  color: var(--blue);
 }
 
 .empty {
@@ -689,9 +711,10 @@ input[type="radio"]:checked {
 
 .form-box {
   background-clip: padding-box;
-  background-color: var(--warm-white);
-  border: 1px solid var(--orange-300);
-  /* box-shadow: 0 0.5px 1px rgba(0,0,0,0.015), 0 1px 2px rgba(0,0,0,0.025), 0 1.5px 3px rgba(0,0,0,0.05), 0 2px 4px rgba(0,0,0,0.075); */
+  background-color: var(--white);
+  /* border: 1px solid var(--orange-300); */
+  border-radius: 4px;
+  box-shadow: 0 0.5px 1px rgba(0,0,0,0.015), 0 1px 2px rgba(0,0,0,0.025), 0 1.5px 3px rgba(0,0,0,0.05), 0 2px 4px rgba(0,0,0,0.075);
   padding: 32px;
 }
 .form-box-inner {
