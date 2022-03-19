@@ -38,7 +38,7 @@ Chosen comes in two flavors: Standard Select and Multiple Select.
 * Standard Chosen enhances the HTML `<select>` element. It primarily adds a more visible search function, with highlighted results.
 * Multiple Chosen enhances the HTML `<select multiple>` element. It not only adds a more visible search function, but also always displays which items you’ve selected, even if they’re scrolled out of view.
 
-For the initial design of Chosen (above), I stuck with neutral styling in an attempt to balance looking good whether viewed on a Mac and Windows computer. However, we did modernize the design a few years later:
+For the initial design of Chosen (above), I stuck with neutral styling in an attempt to balance looking good whether viewed on a Mac and Windows computer. However, we did “modernize” the design a few years later:
 
 </div>
 

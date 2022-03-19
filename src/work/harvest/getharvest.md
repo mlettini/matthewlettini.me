@@ -56,7 +56,7 @@ One of my first projects at the company, our initial design for GetHarvest focus
 
 ## 2013 Redesign
 
-A few years later, we redesigned the site to look simpler, less cluttered, and more modern. This time our focus was on telling a story and communicating the value Harvest brings to teams. We also cut down on how much prospective customers had to read to learn about our product.
+While that design was successful, a few years later we redesigned the site to look simpler, less cluttered, and more modern (for the time). With this design, our focus was on telling a story and communicating the value Harvest brings to teams. We also cut down on how much prospective customers had to read to learn about our product.
 
 This design stood with only minor iterations until 2018. You can still [peruse this design](https://web.archive.org/web/20140122220221/http://www.getharvest.com/features/time-tracking) because the Wayback Machine is awesome.
 
