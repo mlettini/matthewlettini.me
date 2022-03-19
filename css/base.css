@@ -1,11 +1,12 @@
 /* Variables */
 :root {
-  --bg:      #fafafa;
+  --bg:      #fcfcfc;
   --img-bg:  #eee;
   --border:  #bbb;
   --text:    #222;
   --text-lt: #777;
   --color:   deeppink;
+  --color:   #ff2f91;
 
   --zoom-bg: rgba(5, 5, 5, 0.9);
 
@@ -29,6 +30,11 @@
     --text-lt: #888;
     --text:    #ccc;
     --color:   hotpink;
+  }
+}
+@media (prefers-reduced-motion) {
+  :root {
+    --transition: none;
   }
 }
 
@@ -81,11 +87,12 @@
 }
 html {
   font-size: 125%;
-  -webkit-font-smoothing: antialiased;
   padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  scroll-behavior: smooth;
   text-rendering: optimizelegibility;
-  -webkit-text-size-adjust: none;
   text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
 }
 @media (min-width: 125rem) {
   html {
@@ -98,6 +105,11 @@ html {
   }
   .do-not-print {
     display: none !important;
+  }
+}
+@media (prefers-reduced-motion) {
+  html {
+    scroll-behavior: auto;
   }
 }
 body {
@@ -165,21 +177,23 @@ hr {
 
 /* Components */
 .button {
-  background: var(--text);
-  border-radius: 0.5rem;
-  color: var(--bg);
+  border-radius: 0.5em;
+  border: 1px solid var(--border);
   display: inline-flex;
   font-size: 0.9rem;
-  line-height: 1.4;
-  margin-left: auto;
-  padding: 0.5em 1em;
+  gap: 0.5em;
+  line-height: normal;
+  padding: 0.5em 0.75em;
   text-decoration: none;
+  transition: var(--transition);
 }
 @media (pointer: fine) {
   .button:hover {
-    background: var(--color);
-    color: var(--bg);
+    border-color: var(--color);
   }
+}
+.download-button::before {
+  content: "↓";
 }
 
 
@@ -310,7 +324,7 @@ figure *:not(:first-child) {
 figcaption {
   color: var(--text-lt);
   font-size: 0.8rem;
-  line-height: 1.4;
+  line-height: normal;
   margin: 0 !important;
   padding: 0.25rem 0.5rem 0;
   text-align: center;
