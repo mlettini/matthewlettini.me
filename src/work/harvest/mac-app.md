@@ -44,9 +44,9 @@ The design of Harvest for Mac was built specifically to blend seamlessly with th
 
 When we were building Harvest for Mac, we gravitated towards three fundamental features that define the user experience:
 
-1. High visibility. Your timesheet is always available right from the always visible menubar, no matter what else you're doing on your computer at the moment. It even highlights when you have a timer running.
-1. Hotkeys. Timers can be started and stopped with a quick keypress. It’s still the fastest method of tracking time we offer.
-1. Idle time detection. Forget to stop your timer when you had a quick bathroom break? Harvest for Mac can detect how long your computer was idle and automatically remove those minutes from your timesheet.
+1. High visibility – Your timesheet is always available right from the always visible menubar, no matter what else you're doing on your computer at the moment. It even highlights when you have a timer running.
+1. Hotkeys – Timers can be started and stopped with a quick keypress. It’s still the fastest method of tracking time we offer.
+1. Idle time detection – Forget to stop your timer when you had a quick bathroom break? Harvest for Mac can detect how long your computer was idle and automatically remove those minutes from your timesheet.
 
 Here’s a quick product demo I created for the official launch, which demonstrates all of these UX concepts:
 

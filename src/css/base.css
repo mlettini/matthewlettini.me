@@ -1,14 +1,14 @@
 /* Variables */
 :root {
   --bg:      #fcfcfc;
-  --img-bg:  #eee;
-  --border:  #bbb;
-  --text:    #222;
-  --text-lt: #777;
-  --color:   deeppink;
-  --color:   #ff2f91;
+  --color:   35 35 35;
+  --text:    rgb(var(--color));
+  --text-lt: rgb(var(--color) / 0.67);
+  --border:  rgb(var(--color) / 0.3);
+  --img-bg:  rgb(var(--color) / 0.05);
+  --primary: deeppink;
 
-  --zoom-bg: rgba(5, 5, 5, 0.9);
+  --zoom-bg: rgb(5 5 5 / 0.9);
 
   --font-mono:  'LG Mono', Monaco, monospace;
   --font-sans:  'LG', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -20,16 +20,13 @@
   --max-width-sm: 35rem;
   --max-width-lg: 60rem;
 
-  --transition: opacity 200ms, transform ease-out 100ms;
+  --transition: opacity 150ms, transform ease-out 150ms;
 }
 @media (prefers-color-scheme: dark) {
   :root {
     --bg:      #111;
-    --img-bg:  #222;
-    --border:  #333;
-    --text-lt: #888;
-    --text:    #ccc;
-    --color:   hotpink;
+    --color:   220 220 220;
+    --primary: hotpink;
   }
 }
 @media (prefers-reduced-motion) {
@@ -157,7 +154,7 @@ a {
 }
 @media (pointer: fine) {
   a:hover {
-    color: var(--color);
+    color: var(--primary);
   }
 }
 img, picture, video, svg {
@@ -189,7 +186,7 @@ hr {
 }
 @media (pointer: fine) {
   .button:hover {
-    border-color: var(--color);
+    border-color: var(--primary);
   }
 }
 .download-button::before {
@@ -265,6 +262,9 @@ section {
   position: relative;
   text-decoration: none;
 }
+.project-list li:not(:last-of-type) .project {
+  border-bottom-color: transparent
+}
 @media (min-width: 40rem) {
   .project {
     padding: 1rem 0.5rem;
@@ -280,8 +280,8 @@ section {
 }
 @media (pointer: fine) {
   .project:hover {
-    border-color: var(--color);
-    color: var(--color);
+    border-color: var(--primary) !important;
+    color: var(--primary);
     z-index: 1;
   }
   .project:hover::before {
@@ -313,14 +313,6 @@ figure {
 figure *:not(:first-child) {
   margin: 0.5rem auto 0;
 }
-/*
-@media (min-height: 30rem) {
-  figure img,
-  figure video {
-    max-height: 95vh;
-  }
-}
-*/
 figcaption {
   color: var(--text-lt);
   font-size: 0.8rem;
@@ -328,6 +320,9 @@ figcaption {
   margin: 0 !important;
   padding: 0.25rem 0.5rem 0;
   text-align: center;
+}
+figcaption a {
+  text-underline-offset: 1px;
 }
 .bordered {
   background: var(--img-bg);
@@ -415,7 +410,7 @@ img.shadowed {
 @media (pointer: fine) {
   .connect a::before {
     bottom: 1.2rem;
-    color: var(--color);
+    color: var(--primary);
     content: attr(data-label);
     font-size: 0.8rem;
     line-height: 2;
