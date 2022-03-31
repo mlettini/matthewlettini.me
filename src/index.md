@@ -2,6 +2,7 @@
 layout: layouts/blank.njk
 pageType: about
 title: About
+description: I’m a software designer and developer that’s been building, improving, and shipping digital product experiences for over 15 years.
 ---
 
 <section>

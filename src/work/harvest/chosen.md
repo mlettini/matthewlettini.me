@@ -1,6 +1,7 @@
 ---
 title: Chosen
 subtitle: Javascript plugin to make long select boxes more user-friendly.
+description: Javascript plugin to make long select boxes more user-friendly.
 order: 30
 # date: 2011-06-22
 date: 2022-01-30

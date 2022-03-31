@@ -1,6 +1,7 @@
 ---
 title: Harvest for Mac v1
 subtitle: Hotkey time tracking right from the desktop.
+description: Hotkey time tracking right from the desktop.
 order: 5
 # date: 2012-02-28
 date: 2022-01-05

@@ -8,7 +8,7 @@
     {% if pageType == 'about' %}
       <title>{{ site.authorName }}</title>
     {% else %}
-      <title>{{ title }} • {{ site.authorName }}</title>
+      <title>{{ title }} · {{ site.authorName }}</title>
     {% endif %}
 
     <script type="module">
@@ -23,7 +23,7 @@
       <meta property="og:description" content="{{ description }}">
     {% endif %}
 
-    <meta property="og:title" content="{% if pageType == 'about' %}{{ site.authorName }}{% else %}{{ title }} • {{ site.authorName }}{% endif %}">
+    <meta property="og:title" content="{% if pageType == 'about' %}{{ site.authorName }}{% else %}{{ title }} · {{ site.authorName }}{% endif %}">
     <meta property="og:image" content="{{ site.url }}/images/matthew-lettini-portrait.jpg">
     <meta property="og:image:alt" content="{{ site.authorName }}">
     <meta property="og:locale" content="en_US">
@@ -41,7 +41,7 @@
     <link rel="preload" href="/fonts/LG-RegularItalic.woff2" as="font" type="font/woff2">
     <link rel="preload" href="/fonts/LG-Bold.woff2" as="font" type="font/woff2">
     <link rel="preload" href="/fonts/LG-BoldItalic.woff2" as="font" type="font/woff2">
-    <link rel="preload" href="/fonts/LG-mono.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="/fonts/LG-Mono.woff2" as="font" type="font/woff2">
 
     {% block header_content %}
     {% endblock %}

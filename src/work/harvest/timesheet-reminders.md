@@ -1,6 +1,7 @@
 ---
 title: Timesheet Reminders
 subtitle: Prompts to help customers build a habit with time tracking.
+description: Prompts to help customers build a habit with time tracking.
 order: 2
 # date: 2021-04-08
 date: 2022-01-02

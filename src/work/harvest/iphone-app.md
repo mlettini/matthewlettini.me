@@ -1,6 +1,7 @@
 ---
 title: Harvest for iPhone v2
 subtitle: Simple on-the-go time and expense tracking.
+description: Simple on-the-go time and expense tracking.
 order: 6
 # date: 2012-11-08
 date: 2022-01-06
