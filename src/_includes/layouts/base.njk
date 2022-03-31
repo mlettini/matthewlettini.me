@@ -1,34 +1,48 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="no-js">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="keywords" content="matthew lettini, matthew, mathew, matt, lettini, lentini, lettin, new york, nyc, ny, brooklyn, greenpoint, web, design, designer, product, html, css, harvest, forecast, amie street, songza, chosen, mlettini@gmail.com">
 
-    <meta property="og:image" content="{{ site.url }}/images/matthew-lettini-portrait.jpg">
-    <meta property="og:site_name" content="{{ site.authorName }}">
-    <meta property="og:title" content="{% if pageType == 'about' %}{{ site.authorName }}{% else %}{{ title }} • {{ site.authorName }}{% endif %}">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="{{ site.url }}">
-
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:image" content="{{ site.url }}/images/matthew-lettini-portrait.jpg">
-    <meta name="twitter:site" content="{{ site.authorHandle }}">
-    <meta name="twitter:title" content="{% if pageType == 'about' %}{{ site.authorName }}{% else %}{{ title }} • {{ site.authorName }}{% endif %}">
-
-    {% if description %}
-    <meta description="{{ description }}">
-    <meta property="og:description" content="{{ description }}">
-    <meta name="twitter:description" content="{{ description }}">
+    {% if pageType == 'about' %}
+      <title>{{ site.authorName }}</title>
+    {% else %}
+      <title>{{ title }} • {{ site.authorName }}</title>
     {% endif %}
 
-    <title>{% if pageType == 'about' %}{{ site.authorName }}{% else %}{{ title }} • {{ site.authorName }}{% endif %}</title>
-    <link rel="apple-touch-icon" href="/images/matthew-lettini-avatar.jpg">
-    <link rel="icon" href="/images/favicon.svg">
-    <link rel="mask-icon" href="/img/matthew-lettini-avatar.jpg">
+    <script type="module">
+      document.documentElement.classList.remove('no-js');
+      document.documentElement.classList.add('js');
+    </script>
+
     <link rel="stylesheet" href="/css/base.css">
+
+    {% if description %}
+      <meta description="{{ description }}">
+      <meta property="og:description" content="{{ description }}">
+    {% endif %}
+
+    <meta property="og:title" content="{% if pageType == 'about' %}{{ site.authorName }}{% else %}{{ title }} • {{ site.authorName }}{% endif %}">
+    <meta property="og:image" content="{{ site.url }}/images/matthew-lettini-portrait.jpg">
+    <meta property="og:image:alt" content="{{ site.authorName }}">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="{{ site.authorName }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.url }}{{ page.filePathStem }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="{{ site.url }}{{ page.filePathStem }}">
+
+    <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/images/matthew-lettini-avatar.jpg">
     <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Posts">
+
+    <link rel="preload" href="/fonts/LG-Regular.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="/fonts/LG-RegularItalic.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="/fonts/LG-Bold.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="/fonts/LG-BoldItalic.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="/fonts/LG-mono.woff2" as="font" type="font/woff2">
+
     {% block header_content %}
     {% endblock %}
   </head>
@@ -105,8 +119,6 @@
     {% block footer_content %}
     {% endblock %}
     <script src="{{ '/js/medium-zoom.min.js' }}" defer></script>
-    <script type="module" defer>
-      mediumZoom('[data-zoomable]', { margin: 0, scrollOffset: 0 });
-    </script>
+    <script type="module" defer>mediumZoom('[data-zoomable]')</script>
   </body>
 </html>
