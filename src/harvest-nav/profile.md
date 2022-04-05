@@ -10,10 +10,9 @@ title: Team
 </header>
 
 <main class="medium">
-  <div class="flex back-to mb-16">
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
-    <a href="/harvest-nav/team-analysis" class="is-active">Back to team</a>
-  </div>
+  <a href="/harvest-nav/team" class="button button-sm mb-16">
+    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg> Back to team
+  </a>
 
   <div class="flex">
     <img src="https://matthewlettini.me/images/matthew-lettini-avatar.jpg" class="avatar" width="60" height="60">
