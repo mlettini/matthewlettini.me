@@ -219,9 +219,6 @@ section {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.base-header h1 {
-  margin-right: 1rem;
-}
 .base-header ul {
   display: flex;
   gap: 1rem;
@@ -241,7 +238,16 @@ section {
 
 
 
-/* Work List */
+/* About */
+.portrait {
+  height: auto;
+  margin-bottom: 1.2rem;
+  width: auto;
+}
+
+
+
+/* Work */
 .project-list {
   list-style: none;
   padding: 0;
@@ -292,17 +298,12 @@ section {
 
 
 /* Post */
-.post-header span,
-.post-header time {
+.post-header :is(span, time) {
   color: var(--text-lt);
   display: block;
   padding-top: 0.25em;
 }
-.post h2,
-.post h3,
-.post h4,
-.post h5,
-.post h6 {
+.post :is(h2, h3, h4, h5, h6) {
   font-size: 1.2rem;
   font-weight: 600;
   margin-top: 3rem;
@@ -389,7 +390,7 @@ img.shadowed {
 
 
 /* Footer */
-.connect {
+.base-footer ul {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
@@ -397,21 +398,21 @@ img.shadowed {
   padding: 0;
   position: relative;
 }
-.connect li {
+.base-footer li {
   margin: 0;
 }
-.connect a {
+.base-footer a {
   display: block;
 }
-.connect svg {
+.base-footer svg {
   height: 1.2rem;
   width: 1.2rem;
 }
 @media (pointer: fine) {
-  .connect a::before {
+  .base-footer a::before {
     bottom: 1.2rem;
     color: var(--primary);
-    content: attr(data-label);
+    content: attr(aria-label);
     font-size: 0.8rem;
     line-height: 2;
     opacity: 0;
@@ -422,7 +423,7 @@ img.shadowed {
     user-select: none;
     white-space: nowrap;
   }
-  .connect a:hover::before {
+  .base-footer a:hover::before {
     opacity: 1;
     pointer-events: auto;
     transform: translateY(0);

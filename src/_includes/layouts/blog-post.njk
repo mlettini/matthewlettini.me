@@ -18,20 +18,29 @@
   </section>
 
   <section class="do-not-print">
-    <nav class="inner">
+    <nav class="inner" aria-label="post">
       <ul class="post-nav">
-        {% if prevPost.url %}
-          <li class="previous">
+
+        <li class="previous">
+          {% if prevPost.url %}
             <span>← Older</span>
-            <a class="previous" href="{{ prevPost.url }}">{{ prevPost.data.title }}</a>
-          </li>
-        {% endif %}
-        {% if nextPost.url %}
-          <li class="next">
+            <a href="{{ prevPost.url }}">{{ prevPost.data.title }}</a>
+          {% else %}
+            <span>← Back</span>
+            <a href="/work">All Posts</a>
+          {% endif %}
+        </li>
+
+        <li class="next">
+          {% if nextPost.url %}
             <span>Newer →</span>
-            <a class="next" href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
-          </li>
-        {% endif %}
+            <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
+          {% else %}
+            <span>Back →</span>
+            <a href="/work">All Posts</a>
+          {% endif %}
+        </li>
+
       </ul>
     </nav>
   </section>
