@@ -7,7 +7,7 @@ title: Invoices
     <a href="#" class="is-active">Manage invoices</a>
     <a href="#">Manage recurring</a>
     <a href="#">Manage retainers</a>
-    <a href="#">Configure</a>
+    <a href="#">Settings</a>
   </nav>
 </header>
 
@@ -24,7 +24,7 @@ title: Invoices
     <a href="#">View history</a>
   </div>
 
-  <div class="flex justify-space-between mt-16">
+  <div class="flex justify-space-between filters mt-16">
     <div class="flex">
       <button class="button primary">
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>

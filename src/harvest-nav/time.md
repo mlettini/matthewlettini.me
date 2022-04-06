@@ -6,7 +6,6 @@ title: Time
   <nav>
     <a href="#" class="is-active">Track daily</a>
     <a href="#">Track weekly</a>
-    <a href="#">Approve timesheets</a>
     <a href="#">Manage reminders</a>
   </nav>
 </header>
@@ -84,7 +83,7 @@ title: Time
             <small>1:20pm – 4:20pm</small>
           </td>
           <td class="no-width text-right nowrap">
-            <h3>3.00</h3>
+            <h3>3:00</h3>
           </td>
           <td class="no-width timeexpense-row-buttons">
             <div class="flex">
@@ -100,10 +99,10 @@ title: Time
           <td>
             <strong>Task name</strong><br>
             <small>[CODE] Project name <span class="ml-4">(Client Name)</small><br>
-            <small>1:20pm – 4:20pm</small>
+            <small>4:20pm –</small>
           </td>
           <td class="no-width text-right nowrap">
-            <h3>3.00</h3>
+            <h3>0:36</h3>
           </td>
           <td class="no-width timeexpense-row-buttons">
             <div class="flex">
@@ -140,7 +139,7 @@ title: Time
       <tfoot>
         <tr>
           <td class="text-right"><h3 class="text-400 text-secondary">Total:</h3></td>
-          <td class="text-right"><h3>3.00</h3></td>
+          <td class="text-right"><h3>6:36</h3></td>
           <td></td>
         </tr>
       </tfoot>

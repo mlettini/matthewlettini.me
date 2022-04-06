@@ -7,7 +7,7 @@ title: Invoices
     <a href="#" class="is-active">Manage invoices</a>
     <a href="#">Manage recurring</a>
     <a href="#">Manage retainers</a>
-    <a href="#">Configure</a>
+    <a href="#">Settings</a>
   </nav>
 </header>
 
@@ -84,7 +84,7 @@ title: Invoices
     </nav>
   </div>
 
-  <div class="flex justify-space-between mb-4">
+  <div class="flex justify-space-between filters mb-4">
     <div class="flex">
       <div class="button-group">
         <button class="button button-sm button-icon is-disabled"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg></button>
