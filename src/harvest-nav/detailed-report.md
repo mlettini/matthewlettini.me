@@ -81,8 +81,8 @@ title: Reports
       <tbody>
         <tr>
           <td class="no-width"><input type="checkbox"></td>
-          <td>Client name</td>
-          <td>Project name</td>
+          <td><input type="text" class="input inline" value="Client name"></td>
+          <td contenteditable>Project name</td>
           <td>Task name</td>
           <td>Person name</td>
           <td class="no-width text-right">12.34</td>

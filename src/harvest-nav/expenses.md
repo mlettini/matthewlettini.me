@@ -32,8 +32,11 @@ title: Expenses
         <tr>
           <th colspan="100">
             <div class="flex justify-space-between">
-              Week
-              <a href="#" class="button button-sm">Submit for approval</a>
+              <div class="flex">
+                Week
+                <div class="badge ml-4">Pending approval</div>
+              </div>
+              <a href="#" class="button button-xs">Resubmit for approval</a>
             </div>
           </th>
         </tr>
@@ -78,8 +81,11 @@ title: Expenses
         <tr>
           <th colspan="100">
             <div class="flex justify-space-between">
-              Week
-              <a href="#" class="button button-sm">Submit for approval</a>
+              <div class="flex">
+                Week
+                <div class="badge green ml-4">Approved</div>
+              </div>
+              <a href="#" class="button button-xs">Resubmit for approval</a>
             </div>
           </th>
         </tr>

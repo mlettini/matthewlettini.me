@@ -106,7 +106,7 @@ title: Time
           </td>
           <td class="no-width timeexpense-row-buttons">
             <div class="flex">
-              <button class="button button-sm button-empty running button-icon show-mobile">
+              <button class="button button-sm button-empty button-icon show-mobile">
                 <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <circle cx="12" cy="12" r="10"></circle>
                   <line x1="12" y1="6" x2="12" y2="12">
