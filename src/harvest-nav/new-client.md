@@ -12,7 +12,7 @@ title: Clients
 <main class="narrow">
   <div>
     <h1>New client</h1>
-    Once you’ve added a client, you can add projects and contacts.
+    Once you’ve added a client, you can add projects and contacts to them.
   </div>
 
   <hr class="mt-16 mb-24">

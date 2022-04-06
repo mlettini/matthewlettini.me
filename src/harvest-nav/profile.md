@@ -9,10 +9,12 @@ title: Team
   </nav>
 </header>
 
-<main class="medium">
-  <a href="/harvest-nav/team" class="button button-sm mb-16">
-    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg> Back to team
-  </a>
+<main>
+  <div class="flex mb-16" style="height:36px">
+    <a href="/harvest-nav/team-analysis" class="button button-sm">
+      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg> Back to team
+    </a>
+  </div>
 
   <div class="flex">
     <img src="https://matthewlettini.me/images/matthew-lettini-avatar.jpg" class="avatar" width="60" height="60">
@@ -28,6 +30,7 @@ title: Team
       <a href="#">Assigned projects</a>
       <a href="#">Assigned people</a>
       <a href="#">Notifications</a>
+      <a href="#">Reminders <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
       <a href="#">Permissions</a>
       <a href="#">Security</a>
     </nav>

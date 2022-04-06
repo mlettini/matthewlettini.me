@@ -5,7 +5,7 @@ title: Invoices
 <header id="top-nav">
   <nav>
     <a href="#" class="is-active">Manage invoices</a>
-    <a href="#">Manage recurring invoices</a>
+    <a href="#">Manage recurring</a>
     <a href="#">Manage retainers</a>
     <a href="#">Configure</a>
   </nav>

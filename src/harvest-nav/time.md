@@ -14,7 +14,7 @@ title: Time
 <main>
   <div class="flex justify-space-between mb-16">
     <div class="flex">
-      <h1>Daily Timesheet</h1>
+      <h1>Daily timesheet</h1>
     </div>
     <div class="flex">
       <button class="button primary">
@@ -30,22 +30,14 @@ title: Time
 
   <div class="flex justify-space-between">
     <div class="flex">
-        <button class="button button-sm button-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-        </button>
       <div class="button-group">
-        <button class="button button-sm button-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
-        </button>
-        <button class="button button-sm is-disabled">Reset</button>
-        <button class="button button-sm button-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </button>
+        <button class="button button-sm button-icon"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg></button>
+        <button class="button button-sm button-icon"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></button>
+        <button class="button button-sm"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> Today: <span>5 Apr 2022</span></button>
       </div>
-      <h3 class="ml-4">Today: <span class="text-400">Thursday, 25 Mar 2021</span></h3>
+      <a href="#" class="button button-sm">Submit for approval</a>
     </div>
     <div class="flex">
-      <a href="#">Submit for approval</a>
     </div>
   </div>
 
@@ -147,7 +139,7 @@ title: Time
       </tbody>
       <tfoot>
         <tr>
-          <td class="text-right"><h3>Total:</h3></td>
+          <td class="text-right"><h3 class="text-400 text-secondary">Total:</h3></td>
           <td class="text-right"><h3>3.00</h3></td>
           <td></td>
         </tr>

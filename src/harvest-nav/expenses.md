@@ -34,7 +34,7 @@ title: Expenses
           <th colspan="100">
             <div class="flex justify-space-between">
               Week
-              <a href="#">Submit for approval</a>
+              <a href="#" class="button button-sm">Submit for approval</a>
             </div>
           </th>
         </tr>
@@ -68,7 +68,7 @@ title: Expenses
       </tbody>
       <tfoot>
         <tr>
-          <td class="text-right"><h3>Total:</h3></td>
+          <td class="text-right"><h3 class="text-400 text-secondary">Total:</h3></td>
           <td class="text-right"><h3>$3.00</h3></td>
           <td></td>
         </tr>
@@ -80,7 +80,7 @@ title: Expenses
           <th colspan="100">
             <div class="flex justify-space-between">
               Week
-              <a href="#">Submit for approval</a>
+              <a href="#" class="button button-sm">Submit for approval</a>
             </div>
           </th>
         </tr>
@@ -114,7 +114,7 @@ title: Expenses
       </tbody>
       <tfoot>
         <tr>
-          <td class="text-right"><h3>Total:</h3></td>
+          <td class="text-right"><h3 class="text-400 text-secondary">Total:</h3></td>
           <td class="text-right"><h3>$3.00</h3></td>
           <td></td>
         </tr>

@@ -611,19 +611,9 @@ input[type="radio"] {
   display: inline-flex;
   height: 15px;
   margin: -2px 2px 0 0 !important;
-  opacity: 0.7;
+  /* opacity: 0.7; */
   vertical-align: middle;
   width: 15px;
-}
-input[type="checkbox"]:hover,
-input[type="radio"]:hover,
-input[type="checkbox"]:checked,
-input[type="radio"]:checked {
-  opacity: 1;
-}
-.table input[type="checkbox"],
-.table input[type="radio"] {
-  margin: 0 !important;
 }
 
 /* Tables */
@@ -777,9 +767,9 @@ input[type="radio"]:checked {
 /* Meters */
 .meter {
   background: var(--gray-alpha-50);
-  border-radius: 3px;
-  height: 15px;
-  margin: 3px 0;
+  border-radius: 100px;
+  height: 11px;
+  margin: 5px 0;
   overflow: hidden;
   position: relative;
   width: 200px;
@@ -952,8 +942,14 @@ label {
 .justify-space-between {
   justify-content: space-between;
 }
+.text-13 {
+  font-size: 13px;
+}
 .text-400 {
   font-weight: 400;
+}
+.text-secondary {
+  color: var(--color-secondary);
 }
 .text-right {
   text-align: right;
