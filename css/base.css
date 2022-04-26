@@ -12,7 +12,7 @@
 
   --font-mono:  'LG Mono', Monaco, monospace;
   --font-sans:  'LG', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --line-height: 1.5;
+  --line-height: calc(1em + 8px);
 
   --clamp-sm: clamp(2rem, 4vw, 4rem);
   --clamp-lg: clamp(3rem, 8vw, 5rem);
@@ -129,12 +129,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1 {
   font-size: 1.5rem;
-  line-height: 1.2;
 }
 @media (min-width: 35rem) {
   h1 {
     font-size: 2rem;
-    line-height: 1.1;
   }
 }
 p {
@@ -178,19 +176,23 @@ hr {
   border: 1px solid var(--border);
   display: inline-flex;
   font-size: 0.9rem;
+  line-height: var(--line-height);
   gap: 0.5em;
-  line-height: normal;
   padding: 0.5em 0.75em;
   text-decoration: none;
+  transition: var(--transition);
+}
+.download-button::before {
+  content: "↓";
   transition: var(--transition);
 }
 @media (pointer: fine) {
   .button:hover {
     border-color: var(--primary);
   }
-}
-.download-button::before {
-  content: "↓";
+  .download-button:active::before {
+    transform: translateY(2px);
+  }
 }
 
 
@@ -261,9 +263,9 @@ section {
   border-top: 1px solid var(--border);
   display: flex;
   font-size: 0.9rem;
+  line-height: var(--line-height);
   gap: 1rem;
   height: 100%;
-  line-height: 1.4;
   padding: 1rem 0;
   position: relative;
   text-decoration: none;
@@ -278,7 +280,7 @@ section {
 }
 .project::before {
   content: "→";
-  padding-top: 0.2rem;
+  padding-top: 0.1rem;
   transition: var(--transition);
 }
 .project:not(:hover) span {
@@ -374,6 +376,7 @@ img.shadowed {
 @media (min-width: 35rem) {
   .post-nav {
     font-size: 1.2rem;
+    line-height: var(--line-height);
   }
 }
 .post-nav .next {
@@ -383,7 +386,7 @@ img.shadowed {
   color: var(--text-lt);
   display: block;
   font-size: 0.8rem;
-  line-height: 1.5;
+  line-height: var(--line-height);
   white-space: nowrap;
 }
 
@@ -429,4 +432,11 @@ img.shadowed {
     transform: translateY(0);
     transition: var(--transition);
   }
+}
+
+
+
+/* Utilities */
+.m-0 {
+  margin: 0;
 }
