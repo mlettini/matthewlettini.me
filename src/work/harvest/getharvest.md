@@ -9,7 +9,7 @@ date: 2022-01-07
 
 <div class="inner">
 
-When I joined Harvest in October 2010, I was the sole designer on the team. This meant I was tasked with designing more than just the product. Working alongside the marketing team, I redesigned our entire [GetHarvest.com](https://getharvest.com) website a number of times during my tenure (until we eventually hired a dedicated marketing designer). I was responsible for all design and code.
+When I joined Harvest in October 2010, I was the sole designer on the team. This meant I was tasked with designing more than just the product. Working alongside the marketing team, I redesigned our entire <a href="https://www.getharvest.com" target="_blank" rel="noopener">GetHarvest.com</a> website a number of times during my tenure (until we eventually hired a dedicated marketing designer). I was responsible for all design and code.
 
 Both designs proved highly successful, and Harvest saw tremendous growth throughout the first half of the 2010’s. Below are just a handful of screenshots to capture the overall look of each design—I won’t make you scroll through the many many pages of content.
 
@@ -59,7 +59,7 @@ One of my first projects at the company, our initial design for GetHarvest focus
 
 While that design was successful, a few years later we redesigned the site to look simpler, less cluttered, and more modern (for the time). With this design, our focus was on telling a story and communicating the value Harvest brings to teams. We also cut down on how much prospective customers had to read to learn about our product.
 
-This design stood with only minor iterations until 2018. You can still [peruse this design](https://web.archive.org/web/20140122220221/http://www.getharvest.com/features/time-tracking) because the Wayback Machine is awesome.
+This design stood with only minor iterations until 2018. You can still <a href="https://web.archive.org/web/20140122220221/http://www.getharvest.com/features/time-tracking" target="_blank" rel="noopener">peruse this design</a> because the Wayback Machine is awesome.
 
 </div>
 

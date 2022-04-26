@@ -1,7 +1,7 @@
 ---
-title: Timesheet Reminders
-subtitle: Prompts to help customers build a habit with time tracking.
-description: Prompts to help customers build a habit with time tracking.
+title: Time Tracking Reminders
+subtitle: Prompts to help customers build a habit with time keeping.
+description: Prompts to help customers build a habit with time keeping.
 order: 2
 # date: 2021-04-08
 date: 2022-01-02
@@ -13,7 +13,7 @@ Harvest is team-based time tracking software. It’s built specifically to help 
 
 During a research initiative in 2018, one learning was that many customers had trouble getting everyone on their team to track time *on time*. There’s sometimes “a few bad apples” that wouldn’t track until much later. That can be a problem for our customers and us—if insights from time tracking don’t seem trustworthy and realistic, that can cause a customer to churn or a trial to not sign up.
 
-This led our product team to study how habits are formed, and if we could make time tracking something automatic for users. We took a class on behavior design taught by [BJ Fogg](https://www.bjfogg.com), and learned quite a bit! In summary for portfolio purposes: Behavior (B) happens when Motivation (M), Ability (A), and a Prompt (P) come together at the same moment. And when you’re looking to create or change a behavior, the first step is to make sure you have the right prompt.
+This led our product team to study how habits are formed, and if we could make time tracking something automatic for users. We took a class on behavior design taught by <a href="https://www.bjfogg.com" target="_blank" rel="noopener">BJ Fogg</a>, and learned quite a bit! In summary for portfolio purposes: Behavior (B) happens when Motivation (M), Ability (A), and a Prompt (P) come together at the same moment. And when you’re looking to create or change a behavior, the first step is to make sure you have the right prompt.
 
 So to prompt people to track time with Harvest, we built two separate reminder notification systems. I was the designer and project manager for both, leading teams that consisted of a product manager and a few front-end engineers.
 
@@ -67,7 +67,7 @@ Creating the browser-based desktop notification was a fun challenge. Since some 
 
 In addition to your typical settings preference, we also built a dialog wizard to help individuals discover this feature and guide them through setup. It would pop up for new users after they tracked a bit of time, and was designed to help them set up reminders based on how they prefer to track. This also gave us an opportunity to recommend daily tracking, which data shows is more beneficial to both them and their team.
 
-The screenshots below highlight a bit of my design process. I often start scribbling in a tool like [Whimsical](https://whimsical.com) so I can quickly get ideas and flows down on screen without having to worry yet about specific styles. Wireframing and sketching like this helps me focus more on the edges of the user experience.
+The screenshots below highlight a bit of my design process. I often start scribbling in a tool like <a href="https://whimsical.com" target="_blank" rel="noopener">Whimsical</a> so I can quickly get ideas and flows down on screen without having to worry yet about specific styles. Wireframing and sketching like this helps me focus more on the edges of the user experience.
 
 </div>
 
@@ -153,7 +153,7 @@ In addition to your typical settings preference, we once again built a more clea
 
 Teams love this feature because an automated reminder removes awkward IRL “Hey, you need to get your time in!” conversations between managers and their team members. Those aren’t enjoyable for anyone involved. This feature also led to a significant increase in trials that track time, one of our primary metrics.
 
-To learn more, read the launch announcement of timesheet reminders I posted on [the official Harvest Blog](https://www.getharvest.com/blog/2021/04/timesheet-reminders).
+To learn more, read the launch announcement of timesheet reminders I posted on <a href="https://www.getharvest.com/blog/2021/04/timesheet-reminders" target="_blank" rel="noopener">the official Harvest Blog</a>.
 
 These two reminder features may just be simple email notification systems on the surface, but they both presented unique design challenges. They taught me lessons in product marketing, settings UX, and behavior design. Since these prompts help individuals and teams track time better, we also highlighted them when we updated our [welcome flow](/work/harvest/welcome-flow).
 

@@ -9,7 +9,7 @@ date: 2022-01-02
 
 <div class="inner">
 
-While working at [Amie Street](https://en.wikipedia.org/wiki/Amie_Street) in 2009, the company also purchased [Songza](https://en.wikipedia.org/wiki/Songza). We used the brand and it’s technology to create a number of nich and cool internet radio products, all centered around music stations and playlists. I was the chief designer and also responsible for the front-end HTML and CSS development.
+While working at <a href="https://en.wikipedia.org/wiki/Amie_Street" target="_blank" rel="noopener">Amie Street</a> in 2009, the company also purchased <a href="https://en.wikipedia.org/wiki/Songza" target="_blank" rel="noopener">Songza</a>. We used the brand and it’s technology to create a number of nich and cool internet radio products, all centered around music stations and playlists. I was the chief designer and also responsible for the front-end HTML and CSS development.
 
 </div>
 

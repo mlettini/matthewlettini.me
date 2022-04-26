@@ -9,7 +9,7 @@ date: 2022-01-01
 
 <div class="inner">
 
-Time tracking with Harvest helps teams understand their present and their past, but what about their future? How do they plan their time? This was the question that set us on a course to develop [Forecast](https://getharvest.com/forecast), a companion app with the ability to plot your team’s upcoming assignments along a horizontal timeline.
+Time tracking with Harvest helps teams understand their present and their past, but what about their future? How do they plan their time? This was the question that set us on a course to develop <a href="https://getharvest.com/forecast" target="_blank" rel="noopener">Forecast</a>, a companion app with the ability to plot your team’s upcoming assignments along a horizontal timeline.
 
 Between 2013 and 2018, Forecast was created and maintained by a small team that consisted of just the CEO, myself, and four great engineers. I was the product lead, responsible for all things product: strategy, research, project management, design, UI & UX, HTML & CSS, beta communication, and even customer support at times. For those few years, Forecast was my baby.
 
@@ -56,7 +56,7 @@ As the designer and product lead, it was my job to make the experience of using 
 
 <div class="inner">
 
-Beyond the 2014 launch, our team continued for years to improve Forecast based on customer and internal needs. We iterated on behind-the-scenes flows like billing and onboarding, helped unlock insights with reports and exports, and added many features that enhanced the core experience. You can see some of these updates on [The Harvest Blog](https://www.getharvest.com/blog/tag/forecast), but here’s a couple demos of some later highlight features, narrated by my wonderful coworkers:
+Beyond the 2014 launch, our team continued for years to improve Forecast based on customer and internal needs. We iterated on behind-the-scenes flows like billing and onboarding, helped unlock insights with reports and exports, and added many features that enhanced the core experience. You can see some of these updates on <a href="https://www.getharvest.com/blog/tag/forecast" target="_blank" rel="noopener">The Harvest Blog</a>, but here’s a couple demos of some later highlight features, narrated by my wonderful coworkers:
 
 </div>
 
@@ -79,6 +79,6 @@ Beyond the 2014 launch, our team continued for years to improve Forecast based o
 
 I worked on Forecast for five years until an organization shift in 2018. It’s always a fantastic experience to both ship a product from scratch and continue to iterate on it based on paying customer feedback, *and* love the team you work with. I could talk your ear off reflecting on what I learned, what we did well, and what we could’ve done better.
 
-Forecast offers customers an important birds-eye-view of their upcoming work and helps them plan around who’s doing what and when. Today, Forecast helps schedule over 82,000 purchased seats and contributes a significant amount of revenue to Harvest’s business. You can learn more and even try it out at [https://getharvest.com/forecast](https://www.getharvest.com/forecast) (I also designed the marketing site).
+Forecast offers customers an important birds-eye-view of their upcoming work and helps them plan around who’s doing what and when. Today, Forecast helps schedule over 82,000 purchased seats and contributes a significant amount of revenue to Harvest’s business. You can learn more and even try it out at <a href="https://getharvest.com/forecast" target="_blank" rel="noopener">https://getharvest.com/forecast</a> (I also designed the marketing site).
 
 </div>

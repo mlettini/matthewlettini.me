@@ -9,7 +9,7 @@ date: 2022-01-01
 
 <div class="inner">
 
-In 2009 I joined [Amie Street](https://en.wikipedia.org/wiki/Amie_Street), a fun and interesting start-up. It was an online music store with a unique dynamic pricing model: songs and albums started out very cheap, and grew more expensive with popularity. Unfortunately it was competing with the rise of iTunes and the rest is history.
+In 2009 I joined <a href="https://en.wikipedia.org/wiki/Amie_Street" target="_blank" rel="noopener">Amie Street</a>, a fun and interesting start-up. It was an online music store with a unique dynamic pricing model: songs and albums started out very cheap, and grew more expensive with popularity. Unfortunately it was competing with the rise of iTunes and the rest is history.
 
 I was brought on as the chief designer tasked with a full rebrand of the product. This included a range of design challenges including brand identity, marketing, e-commerce purchasing flows, in-brower music player, sign up and in flows, desktop downloaders, newsletters, and more. I was also responsible for the front-end HTML and CSS development.
 

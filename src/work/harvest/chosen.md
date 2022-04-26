@@ -11,9 +11,9 @@ date: 2022-01-30
 
 Many Harvest customers have long lists of clients, projects, tasks, or other they need to sift through when trying to start a timer, run a report, create an invoice, or whatever else they’re trying to do in the product. However, really long select boxes are unfortunately rather unwieldy and not very user-friendly.
 
-When we were revamping our reports in 2011, [Patrick Filler](https://patrickfiller.com), an engineer (and friend) at Harvest, came up with an idea. Could we behind-the-scenes continue to code these as regular HTML select boxes, then leverage javascript to progressively enhance the user experience? The answer was yes.
+When we were revamping our reports in 2011, <a href="https://patrickfiller.com" target="_blank" rel="noopener">Patrick Filler</a>, an engineer (and friend) at Harvest, came up with an idea. Could we behind-the-scenes continue to code these as regular HTML select boxes, then leverage javascript to progressively enhance the user experience? The answer was yes.
 
-He built [Chosen](https://harvesthq.github.io/chosen) originally as a jQuery plugin, and over the years it’s since been ported to other libraries. I paired with him on the initial design and the CSS, and continued to help maintain it over the years.
+He built <a href="https://harvesthq.github.io/chosen" target="_blank" rel="noopener">Chosen</a> originally as a jQuery plugin, and over the years it’s since been ported to other libraries. I paired with him on the initial design and the CSS, and continued to help maintain it over the years.
 
 </div>
 
@@ -60,7 +60,7 @@ For the initial design of Chosen (above), I stuck with neutral styling in an att
 
 <div class="inner">
 
-You can try Chosen for yourself at its [library demonstration page](https://harvesthq.github.io/chosen). Or you can watch this ruby installation demo by <a href="https://www.driftingruby.com/episodes/javascript-select-form-fields-with-chosen">David Kimura</a>:
+You can try Chosen for yourself at its <a href="https://harvesthq.github.io/chosen" target="_blank" rel="noopener">library demonstration page</a>. Or you can watch this ruby installation demo by <a href="https://www.driftingruby.com/episodes/javascript-select-form-fields-with-chosen" target="_blank" rel="noopener">David Kimura</a>:
 
 </div>
 
@@ -73,6 +73,6 @@ You can try Chosen for yourself at its [library demonstration page](https://harv
 
 <div class="inner">
 
-Chosen is now deprecated and no longer under active development, but the idea and concept lives on. It’s been forked into [Select2](https://select2.org) and the concept adopted by many other libraries and plugins.
+Chosen is now deprecated and no longer under active development, but the idea and concept lives on. It’s been forked into <a href="https://select2.org" target="_blank" rel="noopener">Select2</a> and the concept adopted by many other libraries and plugins.
 
 </div>
