@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Matthew Lettini</title>
-	<link href="https://matthewlettini.me/feed.xml" rel="self"/>
-	<link href="https://matthewlettini.me/"/>
+	<link href="https://matthewlettini.com/feed.xml" rel="self"/>
+	<link href="https://matthewlettini.com/"/>
 	<updated>2013-01-13T00:00:00-00:00</updated>
-	<id>https://matthewlettini.me</id>
+	<id>https://matthewlettini.com</id>
 	<author>
     <name>Matthew Lettini</name>
 	</author>
@@ -13,9 +13,9 @@
     
     <entry>
       <title>Blog Test Post</title>
-      <link href="https://matthewlettini.me/posts/2020/test-post/"/>
+      <link href="https://matthewlettini.com/posts/2020/test-post/"/>
       <updated>2020-04-05T00:00:00-00:00</updated>
-      <id>https://matthewlettini.me/posts/2020/test-post/</id>
+      <id>https://matthewlettini.com/posts/2020/test-post/</id>
       <content type="html"><![CDATA[
         <div class="inner">
 <p>I’m not sure how much I’ll actually write on here, but I’m creating this blog post as a way to test the design while I figure out Eleventy. This post should contain everything I’ll need for a future blog post, including headers, lists, blockquotes, code, photos, etc.</p>
@@ -77,9 +77,9 @@
     
     <entry>
       <title>The Heavy Edition: Post-Mortem</title>
-      <link href="https://matthewlettini.me/posts/2013/the-heavy-edition-post-mortem/"/>
+      <link href="https://matthewlettini.com/posts/2013/the-heavy-edition-post-mortem/"/>
       <updated>2013-02-24T00:00:00-00:00</updated>
-      <id>https://matthewlettini.me/posts/2013/the-heavy-edition-post-mortem/</id>
+      <id>https://matthewlettini.com/posts/2013/the-heavy-edition-post-mortem/</id>
       <content type="html"><![CDATA[
         <div class="inner">
 <p>Years ago I was a member of my college radio station, where we frequently got the newest albums and artists to play. My cohost and I always had a great time, being idiots on the air and playing awesome new music.</p>
@@ -108,9 +108,9 @@
     
     <entry>
       <title>In Defense of Rem Units</title>
-      <link href="https://matthewlettini.me/posts/2013/in-defense-of-rem-units/"/>
+      <link href="https://matthewlettini.com/posts/2013/in-defense-of-rem-units/"/>
       <updated>2013-02-01T00:00:00-00:00</updated>
-      <id>https://matthewlettini.me/posts/2013/in-defense-of-rem-units/</id>
+      <id>https://matthewlettini.com/posts/2013/in-defense-of-rem-units/</id>
       <content type="html"><![CDATA[
         <div class="inner">
 <blockquote>
@@ -167,9 +167,9 @@ of 2em, and the div it’s inside of has a <code>font-size</code> of 10px, then 
     
     <entry>
       <title>A Day Without Glasses</title>
-      <link href="https://matthewlettini.me/posts/2013/a-day-without-glasses/"/>
+      <link href="https://matthewlettini.com/posts/2013/a-day-without-glasses/"/>
       <updated>2013-01-13T00:00:00-00:00</updated>
-      <id>https://matthewlettini.me/posts/2013/a-day-without-glasses/</id>
+      <id>https://matthewlettini.com/posts/2013/a-day-without-glasses/</id>
       <content type="html"><![CDATA[
         <div class="inner">
 <p>A minor incident Thursday night left me with broken glasses, shattered lenses, and a scratched cornea. It was an accident, and the scratches would heal in a couple days with no (known) longterm issues. I normally have old glasses around as backups, but I got rid of those during a recent purge. So I spent half my Friday without any vision correctness.</p>
