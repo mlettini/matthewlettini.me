@@ -1,5 +1,5 @@
 ---
-title: Cancellation Flow
+title: Harvest Cancellation
 subtitle: Providing a pleasant and useful close account experience.
 description: Providing a pleasant and useful close account experience.
 order: 4

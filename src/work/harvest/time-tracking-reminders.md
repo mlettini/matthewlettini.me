@@ -1,5 +1,5 @@
 ---
-title: Time Tracking Reminders
+title: Harvest Timesheet Reminders
 subtitle: Prompts to help customers build a habit with time keeping.
 description: Prompts to help customers build a habit with time keeping.
 order: 2

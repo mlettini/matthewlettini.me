@@ -1,5 +1,5 @@
 {
-  "name": "matthewlettini.me",
+  "name": "matthewlettini.com",
   "version": "1.0.0",
   "description": "My personal site",
   "scripts": {
@@ -8,11 +8,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/mlettini/matthewlettini.me"
+    "url": "git://github.com/mlettini/matthewlettini.com"
   },
   "author": {
     "name": "Matthew Lettini",
-    "url": "https://matthewlettini.me"
+    "url": "https://matthewlettini.com"
   },
   "license": "ISC",
   "devDependencies": {
