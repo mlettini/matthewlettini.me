@@ -1,4 +1,4 @@
-# matthewlettini.me
+# matthewlettini.com
 
 Work in progress. Blatently copying a friend's Eleventy setup as I learn. Notes for myself:
 
