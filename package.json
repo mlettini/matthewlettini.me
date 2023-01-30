@@ -4,7 +4,6 @@
   "description": "My personal site",
   "main": ".eleventy.js",
   "dependencies": {
-    "eleventy": "^1.0.2",
     "medium-zoom": "^1.0.6"
   },
   "devDependencies": {
