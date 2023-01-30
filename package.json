@@ -21,6 +21,7 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1"
   },
   "dependencies": {
+    "eleventy": "^1.0.6",
     "medium-zoom": "^1.0.6"
   }
 }
