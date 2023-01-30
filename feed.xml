@@ -3,7 +3,7 @@
   <title>Matthew Lettini</title>
 	<link href="https://matthewlettini.com/feed.xml" rel="self"/>
 	<link href="https://matthewlettini.com/"/>
-	<updated>2013-01-13T00:00:00-00:00</updated>
+	<updated>2020-04-05T00:00:00Z</updated>
 	<id>https://matthewlettini.com</id>
 	<author>
     <name>Matthew Lettini</name>
@@ -14,7 +14,7 @@
     <entry>
       <title>Blog Test Post</title>
       <link href="https://matthewlettini.com/posts/2020/test-post/"/>
-      <updated>2020-04-05T00:00:00-00:00</updated>
+      <updated>2020-04-05T00:00:00Z</updated>
       <id>https://matthewlettini.com/posts/2020/test-post/</id>
       <content type="html"><![CDATA[
         <div class="inner">
@@ -78,7 +78,7 @@
     <entry>
       <title>The Heavy Edition: Post-Mortem</title>
       <link href="https://matthewlettini.com/posts/2013/the-heavy-edition-post-mortem/"/>
-      <updated>2013-02-24T00:00:00-00:00</updated>
+      <updated>2013-02-24T00:00:00Z</updated>
       <id>https://matthewlettini.com/posts/2013/the-heavy-edition-post-mortem/</id>
       <content type="html"><![CDATA[
         <div class="inner">
@@ -109,7 +109,7 @@
     <entry>
       <title>In Defense of Rem Units</title>
       <link href="https://matthewlettini.com/posts/2013/in-defense-of-rem-units/"/>
-      <updated>2013-02-01T00:00:00-00:00</updated>
+      <updated>2013-02-01T00:00:00Z</updated>
       <id>https://matthewlettini.com/posts/2013/in-defense-of-rem-units/</id>
       <content type="html"><![CDATA[
         <div class="inner">
@@ -168,7 +168,7 @@ of 2em, and the div it’s inside of has a <code>font-size</code> of 10px, then 
     <entry>
       <title>A Day Without Glasses</title>
       <link href="https://matthewlettini.com/posts/2013/a-day-without-glasses/"/>
-      <updated>2013-01-13T00:00:00-00:00</updated>
+      <updated>2013-01-13T00:00:00Z</updated>
       <id>https://matthewlettini.com/posts/2013/a-day-without-glasses/</id>
       <content type="html"><![CDATA[
         <div class="inner">
