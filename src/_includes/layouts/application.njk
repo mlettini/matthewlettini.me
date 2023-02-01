@@ -16,7 +16,7 @@
       document.documentElement.classList.add('js');
     </script>
 
-    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/styles.css">
 
     {% if description %}
       <meta description="{{ description }}">
@@ -52,6 +52,7 @@
     <header class="base-header">
       <div class="inner">
         <h2><a href="/">{{ site.authorName }}</a></h2>
+        {#
         <nav aria-label="site">
           <ul>
             <li>
@@ -60,11 +61,12 @@
             <li>
               <a href="/work"{% if pageType == 'work' or pageType == 'work-post' %} class="selected"{% endif %}>Work</a>
             </li>
-            {#<li>
+            <li>
               <a href="/posts"{% if pageType == 'blog' %} class="selected"{% endif %}>Writing</a>
-            </li>#}
+            </li>
           </ul>
         </nav>
+        #}
       </div>
     </header>
 

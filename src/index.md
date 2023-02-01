@@ -1,14 +1,14 @@
 ---
-layout: layouts/blank.njk
-pageType: about
-title: About
+layout: layouts/home.njk
+pageType: home
+title: Home
 description: Brooklyn-based product designer and developer.
 ---
 
 <section>
   <div class="inner">
 
-<img src="/images/matthew-lettini-portrait.jpg" alt="A portrait of Matthew Lettini" class="portrait" width="400" height="225" data-zoomable>
+<img src="/images/matthew-lettini-portrait.jpg" alt="A portrait of Matthew Lettini" class="portrait" width="400" height="225">
 
 👋 Hi, I’m Matthew. I’m a software designer and developer that’s been building, improving, and shipping digital product experiences for over 15 years.
 
