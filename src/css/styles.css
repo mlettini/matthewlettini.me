@@ -79,7 +79,6 @@
 /* Base */
 *, *:before, *:after {
   box-sizing: border-box;
-  margin: 0;
   overflow-wrap: break-word;
 }
 html {
@@ -134,9 +133,6 @@ h1 {
   h1 {
     font-size: 2rem;
   }
-}
-p {
-  margin: 1rem 0;
 }
 ol, ul {
   margin: 1.5rem 0;
@@ -198,28 +194,44 @@ hr {
 
 
 /* Layout */
-main,
+/* main,
 section {
   margin: var(--clamp-lg) auto;
   max-width: var(--max-width-lg);
-}
+} */
 .inner {
   margin: auto;
   max-width: var(--max-width-sm);
 }
-.base-header,
+/* .base-header,
 .base-footer {
   margin: var(--clamp-sm) auto;
-}
+} */
 
 
 
 /* Header */
+.base-header {
+  background-color: var(--bg);
+  margin-bottom: var(--clamp-lg);
+  position: sticky;
+  top: 0;
+}
 .base-header .inner {
   align-items: center;
+  border-bottom: 2px solid var(--text);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-block: 1rem;
+}
+@media (min-width: 40rem) {
+  .base-header .inner {
+    padding-block: 2rem;
+  }
+}
+.base-header h2 {
+  text-transform: uppercase;
 }
 .base-header ul {
   display: flex;
