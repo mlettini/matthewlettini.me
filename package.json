@@ -3,25 +3,30 @@
   "version": "1.0.0",
   "description": "My personal website",
   "main": ".eleventy.js",
-  "scripts": {
-    "build": "eleventy",
-    "serve": "ELEVENTY_ENV=localhost eleventy --serve"
-  },
+  "author": "Matthew Lettini",
+  "license": "ISC",
+  "homepage": "https://github.com/mlettini/matthewlettini.com#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mlettini/matthewlettini.com.git"
   },
-  "keywords": [],
-  "author": "Matthew Lettini",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/mlettini/matthewlettini.com/issues"
   },
-  "homepage": "https://github.com/mlettini/matthewlettini.com#readme",
   "dependencies": {
     "@11ty/eleventy": "^1.0.2",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",
-    "medium-zoom": "^1.0.8"
+    "medium-zoom": "^1.0.8",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.58.0"
+  },
+  "scripts": {
+    "watch:sass": "sass --watch src/css:public/css",
+    "build:sass": "sass src/css:public/css",
+    "watch:eleventy": "npx @11ty/eleventy --serve",
+    "build:eleventy": "npx @11ty/eleventy",
+    "start": "npm-run-all build:sass --parallel watch:*",
+    "build": "npm-run-all build:*"
   }
 }
