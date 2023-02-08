@@ -84,12 +84,12 @@
 }
 html {
   font-size: 125%;
+  -webkit-font-smoothing: antialiased;
   padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   scroll-behavior: smooth;
   text-rendering: optimizelegibility;
   text-size-adjust: none;
   -webkit-text-size-adjust: none;
-  -webkit-font-smoothing: antialiased;
 }
 @media (min-width: 125rem) {
   html {
@@ -172,12 +172,12 @@ hr {
 
 /* Components */
 .button {
-  border-radius: 0.5em;
   border: 1px solid var(--border);
+  border-radius: 0.5em;
   display: inline-flex;
   font-size: 0.9rem;
-  line-height: var(--line-height);
   gap: 0.5em;
+  line-height: var(--line-height);
   padding: 0.5em 0.75em;
   text-decoration: none;
   transition: var(--transition);
@@ -263,9 +263,9 @@ section {
   border-top: 1px solid var(--border);
   display: flex;
   font-size: 0.9rem;
-  line-height: var(--line-height);
   gap: 1rem;
   height: 100%;
+  line-height: var(--line-height);
   padding: 1rem 0;
   position: relative;
   text-decoration: none;
