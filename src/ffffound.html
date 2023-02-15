@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="robots" content="noindex">
+  <title>FFFFOUND PROTOTYPE</title>
+
+  <script type="module">
+    document.documentElement.classList.remove('no-js');
+    document.documentElement.classList.add('js');
+  </script>
+
+  <link rel="stylesheet" href="/css/ffffound.css">
+
+  <link rel="preload" href="/fonts/LG-Regular.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="/fonts/LG-RegularItalic.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="/fonts/LG-Bold.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="/fonts/LG-BoldItalic.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="/fonts/LG-Mono.woff" as="font" type="font/woff">
+</head>
+<body>
+
+  <header>
+    <aside>
+      User Account Things (settings, log in/out, etc)
+    </aside>
+
+    <h1>NAME OF FFFFORUM</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Discussions (#)</a></li>
+      <li><a href="#">Bookmarks (#)</a></li>
+      <li><a href="#">Latest Posts</a></li>
+      <li><a href="#">Members (#)</a></li>
+      <li><a href="#">About & Rules</a></li>
+      <li><a href="#">Settings</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="discussions-list-filters">
+      <a href="#">+ New Discussion</a>
+      <a href="#">Filter</a>
+      <a href="#">Sort</a>
+      <a href="#">Search</a>
+    </section>
+
+    <section class="discussions-list">
+      <ul>
+        <li>
+          <a href="#">
+            <div>
+              <h2>Name of thread</h2>
+              Category · Started by (A) Username · X days ago
+              <span class="hidden-on-mobile">– This is a preview of the first post in this topic that only goes some characters and then cuts off …</span>
+              <br>
+              Latest by (A) userName · X min ago
+            </div>
+            <div>
+              <h2>(#)</h2>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+</body>
+</html>
