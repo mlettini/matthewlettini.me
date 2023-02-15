@@ -1,68 +1,55 @@
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="robots" content="noindex">
   <title>FFFFORUM PROTOTYPE</title>
-
-  <script type="module">
-    document.documentElement.classList.remove('no-js');
-    document.documentElement.classList.add('js');
-  </script>
-
   <link rel="stylesheet" href="/css/fffforum.css">
-
-  <link rel="preload" href="/fonts/LG-Regular.woff2" as="font" type="font/woff2">
-  <link rel="preload" href="/fonts/LG-RegularItalic.woff2" as="font" type="font/woff2">
-  <link rel="preload" href="/fonts/LG-Bold.woff2" as="font" type="font/woff2">
-  <link rel="preload" href="/fonts/LG-BoldItalic.woff2" as="font" type="font/woff2">
-  <link rel="preload" href="/fonts/LG-Mono.woff" as="font" type="font/woff">
 </head>
 <body>
 
-  <header>
-    <aside>
-      User Account Things (settings, log in/out, etc)
-    </aside>
+  <aside>
+    <a href="#">Username Dropdown</a>
+  </aside>
 
+  <header>
     <h1>NAME OF FFFFORUM</h1>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="#">Discussions (#)</a></li>
-      <li><a href="#">Bookmarks (#)</a></li>
-      <li><a href="#">Latest Posts</a></li>
-      <li><a href="#">Members (#)</a></li>
-      <li><a href="#">About & Rules</a></li>
-      <li><a href="#">Settings</a></li>
-    </ul>
-  </nav>
-
   <main>
+    <nav>
+      <ul>
+        <li><a href="#">Discussions (254)</a></li>
+        <li><a href="#">Bookmarks (13)</a></li>
+        <li><a href="#">Comments (2.4k)</a></li>
+        <li><a href="#">Community (79)</a></li>
+        <li><a href="#">About & Rules</a></li>
+        <li><a href="#">Adminland</a></li>
+      </ul>
+    </nav>
+
     <section class="discussions-list-filters">
-      <a href="#">+ New Discussion</a>
-      <a href="#">Filter</a>
-      <a href="#">Sort</a>
-      <a href="#">Search</a>
+      <button>+ New Discussion</button>
+      <div>
+        <button>Filter</button>
+        <button>Sort</button>
+        <input type="search" placeholder="Search">
+      </div>
     </section>
 
     <section class="discussions-list">
       <ul>
         <li>
+          Category
           <a href="#">
-            <div>
-              <h2>Name of thread</h2>
-              Category · Started by (A) Username · X days ago
-              <span class="hidden-on-mobile">– This is a preview of the first post in this topic that only goes some characters and then cuts off …</span>
-              <br>
-              Latest by (A) userName · X min ago
-            </div>
-            <div>
-              <h2>(#)</h2>
-            </div>
+            <h2>Name of thread</h2>
+            Started by Username · X days ago · Category
+          </a>
+          <a href="#" style="margin-left: auto; text-align: right">
+            <h2># Comments</h2>
+            Latest by Username [MOD] · X min ago
           </a>
         </li>
       </ul>
