@@ -11,18 +11,18 @@
 <body>
 
   <aside>
-    <a href="#">Username Dropdown</a>
+    <a href="#">Forum switcher</a>
+    <a href="#">Profile Dropdown</a>
   </aside>
 
   <header>
-    <h1>NAME OF FFFFORUM</h1>
+    <h1>FFFFORUM NAME & IMAGE</h1>
   </header>
 
   <main>
     <nav>
       <ul>
-        <li><a href="#">Discussions (254)</a></li>
-        <li><a href="#">Bookmarks (13)</a></li>
+        <li><a href="#"><u>Discussions (254)</u></a></li>
         <li><a href="#">Comments (2.4k)</a></li>
         <li><a href="#">Community (79)</a></li>
         <li><a href="#">About & Rules</a></li>
@@ -33,8 +33,10 @@
     <section class="discussions-list-filters">
       <button>+ New Discussion</button>
       <div>
-        <button>Filter</button>
         <button>Sort</button>
+        <button>Category Filter</button>
+        <label><input type="checkbox">Bookmarks</label>
+        <label><input type="checkbox">Following</label>
         <input type="search" placeholder="Search">
       </div>
     </section>
@@ -42,14 +44,14 @@
     <section class="discussions-list">
       <ul>
         <li>
-          Category
+          <div class="hidden-on-mobile">Category Image</div>
           <a href="#">
             <h2>Name of thread</h2>
-            Started by Username · X days ago · Category
+            <span class="hidden-on-mobile">Started by </span>Username · X days ago · Category
           </a>
           <a href="#" style="margin-left: auto; text-align: right">
-            <h2># Comments</h2>
-            Latest by Username [MOD] · X min ago
+            <h2>#<span class="hidden-on-mobile"> Comments</span></h2>
+            <span class="hidden-on-mobile">Latest by </span>Username [MOD] · X min ago
           </a>
         </li>
       </ul>
