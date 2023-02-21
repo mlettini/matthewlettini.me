@@ -7,11 +7,11 @@
   <meta name="robots" content="noindex">
   <title>FFFFORUM PROTOTYPE</title>
   <link rel="stylesheet" href="/css/fffforum.css">
+  <script src="https://kit.fontawesome.com/4573453903.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
   <aside>
-    <a href="#">Forum switcher</a>
     <a href="#">Profile Dropdown</a>
   </aside>
 
@@ -22,36 +22,55 @@
   <main>
     <nav>
       <ul>
-        <li><a href="#"><u>Discussions (254)</u></a></li>
-        <li><a href="#">Comments (2.4k)</a></li>
-        <li><a href="#">Community (79)</a></li>
-        <li><a href="#">About & Rules</a></li>
-        <li><a href="#">Adminland</a></li>
+        <li><a href="#" class="selected">Discussions</a></li>
+        <li><a href="#">Comments</a></li>
+        <li><a href="#">Members</a></li>
+        <li><a href="#">Settings</a></li>
       </ul>
     </nav>
 
-    <section class="discussions-list-filters">
-      <button>+ New Discussion</button>
-      <div>
-        <button>Sort</button>
-        <button>Category Filter</button>
-        <label><input type="checkbox">Bookmarks</label>
-        <label><input type="checkbox">Following</label>
-        <input type="search" placeholder="Search">
-      </div>
-    </section>
+    <nav>
+      <ul>
+        <li>Filter:&nbsp;</li>
+        <li><a href="#" class="selected">Everything</a></li>
+        <li><a href="#">Bookmarks</a></li>
+        <li><a href="#">Categories <i class="fa-regular fa-chevron-down"></i></a></li>
+        <li></li>
+      </ul>
+    </nav>
+
+    <nav>
+      <ul>
+        <li>Sort:&nbsp;</li>
+        <li><a href="#" class="selected">Newest</a></li>
+        <li><a href="#">Updated</a></li>
+      </ul>
+    </nav>
 
     <section class="discussions-list">
       <ul>
         <li>
-          <div class="hidden-on-mobile">Category Image</div>
+          <img src="/images/matthew-lettini-avatar.jpg" alt="" class="avatar">
           <a href="#">
             <h2>Name of thread</h2>
-            <span class="hidden-on-mobile">Started by </span>Username · X days ago · Category
+            Person A · X days ago
+            <br>
+            Person B · X min ago
           </a>
           <a href="#" style="margin-left: auto; text-align: right">
-            <h2>#<span class="hidden-on-mobile"> Comments</span></h2>
-            <span class="hidden-on-mobile">Latest by </span>Username [MOD] · X min ago
+            <h2><i class="fa-solid fa-comment"></i></h2>
+          </a>
+        </li>
+        <li>
+          <img src="/images/matthew-lettini-avatar.jpg" alt="" class="avatar">
+          <a href="#">
+            <h2>Name of thread</h2>
+            Person A · X days ago
+            <br>
+            Person B · X min ago
+          </a>
+          <a href="#" style="margin-left: auto; text-align: right">
+            <h2><i class="fa-solid fa-comment"></i></h2>
           </a>
         </li>
       </ul>
