@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    {% if pageType == 'home' %}
+      <title>{{ site.authorName }}</title>
+    {% else %}
+      <title>{{ title }} · {{ site.authorName }}</title>
+    {% endif %}
+
+    <script type="module">
+      document.documentElement.classList.remove('no-js');
+      document.documentElement.classList.add('js');
+    </script>
+
+    <link rel="stylesheet" href="/css/new.css">
+
+    {% if description %}
+      <meta description="{{ description }}">
+      <meta property="og:description" content="{{ description }}">
+    {% endif %}
+
+    <meta property="og:title" content="{% if pageType == 'home' %}{{ site.authorName }}{% else %}{{ title }} · {{ site.authorName }}{% endif %}">
+    <meta property="og:image" content="{{ site.url }}/images/matthew-lettini-portrait.jpg">
+    <meta property="og:image:alt" content="{{ site.authorName }}">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="{{ site.authorName }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.url }}{{ page.filePathStem }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="{{ site.url }}{{ page.filePathStem }}">
+
+    <link rel="icon" href="/images/bowie-favicon.png" sizes="any">
+    <link rel="apple-touch-icon" href="/images/matthew-lettini-avatar.jpg">
+
+    {% block header_content %}
+    {% endblock %}
+  </head>
+  <body id="{{ pageType }}">
+
+    <main>
+      {{ content | safe }}
+    </main>
+
+    {% block footer_content %}
+    {% endblock %}
+  </body>
+</html>

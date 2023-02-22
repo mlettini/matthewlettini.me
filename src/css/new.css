@@ -1,0 +1,120 @@
+/* Variables */
+:root {
+  --bg:      #eee;
+  --text:    #222;
+  --primary: blue;
+
+  --font-sans: "ITC2", -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  --transition: 100ms;
+}
+/* @media (prefers-color-scheme: dark) {
+  :root {
+
+  }
+} */
+@media (prefers-reduced-motion) {
+  :root {
+    --transition: none;
+  }
+}
+
+
+
+@font-face {
+  font-display: swap;
+  font-family: 'ITC2';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/ITC2.woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'ITC';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/ITC.woff2');
+}
+
+
+/* Base */
+*, *:before, *:after {
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+}
+html {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 36px;
+  /* -webkit-font-smoothing: antialiased; */
+  font-weight: 400;
+  line-height: calc(1em + 10px);
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  scroll-behavior: smooth;
+  text-rendering: optimizelegibility;
+}
+@media (prefers-color-scheme: dark) {
+  html {
+    filter: invert(100%);
+  }
+}
+@media (prefers-reduced-motion) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+body {
+  background-color: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 1rem;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: inherit;
+  font-family: inherit;
+  line-height: inherit;
+}
+h1 {
+  font-family: ITC;
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: -1px;
+  line-height: calc(1em + 2px);
+}
+a {
+  color: var(--primary);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+@media (pointer: fine) {
+  a:hover {
+    text-decoration: none;
+  }
+}
+img, picture, video, svg {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+main {
+  margin: auto;
+  max-width: 60ch;
+}
+
+
+
+/* Utilities */
+@media print {
+  .do-not-print {
+    display: none !important;
+  }
+}
+
+
+

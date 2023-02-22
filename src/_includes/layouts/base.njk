@@ -49,14 +49,13 @@
   </head>
   <body id="{{ pageType }}">
 
-    {#
     <header class="base-header">
       <div class="inner">
         <h2><a href="/">{{ site.authorName }}</a></h2>
         <nav aria-label="site">
           <ul>
             <li>
-              <a href="/"{% if pageType == 'about' %} class="selected"{% endif %}>About</a>
+              <a href="/v6"{% if pageType == 'about' %} class="selected"{% endif %}>About</a>
             </li>
             <li>
               <a href="/work"{% if pageType == 'work' or pageType == 'work-post' %} class="selected"{% endif %}>Work</a>
@@ -68,7 +67,6 @@
         </nav>
       </div>
     </header>
-    #}
 
     <main>
       {% block content %}
