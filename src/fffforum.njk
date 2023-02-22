@@ -5,72 +5,76 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="robots" content="noindex">
-  <title>FFFFORUM PROTOTYPE</title>
+  <title>DISSCUZIONS</title>
   <link rel="stylesheet" href="/css/fffforum.css">
   <script src="https://kit.fontawesome.com/4573453903.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
   <aside>
-    <a href="#">Profile Dropdown</a>
+    <a href="#"><i class="fa-solid fa-bell"></i> <i class="fa-solid fa-chevron-down"></i></a>
+    <a href="#"><i class="fa-solid fa-user"></i> <i class="fa-solid fa-chevron-down"></i></a>
   </aside>
 
   <header>
-    <h1>FFFFORUM NAME & IMAGE</h1>
+    <h1>Zoom Zoom Drawing Club</h1>
+    This is just the Discussions/Home page design below:
   </header>
 
   <main>
-    <nav>
+    <nav class="filter-bar">
       <ul>
-        <li><a href="#" class="selected">Discussions</a></li>
-        <li><a href="#">Comments</a></li>
-        <li><a href="#">Members</a></li>
-        <li><a href="#">Settings</a></li>
-      </ul>
-    </nav>
-
-    <nav>
-      <ul>
-        <li>Filter:&nbsp;</li>
-        <li><a href="#" class="selected">Everything</a></li>
-        <li><a href="#">Bookmarks</a></li>
-        <li><a href="#">Categories <i class="fa-regular fa-chevron-down"></i></a></li>
-        <li></li>
-      </ul>
-    </nav>
-
-    <nav>
-      <ul>
-        <li>Sort:&nbsp;</li>
-        <li><a href="#" class="selected">Newest</a></li>
+        <li><a href="#" class="selected">Newest •</a></li>
         <li><a href="#">Updated</a></li>
+        <li><a href="#">Watching</a></li>
+        <li><a href="#">Category <i class="fa-solid fa-chevron-down"></i></a></li>
       </ul>
     </nav>
 
     <section class="discussions-list">
       <ul>
         <li>
-          <img src="/images/matthew-lettini-avatar.jpg" alt="" class="avatar">
           <a href="#">
-            <h2>Name of thread</h2>
-            Person A · X days ago
-            <br>
-            Person B · X min ago
-          </a>
-          <a href="#" style="margin-left: auto; text-align: right">
-            <h2><i class="fa-solid fa-comment"></i></h2>
+            <h2 class="unread">What are you working on? (March 2023 Edition)</h2>
+            <div class="comment">
+              <img src="/images/matthew-lettini-avatar.jpg" alt="" class="avatar">
+              <p>
+                <span>Started by @mlettini 2 days ago</span> —
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque...
+              </p>
+            </div>
+            <div class="meta">
+              <span><i class="fa-solid fa-comment"></i> New!</span>
+              <span><i class="fa-solid fa-book"></i> Work</span>
+              <span><i class="fa-solid fa-thumbtack"></i> Pinned</span>
+              <span style="margin-left: auto"><i class="fa-solid fa-ellipsis"></i></span>
+            </div>
           </a>
         </li>
+
         <li>
-          <img src="/images/matthew-lettini-avatar.jpg" alt="" class="avatar">
           <a href="#">
-            <h2>Name of thread</h2>
-            Person A · X days ago
-            <br>
-            Person B · X min ago
-          </a>
-          <a href="#" style="margin-left: auto; text-align: right">
-            <h2><i class="fa-solid fa-comment"></i></h2>
+            <h2 class="unread">Show your desk!</h2>
+            <div class="comment">
+              <img src="/images/matthew-lettini-avatar.jpg" alt="" class="avatar">
+              <p>
+                <span>Started by @mlettini 23 days ago</span> —
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque...
+              </p>
+            </div>
+            <div class="comment">
+              <img src="https://ca.slack-edge.com/T02UYK6DLNB-U02VAAP7WGM-g0218fde3a78-512" alt="" class="avatar">
+              <p>
+                <span>Latest by @bjhess 1 day ago</span> —
+                Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean...
+              </p>
+            </div>
+            <div class="meta">
+              <span><i class="fa-solid fa-comment"></i> 231</span>
+              <span><i class="fa-solid fa-sun"></i> Fun</span>
+              <span><i class="fa-solid fa-eye"></i> Watching</span>
+              <span style="margin-left: auto"><i class="fa-solid fa-ellipsis"></i></span>
+            </div>
           </a>
         </li>
       </ul>
