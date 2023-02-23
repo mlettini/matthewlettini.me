@@ -8,12 +8,15 @@
   <title>DISSCUZIONS</title>
   <link rel="stylesheet" href="/css/fffforum.css">
   <script src="https://kit.fontawesome.com/4573453903.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <aside>
-    <a href="#"><i class="fa-solid fa-bell"></i> <i class="fa-solid fa-chevron-down"></i></a>
-    <a href="#"><i class="fa-solid fa-user"></i> <i class="fa-solid fa-chevron-down"></i></a>
+    <a href="#"><i class="fa-solid fa-bell"></i></a>
+    <a href="#"><img src="/images/matthew-lettini-avatar.jpg" alt="" class="avatar"></a>
   </aside>
 
   <header>
@@ -24,58 +27,55 @@
   <main>
     <nav class="filter-bar">
       <ul>
-        <li><a href="#" class="selected">Newest •</a></li>
+        <li><a href="#" class="selected">All</a></li>
         <li><a href="#">Updated</a></li>
-        <li><a href="#">Watching</a></li>
+        <li><a href="#">Following</a></li>
         <li><a href="#">Category <i class="fa-solid fa-chevron-down"></i></a></li>
       </ul>
     </nav>
 
     <section class="discussions-list">
+      -- New --
       <ul>
         <li>
-          <a href="#">
-            <h2 class="unread">What are you working on? (March 2023 Edition)</h2>
-            <div class="comment">
-              <img src="/images/matthew-lettini-avatar.jpg" alt="" class="avatar">
-              <p>
-                <span>Started by @mlettini 2 days ago</span> —
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque...
-              </p>
-            </div>
-            <div class="meta">
-              <span><i class="fa-solid fa-comment"></i> New!</span>
-              <span><i class="fa-solid fa-book"></i> Work</span>
-              <span><i class="fa-solid fa-thumbtack"></i> Pinned</span>
-              <span style="margin-left: auto"><i class="fa-solid fa-ellipsis"></i></span>
-            </div>
+          <h2><a href="#">Show your desk!</a></h2>
+          <a href="#" class="comment">
+            <img src="/images/matthew-lettini-avatar.jpg" alt="" class="avatar">
+            <p>
+              <span><span class="hidden-on-mobile">Started by </span>@mlettini · 23 days ago</span>
+              — Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque...
+            </p>
           </a>
+          <a href="#" class="comment">
+            <img src="https://ca.slack-edge.com/T02UYK6DLNB-U02VAAP7WGM-g0218fde3a78-512" alt="" class="avatar">
+            <p>
+              <span><span class="hidden-on-mobile">Latest by </span>@bjhess · 1 day ago</span>
+              — Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean...
+            </p>
+          </a>
+          <div class="meta">
+            <span><i class="fa-solid fa-thumbtack"></i> Pinned</span>
+            <a href="#"><i class="fa-solid fa-comment"></i> 231 Comments</a>
+            <a href="#"><i class="fa-solid fa-hashtag"></i> Fun</a>
+            <a href="#" style="margin-left: auto"><i class="fa-solid fa-ellipsis"></i></a>
+            <a href="#"><i class="fa-solid fa-bookmark"></i></a>
+          </div>
         </li>
 
         <li>
-          <a href="#">
-            <h2 class="unread">Show your desk!</h2>
-            <div class="comment">
-              <img src="/images/matthew-lettini-avatar.jpg" alt="" class="avatar">
-              <p>
-                <span>Started by @mlettini 23 days ago</span> —
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque...
-              </p>
-            </div>
-            <div class="comment">
-              <img src="https://ca.slack-edge.com/T02UYK6DLNB-U02VAAP7WGM-g0218fde3a78-512" alt="" class="avatar">
-              <p>
-                <span>Latest by @bjhess 1 day ago</span> —
-                Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean...
-              </p>
-            </div>
-            <div class="meta">
-              <span><i class="fa-solid fa-comment"></i> 231</span>
-              <span><i class="fa-solid fa-sun"></i> Fun</span>
-              <span><i class="fa-solid fa-eye"></i> Watching</span>
-              <span style="margin-left: auto"><i class="fa-solid fa-ellipsis"></i></span>
-            </div>
+          <h2><a href="#">What are you working on? (March 2023 Edition)</a></h2>
+          <a href="#" class="comment">
+            <img src="/images/matthew-lettini-avatar.jpg" alt="" class="avatar">
+            <p>
+              <span><span class="hidden-on-mobile">Started by </span>@mlettini · 2 days ago</span>
+              — Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque...
+            </p>
           </a>
+          <div class="meta">
+            <a href="#"><i class="fa-solid fa-hashtag"></i> Work</a>
+            <a href="#" style="margin-left: auto"><i class="fa-solid fa-ellipsis"></i></a>
+            <a href="#"><i class="fa-solid fa-bookmark-slash" style="opacity:0.3"></i></a>
+          </div>
         </li>
       </ul>
     </section>
