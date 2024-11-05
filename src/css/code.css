@@ -30,7 +30,7 @@ pre[class*="language-"] {
   font-size: 0.9em;
   hyphens: none;
   line-height: var(--line-height);
-  margin: var(--clamp-sm) auto;
+  margin: var(--margin-clamp) auto;
   overflow: auto;
   padding: 1.5rem;
   text-align: left;
